@@ -1,0 +1,140 @@
+/* styles.css */
+
+html {
+    background-color: #1d1b1e;
+}
+
+body {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #1d1b1e;
+    color: #dbe1f8;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Змінюємо напрямок розташування на стовбчик */
+    align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.header .header-content {
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+.header img {
+    max-width: 100px; /* Змініть розмір зображення за потреби */
+    margin-right: 10px; /* Додайте відступ між зображенням і текстом */
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0; /* Видаліть зовнішній відступ від заголовка */
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto; /* Змінили відступи і додали auto для центрування по горизонталі */
+    display: flex;
+    flex-direction: column; /* Змінюємо напрямок розташування на стовбчик */
+    position: relative; /* Залиште це, якщо воно потрібне для інших елементів на сторінці */
+    z-index: 0; /* Залиште це, якщо воно потрібне для інших елементів на сторінці */
+}
+
+.container-content {
+    width: 100%;
+}
+
+.item {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 24px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: #2b2222;
+    border-radius: 20px;
+    position: relative;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    background-size:cover;
+}
+
+
+
+.title {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #dbe1f8;
+}
+
+.description {
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #7e292a;
+
+    color: #dbe1f8;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 250px;
+}
+
+.popup {
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    background-color: #7e292a;
+    color: #dbe1f8;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 2;
+    width: 210px;
+    /* Видаліть наступний рядок, щоб заборонити обмеження висоти */
+    /* max-height: 0; */
+    overflow: hidden;
+    white-space: normal;
+    transition: max-height 0.3s;
+
+    bottom: calc(4% + 10px);
+}
+
+
+.item:hover .description {
+    max-height: 1000px;
+}
+
+.description, .popup{
+    text-align: left;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center; /* Ця властивість центрує елементи горизонтально */
+}
+
+.tab {
+    background-color: #7e292a;
+    color: #dbe1f8;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+}

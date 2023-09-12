@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Data Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <img src="header-image.png" alt="Спільнота українізації модів">
+            <h1>Спільнота українізації модів</h1>
+        </div>
+        <!-- Додайте поле пошуку -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Пошук...">
+            <button onclick="performSearch()">Пошук</button>
+        </div>
+    </div>
+    <div class="div">
+                <!-- Додайте вкладки -->
+                <div class="tabs" id="tabs">
+                    <div class="tab" onclick="showAllTranslations()">Всі переклади</div>
+                    <div class="tab" onclick="showMinecraftTranslations()">Майнкрафт моди</div>
+                    <div class="tab" onclick="showGamesTranslations()">Переклади ігор</div>
+                    <div class="tab" onclick="showAboutPage()">Про нас</div>
+                </div>
+    </div>
+    <div class="container">
+        <div class="container-content">
+            <!-- Контейнер для карточок -->
+            <div id="data-container">
+                <!-- Карточки будуть додаватися за допомогою JavaScript -->
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup"></div>
+    <script src="search.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

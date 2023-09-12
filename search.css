@@ -1,0 +1,18 @@
+/*search.css*/
+#search{
+    background-color: #201a1a;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #dbe1f8;
+    border-color: #dbe1f8;
+
+}
+
+button{
+    background-color: #7e292a;
+    color: #dbe1f8;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+}
