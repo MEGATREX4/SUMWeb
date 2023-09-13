@@ -6,6 +6,7 @@
     <script src="page.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="scrollbar.css">
     <link rel="icon" type="image/x-icon" href="header-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +22,7 @@
     </div>
             <!-- Додайте поле пошуку -->
             <div class="search-container">
+                <button class="addbutton"><i class="fa fa-plus faadd" aria-hidden="true"></i></button>
                 <input type="text" id="search" placeholder="Пошук...">
                 <button onclick="performSearch()">Пошук</button>
             </div>
@@ -45,9 +47,23 @@
 </button>
         </div>
     </div>
+
+      <div class="custom-tooltip" style="display: none;">
+        <div class="tooltip-content">
+            Ця відмітка означає що розробник додав переклад в свій мод і він вже вбудований, нічого довантажувати не треба
+        </div>
+    </div>
+      
+
+    <div class="footer">
+        <p>&copy; 2023 Спільнота українізації модів</p>
+        <p>Створено в Україні для українців</p>
+    </div>
+
     <div class="popup" id="popup"></div>
+
+
     <script src="search.js"></script>
     <script src="script.js"></script>
-    <script src="showMore.js"></script>
 </body>
 </html>

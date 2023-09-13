@@ -202,3 +202,58 @@ body {
 .notcompleted{
     background: linear-gradient(135deg,rgba(243,198,62,.3) 0%,rgba(243,198,62,.3) 25%,rgba(112,94,37,.3) 25%,rgba(112,94,37,.3) 50%,rgba(243,198,62,.3) 50%,rgba(243,198,62,.3) 75%,rgba(112,94,37,.3) 75%,rgba(112,94,37,.3) 100%);
 }
+
+
+.footer {
+    background-color: #1d1b1e;
+    color: #dbe1f8;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    opacity: 40%;
+
+}
+
+.footer a {
+    color: #dbe1f8;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.custom-tooltip {
+    position: absolute;
+    background-color: rgb(51, 128, 48);
+    color: #e6e6e6;
+    padding: 15px;
+    border-radius: 20px;
+    z-index: 999;
+    left: -50%;
+    top: -10px;
+    transform: translateX(-31.5%) translateY(-40%);
+}
+
+.custom-tooltip .tooltip-content {
+    /* Стилі для вмісту підказки */
+    max-width: 200px; /* Обмежити ширину тексту до 200 пікселів */
+    overflow: auto; /* Додати прокручування, якщо текст не поміщається */
+    white-space: normal; /* Дозволити перенос тексту */
+    word-wrap: break-word; /* Розділити слова, якщо вони не вміщаються */
+}
+
+i{
+    color:rgb(51, 128, 48);
+}
+

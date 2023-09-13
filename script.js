@@ -67,11 +67,37 @@ function displayTranslations(data, currentPage, itemsPerPage) {
             translationButton.textContent = 'Переклад';
             translationButton.href = 'https://github.com/SKZGx/UA-Translation'; // Посилання на GitHub
             if (item.hasOwnProperty('verified') && item.verified === true) {
-                // Додавання значка (Font Awesome) зліва від тексту
+                // Створити значок <i> для галочки
                 const icon = document.createElement('i');
-                icon.classList.add('fa', 'fa-check', 'translation-icon', 'left-icon'); // Додаємо класи для значка галочки
+                icon.classList.add('fa', 'fa-check', 'translation-icon', 'left-icon'); // Додати класи для значка галочки
+            
+                // Додати обробник подій для показу підказки при наведенні
+                icon.addEventListener('mouseenter', function () {
+                    const tooltip = document.querySelector('.custom-tooltip');
+                    if (tooltip) {
+                        // Задати текст підказки відповідно до вашого потреби
+                        tooltip.querySelector('.tooltip-content').textContent = 'Ця відмітка означає що розробник додав переклад в свій мод і він вже вбудований, нічого довантажувати не треба';
+                        
+                        // Показати підказку і визначити її позицію
+                        tooltip.style.display = 'block';
+                        tooltip.style.left = `${icon.getBoundingClientRect().left}px`;
+                        tooltip.style.top = `${icon.getBoundingClientRect().top - tooltip.offsetHeight}px`;
+                    }
+                });
+            
+                // Додати обробник події для приховування підказки при виході миші
+                icon.addEventListener('mouseleave', function () {
+                    const tooltip = document.querySelector('.custom-tooltip');
+                    if (tooltip) {
+                        tooltip.style.display = 'none'; // Приховати підказку
+                    }
+                });
+            
+                // Додати значок на сторінку (в ваш контейнер або елемент, де ви його вставляєте)
                 translationButton.insertBefore(icon, translationButton.firstChild);
             }
+            
+            
         }
 
         // Додавання pop-up вікна перед описом
@@ -229,7 +255,6 @@ loadTranslationsFromFile('mods.json', 1, displayedItems);
 
 // Завантажити дані з файлу game.json при запуску сторінки
 loadTranslationsFromFile('game.json', 1, displayedItems);
-
 
 
 
