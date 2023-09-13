@@ -55,11 +55,7 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         translationButton.target = '_blank'; // Відкривати посилання в новій вкладці
 
         // Додавання значка (Font Awesome) зліва від тексту тільки при значенні "verified": true
-        if (item.verified === true) {
-            const icon = document.createElement('i');
-            icon.classList.add('fa', 'fa-check', 'translation-icon', 'left-icon'); // Додаємо класи для значка галочки
-            translationButton.appendChild(icon);
-        }
+
 
         // Перевірка значення тегу 'completed'
         if (item.completed === false) {
@@ -70,6 +66,12 @@ function displayTranslations(data, currentPage, itemsPerPage) {
             // Інакше встановлюємо текст кнопки "Переклад"
             translationButton.textContent = 'Переклад';
             translationButton.href = 'https://github.com/SKZGx/UA-Translation'; // Посилання на GitHub
+            if (item.hasOwnProperty('verified') && item.verified === true) {
+                // Додавання значка (Font Awesome) зліва від тексту
+                const icon = document.createElement('i');
+                icon.classList.add('fa', 'fa-check', 'translation-icon', 'left-icon'); // Додаємо класи для значка галочки
+                translationButton.insertBefore(icon, translationButton.firstChild);
+            }
         }
 
         // Додавання pop-up вікна перед описом

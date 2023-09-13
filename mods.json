@@ -8,7 +8,8 @@
     {
         "title": "Spectrum",
         "description": "Spectrum - це магічний мод, що базується на розвитку та дослідженні, де ви комбінуєте кольори для створення магічних інструментів і машин, з кінцевою метою дізнатися, що лежить під колись непроникною підлогою Bedrock.",
-        "image": "images/SP.png"
+        "image": "images/SP.png",
+        "verified": true
     },
     {
         "title": "Terrestria",
