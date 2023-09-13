@@ -54,9 +54,6 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         translationButton.classList.add('translation-button');
         translationButton.target = '_blank'; // Відкривати посилання в новій вкладці
 
-        // Додавання значка (Font Awesome) зліва від тексту тільки при значенні "verified": true
-
-
         // Перевірка значення тегу 'completed'
         if (item.completed === false) {
             // Якщо 'completed' дорівнює false, встановлюємо текст кнопки "в процесі"
@@ -164,6 +161,13 @@ function showAllTranslations() {
     setActiveTab(document.querySelector('.tab:nth-child(1)'));
 }
 
+function showGamesTranslations() {
+    currentTab = 'games';
+    displayedItems = 15;
+    loadAndDisplayData('games');
+    setActiveTab(document.querySelector('.tab:nth-child(3)'));
+}
+
 function showMinecraftTranslations() {
     currentTab = 'minecraft';
     displayedItems = 15;
@@ -171,12 +175,7 @@ function showMinecraftTranslations() {
     setActiveTab(document.querySelector('.tab:nth-child(2)'));
 }
 
-function showGamesTranslations() {
-    currentTab = 'games';
-    displayedItems = 15;
-    loadAndDisplayData('games');
-    setActiveTab(document.querySelector('.tab:nth-child(3)'));
-}
+
 
 // Відображення всіх перекладів за замовчуванням при завантаженні сторінки
 showAllTranslations();
@@ -250,11 +249,13 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
         });
 }
 
+// Завантажити дані з файлу game.json при запуску сторінки
+loadTranslationsFromFile('game.json', 1, displayedItems);
+
 // Завантажити дані з файлу mods.json при запуску сторінки
 loadTranslationsFromFile('mods.json', 1, displayedItems);
 
-// Завантажити дані з файлу game.json при запуску сторінки
-loadTranslationsFromFile('game.json', 1, displayedItems);
+
 
 
 

@@ -1,5 +1,6 @@
 /* styles.css */
 
+
 html {
     background-color: #1d1b1e;
 }
@@ -8,6 +9,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
+
 }
 
 .header {
@@ -44,13 +46,19 @@ body {
     max-width: 960px;
     margin: 20px auto; /* Змінили відступи і додали auto для центрування по горизонталі */
     display: flex;
+    transform:  translateX(5%);
     flex-direction: column; /* Змінюємо напрямок розташування на стовбчик */
     position: relative; /* Залиште це, якщо воно потрібне для інших елементів на сторінці */
     z-index: 0; /* Залиште це, якщо воно потрібне для інших елементів на сторінці */
+    align-items: center; /* Додайте цей рядок для вирівнювання карточок по центру */
 }
 
 .container-content {
     width: 100%;
+
+
+    
+    
 }
 
 .item {
@@ -59,11 +67,12 @@ body {
     padding: 10px;
     padding-top: 24px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     text-align: center;
     background-color: #2b2222;
     border-radius: 20px;
     position: relative;
+
 }
 
 .image-container {
@@ -257,3 +266,14 @@ i{
     color:rgb(51, 128, 48);
 }
 
+.concon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#show-more-button{
+    transform:  translateX(-25%);
+}
