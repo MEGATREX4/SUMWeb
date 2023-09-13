@@ -127,7 +127,7 @@ body {
     overflow: hidden;
     white-space: normal;
     transition: max-height 0.3s, padding 0.3s;
-    bottom: calc(18% + 2px);
+    bottom: calc(21% + 3px);
 }
 
 
@@ -150,7 +150,7 @@ body {
     background-color: #7e292a;
     color: #dbe1f8;
     border: none;
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 20px;
     margin: 0 10px;
 }
@@ -182,7 +182,7 @@ body {
     text-align: center;
     background-color: #7e292a;
     color: #dbe1f8;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 20px;
     cursor: pointer;
     display: flex;
@@ -251,7 +251,7 @@ body, html {
     z-index: 999;
     left: -50%;
     top: -10px;
-    transform: translateX(-31.5%) translateY(-40%);
+    transform: translateX(-31.5%) translateY(-49%);
 }
 
 .custom-tooltip .tooltip-content {
