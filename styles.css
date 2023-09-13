@@ -13,11 +13,17 @@ body {
 .header {
     background-color: #1d1b1e;
     color: #dbe1f8;
-    text-align: left;
-    padding: 20px;
+    text-align: center;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column; /* Змінюємо напрямок розташування на стовбчик */
     align-items: center; /* Вирівнювання по вертикалі */
+    font-family: 'Nunito', sans-serif;
+}
+
+.headertext{
+    display:block;
+    
 }
 
 .header .header-content {
@@ -89,7 +95,7 @@ body {
     padding: 20px;
     border-radius: 20px;
     background-color: #7e292a;
-
+    
     color: #dbe1f8;
     position: relative;
     cursor: pointer;
@@ -98,6 +104,7 @@ body {
 }
 
 .popup {
+    cursor: default;
     font-size: 14px;
     display: none;
     position: absolute;
@@ -107,14 +114,14 @@ body {
     border-radius: 20px;
     z-index: 2;
     width: 210px;
-    /* Видаліть наступний рядок, щоб заборонити обмеження висоти */
-    /* max-height: 0; */
+    max-height: none; /* Змінено на "none" замість "0" */
     overflow: hidden;
     white-space: normal;
-    transition: max-height 0.3s;
-
-    bottom: calc(4% + 10px);
+    transition: max-height 0.3s, padding 0.3s;
+    bottom: calc(18% + 10px);
 }
+
+
 
 
 .item:hover .description {
@@ -137,4 +144,48 @@ body {
     padding: 20px;
     border-radius: 20px;
     margin: 0 10px;
+}
+
+.tab.active {
+    background-color: #ffb3b0; /* Змініть на бажаний колір фону */
+    color: #601216; /* Змініть на бажаний колір тексту */
+}
+
+.tab:hover:not(.active) {
+    background-color: #c57976; /* Змініть на бажаний колір фону */
+    color: #601216; /* Змініть на бажаний колір тексту */
+    -webkit-box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.42);
+    cursor: pointer;
+}
+
+.author{
+    color: #969aa8;
+    text-align: center;
+    opacity: 50%;
+    margin-top: -10px;
+}
+
+.translation-button {
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    background-color: #7e292a;
+    color: #dbe1f8;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Додайте цей рядок для центрування тексту по горизонталі */
+}
+
+.translation-icon {
+    margin-right: 5px; /* Відстань між іконкою і текстом */
+}
+
+.translation-button:hover {
+    background-color: #c57976; /* Колір фону кнопки при наведенні */
+    color: #601216; /* Колір тексту кнопки при наведенні */
 }

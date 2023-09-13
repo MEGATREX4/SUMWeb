@@ -2,22 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JSON Data Page</title>
+    <title>Спільнота українізації модів</title>
+    <script src="page.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="search.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="header-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet"></head>
 <body>
     <div class="header">
         <div class="header-content">
             <img src="header-image.png" alt="Спільнота українізації модів">
-            <h1>Спільнота українізації модів</h1>
+            <h1 class="headertext">Спільнота українізації модів</h1>
         </div>
-        <!-- Додайте поле пошуку -->
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Пошук...">
-            <button onclick="performSearch()">Пошук</button>
-        </div>
+
     </div>
+            <!-- Додайте поле пошуку -->
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Пошук...">
+                <button onclick="performSearch()">Пошук</button>
+            </div>
     <div class="div">
                 <!-- Додайте вкладки -->
                 <div class="tabs" id="tabs">
@@ -33,10 +39,14 @@
             <div id="data-container">
                 <!-- Карточки будуть додаватися за допомогою JavaScript -->
             </div>
+            <button id="show-more-button" onclick="showMoreTranslations()">
+    <i class="fa fa-retweet" aria-hidden="true"></i> Показати більше
+</button>
         </div>
     </div>
     <div class="popup" id="popup"></div>
     <script src="search.js"></script>
     <script src="script.js"></script>
+    <script src="showMore.js"></script>
 </body>
 </html>
