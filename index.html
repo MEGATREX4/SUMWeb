@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <title>Спільнота українізації модів</title>
-    <script src="page.js"></script>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="load.css">
+
     <link rel="icon" type="image/x-icon" href="header-image.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet"></head>
 <body>
+
+
     <div class="header">
         <div class="header-content">
             <img src="header-image.png" alt="Спільнота українізації модів">
@@ -22,7 +27,7 @@
     </div>
             <!-- Додайте поле пошуку -->
             <div class="search-container">
-                <button class="addbutton"><i class="fa fa-plus faadd" aria-hidden="true"></i></button>
+                <button class="addbutton" id="addbutton"><i class="fa fa-plus faadd" aria-hidden="true"></i></button>
                 <input type="text" id="search" placeholder="Пошук...">
                 <button onclick="performSearch()">Пошук</button>
             </div>
@@ -32,7 +37,7 @@
                     <div class="tab" onclick="showAllTranslations()">Всі переклади</div>
                     <div class="tab" onclick="showMinecraftTranslations()">Майнкрафт моди</div>
                     <div class="tab" onclick="showGamesTranslations()">Переклади ігор</div>
-                    <div class="tab" onclick="showAboutPage()">Про нас</div>
+                    <div class="tab" onclick="window.open('/about.html','_self')">Про нас</div>
                 </div>
     </div>
     <div class="concon">
@@ -44,8 +49,7 @@
             </div>
             <div class="button-container">
             <button id="show-more-button" class="show-more-button">Показати більше</button>
-            </div>
-</button>
+            </div></button>
         </div>
     </div>
     </div>
@@ -54,6 +58,10 @@
         <div class="tooltip-content">
         </div>
     </div>
+
+    <div class="overlay">
+        <div class="spinner"></div>
+      </div>
       
 
     <div class="footer">
@@ -61,9 +69,10 @@
         <p>Створено в Україні для українців</p>
     </div>
 
+
+
     <div class="popup" id="popup"></div>
-
-
+    <script src="load.js"></script>
     <script src="search.js"></script>
     <script src="script.js"></script>
 </body>

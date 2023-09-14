@@ -1,0 +1,138 @@
+/* Стилі для великого екрану */
+.aboutcont {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+}
+
+.socbut {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; /* Додайте бажаний відступ між стовбцями */
+}
+
+.textabout p {
+    flex: 1; /* Розширюємо textabout на всю доступну ширину */
+    color:#dbe1f8;
+}
+
+.aboutcont {
+    margin-top: 50px;
+}
+
+/* Стилі для екранів меншого розміру */
+@media (max-width: 768px) {
+    .aboutcont {
+        flex-direction: column; /* Міняємо на вертикальне розміщення */
+    }
+
+    .socbut {
+        width: 100%;
+        margin-right: 0; /* Знищуємо відступ для маленького екрану */
+    }
+}
+
+.soc-button {
+    margin: 10px 20px;
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    background-color: #7e292a;
+    color: #dbe1f8;
+    padding: 20px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Додайте цей рядок для центрування тексту по горизонталі */
+}
+
+.soc-button:hover{
+    background-color: #c57976; /* Колір фону кнопки при наведенні */
+    color: #601216; /* Колір тексту кнопки при наведенні */
+}
+
+.smallsoc {
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center; /* Додайте цей рядок для центрування тексту по горизонталі */
+    display: flex;
+    flex: 1;
+}
+
+.smalll:hover{
+    background-color: #c57976; /* Колір фону кнопки при наведенні */
+    color: #601216; /* Колір тексту кнопки при наведенні */
+}
+
+.smalll {
+    
+    width: 59px;
+    height: 59px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #7e292a;
+    color: #dbe1f8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.addbuttonab {
+    width: 250px;
+    height: 59px;
+    margin-right: 20px;
+    background-color: rgba(126, 113, 41, 0.3);
+    color: white;
+}
+
+.addbuttonab:hover {
+    background-color: rgba(197, 186, 118, 0.3);
+    color: #ffff;
+}
+
+.textabout {
+    background-color: #2b2222;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #dbe1f8;
+}
+
+.contcont {
+    vertical-align: middle;
+    text-align: center;
+    height: 420px;
+}
+
+
+
+
+
+.dona{
+    background-image: url(images/Donatello.png);
+}
+
+.mono{
+    background-image: url(images/monobank.png);
+    
+}
+
+.mas{
+    background-image: url(images/socials/mastodon.png);
+}
+.tel{
+    background-image: url(images/socials/telegram.png);
+}
+.sky{
+    background-image: url(images/socials/bluesky.png);
+}
+.twi{
+    background-image: url(images/socials/twitter.png);
+}
+
+.dona, .mono, .mas,.tel,.sky,.twi{
+    background-size: cover;
+}

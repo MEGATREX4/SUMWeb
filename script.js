@@ -4,10 +4,14 @@ function displayTranslations(data, currentPage, itemsPerPage) {
     const cardContainer = document.querySelector('.container-content #data-container');
     cardContainer.innerHTML = ''; // Очистити контейнер перед додаванням нових карточок
 
+    // Визначення діапазону елементів, які будуть відображені на поточній сторінці
     const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const endIndex = Math.min(startIndex + itemsPerPage, data.length); // Обмеження endIndex за допомогою довжини масиву
 
-    data.slice(startIndex, endIndex).forEach(item => {
+    // Перебираємо елементи в діапазоні і створюємо карточки
+    for (let i = startIndex; i < endIndex; i++) {
+        const item = data[i];
+
         const itemContainer = document.createElement('div');
         itemContainer.classList.add('item');
 
@@ -17,6 +21,7 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         const imageElement = document.createElement('div');
         imageElement.classList.add('image');
 
+        // Встановлення фонового зображення для imageElement
         if (item.image === null) {
             imageElement.style.backgroundImage = `url('images/default-image.jpg')`;
         } else {
@@ -57,8 +62,9 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         // Перевірка значення тегу 'completed'
         if (item.completed === false) {
             // Якщо 'completed' дорівнює false, встановлюємо текст кнопки "в процесі"
-            translationButton.textContent = 'в процесі';
+            translationButton.textContent = 'В процесі';
             translationButton.classList.add('notcompleted'); // Додаємо клас 'notcompleted'
+            translationButton.setAttribute("id", "notcompleted");
         } else {
             // Інакше встановлюємо текст кнопки "Переклад"
             translationButton.textContent = 'Переклад';
@@ -93,8 +99,6 @@ function displayTranslations(data, currentPage, itemsPerPage) {
                 // Додати значок на сторінку (в ваш контейнер або елемент, де ви його вставляєте)
                 translationButton.insertBefore(icon, translationButton.firstChild);
             }
-            
-            
         }
 
         // Додавання pop-up вікна перед описом
@@ -118,8 +122,9 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         descriptionContainer.addEventListener('mouseleave', () => {
             popupElement.style.display = 'none';
         });
-    });
+    }
 }
+
 
 
 

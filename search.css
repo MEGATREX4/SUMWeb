@@ -39,13 +39,13 @@ button:hover{
     width: 59px;
     height: 59px;
     margin-right: 20px;
-    background-color: #5a4319;
+    background-color: rgb(126, 113, 41,.3);
     color: white;
 
 }
 
 .addbutton:hover{
-    background-color: #a07422;
+    background-color: rgba(197, 186, 118,.3);
     color: #ffff;
 }
 
