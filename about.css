@@ -24,12 +24,16 @@
 /* Стилі для екранів меншого розміру */
 @media (max-width: 768px) {
     .aboutcont {
+        
         flex-direction: column; /* Міняємо на вертикальне розміщення */
     }
 
     .socbut {
         width: 100%;
         margin-right: 0; /* Знищуємо відступ для маленького екрану */
+    }
+    .smalll {
+        margin-bottom: 20px;
     }
 }
 
