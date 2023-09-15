@@ -71,8 +71,11 @@ function displayTranslations(data, currentPage, itemsPerPage) {
             translationButton.href = 'https://github.com/SKZGx/UA-Translation'; // Посилання на GitHub
             if (item.hasOwnProperty('verified') && item.verified === true) {
                 // Створити значок <i> для галочки
+                
                 const icon = document.createElement('i');
+                itemContainer.id = 'verified';
                 icon.classList.add('fa', 'fa-check', 'translation-icon', 'left-icon'); // Додати класи для значка галочки
+                
             
                 // Додати обробник подій для показу підказки при наведенні
                 icon.addEventListener('mouseenter', function () {
@@ -98,12 +101,13 @@ function displayTranslations(data, currentPage, itemsPerPage) {
             
                 // Додати значок на сторінку (в ваш контейнер або елемент, де ви його вставляєте)
                 translationButton.insertBefore(icon, translationButton.firstChild);
+                
             }
         }
 
         // Додавання pop-up вікна перед описом
         descriptionContainer.appendChild(popupElement);
-
+        
         imageContainer.appendChild(imageElement);
         itemContainer.appendChild(imageContainer);
         itemContainer.appendChild(titleElement);

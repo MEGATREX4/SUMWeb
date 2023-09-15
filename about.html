@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Спільнота українізації модів</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/icon.png">
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="notcompleted.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,14 +24,17 @@
     </div>
             <!-- Додайте поле пошуку -->
             <div class="search-container">
-                <button class="addbuttonab" id="addbutton"><i class="fa fa-plus faadd faaddabout" aria-hidden="true">Додати свій переклад</i></button>
+                <div class="mobile-only"> </div>
+
+                <button class="addbutton" id="addbutton"><i class="fa fa-plus faadd faaddabout" aria-hidden="true"></i></button>
             </div>
     <div class="div">
         <!-- Додайте вкладки -->
-        <div class="tabs" id="tabs">
+        <div class="tabs container" id="tabs">
             <div class="tab" onclick="window.open ('/index.html', '_self')">Всі переклади</div>
             <div class="tab" onclick="window.open ('/index.html', '_self')">Майнкрафт моди</div>
             <div class="tab" onclick="window.open ('/index.html', '_self')">Переклади ігор</div>
+            <div class="NotCompletedTab tab" onclick="window.open ('/index.html', '_self')">В роботі</div>
             <div class="tab active" onclick="showAboutPage()">Про нас</div>
         </div>
 </div>

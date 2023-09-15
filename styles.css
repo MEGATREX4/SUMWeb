@@ -10,7 +10,74 @@ background-size: cover!important;
     html{
         background-size: cover!important;
     }
+    body {
+        font-size: 16px;
+
+    }
+    .header {
+        padding-bottom: 20px;
+    }
+    .mobile-only {
+        display: block!important; /* Показувати меню на мобільних пристроях */
+        position: fixed; /* Фіксована позиція */
+        bottom: -2px; /* Внизу екрану */
+        left: 0; /* Лівий край екрану */
+        background-color: #131214; /* Колір фону меню */
+        width: 90%; /* 100% ширина екрану */
+        padding: 40px; /* Відступи */
+        text-align: center; /* Вирівнювання тексту по центру */
+        z-index: 50; /* Вищий індекс ніж в інших елементів */
+        color: white;
+        box-shadow: 1px -8px 35px 20px rgba(0,0,0,0.10);
+        -webkit-box-shadow: 1px -8px 35px 20px rgba(0,0,0,0.10);
+        -moz-box-shadow: 1px -8px 35px 20px rgba(0,0,0,0.10);
+        border-radius: 19px 19px 0px 0px;
+        -webkit-border-radius: 19px 19px 0px 0px;
+        -moz-border-radius: 19px 19px 0px 0px;
+    }
+    .addbutton{
+        display: block!important; /* Показувати меню на мобільних пристроях */
+        position: fixed; /* Фіксована позиція */
+        bottom: 8px; /* Внизу екрану */
+        z-index: 100;
+        
+    }
+    .search-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+    .search-container button{
+        margin-top: 10px;
+    }
+
+
+    .container{
+        margin: 0!important;
+    }
+    .footer{
+        height: 170px;
+    }
 }
+
+@media (max-width: 443px){
+    .search-container #searchbtn{
+        width: 100%;
+        margin: 20px 20px;
+
+    }
+}
+
+.tabs{
+    margin: 0px!important;
+}
+
+.mobile-only {
+    display: none;
+    }
 
 body {
     justify-content: center;
@@ -68,6 +135,10 @@ body {
     border-radius: 20px;
     position: relative;
 
+
+}
+#verified{
+    border: 3px solid #297e4c;
 }
 
 
@@ -147,7 +218,7 @@ body {
     border: none;
     padding: 30px 20px;
     border-radius: 20px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .tab.active {
@@ -305,4 +376,8 @@ i{
     position: relative;
 }
 
-
+.div{
+    display: flex;
+    flex-wrap: wrap; /* Змінюємо розміщення на згорнуту обгортку */
+    justify-content: center;
+}

@@ -26,3 +26,25 @@
     background-color: #ffb3b0;
   }
   
+
+  @media (max-width: 768px) {
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffb3b0 #534342;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #ffb3b0;
+}
+
+
+  }

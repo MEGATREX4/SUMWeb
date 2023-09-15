@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>Спільнота українізації модів</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="load.css">
+    <link rel="stylesheet" href="notcompleted.css">
+    
 
     <link rel="icon" type="image/x-icon" href="images/icon.png">
 
@@ -29,19 +33,22 @@
             <div class="search-container">
                 <button class="addbutton" id="addbutton"><i class="fa fa-plus faadd" aria-hidden="true"></i></button>
                 <input type="text" id="search" placeholder="Пошук...">
-                <button onclick="performSearch()">Пошук</button>
+                <button id="searchbtn" onclick="performSearch()">Пошук</button>
             </div>
     <div class="div">
                 <!-- Додайте вкладки -->
-                <div class="tabs" id="tabs">
+                <div class="tabs container" id="tabs">
                     <div class="tab" onclick="showAllTranslations()">Всі переклади</div>
                     <div class="tab" onclick="showMinecraftTranslations()">Майнкрафт моди</div>
                     <div class="tab" onclick="showGamesTranslations()">Переклади ігор</div>
+                    <div class="tab NotCompletedTab" onclick="showNotCompletedTranslations()">В процесі</div>
+                    <div class="tab" onclick="showOfficialTranslations()">Офіційні</div>
                     <div class="tab" onclick="window.open('/about.html','_self')">Про нас</div>
                 </div>
     </div>
     <div class="concon">
     <div class="container">
+        <div class="mobile-only"> </div>
         <div class="container-content">
             <!-- Контейнер для карточок -->
             <div id="data-container">
@@ -64,6 +71,7 @@
       </div>
       
 
+
     <div class="footer">
         <p>&copy; 2023 Спільнота українізації модів</p>
         <p>Створено в Україні для українців</p>
@@ -72,6 +80,9 @@
 
 
     <div class="popup" id="popup"></div>
+
+    <script src="official.js"></script>
+    <script src="notcompleted.js"></script>
     <script src="load.js"></script>
     <script src="search.js"></script>
     <script src="script.js"></script>

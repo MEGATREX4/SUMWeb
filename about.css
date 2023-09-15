@@ -6,7 +6,7 @@
 }
 
 .socbut {
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     margin-right: 20px; /* Додайте бажаний відступ між стовбцями */
@@ -35,6 +35,12 @@
     .smalll {
         margin-bottom: 20px;
     }
+    .addbuttonab{
+        display: block!important; /* Показувати меню на мобільних пристроях */
+        position: fixed; /* Фіксована позиція */
+        bottom: 10px; /* Внизу екрану */
+        z-index: 100;
+    }
 }
 
 .soc-button {
@@ -44,7 +50,7 @@
     text-align: center;
     background-color: #7e292a;
     color: #dbe1f8;
-    padding: 20px 10px;
+    padding: 30px 10px;
     border-radius: 20px;
     cursor: pointer;
     display: flex;
@@ -138,5 +144,14 @@
 }
 
 .dona, .mono, .mas,.tel,.sky,.twi{
-    background-size: cover;
+    background-size:cover;
+}
+
+#search {
+    background-color: #201a1a00;
+    padding: 20px;
+    border-radius: 20px;
+    color: #dbe1f800;
+    border-color: #dbe1f800;
+    width: 300px;
 }
