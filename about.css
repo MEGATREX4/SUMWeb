@@ -104,6 +104,8 @@
 }
 
 .textabout {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
     background-color: #2b2222;
     margin: 20px;
     padding: 20px;
@@ -155,4 +157,17 @@
     color: #dbe1f800;
     border-color: #dbe1f800;
     width: 300px;
+}
+
+.terms{
+    text-align: center;
+    margin: 0;
+    color: #dbe1f8;
+    opacity: 40%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.termstext{
+    margin-top: 20px;
 }
