@@ -331,14 +331,14 @@ body, html {
 
 .custom-tooltip {
     position: absolute;
-    background-color: #297e4c;
+    background-color: #1d1b1e;
     color: #e6e6e6;
     padding: 15px;
     border-radius: 20px;
     z-index: 999;
     left: -50%;
     top: -10px;
-    transform: translateX(-31.5%) translateY(-49%);
+    transform: translateX(-31.5%) translateY(-48%);
 }
 
 .custom-tooltip .tooltip-content {
@@ -349,9 +349,7 @@ body, html {
     word-wrap: break-word; /* Розділити слова, якщо вони не вміщаються */
 }
 
-i{
-    color:#297e4c;
-}
+
 
 .concon{
     display: flex;

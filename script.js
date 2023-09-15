@@ -74,7 +74,7 @@ function displayTranslations(data, currentPage, itemsPerPage) {
                 
                 const icon = document.createElement('i');
                 itemContainer.id = 'verified';
-                icon.classList.add('fa', 'fa-check', 'translation-icon', 'left-icon'); // Додати класи для значка галочки
+                icon.classList.add('fa', 'fa-question-circle-o', 'translation-icon', 'left-icon'); // Додати класи для значка галочки
                 
             
                 // Додати обробник подій для показу підказки при наведенні
