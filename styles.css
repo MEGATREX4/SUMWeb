@@ -341,6 +341,7 @@ body, html {
     transform: translateX(-31.5%) translateY(-48%);
 }
 
+
 .custom-tooltip .tooltip-content {
     /* Стилі для вмісту підказки */
     max-width: 200px; /* Обмежити ширину тексту до 200 пікселів */
