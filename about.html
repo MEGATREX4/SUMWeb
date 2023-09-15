@@ -5,7 +5,8 @@
     <title>Спільнота українізації модів</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    <script src="script.js"></script>
+    <script src="about.js"></script>
     <meta property="og:title" content="Спільнота українізації модів">
     <meta property="og:description" content="Тут ви зможете зайти переклади модів для майнкрафту, або перелкди інших ігор, також можна запропонувати свій переклад(виключно моди майнкрафт)">
     <meta property="og:image" content="images/icon.png">
@@ -49,12 +50,21 @@
     <div class="div">
         <!-- Додайте вкладки -->
         <div class="tabs container" id="tabs">
-            <div class="tab" onclick="window.open ('/index.html', '_self')">Всі переклади</div>
-            <div class="tab" onclick="window.open ('/index.html', '_self')">Майнкрафт моди</div>
-            <div class="tab" onclick="window.open ('/index.html', '_self')">Переклади ігор</div>
-            <div class="NotCompletedTab tab" onclick="window.open ('/index.html', '_self')">В роботі</div>
+            <div class="tab" data-tab="all" onclick="redirectToIndex('all')">Всі переклади</div>
+            <div class="tab" data-tab="minecraft" onclick="redirectToIndex('minecraft')">Майнкрафт моди</div>
+            <div class="tab" data-tab="games" onclick="redirectToIndex('games')">Переклади ігор</div>
+            <div class="tab NotCompletedTab" data-tab="notcompleted" onclick="redirectToIndex('notcompleted')">В роботі</div>
+            <div class="tab" data-tab="official" onclick="redirectToIndex('official')">Офіційні</div>
             <div class="tab active" onclick="showAboutPage()">Про нас</div>
         </div>
+        
+        
+
+        <script>
+            function redirectToIndex(tabName) {
+              window.location.href = `/index.html?tab=${tabName}`;
+            }
+            </script>
 </div>
 
 <div class="container">

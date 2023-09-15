@@ -129,22 +129,6 @@ function displayTranslations(data, currentPage, itemsPerPage) {
     }
 }
 
-
-
-
-function setActiveTab(tabElement) {
-    // Знайти всі вкладки
-    const tabs = document.querySelectorAll('.tab');
-
-    // Перебрати всі вкладки і видалити клас 'active'
-    tabs.forEach(tab => {
-        tab.classList.remove('active');
-    });
-
-    // Додати клас 'active' до вибраної вкладки
-    tabElement.classList.add('active');
-}
-
 function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
     fetch(fileName)
         .then(response => response.json())
@@ -155,6 +139,26 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
         .catch(error => {
             console.error(`Помилка завантаження JSON даних з файлу ${fileName}:`, error);
         });
+}
+
+function loadAndDisplayNotCompletedData() {
+    const notCompletedData = minecraftData.concat(gamesData).filter(item => item.completed === false);
+    const startIndex = 0;
+    const endIndex = displayedItems;
+
+    const showMoreButton = document.getElementById('show-more-button');
+
+    if (endIndex >= notCompletedData.length) {
+        if (showMoreButton) {
+            showMoreButton.style.display = 'none';
+        }
+    } else {
+        if (showMoreButton) {
+            showMoreButton.style.display = 'block';
+        }
+    }
+
+    displayTranslations(notCompletedData.slice(startIndex, endIndex), 1, displayedItems);
 }
 
 // Оголосіть змінні для зберігання кількості відображених елементів і загальної кількості елементів
@@ -182,6 +186,42 @@ function showMinecraftTranslations() {
     displayedItems = 15;
     loadAndDisplayData('minecraft');
     setActiveTab(document.querySelector('.tab:nth-child(2)'));
+}
+
+function showNotCompletedTranslations() {
+    currentTab = 'notcompleted'; // Встановлюємо поточну вкладку в 'notcompleted'
+    displayedItems = 15; // Встановлюємо кількість відображених елементів
+    loadAndDisplayNotCompletedData(); // Завантажуємо та відображаємо невиконані переклади
+    setActiveTab(document.querySelector('.tab:nth-child(4)')); // Позначаємо вкладку "В роботі" як активну
+}
+
+function showOfficialTranslations() {
+    currentTab = 'official'; // Встановлюємо поточну вкладку в 'official'
+    displayedItems = 15; // Встановлюємо кількість відображених елементів
+    // Отримуємо офіційні переклади з позначкою "verified": true
+    const officialData = minecraftData.concat(gamesData).filter(item => item.verified === true);
+    const startIndex = 0;
+    const endIndex = displayedItems;
+
+    const showMoreButton = document.getElementById('show-more-button');
+
+    if (endIndex >= officialData.length) {
+        if (showMoreButton) {
+            showMoreButton.style.display = 'none';
+        }
+    } else {
+        if (showMoreButton) {
+            showMoreButton.style.display = 'block';
+        }
+    }
+
+    displayTranslations(officialData.slice(startIndex, endIndex), 1, displayedItems);
+
+    // Позначаємо вкладку "Офіційні" як активну
+    const officialTab = document.querySelector('.tab:nth-child(5)');
+    if (officialTab) {
+        setActiveTab(officialTab);
+    }
 }
 
 
@@ -263,6 +303,7 @@ loadTranslationsFromFile('game.json', 1, displayedItems);
 
 // Завантажити дані з файлу mods.json при запуску сторінки
 loadTranslationsFromFile('mods.json', 1, displayedItems);
+
 
 
 
