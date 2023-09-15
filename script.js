@@ -52,7 +52,7 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         // Додавання імені автора або "команда СУМ", якщо автор не вказаний
         const authorElement = document.createElement('p');
         authorElement.classList.add('author');
-        authorElement.textContent = `Автор: ${item.author || 'команда СУМ'}`;
+        authorElement.textContent = `Автор: ${item.author || 'Команда СУМ'}`;
 
         // Додавання кнопки "Переклад" з посиланням на GitHub
         const translationButton = document.createElement('a');
