@@ -161,18 +161,20 @@ body {
 
 
 .title {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 10px;
     color: #dbe1f8;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
 }
 
 .description {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px;
     padding: 20px;
     border-radius: 20px;
     background-color: #7e292a;
-    
+    font-family: 'Ubuntu', sans-serif;
     color: #dbe1f8;
     position: relative;
     cursor: pointer;
@@ -182,7 +184,7 @@ body {
 
 .popup {
     cursor: default;
-    font-size: 14px;
+    
     display: none;
     position: absolute;
     background-color: #7e292a;
@@ -196,6 +198,8 @@ body {
     white-space: normal;
     transition: max-height 0.3s, padding 0.3s;
     bottom: calc(21% + 5px);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -241,6 +245,13 @@ body {
     text-align: center;
     opacity: 50%;
     margin-top: -10px;
+    font-family: 'Noto Serif', serif;
+}
+
+.tab, #searchbtn, .addbutton, #show-more-button{
+    font-size: 17px;
+    font-family: 'Rubik', sans-serif!important;
+    font-weight: 200!important;
 }
 
 .translation-button {
@@ -255,6 +266,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; /* Додайте цей рядок для центрування тексту по горизонталі */
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 .translation-button:hover {
@@ -308,6 +322,8 @@ body {
     bottom: 0;
     width: 100%;
     opacity: 40%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
 
 }
 
@@ -338,7 +354,9 @@ body, html {
     z-index: 999;
     left: -50%;
     top: -10px;
-    transform: translateX(-31.5%) translateY(-48%);
+    transform: translateX(-30%) translateY(-54%);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
 }
 
 

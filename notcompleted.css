@@ -23,7 +23,7 @@
     color: white;
 }
 
-.NotCompletedTab active{
+.tab .NotCompletedTab active{
     background-color: #ffffff00;
     color: white;
     cursor: default;
