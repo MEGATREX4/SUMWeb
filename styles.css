@@ -46,7 +46,7 @@ background-size: cover!important;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 10px!important;
         margin-bottom: 40px;
         flex-wrap: wrap;
     }
@@ -55,15 +55,13 @@ background-size: cover!important;
     }
 
 
-    
-
-
     .container{
         margin: 0!important;
     }
     .footer{
         height: 170px;
     }
+
 }
 
 @media (max-width: 443px){
@@ -204,11 +202,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
 }
-
-
-
-
-
 
 .description, .popup{
     text-align: left;
