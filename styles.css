@@ -55,6 +55,9 @@ background-size: cover!important;
     }
 
 
+    
+
+
     .container{
         margin: 0!important;
     }
@@ -197,7 +200,7 @@ body {
     overflow: hidden;
     white-space: normal;
     transition: max-height 0.3s, padding 0.3s;
-    bottom: calc(21% + 5px);
+    bottom: calc(21% + 3px);
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
 }
@@ -209,6 +212,11 @@ body {
 
 .description, .popup{
     text-align: left;
+    
+}
+
+.hide {
+    color: transparent!important;
 }
 
 .tabs {
@@ -354,7 +362,7 @@ body, html {
     z-index: 999;
     left: -50%;
     top: -10px;
-    transform: translateX(-30%) translateY(-54%);
+    transform: translateX(-28%) translateY(-54%);
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
 }

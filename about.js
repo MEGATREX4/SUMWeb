@@ -1,4 +1,4 @@
-// Додайте цей код у функцію changeTabAbout
+// about.js
 function changeTabAbout(tabName) {
     // Змініть активну вкладку
     const tabs = document.querySelectorAll('.tab');

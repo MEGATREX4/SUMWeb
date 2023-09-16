@@ -1,3 +1,4 @@
+//tabs.js
 function changeTab(tabName) {
     // Змініть активну вкладку
     const tabs = document.querySelectorAll('.tab');
@@ -12,32 +13,22 @@ function changeTab(tabName) {
     localStorage.setItem('activeTab', tabName);
 
     // Змініть активну вкладку на потрібну
-    changeTab(activeTab);
+    changeTab(activeTab); // Це оголошення функції changeTab
 }
 
-// Отримати всі елементи вкладок
-const tabs = document.querySelectorAll('.tab');
-
-// Отримати активну вкладку з локального сховища браузера або встановити значення "all" за замовчуванням
-let activeTab = localStorage.getItem('activeTab') || 'all';
-
-// Функція для зміни активної вкладки та переадресації користувача
-function changeTab(tabName) {
-    // Змініть активну вкладку
-    activeTab = tabName;
-
-    // Зберегти активну вкладку в локальному сховищі браузера
-    localStorage.setItem('activeTab', activeTab);
-
-    // Встановити активну вкладку на сторінці
+//tabs.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Отримуємо всі необхідні елементи DOM
+    const tabs = document.querySelectorAll('.tab');
+    
+    // Додаємо обробник подій для кожної вкладки
     tabs.forEach(tab => {
-        tab.classList.remove('active');
+        tab.addEventListener('click', () => {
+            // Отримуємо значення атрибута data-tab вкладки
+            const tabName = tab.getAttribute('data-tab');
+            
+            // Викликаємо функцію зміни вкладки
+            changeTab(tabName);
+        });
     });
-    const selectedTab = document.querySelector(`[data-tab="${activeTab}"]`);
-    selectedTab.classList.add('active');
-
-    // Тут ви можете викликати функції для відображення відповідного вмісту
-}
-
-// Викликати функцію для зміни активної вкладки
-changeTab(activeTab);
+});

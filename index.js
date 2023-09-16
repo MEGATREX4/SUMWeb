@@ -26,7 +26,15 @@ function changeTab(tabName) {
     } else if (activeTab === 'about') {
         redirectToAboutPage();
     }
+
+    // Додати виклики функцій завантаження даних тут
+    if (activeTab === 'notcompleted') {
+        loadAndDisplayNotCompletedData();
+    } else if (activeTab === 'official') {
+        loadOfficialData(); // Додайте функцію завантаження офіційних даних
+    }
 }
+
 
 // Функція для перенаправлення на сторінку "Про нас"
 function redirectToAboutPage() {
@@ -62,3 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+
+
+

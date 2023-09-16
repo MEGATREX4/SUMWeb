@@ -39,6 +39,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet"></head>
 <body>
 
+    <script type="module" src="tabs.js"></script>
+    <script type="module" src="tabsindex.js"></script>
+
 
     <div class="header">
         <div class="header-content">
@@ -52,22 +55,33 @@
                 <button class="addbutton" id="addbutton"><i class="fa fa-plus faadd" aria-hidden="true"></i></button>
                 <input type="text" id="search" placeholder="Пошук...">
                 <button id="searchbtn" onclick="performSearch()">Пошук</button>
+                
             </div>
+
+
+            
     <div class="div">
                 <!-- Додайте вкладки -->
                 <div class="tabs container" id="tabs">
-                    <div class="tab" data-tab="all">Всі переклади</div>
-                    <div class="tab" data-tab="minecraft">Майнкрафт моди</div>
-                    <div class="tab"  data-tab="games" >Переклади ігор</div>
-                    <div class="tab NotCompletedTab" data-tab="notcompleted">В процесі</div>
-                    <div class="tab" data-tab="official">Офіційні</div>
+                    <div class="tab" data-tab="all" onclick="redirectToIndex('all')">Всі переклади</div>
+                    <div class="tab" data-tab="minecraft" onclick="redirectToIndex('minecraft')">Майнкрафт моди</div>
+                    <div class="tab" data-tab="games" onclick="redirectToIndex('games')">Переклади ігор</div>
+                    <div class="tab NotCompletedTab" data-tab="notcompleted">В роботі</div>
+                    <div id="tab-official" class="tab" data-tab="official">Офіційні</div>
                     <div class="tab" onclick="window.open('/about.html', '_self')">Про нас</div>
                 </div>
                 
-                <script type="module" src="tabs.js"></script>
+                <script>
+                    function redirectToIndex(tabName) {
+                        window.location.href = `/index.html?tab=${tabName}`;
+                    }
+                </script>
+
+                
 
     </div>
     <div class="concon">
+        
     <div class="container">
         <div class="mobile-only"> </div>
         <div class="container-content">
@@ -100,13 +114,14 @@
 
 
 
+
+
     <div class="popup" id="popup"></div>
 
     <script src="index.js"></script>
-    <script src="official.js"></script>
-    <script src="notcompleted.js"></script>
     <script src="load.js"></script>
     <script src="search.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
