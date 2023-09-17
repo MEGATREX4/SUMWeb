@@ -1,3 +1,27 @@
+@media (max-width: 768px) {
+
+    #goBackButton{
+        background-color: #7e292a!important;
+        color: #dbe1f8;
+        display: fixed!important; /* Показувати меню на мобільних пристроях */
+        position: fixed; /* Фіксована позиція */
+        bottom: 10px!important; /* Внизу екрану */
+        left: 21vh;
+        z-index: 100;
+        transform: none!important;
+        font-family: 'Rubik', sans-serif!important;
+        font-weight: 200!important;
+        font-size: 17px;
+    }
+    
+    #goBackButton:hover{
+        color: #dbe1f8;
+        box-shadow: none;
+    }
+
+
+}
+
 .forminput{
     margin: 20px 0px;
 }
@@ -53,20 +77,29 @@ input::selection{
 .radio{
     background-color: #7e292a;
     accent-color: #7e282a;
+    font-family: 'Rubik', sans-serif!important;
+    font-weight: 200!important;
 
 }
 
 label, span{
     color:#dbe1f8;
+    font-size: 17px;
+    font-family: 'Rubik', sans-serif!important;
+    font-weight: 200!important;
 }
 
 h2{
     color:#dbe1f8;
+    font-family: 'Nunito', sans-serif;
 }
 
 .submit{
     margin-top: 20px;
     width: 60%;
+    font-family: 'Rubik', sans-serif!important;
+    font-weight: 200!important;
+    font-size: 17px;
 }
 
 .radioinput{
@@ -76,9 +109,12 @@ h2{
     align-items: center;
     width: 50%;
     display:flex;
+    font-family: 'Rubik', sans-serif!important;
+    font-weight: 200!important;
 }
 
 html{
     align-items: center;
+    
 }
 
