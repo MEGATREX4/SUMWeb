@@ -8,7 +8,7 @@ function loadDataFromFiles() {
         .then(data => {
             allData = allData.concat(data);
             // Після завантаження всіх даних, викликайте функцію для відображення
-            displayTranslations(allData, 1, 10); // Змініть параметри, які вам потрібні
+            displayTranslations(allData, 1, 25); // Змініть параметри, які вам потрібні
         })
         .catch(error => {
             console.error('Помилка завантаження JSON даних з файлу game.json:', error);
@@ -19,7 +19,7 @@ function loadDataFromFiles() {
         .then(data => {
             allData = allData.concat(data);
             // Після завантаження всіх даних, викликайте функцію для відображення
-            displayTranslations(allData, 1, 10); // Змініть параметри, які вам потрібні
+            displayTranslations(allData, 1, 25); // Змініть параметри, які вам потрібні
         })
         .catch(error => {
             console.error('Помилка завантаження JSON даних з файлу mods.json:', error);

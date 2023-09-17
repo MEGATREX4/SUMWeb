@@ -55,9 +55,7 @@ background-size: cover!important;
     }
 
 
-    .container{
-        margin: 0!important;
-    }
+
     .footer{
         height: 170px;
     }
@@ -133,7 +131,7 @@ body {
     vertical-align: middle;
     text-align: center;
     background-color: #2b2222;
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
 
 
@@ -153,7 +151,7 @@ body {
 }
 
 .image {
-    border-radius: 20px;
+    border-radius: 15px;
     width: 200px;
     height: 200px;
     background-size:cover;
@@ -173,7 +171,7 @@ body {
     font-size: 16px;
     margin-top: 5px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #7e292a;
     font-family: 'Ubuntu', sans-serif;
     color: #dbe1f8;
@@ -191,7 +189,7 @@ body {
     background-color: #7e292a;
     color: #dbe1f8;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     z-index: 2;
     width: 210px;
     max-height: none; /* Змінено на "none" замість "0" */
@@ -222,7 +220,7 @@ body {
     color: #dbe1f8;
     border: none;
     padding: 30px 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 10px 10px;
 }
 
@@ -351,7 +349,7 @@ body, html {
     background-color: #1d1b1e;
     color: #e6e6e6;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
     z-index: 999;
     left: -50%;
     top: -10px;
@@ -390,7 +388,7 @@ body, html {
     margin: 10px;
     padding: 10px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
 }
 

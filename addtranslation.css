@@ -1,0 +1,84 @@
+.forminput{
+    margin: 20px 0px;
+}
+
+.containerform {
+    max-width: 460px;
+    margin: 20px auto;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.form{
+    background-color: #2b2222;
+    padding: 40px 60px;
+    border-radius: 20px;
+}
+
+input{
+    width: 100%;
+    background-color: #7e292a;
+    border: none;
+    padding: 20px 0px;
+    margin: 5px;
+    border-radius: 20px;
+    color: #ffb3b0;
+    text-align: center;
+}
+
+#goBackButton{
+    display: flex;
+    background-color: transparent;
+    position:absolute;
+    color: #dbe1f8;
+    transform: translateX(-28%) translateY(-54%);
+}
+
+#goBackButton:hover{
+    background-color: transparent;
+    color: #dbe1f8;
+    box-shadow: none;
+}
+
+
+
+input::selection{
+    background-color: #ffb3b0;
+    color: #7e292a;
+}
+
+.radio{
+    background-color: #7e292a;
+    accent-color: #7e282a;
+
+}
+
+label, span{
+    color:#dbe1f8;
+}
+
+h2{
+    color:#dbe1f8;
+}
+
+.submit{
+    margin-top: 20px;
+    width: 60%;
+}
+
+.radioinput{
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    display:flex;
+}
+
+html{
+    align-items: center;
+}
+

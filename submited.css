@@ -1,0 +1,60 @@
+
+
+.container {
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.linkbutton{
+    background-color: #7e292a;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 10px 0px;
+    color:#c0d5f8;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.linkbutton:hover{
+    background-color: #c57976; /* Колір фону кнопки при наведенні */
+    color: #601216; /* Колір тексту кнопки при наведенні */
+}
+
+a{
+text-decoration: none !important;
+border: none !important;
+}
+.discord{
+    color:#5662f6!important;
+}
+
+.other{
+    color:#ffb3b0;
+}
+
+
+
+.submited{
+    background-color: #2b2222;
+    padding: 30px 60px;
+    border-radius: 30px;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #dbe1f8;
+}

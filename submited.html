@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="load.css">
     <link rel="stylesheet" href="notcompleted.css">
+    <link rel="stylesheet" href="submited.css">
 
     <meta property="og:title" content="Спільнота українізації модів">
     <meta property="og:description" content="Тут ви зможете зайти переклади модів для майнкрафту, або перелкди інших ігор, також можна запропонувати свій переклад(виключно моди майнкрафт)">
@@ -39,12 +40,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet"></head>
 <body>
-
-
-    <script type="module" src="tabs.js"></script>
-    <script type="module" src="tabsindex.js"></script>
-
-
     <div class="header">
         <div class="header-content">
             <img src="header-image.png" alt="Спільнота українізації модів">
@@ -52,78 +47,25 @@
         </div>
 
     </div>
-            <!-- Додайте поле пошуку -->
-            <div class="search-container">
-                <button class="addbutton" onclick="window.open('/addtranslation.html', '_self')" id="addbutton"><i class="fa fa-plus faadd" aria-hidden="true"></i></button>
-                <input type="text" id="search" placeholder="Пошук...">
-                <button id="searchbtn" onclick="performSearch()">Пошук</button>
-                
-            </div>
 
 
-            
-    <div class="div">
-                <!-- Додайте вкладки -->
-                <div class="tabs container" id="tabs">
-                    <div class="tab" data-tab="all" onclick="redirectToIndex('all')">Всі переклади</div>
-                    <div class="tab" data-tab="minecraft" onclick="redirectToIndex('minecraft')">Майнкрафт моди</div>
-                    <div class="tab" data-tab="games" onclick="redirectToIndex('games')">Переклади ігор</div>
-                    <div class="tab NotCompletedTab" data-tab="notcompleted">В роботі</div>
-                    <div id="tab-official" class="tab" data-tab="official">Офіційні</div>
-                    <div class="tab" onclick="window.open('/about.html', '_self')">Про нас</div>
-                </div>
-                
-                <script>
-                    function redirectToIndex(tabName) {
-                        window.location.href = `/index.html?tab=${tabName}`;
-                    }
-                </script>
-
-                
-
-    </div>
-    <div class="concon">
-        
     <div class="container">
-        <div class="mobile-only"> </div>
-        <div class="container-content">
-            <!-- Контейнер для карточок -->
-            <div id="data-container">
-                <!-- Карточки будуть додаватися за допомогою JavaScript -->
+        <div class="submited">
+            <p class="text">Ваш переклад надіслано, очікуйте на додавання, для зв'язку можете використати <span class="discord">Discord</span>, або будь який <span class="other"> інший спосіб зв'язку.<span></p>
+              
+            <div class="buttons">
+                <a class="linkbutton" href="/addtranslation.html"><i class="fa fa-plus faadd" aria-hidden="true"></i> Додати ще один переклад</a>
+                <a class="linkbutton" href="/"><i class="fa fa-chevron-left" aria-hidden="true"></i> Перейти на головну сторінку</a>
             </div>
-            <div class="button-container">
-            <button id="show-more-button" class="show-more-button">Показати більше</button>
-            </div></button>
-        </div>
-    </div>
-    </div>
-
-    <div class="custom-tooltip" style="display: none;">
-        <div class="tooltip-content">
         </div>
     </div>
 
-    <div class="overlay">
-        <div class="spinner"></div>
-      </div>
-      
+
 
 
     <div class="footer">
         <p>&copy; 2023 Спільнота українізації модів</p>
         <p>Створено в Україні для українців</p>
     </div>
-
-
-
-
-
-    <div class="popup" id="popup"></div>
-
-    <script src="index.js"></script>
-    <script src="load.js"></script>
-    <script src="search.js"></script>
-    <script src="script.js"></script>
-
 </body>
 </html>
