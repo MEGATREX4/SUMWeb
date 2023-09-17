@@ -16,6 +16,15 @@
     
 }
 
+.addmore{
+    background-color: #3a3521!important;
+}
+
+.addmore:hover{
+    background-color: #4f4b38!important;
+    color: white!important;
+}
+
 .linkbutton{
     background-color: #7e292a;
     border-radius: 20px;
