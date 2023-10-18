@@ -119,7 +119,11 @@ body {
 }
 
 
-
+.image{
+    min-width: 200px;
+    min-height: 200px;
+    background-color: #5726272a;
+}
 
 
 .item {
@@ -133,6 +137,10 @@ body {
     background-color: #2b2222;
     border-radius: 30px;
     position: relative;
+    min-height: 0px;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
 
 
 }
@@ -155,6 +163,9 @@ body {
     width: 200px;
     height: 200px;
     background-size:cover;
+    box-shadow: 0px 0px 24px -14px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 0px 0px 24px -14px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 24px -14px rgba(0,0,0,0.59);
 }
 
 
@@ -168,6 +179,7 @@ body {
 }
 
 .description {
+    min-width: 190px;
     font-size: 16px;
     margin-top: 5px;
     padding: 20px;

@@ -3,9 +3,6 @@
     #goBackButton{
         background-color: #7e292a!important;
         color: #dbe1f8;
-        display: fixed!important; /* Показувати меню на мобільних пристроях */
-        position: fixed; /* Фіксована позиція */
-        bottom: 10px!important; /* Внизу екрану */
         left: 21vh;
         z-index: 100;
         transform: none!important;
@@ -54,15 +51,12 @@ input{
 }
 
 #goBackButton{
-    display: flex;
-    background-color: transparent;
-    position:absolute;
+    background-color: #7e282970;
     color: #dbe1f8;
-    transform: translateX(-28%) translateY(-54%);
 }
 
 #goBackButton:hover{
-    background-color: transparent;
+    background-color: #c579766e;
     color: #dbe1f8;
     box-shadow: none;
 }

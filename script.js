@@ -21,12 +21,13 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         const imageElement = document.createElement('div');
         imageElement.classList.add('image');
 
-        // Встановлення фонового зображення для imageElement
-        if (item.image === null) {
-            imageElement.style.backgroundImage = `url('images/default-image.jpg')`;
-        } else {
-            imageElement.style.backgroundImage = `url('${item.image}')`;
-        }
+// Встановлення фонового зображення для imageElement
+if (item.image !== "") {
+    imageElement.style.backgroundImage = `url('${item.image}')`;
+} else {
+    imageElement.style.backgroundImage = `url('images/default-image.png')`;
+}
+
 
         const titleElement = document.createElement('h2');
         titleElement.textContent = item.title;
@@ -37,22 +38,32 @@ function displayTranslations(data, currentPage, itemsPerPage) {
 
         const descriptionElement = document.createElement('p');
         descriptionElement.classList.add('description');
-
+        
         const popupElement = document.createElement('div');
         popupElement.classList.add('popup');
-
-        // Встановлення тексту опису в обидві елементи
-        const descriptionText = item.description.length > 100
-            ? item.description.slice(0, 100) + '...'
-            : item.description;
-
-        descriptionElement.textContent = descriptionText;
-        popupElement.textContent = item.description;
+        
+        // Перевірка, чи поле "description" порожнє
+        if (item.description === "") {
+            const errorText = "Мод/гра поки не має опису, це може бути помилкою, тому зверніться до розробників через пошту, або в соц мережах";
+            descriptionElement.textContent = errorText;
+            descriptionElement.classList.add('descerror'); // Додавання класу "descerror"
+            
+            popupElement.textContent = errorText;
+            popupElement.classList.add('descerror'); // Додавання класу "descerror"
+        } else {
+            const descriptionText = item.description.length > 100
+                ? item.description.slice(0, 100) + '...'
+                : item.description;
+        
+            descriptionElement.textContent = descriptionText;
+            popupElement.textContent = item.description;
+        }
+        
 
         // Додавання імені автора або "команда СУМ", якщо автор не вказаний
         const authorElement = document.createElement('p');
         authorElement.classList.add('author');
-        authorElement.textContent = `Автор: ${item.author || 'Команда СУМ'}`;
+        authorElement.textContent = `Автор(и): ${item.author || 'Команда СУМ'}`;
 
         // Додавання кнопки "Переклад" з посиланням на GitHub
         const translationButton = document.createElement('a');
@@ -68,7 +79,13 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         } else {
             // Інакше встановлюємо текст кнопки "Переклад"
             translationButton.textContent = 'Переклад';
-            translationButton.href = 'https://github.com/SKZGx/UA-Translation'; // Посилання на GitHub
+            if (item.hasOwnProperty('Link') && item.Link) {
+                // Якщо є поле 'Link' в JSON і воно не пусте, використовуємо його
+                translationButton.href = item.Link;
+            } else {
+                // В іншому випадку встановлюємо стандартне посилання
+                translationButton.href = 'https://github.com/SKZGx/UA-Translation';
+            } // Посилання на GitHub
             if (item.hasOwnProperty('verified') && item.verified === true) {
                 // Створити значок <i> для галочки
                 
