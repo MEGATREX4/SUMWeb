@@ -37,27 +37,32 @@ if (item.image !== "") {
         descriptionContainer.classList.add('description-container');
 
         const descriptionElement = document.createElement('p');
-        descriptionElement.classList.add('description');
-        
-        const popupElement = document.createElement('div');
-        popupElement.classList.add('popup');
-        
-        // Перевірка, чи поле "description" порожнє
-        if (item.description === "") {
-            const errorText = "Мод/гра поки не має опису, це може бути помилкою, тому зверніться до розробників через пошту, або в соц мережах";
-            descriptionElement.textContent = errorText;
-            descriptionElement.classList.add('descerror'); // Додавання класу "descerror"
-            
-            popupElement.textContent = errorText;
-            popupElement.classList.add('descerror'); // Додавання класу "descerror"
-        } else {
-            const descriptionText = item.description.length > 100
-                ? item.description.slice(0, 100) + '...'
-                : item.description;
-        
-            descriptionElement.textContent = descriptionText;
-            popupElement.textContent = item.description;
-        }
+descriptionElement.classList.add('description');
+
+const popupElement = document.createElement('div');
+popupElement.classList.add('popup');
+
+if (item.description === "") {
+    const errorText = "Мод/гра поки не має опису, це може бути помилкою, тому зверніться до розробників через пошту, або в соц мережах";
+    descriptionElement.textContent = errorText;
+    descriptionElement.classList.add('descerror'); // Додавання класу "descerror"
+
+    popupElement.textContent = errorText;
+    popupElement.classList.add('descerror'); // Додавання класу "descerror"
+} else {
+    const descriptionText = item.description.length > 100
+        ? item.description.slice(0, 100) + '...'
+        : item.description;
+
+    descriptionElement.textContent = descriptionText;
+    
+    if (item.description.length > 100) {
+        popupElement.textContent = item.description;
+    } else {
+        popupElement.style.display = 'none'; // Приховувати pop-up, якщо текст менше 100 символів
+    }
+}
+
         
 
         // Додавання імені автора або "команда СУМ", якщо автор не вказаний
@@ -137,11 +142,13 @@ if (item.image !== "") {
 
 // Додавання обробників подій для показу/приховування pop-up
 descriptionContainer.addEventListener('mouseenter', () => {
-    popupElement.style.display = 'block';
-    // Знайдіть елемент .description та додайте йому клас hide
-    const description = itemContainer.querySelector('.description');
-    if (description) {
-        description.classList.add('hide');
+    if (item.description.length > 100) {
+        popupElement.style.display = 'block';
+        // Знайдіть елемент .description та додайте йому клас hide
+        const description = itemContainer.querySelector('.description');
+        if (description) {
+            description.classList.add('hide');
+        }
     }
 });
 

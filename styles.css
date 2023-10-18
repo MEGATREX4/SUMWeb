@@ -169,16 +169,20 @@ body {
 }
 
 
-
 .title {
+    min-height: 48px;
     font-size: 20px;
     margin-top: 10px;
     color: #dbe1f8;
     font-family: 'Rubik', sans-serif;
     font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .description {
+    min-height: 85px;
     min-width: 190px;
     font-size: 16px;
     margin-top: 5px;
@@ -188,9 +192,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
     color: #dbe1f8;
     position: relative;
-    cursor: pointer;
+    cursor: default;
     display: inline-block;
     max-width: 250px;
+    text-align: end;
 }
 
 .popup {
@@ -218,9 +223,7 @@ body {
     
 }
 
-.hide {
-    color: transparent!important;
-}
+
 
 .tabs {
     display: flex;
