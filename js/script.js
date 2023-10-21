@@ -2,7 +2,12 @@
 
 function displayTranslations(data, currentPage, itemsPerPage) {
     const cardContainer = document.querySelector('.container-content #data-container');
-    cardContainer.innerHTML = ''; // Очистити контейнер перед додаванням нових карточок
+    
+    // Select and remove only the existing translation items
+    const existingItems = cardContainer.querySelectorAll('.item');
+    existingItems.forEach(item => {
+        cardContainer.removeChild(item);
+    });
 
     // Визначення діапазону елементів, які будуть відображені на поточній сторінці
     const startIndex = (currentPage - 1) * itemsPerPage;
@@ -196,7 +201,9 @@ function loadAndDisplayNotCompletedData() {
     displayTranslations(notCompletedData.slice(startIndex, endIndex), 1, displayedItems);
 }
 
-// Оголосіть змінні для зберігання кількості відображених елементів і загальної кількості елементів
+
+
+
 let displayedItems = 15;
 let minecraftData = [];
 let gamesData = [];
@@ -204,81 +211,61 @@ let notcompletedData = [];
 let officialData = [];
 let currentTab = 'all';
 
-function showAllTranslations() {
-    currentTab = 'all';
+function showTab(tabName) {
+    currentTab = tabName;
     displayedItems = 15;
-    loadAndDisplayData('all');
-    setActiveTab(document.querySelector('.tab:nth-child(1)'));
+    loadAndDisplayData(tabName);
+
+    // Find the corresponding tab element and add the 'active' class
+    const tabElement = document.querySelector(`[data-tab="${tabName}"]`);
+    if (tabElement) {
+        setActiveTab(tabElement);
+    }
+}
+
+function showAllTranslations() {
+    showTab('all');
 }
 
 function showGamesTranslations() {
-    currentTab = 'games';
-    displayedItems = 15;
-    loadAndDisplayData('games');
-    setActiveTab(document.querySelector('.tab:nth-child(3)'));
+    showTab('games');
 }
 
 function showMinecraftTranslations() {
-    currentTab = 'minecraft';
-    displayedItems = 15;
-    loadAndDisplayData('minecraft');
-    setActiveTab(document.querySelector('.tab:nth-child(2)'));
+    showTab('minecraft');
 }
 
 function showNotCompletedTranslations() {
-    currentTab = 'notcompleted'; // Встановлюємо поточну вкладку в 'notcompleted'
-    displayedItems = 15; // Встановлюємо кількість відображених елементів
-    loadAndDisplayData('notcompleted');
-    loadAndDisplayNotCompletedData(); // Завантажуємо та відображаємо невиконані переклади
-    setActiveTab(document.querySelector('.tab:nth-child(4)')); // Позначаємо вкладку "В роботі" як активну
+    showTab('notcompleted');
+    loadAndDisplayNotCompletedData();
 }
 
 
 function showOfficialTranslations() {
-    currentTab = 'official'; // Встановлюємо поточну вкладку в 'official'
-    displayedItems = 15; // Встановлюємо кількість відображених елементів
-
-    // Отримуємо офіційні переклади з позначкою "verified": true
-    const officialData = minecraftData.concat(gamesData).filter(item => item.verified === true);
-
-    const startIndex = 0;
-    const endIndex = displayedItems;
-
-    const showMoreButton = document.getElementById('show-more-button');
-
-    if (endIndex >= officialData.length) {
-        if (showMoreButton) {
-            showMoreButton.style.display = 'none';
-        }
-    } else {
-        if (showMoreButton) {
-            showMoreButton.style.display = 'block';
-        }
-    }
-
-    // Викликаємо функцію displayTranslations для відображення офіційних перекладів
-    displayTranslations(officialData.slice(startIndex, endIndex), 1, displayedItems);
-
-    // Позначаємо вкладку "Офіційні" як активну
-    const officialTab = document.querySelector('.tab:nth-child(5)');
-    if (officialTab) {
-        setActiveTab(officialTab);
-    }
-}
-
-
-function setActiveOfficialTab() {
-    // Встановлюємо поточну вкладку в 'official'
     currentTab = 'official';
     displayedItems = 15;
-    loadAndDisplayData('official');
-
-    // Знайти вкладку за її id та додати клас 'active'
-    const officialTab = document.getElementById('tab-official');
-    if (officialTab) {
-        officialTab.classList.add('active');
+    
+    // Filter the official translations based on the "verified" property
+    officialData = minecraftData.concat(gamesData).filter(item => item.verified === true);
+    
+    // Update the visibility of the "Show More" button
+    const showMoreButton = document.getElementById('show-more-button');
+    if (showMoreButton) {
+        showMoreButton.style.display = displayedItems >= officialData.length ? 'none' : 'block';
     }
+    
+    // Display official translations
+    displayTranslations(officialData.slice(0, displayedItems), 1, displayedItems);
+
+    // Set the active tab to "official"
+    setActiveTab(document.querySelector('[data-tab="official"]'));
 }
+
+function setActiveOfficialTab() {
+    showOfficialTranslations(); // Call the showOfficialTranslations function instead of showTab
+}
+
+
 
 
 
@@ -319,6 +306,82 @@ function loadAndDisplayData(tab) {
     displayTranslations(dataToDisplay.slice(startIndex, endIndex), 1, displayedItems);
 }
 
+function loadOfficialData() {
+    currentTab = 'official'; // Set the current tab to 'official'
+
+    // You should provide the file paths for the official data files
+    const officialDataFiles = [
+        'mods.json',
+        'game.json',
+        // Add more file paths as needed
+    ];
+
+    // Fetch data from each official data file
+    const requests = officialDataFiles.map(fileName => {
+        return fetch(fileName)
+            .then(response => response.json())
+            .then(data => data);
+    });
+
+    // After all data is fetched, merge and filter it
+    Promise.all(requests)
+        .then(dataArray => {
+            const mergedData = [].concat(...dataArray); // Merge data from different files
+            const officialData = mergedData.filter(item => item.verified === true);
+
+            // Update the visibility of the "Show More" button
+            const showMoreButton = document.getElementById('show-more-button');
+            if (showMoreButton) {
+                showMoreButton.style.display = displayedItems >= officialData.length ? 'none' : 'block';
+            }
+
+            // Display official translations
+            displayTranslations(officialData.slice(0, displayedItems), 1, displayedItems);
+        })
+        .catch(error => {
+            console.error('Error loading official data:', error);
+        });
+}
+
+function loadAndDisplayNotCompletedData() {
+    currentTab = 'notcompleted'; // Set the current tab to 'notcompleted'
+
+    // You should provide the file paths for the not completed data files
+    const notCompletedDataFiles = [
+        'mods.json',
+        'game.json',
+        // Add more file paths as needed
+    ];
+
+    // Fetch data from each not completed data file
+    const requests = notCompletedDataFiles.map(fileName => {
+        return fetch(fileName)
+            .then(response => response.json())
+            .then(data => data);
+    });
+
+    // After all data is fetched, merge and filter it
+    Promise.all(requests)
+        .then(dataArray => {
+            const mergedData = [].concat(...dataArray); // Merge data from different files
+            const notCompletedData = mergedData.filter(item => item.completed === false);
+
+            // Update the visibility of the "Show More" button
+            const showMoreButton = document.getElementById('show-more-button');
+            if (showMoreButton) {
+                showMoreButton.style.display = displayedItems >= notCompletedData.length ? 'none' : 'block';
+            }
+
+            // Display not completed translations
+            displayTranslations(notCompletedData.slice(0, displayedItems), 1, displayedItems);
+        })
+        .catch(error => {
+            console.error('Error loading not completed data:', error);
+        });
+}
+
+
+
 // Додайте обробник події для кнопки "Показати більше"
 const showMoreButton = document.getElementById('show-more-button');
 if (showMoreButton) {
@@ -341,11 +404,16 @@ function setActiveTab(tabElement) {
     tabElement.classList.add('active');
 }
 
-function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
-    const overlay = document.querySelector('.overlay'); // Отримуємо елемент overlay
-
-    // Показуємо анімацію завантаження перед початком завантаження карточок
+// Add this function to show the loading animation
+function showLoadingAnimation() {
+    const overlay = document.querySelector('.overlay');
     overlay.style.display = 'block';
+}
+
+// Modify your existing loadTranslationsFromFile function
+function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
+    // Show loading animation
+    showLoadingAnimation();
 
     fetch(fileName)
         .then(response => response.json())
@@ -356,17 +424,21 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
                 gamesData = data;
             }
 
-            // Приховуємо анімацію після завершення завантаження карточок
+            // Hide loading animation after loading the data
+            const overlay = document.querySelector('.overlay');
             overlay.style.display = 'none';
 
             loadAndDisplayData(currentTab);
         })
         .catch(error => {
-            console.error(`Помилка завантаження JSON даних з файлу ${fileName}:`, error);
-            // Приховуємо анімацію в разі помилки
+            console.error(`Error loading JSON data from file ${fileName}:`, error);
+
+            // Hide loading animation in case of an error
+            const overlay = document.querySelector('.overlay');
             overlay.style.display = 'none';
         });
 }
+
 
 
 

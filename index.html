@@ -17,6 +17,7 @@
     <meta property="og:description" content="Тут ви зможете зайти переклади модів для майнкрафту, або перелкди інших ігор, також можна запропонувати свій переклад(виключно моди майнкрафт)">
     <meta property="og:image" content="images/icon.png">
     <meta property="og:url" content="https://sumtranslate.netlify.app/">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
     <meta name="keywords" content="геймінг, Minecraft, переклад модів, геймерська спільнота, українська мова, Crowdin, аматорський переклад, СУМ, Спільнота Українізації Модів, українські гравці, онлайн-ігри, грейдерське спільнота, модифікації для гри">
@@ -41,8 +42,7 @@
 <body>
 
 
-    <script type="module" src="js/tabs.js"></script>
-    <script type="module" src="js/tabsindex.js"></script>
+    <script src="js/tabs.js"></script>
 
 
     <div class="header">
@@ -60,30 +60,24 @@
                 
             </div>
 
-
-            
     <div class="div">
-                <!-- Додайте вкладки -->
-                <div class="tabs container" id="tabs">
+                <div class="tabs container " id="tabs">
                     <div class="tab" data-tab="all" onclick="redirectToIndex('all')">Всі переклади</div>
                     <div class="tab" data-tab="minecraft" onclick="redirectToIndex('minecraft')">Майнкрафт моди</div>
                     <div class="tab" data-tab="games" onclick="redirectToIndex('games')">Переклади ігор</div>
-                    <div class="tab NotCompletedTab" data-tab="notcompleted">В роботі</div>
-                    <div id="tab-official" class="tab" data-tab="official">Офіційні</div>
                     <div class="tab" onclick="window.open('/about.html', '_self')">Про нас</div>
-                </div>
-                
-                <script>
-                    function redirectToIndex(tabName) {
-                        window.location.href = `/index.html?tab=${tabName}`;
-                    }
-                </script>
-
-                
-
+                    <div class="tab NotCompletedTab" data-tab="notcompleted" onclick="redirectToIndex('notcompleted')" id="notcompleted-tab">В роботі</div>
+                    <div class="tab" data-tab="official" onclick="redirectToIndex('official')" id="official-tab">Офіційні</div>
     </div>
+</div>
+
+
+<script>
+    function redirectToIndex(tabName) {
+      window.location.href = `/index.html?tab=${tabName}`;
+    }
+    </script>
     <div class="concon">
-        
     <div class="container">
         <div class="mobile-only"> </div>
         <div class="container-content">
@@ -120,11 +114,12 @@
 
 
     <div class="popup" id="popup"></div>
-
-    <script src="js/index.js"></script>
-    <script src="load.js"></script>
     <script src="js/search.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
 
+
+
+
+    <script src="/js/script.js"></script>
 </body>
 </html>

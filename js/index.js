@@ -1,64 +1,63 @@
-// Отримати всі елементи вкладок
+// index.js
 const tabs = document.querySelectorAll('.tab');
 
-// Отримати активну вкладку з локального сховища браузера або встановити значення "all" за замовчуванням
+// Get the active tab from the URL parameter or set it to "all" by default
 let activeTab = localStorage.getItem('activeTab') || 'all';
 
-// Функція для зміни активної вкладки та переадресації користувача
+// Function to change the active tab and redirect the user
 function changeTab(tabName) {
-    // Змініть активну вкладку
+    // Change the active tab
     activeTab = tabName;
 
-    // Зберегти активну вкладку в локальному сховищі браузера
+    // Save the active tab in the local browser storage
     localStorage.setItem('activeTab', activeTab);
 
-    // Перенаправити користувача на потрібну сторінку
-    if (activeTab === 'all') {
+    // Redirect the user to the appropriate page
+    if (tabName === 'all') {
+        console.log('Loading all data');
         showAllTranslations();
-    } else if (activeTab === 'minecraft') {
+    } else if (tabName === 'minecraft') {
+        console.log('Loading minecraft data');
         showMinecraftTranslations();
-    } else if (activeTab === 'games') {
+    } else if (tabName === 'games') {
+        console.log('Loading games data');
         showGamesTranslations();
-    } else if (activeTab === 'notcompleted') {
-        showNotCompletedTranslations();
-    } else if (activeTab === 'official') {
-        showOfficialTranslations();
-    } else if (activeTab === 'about') {
-        redirectToAboutPage();
-    }
-
-    // Додати виклики функцій завантаження даних тут
-    if (activeTab === 'notcompleted') {
+    } else if (tabName === 'notcompleted') {
+        console.log('Loading notcompleted data');
         loadAndDisplayNotCompletedData();
-    } else if (activeTab === 'official') {
-        loadOfficialData(); // Додайте функцію завантаження офіційних даних
+    } else if (tabName === 'official') {
+        console.log('Loading official data');
+        loadOfficialData();
+    } else if (tabName === 'about') {
+        console.log('Loading about data');
+        redirectToAboutPage();
     }
 }
 
-
-// Функція для перенаправлення на сторінку "Про нас"
+// Function to redirect to the "About" page
 function redirectToAboutPage() {
-    // Змініть активну вкладку на "about"
+    // Change the active tab to "about"
     changeTab('about');
 
-    // Перенаправити користувача на сторінку "about.html"
+    // Redirect the user to the "about.html" page
     window.location.href = '/about.html';
 }
 
-// Додайте обробник кліку для кожної вкладки
+// Add click event listeners to each tab
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        // Отримати значення атрибуту data-tab
+        // Get the data-tab attribute value
         const tabName = tab.getAttribute('data-tab');
 
-        // Змініть активну вкладку та перенаправте користувача
+        // Change the active tab and redirect the user
         changeTab(tabName);
     });
 });
 
-// Змініть активну вкладку на потрібну
+// Change the active tab to the appropriate one
 changeTab(activeTab);
 
+// Automatically change the active tab to "Official" or "Not Completed" if specified in the URL
 document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const tabParam = urlParams.get('tab');
@@ -70,7 +69,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
-
-
-
-

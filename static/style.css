@@ -1,4 +1,7 @@
-
+html{
+    font-family: 'Nunito', sans-serif!important;
+    color:#dbdbdb!important;
+}
 
 
 .dialog {
@@ -22,7 +25,7 @@
 }
 
 .dialog-content {
-    background: #fff;
+
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -31,8 +34,6 @@
 
 body {
     background-color: #1d1b1e;
-    font-family: Arial, sans-serif;
-    color: white;
     margin: 0;
     padding: 0;
 }
@@ -134,6 +135,7 @@ body {
 .adddiv{
     border: 1px solid #7e292a;
     display: flex!important;
+    position: absolute;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -145,6 +147,7 @@ body {
     color: #dbe1f8;
     height: 300px;
     width: 200px;
+    cursor: move;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,4 +171,11 @@ body {
     align-content: center;
     align-items: center;
     
+}
+
+/* Add this CSS code to your existing styles */
+.table-container {
+    position: relative; /* Add this to establish a positioning context */
+    left: calc(20px); /* Move the table 200 pixels to the left */
+    margin: 0 auto; /* Center the table horizontally */
 }

@@ -74,6 +74,10 @@ background-size: cover!important;
     margin: 0px!important;
 }
 
+.tabslayer2{
+    display: flex!important;
+}
+
 .mobile-only {
     display: none;
     }
@@ -137,7 +141,7 @@ body {
     background-color: #2b2222;
     border-radius: 30px;
     position: relative;
-    min-height: 0px;
+    min-height: 520px;
     box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
     -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
     -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
@@ -145,7 +149,7 @@ body {
 
 }
 #verified{
-    border: 3px solid #297e4c;
+    box-shadow:0px 0px 0px 3px #297e4c inset;
 }
 
 
@@ -193,6 +197,7 @@ body {
     cursor: default;
     display: inline-block;
     max-width: 250px;
+    max-height: 125px;
     text-align: end;
 }
 
@@ -204,14 +209,14 @@ body {
     background-color: #7e292a;
     color: #dbe1f8;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 15px 15px 20px 20px;
     z-index: 2;
     width: 210px;
     max-height: none; /* Змінено на "none" замість "0" */
     overflow: hidden;
     white-space: normal;
     transition: max-height 0.3s, padding 0.3s;
-    bottom: calc(21% + 3px);
+    bottom: calc(23% + 2px);
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
 }
@@ -220,6 +225,7 @@ body {
     text-align: left;
     
 }
+
 
 
 
@@ -264,6 +270,14 @@ body {
     font-size: 17px;
     font-family: 'Rubik', sans-serif!important;
     font-weight: 200!important;
+
+}
+
+.tab{
+    min-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .translation-button {
@@ -409,4 +423,15 @@ body, html {
     display: flex;
     flex-wrap: wrap; /* Змінюємо розміщення на згорнуту обгортку */
     justify-content: center;
+}
+
+.div2{
+    display:inline-block;
+}
+
+.divindiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }

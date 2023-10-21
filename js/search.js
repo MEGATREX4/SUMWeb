@@ -1,4 +1,4 @@
-// Зберігайте всі дані з файлів в окремі змінні або структури даних
+// search.js
 let allData = []; // Сюди зберігати всі дані з файлів
 
 // Функція завантаження даних з файлів і збереження їх
@@ -153,13 +153,18 @@ searchInput.addEventListener('input', performSearch);
 function performSearch() {
     const searchTerm = searchInput.value.toLowerCase();
 
-    const searchResults = allData.filter(item => {
-        const titleText = item.title.toLowerCase();
-        const descriptionText = item.description.toLowerCase();
-        return titleText.includes(searchTerm) || descriptionText.includes(searchTerm);
-    });
+    if (searchTerm.trim() === '') {
+        // If the search input is empty, display all translations
+        displayTranslations(allData, 1, 15); // You can adjust the number of items per page
+    } else {
+        const searchResults = allData.filter(item => {
+            const titleText = item.title.toLowerCase();
+            const descriptionText = item.description.toLowerCase();
+            return titleText.includes(searchTerm) || descriptionText.includes(searchTerm);
+        });
 
-    // Виклик функції для відображення результатів пошуку
-    displayTranslations(searchResults, 1, 15); // Змініть параметри, які вам потрібні
+        displayTranslations(searchResults, 1, 15); // You can adjust the number of items per page
+    }
 }
+
 

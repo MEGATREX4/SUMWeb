@@ -7,6 +7,8 @@ $(document).ready(function () {
         form.find('.new-title').val(cardTitle);
     });
 
+    
+
     $('.site-link').each(function () {
         const fullLink = $(this).attr('href');
         if (fullLink) {
