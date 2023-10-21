@@ -49,10 +49,6 @@ background-size: cover!important;
         margin-top: 10px!important;
         margin-bottom: 40px;
         flex-wrap: wrap;
-    }
-    .search-container button{
-        margin-top: 10px;
-    }
 
 
 
@@ -64,9 +60,14 @@ background-size: cover!important;
 
 @media (max-width: 443px){
     .search-container #searchbtn{
-        width: 100%;
+        width: 60px;
+        height: 60px;
         margin: 20px 20px;
 
+    }
+    .searchbtn{
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -226,7 +227,10 @@ body {
     
 }
 
-
+.searchbtn{
+    width: 60px;
+    height: 60px;
+}
 
 
 .tabs {

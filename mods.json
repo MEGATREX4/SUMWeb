@@ -146,9 +146,9 @@
     {
         "title": "Applied Energistics 2",
         "description": "Applied Energistics 2 (AE2) - це комплексний мод для Minecraft, який представляє унікальний підхід до управління внутрішньоігровими запасами.",
-        "image": "https://cdn.modrinth.com/data/XxWD5pD3/icon.png",
+        "image": "https://i.ibb.co/Brq3L82/controller.png",
         "verified": false,
-        "author": "",
+        "author": "Команда СУМ",
         "completed": true,
         "link": ""
     },
@@ -326,7 +326,7 @@
     {
         "title": "Refined Storage",
         "description": "Мод для Minecraft, який пропонує гравцям мережеву систему зберігання, що дозволяє зберігати предмети та рідини в мережі пристроїв з можливістю масового розширення.",
-        "image": "https://cdn.modrinth.com/data/KDvYkUg3/be094d898dbfe003baaa6e86098145eec8dbec9b.jpeg",
+        "image": "https://media.forgecdn.net/avatars/109/479/636379986745350648.png",
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
@@ -361,19 +361,19 @@
     },
     {
         "title": "AE2 Tools",
-        "description": "",
-        "image": "",
+        "description": "мод, який додає доповнення Tools Complement до AE2 Tools.",
+        "image": "https://media.forgecdn.net/avatars/804/765/638171397362772174.png",
         "verified": false,
-        "author": "",
+        "author": "Команда СУМ",
         "completed": true,
         "link": ""
     },
     {
         "title": "AE2 Additions",
-        "description": "",
-        "image": "",
+        "description": "Це мод, який додає деякі функції для Applied Energetics 2, які зроблять ваше життя простішим.",
+        "image": "blob:https://imgur.com/c535ba13-3519-42f0-aebe-79d454d25ce3",
         "verified": false,
-        "author": "",
+        "author": "Команда СУМ",
         "completed": true,
         "link": ""
     },

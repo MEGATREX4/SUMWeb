@@ -276,10 +276,10 @@ function loadAndDisplayData(tab) {
     const itemsPerPage = 15;
     let dataToDisplay = [];
 
-    if (tab === 'minecraft') {
-        dataToDisplay = minecraftData;
-    } else if (tab === 'games') {
+    if (tab === 'games') {
         dataToDisplay = gamesData;
+    } else if (tab === 'minecraft') {
+        dataToDisplay = minecraftData;
     } else if (tab === 'notcompleted') {
         dataToDisplay = notcompletedData;
     } else if (tab === 'official') {
@@ -311,8 +311,8 @@ function loadOfficialData() {
 
     // You should provide the file paths for the official data files
     const officialDataFiles = [
-        'mods.json',
         'game.json',
+        'mods.json',
         // Add more file paths as needed
     ];
 
@@ -348,8 +348,8 @@ function loadAndDisplayNotCompletedData() {
 
     // You should provide the file paths for the not completed data files
     const notCompletedDataFiles = [
-        'mods.json',
         'game.json',
+        'mods.json',
         // Add more file paths as needed
     ];
 
