@@ -1,946 +1,956 @@
-[{
-    "title": "Apotheosis",
-    "description": "Можливості варіюються від простих змін, таких як вища цукрова тростина, до масштабних капітальних ремонтів основних систем, таких як зачарування.",
-    "image": "https://media.forgecdn.net/avatars/806/643/638174667713250064.png",
-    "verified": true,
-    "author": "",
-    "completed": true,
-    "link": "https://www.curseforge.com/minecraft/mc-mods/apotheosis"
-},
-{
-    "title": "Gobber2",
-    "description": "Мод Gobber призначений для того, щоб зробити гру в Minecraft більш захоплюючою, надаючи покращену броню, інструменти та зброю.",
-    "image": "https://media.forgecdn.net/avatars/265/418/637229299628778865.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Immersive Engineering",
-    "description": "технічний мод з певним шармом, заснований на ідеях та концепціях. Загалом, це про технології, натхненні реалізмом.",
-    "image": "https://media.forgecdn.net/avatars/334/842/637469274508716717.png",
-    "verified": true,
-    "author": "",
-    "completed": true,
-    "link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering"
-},
-{
-    "title": "Spice of Life: SPE",
-    "description": "Цей мод додає переваги від вживання різноманітної їжі у Minecraft. Він відстежує ваш раціон і дає вам атрибути або ефекти на основі вашої оцінки різноманітності.",
-    "image": "https://media.forgecdn.net/avatars/570/46/637930919653071925.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "delightful",
-    "description": "Налаштовуваний аддон Farmer's Delight з функціями сумісності та захоплюючими новими продуктами.",
-    "image": "https://cdn.modrinth.com/data/JtSnhtNJ/707d7697b315dd6dfc84648c893bf3e057bb3e34.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "End's Delight",
-    "description": "End's Delight - це аддон-мод для Farmer's Delight, заснований на додаванні кулінарного контенту з предметів Енду!",
-    "image": "https://cdn.modrinth.com/data/yHN0njMr/8b215554e49c51cb5bb5ded435263d2078e0829e.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Framed Compacting Drawers",
-    "description": "Це аддон-мод до Storage Drawers, який додає безмежно велику кількість нових ящиків до гри.",
-    "image": "https://media.forgecdn.net/avatars/264/387/637226486288344415.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Frozen Delight",
-    "description": "Frozen Delight - це просте, але якісне доповнення для Farmer's Delight, яке робить його більш сумісним з Frozen Up!",
-    "image": "https://media.forgecdn.net/avatars/807/186/638176014809459782.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Frozen Up",
-    "description": "мод, який додає купу нових можливостей, зберігаючи при цьому класичний стиль Minecraft. Він додає нових чарівних пухнастих рептилій: чилу, пінгвінів, північних оленів, оновлює іглу та багато іншого!",
-    "image": "https://media.forgecdn.net/avatars/595/853/637971166121370460.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Ore Excavation",
-    "description": "Дозволяє гравцям видобувати цілі жили руди, рубати цілі дерева або виконувати будь-які інші дії з інструментами за один раз. ",
-    "image": "https://media.forgecdn.net/avatars/50/412/636090834615920242.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Rotten Creatures",
-    "description": "Мод, який має на меті додати до Minecraft багато нових чудових зомбі-мобів!",
-    "image": "https://cdn.modrinth.com/data/5Zusp48B/47a8369c7bc216fdc69e2ab709d5c0a7b9f8e255.jpeg",
-    "verified": true,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Nether's Exoticism",
-    "description": "Додає 5 екзотичних фруктів, які існують в реальному житті, кожен біом Nether отримує фрукт.",
-    "image": "https://cdn.modrinth.com/data/3e4LaIlU/37235ed4c98620770a66e50018669b6bdfa00388.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Nether's Delight",
-    "description": "Використовуючи передові мисливські техніки та кулінарні навички, ви зможете приготувати безліч огидних страв і покритих мохом закусок, і навіть трохи довше прожити в Незері!",
-    "image": "https://cdn.modrinth.com/data/Vv0RM7WN/bcc7b753ece2584ea956888971a98dc7f3045319.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Nether's Cruelty",
-    "description": "Nether's Cruelty - це невеликий аддон до Nether's Exotism, який додає нову їжу в мод. Єдина зміна, яку додає цей мод - це нова їжа, Стейк Молоха, який грабують 2 з 3 Молохів (мобів, доданих у Nether's Exoticism).",
-    "image": "https://media.forgecdn.net/avatars/614/184/637997323156423195.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "The One Probe",
-    "description": "TOP, альтернатива WAILA, яка показує інформацію про те, на що ви дивитеся (істоти, блоки, предмети)",
-    "image": "https://cdn.modrinth.com/data/Eyw0UxEx/ca066fbe30ebf9357896ae53711b86460159aedf.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Storage Drawers",
-    "description": "Ящики для зберігання запозичили ідеї від Jabba та Bibliocraft, що дозволило створити високофункціональне, компактне та естетичне рішення для зберігання.",
-    "image": "https://media.forgecdn.net/avatars/10/842/635468327818431130.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Applied Energistics 2",
-    "description": "Applied Energistics 2 (AE2) - це комплексний мод для Minecraft, який представляє унікальний підхід до управління внутрішньоігровими запасами.",
-    "image": "https://cdn.modrinth.com/data/XxWD5pD3/icon.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Bartering Station",
-    "description": "Станція обміну додає один абсолютно новий блок утиліти: Покладіть туди всі свої золоті злитки, і вони будуть віддані свиням у цьому районі. Все добро, яке вони повернуть, буде автоматично зібрано в блоці станції.",
-    "image": "https://cdn.modrinth.com/data/EOig9U0j/320cbe8a7409ef0b4928ee174b32b70860eb44a1.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Chunk Loaders",
-    "description": "Мод на простий завантажувач чанків, маж декілька різних рівнів, можна обрати який саме чанк завантажити інтерфейсом мапи в блоці.",
-    "image": "https://cdn.modrinth.com/data/t1VgucWo/icon.png",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Catalogue",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Magnum Torch(by Fuzs)",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Create : Misc & Things",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Create Central Kitchen",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Create Enchantment Industry",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Create Slice & Dice",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Create Stuff & Additions",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Create: Crystal Clear",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Cultural Delights",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Configured",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Farmer's Respite(little bit)",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Crafting Station",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "It Takes a Pillage",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "More Villagers",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "FTB Quests",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "FTB Chunks",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "FTB Teams",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Refined Storage",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Building Gadgets(Direwolf20)",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Keymap",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Crafting Tweaks",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "AE2 Tools",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "AE2 Additions",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Ae2 Things",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "AE2 WTLIB",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Another Furniture(little bit)",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Create Confectionery",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Energy Meter",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Integrated Dungeons and Structures",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Immersive Posts",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Item Locks",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "KeyMap(by nEinjerjar)",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Ma Enchants",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Patchouli",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Slice and dice",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Sophisticated Backpacks",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Tesseract (by SuperMartijn642)",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Tool Complement",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Trading Post(by Fuzs)",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Trashcans(by SuperMartijn642)",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "CreateDeco",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "tools complement",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "terrestria",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Advanced Reborn",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Kibe",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "packpack mod",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "VC Gliders",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Simple radio",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Simple redio",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Seasons extra",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Artifacts",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Charm",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Naturalist",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Iron CHest",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Seasons fabric",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "seasons hud",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "added tools complement",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "tiered",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "purecoppertools",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "paladins",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "numismatic-overhaul",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "nametags",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "hardcorerevival",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "environmentz",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "cinderscapes",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "chronopyre",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Blockrunner",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "spell_engine",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "botania",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "beautify",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "backpacked",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "itemalchemy",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "tokenablefurnaces",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "skylorlib",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "cloth-config2",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "RelicEX",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "PlayerEX",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "MapFrontiers",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "WizardsEX",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Charm",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "xercapaint (Joy of Painting)",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "universal graves",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "forgotten graves",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "Charm of undying",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "patchouli",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-},
-{
-    "title": "expandeddelight",
-    "description": "",
-    "image": "",
-    "verified": false,
-    "author": "",
-    "completed": true,
-    "link": ""
-}
+[
+    {
+        "title": "Apotheosis",
+        "description": "Можливості варіюються від простих змін, таких як вища цукрова тростина, до масштабних капітальних ремонтів основних систем, таких як зачарування.",
+        "image": "https://media.forgecdn.net/avatars/806/643/638174667713250064.png",
+        "verified": true,
+        "author": "Команда СУМ",
+        "completed": true,
+        "link": "https://www.curseforge.com/minecraft/mc-mods/apotheosis"
+    },
+    {
+        "title": "Gobber 2",
+        "description": "Мод Gobber призначений для того, щоб зробити гру в Minecraft більш захоплюючою, надаючи покращену броню, інструменти та зброю.",
+        "image": "https://media.forgecdn.net/avatars/265/418/637229299628778865.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Immersive Engineering",
+        "description": "технічний мод з певним шармом, заснований на ідеях та концепціях. Загалом, це про технології, натхненні реалізмом.",
+        "image": "https://media.forgecdn.net/avatars/334/842/637469274508716717.png",
+        "verified": true,
+        "author": "",
+        "completed": true,
+        "link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering"
+    },
+    {
+        "title": "Spice of Life: SPE",
+        "description": "Цей мод додає переваги від вживання різноманітної їжі у Minecraft. Він відстежує ваш раціон і дає вам атрибути або ефекти на основі вашої оцінки різноманітності.",
+        "image": "https://media.forgecdn.net/avatars/570/46/637930919653071925.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "delightful",
+        "description": "Налаштовуваний аддон Farmer's Delight з функціями сумісності та захоплюючими новими продуктами.",
+        "image": "https://cdn.modrinth.com/data/JtSnhtNJ/707d7697b315dd6dfc84648c893bf3e057bb3e34.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "End's Delight",
+        "description": "End's Delight - це аддон-мод для Farmer's Delight, заснований на додаванні кулінарного контенту з предметів Енду!",
+        "image": "https://cdn.modrinth.com/data/yHN0njMr/8b215554e49c51cb5bb5ded435263d2078e0829e.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Framed Compacting Drawers",
+        "description": "Це аддон-мод до Storage Drawers, який додає безмежно велику кількість нових ящиків до гри.",
+        "image": "https://media.forgecdn.net/avatars/264/387/637226486288344415.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Frozen Delight",
+        "description": "Frozen Delight - це просте, але якісне доповнення для Farmer's Delight, яке робить його більш сумісним з Frozen Up!",
+        "image": "https://media.forgecdn.net/avatars/807/186/638176014809459782.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Frozen Up",
+        "description": "мод, який додає купу нових можливостей, зберігаючи при цьому класичний стиль Minecraft. Він додає нових чарівних пухнастих рептилій: чилу, пінгвінів, північних оленів, оновлює іглу та багато іншого!",
+        "image": "https://media.forgecdn.net/avatars/595/853/637971166121370460.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Ore Excavation",
+        "description": "Дозволяє гравцям видобувати цілі жили руди, рубати цілі дерева або виконувати будь-які інші дії з інструментами за один раз. ",
+        "image": "https://media.forgecdn.net/avatars/50/412/636090834615920242.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Rotten Creatures",
+        "description": "Мод, який має на меті додати до Minecraft багато нових чудових зомбі-мобів!",
+        "image": "https://cdn.modrinth.com/data/5Zusp48B/47a8369c7bc216fdc69e2ab709d5c0a7b9f8e255.jpeg",
+        "verified": true,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Nether's Exoticism",
+        "description": "Додає 5 екзотичних фруктів, які існують в реальному житті, кожен біом Nether отримує фрукт.",
+        "image": "https://cdn.modrinth.com/data/3e4LaIlU/37235ed4c98620770a66e50018669b6bdfa00388.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Nether's Delight",
+        "description": "Використовуючи передові мисливські техніки та кулінарні навички, ви зможете приготувати безліч огидних страв і покритих мохом закусок, і навіть трохи довше прожити в Незері!",
+        "image": "https://cdn.modrinth.com/data/Vv0RM7WN/bcc7b753ece2584ea956888971a98dc7f3045319.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Nether's Cruelty",
+        "description": "Nether's Cruelty - це невеликий аддон до Nether's Exotism, який додає нову їжу в мод. Єдина зміна, яку додає цей мод - це нова їжа, Стейк Молоха, який грабують 2 з 3 Молохів (мобів, доданих у Nether's Exoticism).",
+        "image": "https://media.forgecdn.net/avatars/614/184/637997323156423195.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "The One Probe",
+        "description": "TOP, альтернатива WAILA, яка показує інформацію про те, на що ви дивитеся (істоти, блоки, предмети)",
+        "image": "https://cdn.modrinth.com/data/Eyw0UxEx/ca066fbe30ebf9357896ae53711b86460159aedf.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Storage Drawers",
+        "description": "Ящики для зберігання запозичили ідеї від Jabba та Bibliocraft, що дозволило створити високофункціональне, компактне та естетичне рішення для зберігання.",
+        "image": "https://media.forgecdn.net/avatars/10/842/635468327818431130.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Applied Energistics 2",
+        "description": "Applied Energistics 2 (AE2) - це комплексний мод для Minecraft, який представляє унікальний підхід до управління внутрішньоігровими запасами.",
+        "image": "https://cdn.modrinth.com/data/XxWD5pD3/icon.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Bartering Station",
+        "description": "Станція обміну додає один абсолютно новий блок утиліти: Покладіть туди всі свої золоті злитки, і вони будуть віддані свиням у цьому районі. Все добро, яке вони повернуть, буде автоматично зібрано в блоці станції.",
+        "image": "https://cdn.modrinth.com/data/EOig9U0j/320cbe8a7409ef0b4928ee174b32b70860eb44a1.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Chunk Loaders",
+        "description": "Мод на простий завантажувач чанків, маж декілька різних рівнів, можна обрати який саме чанк завантажити інтерфейсом мапи в блоці.",
+        "image": "https://cdn.modrinth.com/data/t1VgucWo/icon.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Catalogue",
+        "description": "Порт оригінального мода, але модифікований та адаптований спеціально для Fabric. Каталог містить меню, яке відображає список усіх встановлених модифікацій, до якого можна отримати доступ з головного меню або з гри. ",
+        "image": "https://media.forgecdn.net/avatars/871/331/638288815121260754.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Magnum Torch(by Fuzs)",
+        "description": "Магнітний смолоскип додає три види дуже потужних смолоскипів, які не дають мобам нереститися на величезній території. Запобігатимуться лише природні нерестилища, тому, наприклад, нерестилища та рейди все ще працюватимуть, як і раніше.",
+        "image": "https://media.forgecdn.net/avatars/511/74/637828965575792853.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Create : Misc & Things",
+        "description": "додає корисні, будівельні та веселі дрібнички, які чудово вписуються візуально до моду Create.",
+        "image": "https://media.forgecdn.net/avatars/873/437/638293470247022480.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Create Central Kitchen",
+        "description": "мод, який пропонує більше інструментів та методів для автоматизації приготування їжі для інших модів у Create. ",
+        "image": "https://media.forgecdn.net/avatars/770/583/638109213062028041.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Create Enchantment Industry",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Create Slice & Dice",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Create Stuff & Additions",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Create: Crystal Clear",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Cultural Delights",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Configured",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Farmer's Respite(little bit)",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Crafting Station",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "It Takes a Pillage",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "More Villagers",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "FTB Quests",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "FTB Chunks",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "FTB Teams",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Refined Storage",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Building Gadgets(Direwolf20)",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Keymap",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Crafting Tweaks",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "AE2 Tools",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "AE2 Additions",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Ae2 Things",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "AE2 WTLIB",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Another Furniture(little bit)",
+        "description": "немає опису",
+        "image": "static/default-image.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Create Confectionery",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Energy Meter",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Integrated Dungeons and Structures",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Immersive Posts",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Item Locks",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "KeyMap(by nEinjerjar)",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Ma Enchants",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Patchouli",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Slice and dice",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Sophisticated Backpacks",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Tesseract (by SuperMartijn642)",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Tool Complement",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Trading Post(by Fuzs)",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Trashcans(by SuperMartijn642)",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "CreateDeco",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "tools complement",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "terrestria",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Advanced Reborn",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Kibe",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "packpack mod",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "VC Gliders",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Simple radio",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Simple redio",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Seasons extra",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Artifacts",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Charm",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Naturalist",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Iron CHest",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Seasons fabric",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "seasons hud",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "added tools complement",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "tiered",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "purecoppertools",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "paladins",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "numismatic-overhaul",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "nametags",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "hardcorerevival",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "environmentz",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "cinderscapes",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "chronopyre",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Blockrunner",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "spell_engine",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "botania",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "beautify",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "backpacked",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "itemalchemy",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "tokenablefurnaces",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "skylorlib",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "cloth-config2",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "RelicEX",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "PlayerEX",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "MapFrontiers",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "WizardsEX",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Charm",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "xercapaint (Joy of Painting)",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "universal graves",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "forgotten graves",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Charm of undying",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "patchouli",
+        "description": "",
+        "image": "",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "expandeddelight",
+        "description": "",
+        "image": "static/default-image.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "link": ""
+    },
+    {
+        "title": "Spectum",
+        "description": "Магічний мод, що базується на розвитку та дослідженні, де ви комбінуєте кольори для створення магічних інструментів і машин, з кінцевою метою дізнатися, що лежить під колись непроникною підлогою Bedrock.",
+        "image": "https://cdn.modrinth.com/data/3rc31Hgo/70ab94a9c980769dd3f2d17850aef9f6df497ab7.png",
+        "verified": false,
+        "author": "",
+        "completed": false,
+        "link": ""
+    }
 ]

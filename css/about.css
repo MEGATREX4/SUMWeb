@@ -125,25 +125,25 @@
 
 
 .dona{
-    background-image: url(images/Donatello.png);
+    background-image: url(/images/Donatello.png);
 }
 
 .mono{
-    background-image: url(images/monobank.png);
+    background-image: url(/images/monobank.png);
     
 }
 
 .mas{
-    background-image: url(images/socials/mastodon.png);
+    background-image: url(/images/socials/mastodon.png);
 }
 .tel{
-    background-image: url(images/socials/telegram.png);
+    background-image: url(/images/socials/telegram.png);
 }
 .sky{
-    background-image: url(images/socials/bluesky.png);
+    background-image: url(/images/socials/bluesky.png);
 }
 .twi{
-    background-image: url(images/socials/twitter.png);
+    background-image: url(/images/socials/twitter.png);
 }
 
 .dona, .mono, .mas,.tel,.sky,.twi{
