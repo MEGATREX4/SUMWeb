@@ -57,7 +57,7 @@ background-size: cover!important;
     }
 
 }
-
+}
 @media (max-width: 443px){
     .search-container #searchbtn{
         width: 60px;
