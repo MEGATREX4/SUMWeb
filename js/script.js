@@ -450,8 +450,8 @@ const showMoreButton = document.getElementById('show-more-button');
 if (showMoreButton) {
     showMoreButton.addEventListener('click', () => {
         displayedItems += 15;
-
             loadAndDisplayData(currentTab);
+            backtotop.style.display = 'block';
         
     });
 }
@@ -512,10 +512,10 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
 
 
 // Завантажити дані з файлу game.json при запуску сторінки
-loadTranslationsFromFile('game.json', 1, displayedItems);
+loadTranslationsFromFile('mods.json', 1, displayedItems);
 
 // Завантажити дані з файлу mods.json при запуску сторінки
-loadTranslationsFromFile('mods.json', 1, displayedItems);
+loadTranslationsFromFile('game.json', 1, displayedItems);
 
 // Відображення всіх перекладів за замовчуванням при завантаженні сторінки
 showAllTranslations();

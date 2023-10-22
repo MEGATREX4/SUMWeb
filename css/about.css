@@ -150,15 +150,6 @@
     background-size:cover;
 }
 
-#search {
-    background-color: #201a1a00;
-    padding: 20px;
-    border-radius: 20px;
-    color: #dbe1f800;
-    border-color: #dbe1f800;
-    width: 300px;
-}
-
 .terms{
     text-align: center;
     margin: 0;
