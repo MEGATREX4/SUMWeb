@@ -371,7 +371,7 @@
     {
         "title": "AE2 Additions",
         "description": "Це мод, який додає деякі функції для Applied Energetics 2, які зроблять ваше життя простішим.",
-        "image": "blob:https://imgur.com/c535ba13-3519-42f0-aebe-79d454d25ce3",
+        "image": "https://i.ibb.co/cth4wxg/pattern-provider-3th.png",
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
@@ -379,10 +379,10 @@
     },
     {
         "title": "Ae2 Things",
-        "description": "",
-        "image": "",
+        "description": "Додає більше карток більшого розміру, на яких можна зберігати нескінченно багато інформації ",
+        "image": "https://media.forgecdn.net/avatars/475/528/637767573984958255.png",
         "verified": false,
-        "author": "",
+        "author": "Команда СУМ",
         "completed": true,
         "link": ""
     },

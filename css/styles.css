@@ -17,14 +17,43 @@ background-size: cover!important;
     .header {
         padding-bottom: 20px;
     }
-    .mobile-only {
+
+    .pc-only{
+        display: none!important;
+    }
+    .mobile-only-visability{
         display: block!important; /* Показувати меню на мобільних пристроях */
+    }
+    .mobilecontainer {
+        display: flex;
+        flex-direction:row; /* Stack elements vertically */
+        justify-content: center; /* Center-align elements vertically */
+        align-items: center; /* Center-align elements horizontally */
+    }
+
+    #addbutton{
+        height: calc(+20%);
+        width: calc(+20%);
+    }
+
+    #searchbtn{
+        background-color: #131214!important;
+    }
+    #searchbtn:hover{
+        box-shadow: none!important;
+    }
+
+    .mobileadd{
+        resize: 20%;
+    }
+
+    .mobile-only {
         position: fixed; /* Фіксована позиція */
         bottom: -2px; /* Внизу екрану */
         left: 0; /* Лівий край екрану */
         background-color: #131214; /* Колір фону меню */
-        width: 90%; /* 100% ширина екрану */
-        padding: 40px; /* Відступи */
+        width: 100%; /* 100% ширина екрану */
+        padding: 10px 0; /* Відступи */
         text-align: center; /* Вирівнювання тексту по центру */
         z-index: 50; /* Вищий індекс ніж в інших елементів */
         color: white;
@@ -34,13 +63,6 @@ background-size: cover!important;
         border-radius: 19px 19px 0px 0px;
         -webkit-border-radius: 19px 19px 0px 0px;
         -moz-border-radius: 19px 19px 0px 0px;
-    }
-    .addbutton{
-        display: block!important; /* Показувати меню на мобільних пристроях */
-        position: fixed; /* Фіксована позиція */
-        bottom: 8px; /* Внизу екрану */
-        z-index: 100;
-        
     }
     .search-container{
         display: flex;
@@ -66,9 +88,12 @@ background-size: cover!important;
 
     }
     .searchbtn{
-        width: 60px;
-        height: 60px;
+        width: 60px!important;
+        height: 60px!important;
     }
+}
+.pc-only{
+    display: block;
 }
 
 .tabs{
@@ -79,7 +104,7 @@ background-size: cover!important;
     display: flex!important;
 }
 
-.mobile-only {
+.mobile-only-visability {
     display: none;
     }
 
