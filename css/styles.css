@@ -13,7 +13,12 @@ background-size: cover!important;
     body {
         font-size: 16px;
 
+        
     }
+    .margin{
+        margin-bottom: calc(+20%);
+    }
+
     .header {
         padding-bottom: 20px;
     }
@@ -36,16 +41,19 @@ background-size: cover!important;
         width: calc(+20%);
     }
 
-    #searchbtn{
+    #searchbtn, #sharebtn, .home, .info{
         background-color: #131214!important;
+        font-size: 17px!important;
+
     }
-    #searchbtn:hover{
+    #searchbtn:hover, #sharebtn:hover, .home:hover, .info:hover{
         box-shadow: none!important;
     }
 
-    .mobileadd{
-        resize: 20%;
+    .search:hover, .share:hover, .home:hover, .info:hover{
+        color:#929399!important;
     }
+
 
     .mobile-only {
         position: fixed; /* Фіксована позиція */

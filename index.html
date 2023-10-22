@@ -48,7 +48,7 @@
     <div class="header">
         <div class="header-content">
             <img src="header-image.png" alt="Спільнота українізації модів">
-            <h1 class="headertext">Спільнота українізації модів</h1>
+            <h1 id="targetElement" class="headertext">Спільнота українізації модів</h1>
         </div>
 
     </div>
@@ -91,16 +91,40 @@
         </div>
     </div>
     </div>
+
+    <script>
+        function scrollToTop() {
+          // Find the target element by its ID
+          const targetElement = document.getElementById("top");
+        
+          // Check if the target element exists
+          if (targetElement) {
+            // Use the scrollIntoView function to scroll to the target element
+            targetElement.scrollIntoView({
+              behavior: "smooth" // Smooth scrolling
+            });
+          }
+        }
+        </script>
+        
+
     <div class="mobile-only mobile-only-visability">
         <div class="mobilecontainer">
-            <button id="searchbtn" onclick="window.open('/about.html', '_self')"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+            <button class="home"><i class="fa fa-home" aria-hidden="true"></i></button>            
+   
+            <button class="share" id="sharebtn" onclick="window.open('/about.html', '_self')"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
             <button class="addbutton" onclick="window.open('/addtranslation.html', '_self')" id="addbutton">
                 <i class="fa fa-plus faadd mobileadd" aria-hidden="true"></i>
             </button>
-            <button id="searchbtn" onclick="performSearch()"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="search" id="searchbtn" id="scrollButton" onclick="scrollToTop()"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="info"><i class="fa fa-info" aria-hidden="true"></i></button> 
 
         </div>
     </div>
+
+
+        
+
     <div class="custom-tooltip" style="display: none;">
         <div class="tooltip-content">
         </div>
@@ -115,7 +139,7 @@
     <div class="footer">
         <p>&copy; 2023 Спільнота українізації модів</p>
         <p>Створено в Києві з 💜</p>
-        <p>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</p>
+        <p class="margin">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</p>
     </div>
 
 

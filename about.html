@@ -47,7 +47,7 @@
             <div class="tab" data-tab="all" onclick="redirectToIndex('all')">Всі переклади</div>
             <div class="tab" data-tab="minecraft" onclick="redirectToIndex('minecraft')">Майнкрафт моди</div>
             <div class="tab" data-tab="games" onclick="redirectToIndex('games')">Переклади ігор</div>
-            <div class="tab active" onclick="showAboutPage()">Про нас</div>
+            <div class="tab active pc-only" onclick="showAboutPage()">Про нас</div>
             <div class="tab NotCompletedTab" data-tab="notcompleted" onclick="redirectToIndex('notcompleted')" id="notcompleted-tab">В роботі</div>
             <div class="tab" data-tab="official" onclick="redirectToIndex('official')" id="official-tab">Офіційні</div>
 
@@ -86,20 +86,22 @@
     </div>
     <div class="mobile-only mobile-only-visability">
         <div class="mobilecontainer">
-            <button id="searchbtn" onclick="window.open('/about.html', '_self')"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+            <button class="home"><i class="fa fa-home" aria-hidden="true"></i></button>            
+            <button class="share" id="sharebtn"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
             <button class="addbutton" onclick="window.open('/addtranslation.html', '_self')" id="addbutton">
                 <i class="fa fa-plus faadd mobileadd" aria-hidden="true"></i>
             </button>
-            <button id="searchbtn" onclick="performSearch()"><i class="fa fa-search" aria-hidden="true"></i></button>
-
+            <button class="search" id="searchbtn" onclick="window.open('/index.html', '_self')"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="info"><i class="fa fa-info" aria-hidden="true"></i></button> 
         </div>
+    </div>
 
 </div>
 </div>
     <div class="footer">
         <p>&copy; 2023 Спільнота українізації модів</p>
         <p>Створено в Києві з 💜</p>
-        <p>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</p>
+        <p class="margin">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</p>
 
     </div>
     </body>
