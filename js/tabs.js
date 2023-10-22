@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (tabName === 'about') {
             console.log('Loading about data');
             redirectToAboutPage();
+        } else if (tabName === 'frommembers'){
+            console.log('Loading From Members data');
+            loadAndDisplayFromMembersTranslations();
         }
     }
 

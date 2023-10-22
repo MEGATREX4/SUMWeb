@@ -8,7 +8,7 @@ function loadDataFromFiles() {
         .then(data => {
             allData = allData.concat(data);
             // Після завантаження всіх даних, викликайте функцію для відображення
-            displayTranslations(allData, 1, 25); // Змініть параметри, які вам потрібні
+            displayTranslations(allData, 1, 999999); // Змініть параметри, які вам потрібні
         })
         .catch(error => {
             console.error('Помилка завантаження JSON даних з файлу game.json:', error);
@@ -19,7 +19,7 @@ function loadDataFromFiles() {
         .then(data => {
             allData = allData.concat(data);
             // Після завантаження всіх даних, викликайте функцію для відображення
-            displayTranslations(allData, 1, 25); // Змініть параметри, які вам потрібні
+            displayTranslations(allData, 1, 999999); // Змініть параметри, які вам потрібні
         })
         .catch(error => {
             console.error('Помилка завантаження JSON даних з файлу mods.json:', error);
@@ -151,20 +151,47 @@ searchInput.addEventListener('input', performSearch);
 
 // Функція пошуку
 function performSearch() {
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
     const searchTerm = searchInput.value.toLowerCase();
 
     if (searchTerm.trim() === '') {
         // If the search input is empty, display all translations
-        displayTranslations(allData, 1, 15); // You can adjust the number of items per page
+        displayTranslations(allData, 1, 99999999); // You can adjust the number of items per page
+
+        if (showMoreButton) {
+            showMoreButton.style.display = 'block'; // Display the button
+        }
     } else {
-        const searchResults = allData.filter(item => {
-            const titleText = item.title.toLowerCase();
-            const descriptionText = item.description.toLowerCase();
-            return titleText.includes(searchTerm) || descriptionText.includes(searchTerm);
+        const authorResults = allData.filter(item => {
+            const author = item.author ? item.author.toLowerCase() : '';
+            return author.includes(searchTerm);
         });
 
-        displayTranslations(searchResults, 1, 15); // You can adjust the number of items per page
+        if (authorResults.length > 0) {
+            displayTranslations(authorResults, 1, 99999999); // Display translations by the specified author
+
+            if (showMoreButton) {
+                showMoreButton.style.display = 'none'; // Hide the button
+            }
+        } else {
+            // No results for the author, check for title or description
+            const searchResults = allData.filter(item => {
+                const titleText = item.title.toLowerCase();
+                const descriptionText = item.description.toLowerCase();
+                return titleText.includes(searchTerm) || descriptionText.includes(searchTerm);
+            });
+
+            displayTranslations(searchResults, 1, 99999999); // You can adjust the number of items per page
+
+            if (showMoreButton) {
+                showMoreButton.style.display = 'none'; // Hide the button
+            }
+        }
     }
 }
+
+
 
 

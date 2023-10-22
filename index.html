@@ -61,22 +61,24 @@
             </div>
 
     <div class="div">
-                <div class="tabs container " id="tabs">
-                    <div class="tab" data-tab="all" onclick="redirectToIndex('all')">Всі переклади</div>
-                    <div class="tab" data-tab="minecraft" onclick="redirectToIndex('minecraft')">Майнкрафт моди</div>
-                    <div class="tab" data-tab="games" onclick="redirectToIndex('games')">Переклади ігор</div>
-                    <div class="tab pc-only" onclick="window.open('/about.html', '_self')">Про нас</div>
-                    <div class="tab NotCompletedTab" data-tab="notcompleted" onclick="redirectToIndex('notcompleted')" id="notcompleted-tab">В роботі</div>
-                    <div class="tab" data-tab="official" onclick="redirectToIndex('official')" id="official-tab">Офіційні</div>
+        <div class="tabs container" id="tabs">
+            <div class="tab" data-tab="all" onclick="redirectToIndex('all')">Всі переклади</div>
+            <div class="tab" data-tab="minecraft" onclick="redirectToIndex('minecraft')">Майнкрафт моди</div>
+            <div class="tab" data-tab="games" onclick="redirectToIndex('games')">Переклади ігор</div>
+            <div class="tab active pc-only" onclick="window.open('/about.html', '_self')">Про нас</div>
+            <div class="tab NotCompletedTab" data-tab="notcompleted" onclick="redirectToIndex('notcompleted')">В роботі</div>
+            <div class="tab" data-tab="official" onclick="redirectToIndex('official')">Офіційні</div>
+            <div class="tab" data-tab="frommembers" onclick="loadAndDisplayFromMembersTranslations()">Від учасників</div>
+        </div>
     </div>
-</div>
+
 
 
 <script>
     function redirectToIndex(tabName) {
       window.location.href = `/index.html?tab=${tabName}`;
     }
-    </script>
+</script>
     <div class="concon">
     <div class="container">
         
@@ -93,36 +95,30 @@
     </div>
 
     <script>
-        function scrollToTop() {
-          // Find the target element by its ID
-          const targetElement = document.getElementById("top");
-        
-          // Check if the target element exists
-          if (targetElement) {
-            // Use the scrollIntoView function to scroll to the target element
-            targetElement.scrollIntoView({
-              behavior: "smooth" // Smooth scrolling
-            });
-          }
+        function focusSearchInput() {
+            // Get a reference to the search input element
+            const searchInput = document.getElementById('search');
+            
+            // Focus on the search input element
+            searchInput.focus();
         }
-        </script>
+    </script>
         
 
     <div class="mobile-only mobile-only-visability">
         <div class="mobilecontainer">
             <button class="home"><i class="fa fa-home" aria-hidden="true"></i></button>            
-   
             <button class="share" id="sharebtn" onclick="window.open('/about.html', '_self')"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
-            <button class="addbutton" onclick="window.open('/addtranslation.html', '_self')" id="addbutton">
-                <i class="fa fa-plus faadd mobileadd" aria-hidden="true"></i>
-            </button>
-            <button class="search" id="searchbtn" id="scrollButton" onclick="scrollToTop()"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="addbutton" onclick="window.open('/addtranslation.html', '_self')" id="addbutton"><i class="fa fa-plus faadd mobileadd" aria-hidden="true"></i></button>
+            <button class="search" id="searchbtn" id="scrollButton" onclick="focusSearchInput()"><i class="fa fa-search" aria-hidden="true"></i></button>
             <button class="info"><i class="fa fa-info" aria-hidden="true"></i></button> 
 
         </div>
     </div>
 
-
+    <script>
+        
+    </script>
         
 
     <div class="custom-tooltip" style="display: none;">

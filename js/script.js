@@ -210,6 +210,7 @@ let gamesData = [];
 let notcompletedData = [];
 let officialData = [];
 let currentTab = 'all';
+let frommembers = [];
 
 function showTab(tabName) {
     currentTab = tabName;
@@ -238,6 +239,11 @@ function showMinecraftTranslations() {
 function showNotCompletedTranslations() {
     showTab('notcompleted');
     loadAndDisplayNotCompletedData();
+}
+
+function showFromMembersTranslations(){
+    showTab('frommembers');
+    showFromMembersTranslations();
 }
 
 
@@ -284,6 +290,8 @@ function loadAndDisplayData(tab) {
         dataToDisplay = notcompletedData;
     } else if (tab === 'official') {
         dataToDisplay = officialData;
+    } else if (tab === 'frommembers') {
+        dataToDisplay = fromMembersData;
     } else {
         dataToDisplay = minecraftData.concat(gamesData);
     }
@@ -305,6 +313,7 @@ function loadAndDisplayData(tab) {
 
     displayTranslations(dataToDisplay.slice(startIndex, endIndex), 1, displayedItems);
 }
+
 
 function loadOfficialData() {
     currentTab = 'official'; // Set the current tab to 'official'
@@ -382,14 +391,72 @@ function loadAndDisplayNotCompletedData() {
 
 
 
+function loadAndDisplayFromMembersTranslations() {
+    // Set the current tab to 'frommembers'
+    currentTab = 'frommembers';
+
+    // Define the file paths for the data
+    const fromMembersDataFiles = [
+        'mods.json',
+        'game.json',
+        // Add more file paths as needed
+    ];
+
+    // Fetch data from each data file
+    const requests = fromMembersDataFiles.map(fileName => {
+        return fetch(fileName)
+            .then(response => response.json())
+            .then(data => data);
+    });
+
+    // After all data is fetched, merge and filter it
+    Promise.all(requests)
+        .then(dataArray => {
+            const mergedData = [].concat(...dataArray); // Merge data from different files
+
+            // Filter the data to show items from members
+            const fromMembersData = mergedData.filter(item => {
+                const author = item.author ? item.author.toLowerCase() : '';
+                return author !== 'Команда СУМ' && author !== '' && author !== 'Команда СУМ';
+            });
+
+            // Update the visibility of the "Show More" button
+            const showMoreButton = document.getElementById('show-more-button');
+            if (showMoreButton) {
+                showMoreButton.style.display = displayedItems >= fromMembersData.length ? 'none' : 'block';
+            }
+
+            // Display translations from members
+            displayTranslations(fromMembersData.slice(0, displayedItems), 1, displayedItems);
+
+            // Set the active tab to "frommembers"
+            setActiveTab(document.querySelector('[data-tab="frommembers"]'));
+
+            // Update the URL with the tab parameter
+            history.pushState(null, null, `?tab=frommembers`);
+        })
+        .catch(error => {
+            console.error('Error loading from members data:', error);
+        });
+}
+
+
+
+
+
 // Додайте обробник події для кнопки "Показати більше"
+// Add this event listener for the "Show More" button
 const showMoreButton = document.getElementById('show-more-button');
 if (showMoreButton) {
     showMoreButton.addEventListener('click', () => {
         displayedItems += 15;
-        loadAndDisplayData(currentTab);
+
+            loadAndDisplayData(currentTab);
+        
     });
 }
+
+
 
 function setActiveTab(tabElement) {
     // Знайти всі вкладки
@@ -438,6 +505,7 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
             overlay.style.display = 'none';
         });
 }
+
 
 
 
