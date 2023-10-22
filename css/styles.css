@@ -44,7 +44,6 @@ background-size: cover!important;
     #searchbtn, #sharebtn, .home, .info{
         background-color: #131214!important;
         font-size: 17px!important;
-
     }
     #searchbtn:hover, #sharebtn:hover, .home:hover, .info:hover{
         box-shadow: none!important;
