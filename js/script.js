@@ -264,12 +264,18 @@ function showOfficialTranslations() {
     displayTranslations(officialData.slice(0, displayedItems), 1, displayedItems);
 
     // Set the active tab to "official"
-    setActiveTab(document.querySelector('[data-tab="official"]'));
+    const officialTab = document.querySelector('[data-tab="official"]');
+officialTab.addEventListener('click', () => {
+    setActiveOfficialTab();
+});
+
+    loadOfficialData();
 }
 
 function setActiveOfficialTab() {
-    showOfficialTranslations(); // Call the showOfficialTranslations function instead of showTab
+    loadOfficialData(); // Call the loadOfficialData function instead of showOfficialTranslations
 }
+
 
 
 
@@ -336,7 +342,7 @@ function loadOfficialData() {
     Promise.all(requests)
         .then(dataArray => {
             const mergedData = [].concat(...dataArray); // Merge data from different files
-            const officialData = mergedData.filter(item => item.verified === true);
+            officialData = mergedData.filter(item => item.verified === true); // Update officialData
 
             // Update the visibility of the "Show More" button
             const showMoreButton = document.getElementById('show-more-button');
@@ -351,6 +357,7 @@ function loadOfficialData() {
             console.error('Error loading official data:', error);
         });
 }
+
 
 function loadAndDisplayNotCompletedData() {
     currentTab = 'notcompleted'; // Set the current tab to 'notcompleted'
@@ -417,7 +424,7 @@ function loadAndDisplayFromMembersTranslations() {
             // Filter the data to show items from members
             const fromMembersData = mergedData.filter(item => {
                 const author = item.author ? item.author.toLowerCase() : '';
-                return author !== 'Команда СУМ' && author !== '' && author !== 'Команда СУМ';
+                return author !== '' && author.toLowerCase() !== 'команда сум';
             });
 
             // Update the visibility of the "Show More" button

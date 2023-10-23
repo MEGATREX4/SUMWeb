@@ -179,3 +179,7 @@ body {
     left: calc(20px); /* Move the table 200 pixels to the left */
     margin: 0 auto; /* Center the table horizontally */
 }
+
+.new-description{
+    height: calc(+20%);
+}

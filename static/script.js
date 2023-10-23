@@ -145,7 +145,7 @@ $(document).ready(function () {
         const newVerified = $('#new-verified').prop('checked');
         const newCompleted = $('#new-completed').prop('checked');
 
-        const titleRegex = /^[^0-9!@#$%^&*()][A-Za-zА-Яа-яЁёҐґЄєЇїІі0-9\s]*$/;
+        const titleRegex = /^[0-9]*$/;
 
         if (!titleRegex.test(newTitle)) {
             alert('Помилка: Заголовок повинен починатися не з цифри чи спеціального символу.');
