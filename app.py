@@ -29,11 +29,12 @@ def save_data_to_file(data):
 def urlparse(url):
     from urllib.parse import urlparse
     netloc = urlparse(url).netloc
-    if netloc.startswith("www."):
+    if netloc.startswith(b"www."):  # Convert the prefix to bytes
         netloc = netloc[4:]  # Видаляємо "www." з початку
-    if netloc.endswith(".com"):
+    if netloc.endswith(b".com"):  # Convert the suffix to bytes
         netloc = netloc[:-4]  # Видаляємо ".com" з кінця
-    return netloc
+    return netloc.decode('utf-8')  # Decode the bytes back to a string
+
 
 app.jinja_env.filters['urlparse'] = urlparse
 
@@ -68,7 +69,7 @@ def add_card():
     new_author = data.get('author')
     new_verified = data.get('verified')
     new_completed = data.get('completed')
-    new_link = data.get('link')
+    new_Link = data.get('Link')
     
     print(f'{Fore.GREEN}Додано нову картку: {new_title} з даними {data}{Style.RESET_ALL}')  # Повідомлення про додану картку у консоль
 
@@ -92,7 +93,7 @@ def add_card():
         'verified': new_verified,
         'author': new_author,
         'completed': new_completed,
-        'link': new_link
+        'Link': new_Link
     }
 
     data.append(new_card)
@@ -115,7 +116,7 @@ def edit_card():
         new_author = urllib.parse.unquote(data.get('newAuthor', ''))
         new_verified = data.get('newVerified', False)
         new_completed = data.get('newCompleted', False)
-        new_link = urllib.parse.unquote(data.get('newLink', ''))
+        new_Link = urllib.parse.unquote(data.get('newLink', ''))
 
         data = read_data_from_file()
 
@@ -130,7 +131,7 @@ def edit_card():
                 card['author'] = new_author
                 card['verified'] = new_verified
                 card['completed'] = new_completed
-                card['link'] = new_link
+                card['Link'] = new_Link
                 updated = True
                 updated_card = card
                 break

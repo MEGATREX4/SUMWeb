@@ -474,4 +474,7 @@ body, html {
 
 
 
-
+.spantranslate{
+    color: rgb(160, 160, 160);
+    font-size: 10px;
+}

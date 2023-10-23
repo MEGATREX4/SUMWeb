@@ -1,5 +1,4 @@
 //script.js
-
 function displayTranslations(data, currentPage, itemsPerPage) {
     const cardContainer = document.querySelector('.container-content #data-container');
     
@@ -90,12 +89,21 @@ if (item.description === "") {
             // Інакше встановлюємо текст кнопки "Переклад"
             translationButton.textContent = 'Переклад';
             if (item.hasOwnProperty('Link') && item.Link) {
-                // Якщо є поле 'Link' в JSON і воно не пусте, використовуємо його
-                translationButton.href = item.Link;
+                const siteURL = item.Link;
+                const siteName = extractSiteName(siteURL);
+                translationButton.innerHTML = `Переклад&ensp; <span class="spantranslate">(${siteName})</span>`;
+                translationButton.href = siteURL;
             } else {
                 // В іншому випадку встановлюємо стандартне посилання
                 translationButton.href = 'https://github.com/SKZGx/UA-Translation';
-            } // Посилання на GitHub
+                siteURL = 'https://github.com/SKZGx/UA-Translation';
+                const siteName = extractSiteName(siteURL);
+                translationButton.innerHTML = `Переклад&ensp; <span class="spantranslate">(${siteName})</span>`;
+                translationButton.href = siteURL;
+            }
+            
+ // Посилання на GitHub
+            
             if (item.hasOwnProperty('verified') && item.verified === true) {
                 // Створити значок <i> для галочки
                 
@@ -130,7 +138,9 @@ if (item.description === "") {
                 translationButton.insertBefore(icon, translationButton.firstChild);
                 
             }
+            
         }
+        
 
         // Додавання pop-up вікна перед описом
         descriptionContainer.appendChild(popupElement);
@@ -200,6 +210,31 @@ function loadAndDisplayNotCompletedData() {
 
     displayTranslations(notCompletedData.slice(startIndex, endIndex), 1, displayedItems);
 }
+
+
+
+
+function extractSiteName(url) {
+    // Remove "https://", "http://", or "www." from the beginning
+    let siteName = url.replace(/^(https?:\/\/)?(www\.)?/, '');
+
+    // Remove everything after the first "/" or the top-level domain (e.g., ".com")
+    siteName = siteName.replace(/\/|\.com.*/, '');
+
+    return siteName;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

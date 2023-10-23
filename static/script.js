@@ -145,12 +145,7 @@ $(document).ready(function () {
         const newVerified = $('#new-verified').prop('checked');
         const newCompleted = $('#new-completed').prop('checked');
 
-        const titleRegex = /^[0-9]*$/;
 
-        if (!titleRegex.test(newTitle)) {
-            alert('Помилка: Заголовок повинен починатися не з цифри чи спеціального символу.');
-            return;
-        }
 
         const formData = JSON.stringify({
             title: newTitle,

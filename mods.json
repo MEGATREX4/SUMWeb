@@ -6,7 +6,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/apotheosis"
     },
     {
         "title": "Gobber 2",
@@ -15,7 +15,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Immersive Engineering",
@@ -24,7 +24,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering"
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering"
     },
     {
         "title": "Spice of Life: SPE",
@@ -33,7 +33,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "delightful",
@@ -42,7 +42,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/delightful"
+        "Link": "https://modrinth.com/mod/delightful"
     },
     {
         "title": "End's Delight",
@@ -51,7 +51,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/ends-delight"
+        "Link": "https://modrinth.com/mod/ends-delight"
     },
     {
         "title": "Framed Compacting Drawers",
@@ -60,7 +60,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Frozen Delight",
@@ -69,7 +69,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Frozen Up",
@@ -78,7 +78,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Ore Excavation",
@@ -87,7 +87,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Rotten Creatures",
@@ -96,7 +96,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Nether's Exoticism",
@@ -105,7 +105,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Nether's Delight",
@@ -114,7 +114,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Nether's Cruelty",
@@ -123,7 +123,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "The One Probe",
@@ -132,7 +132,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Storage Drawers",
@@ -141,7 +141,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Applied Energistics 2",
@@ -150,7 +150,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Bartering Station",
@@ -159,7 +159,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/bartering-station"
+        "Link": "https://modrinth.com/mod/bartering-station"
     },
     {
         "title": "Chunk Loaders",
@@ -168,7 +168,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/chunk-loaders"
+        "Link": "https://modrinth.com/mod/chunk-loaders"
     },
     {
         "title": "Catalogue",
@@ -177,7 +177,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Magnum Torch",
@@ -186,7 +186,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/magnum-torch"
+        "Link": "https://modrinth.com/mod/magnum-torch"
     },
     {
         "title": "Create : Misc & Things",
@@ -195,7 +195,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Create Central Kitchen",
@@ -204,7 +204,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Create Enchantment Industry",
@@ -213,7 +213,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Create Slice & Dice",
@@ -222,7 +222,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Create Stuff & Additions",
@@ -231,7 +231,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Create: Crystal Clear",
@@ -240,7 +240,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Cultural Delights",
@@ -249,7 +249,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Configured",
@@ -258,7 +258,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/configured"
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/configured"
     },
     {
         "title": "Farmer's Respite",
@@ -267,7 +267,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Crafting Station",
@@ -276,7 +276,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/crafting-station"
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/crafting-station"
     },
     {
         "title": "It Takes a Pillage",
@@ -285,7 +285,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "More Villagers",
@@ -294,7 +294,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "FTB Quests",
@@ -303,7 +303,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "FTB Chunks",
@@ -312,7 +312,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "FTB Teams",
@@ -321,7 +321,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Refined Storage",
@@ -330,7 +330,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Building Gadgets",
@@ -339,7 +339,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Keymap",
@@ -348,7 +348,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/keymap"
+        "Link": "https://modrinth.com/mod/keymap"
     },
     {
         "title": "Crafting Tweaks",
@@ -357,7 +357,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/crafting-tweaks"
+        "Link": "https://modrinth.com/mod/crafting-tweaks"
     },
     {
         "title": "AE2 Tools",
@@ -366,7 +366,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "AE2 Additions",
@@ -375,7 +375,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Ae2 Things",
@@ -384,7 +384,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/ae2things"
+        "Link": "https://modrinth.com/mod/ae2things"
     },
     {
         "title": "AE2 Wireless Terminal Library",
@@ -393,7 +393,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/ae2wtlib"
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/ae2wtlib"
     },
     {
         "title": "Another Furniture",
@@ -402,7 +402,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Create Confectionery",
@@ -411,7 +411,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Energy Meter",
@@ -420,7 +420,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Integrated Dungeons and Structures",
@@ -429,7 +429,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Immersive Posts",
@@ -438,7 +438,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/immersiveposts"
+        "Link": "https://modrinth.com/mod/immersiveposts"
     },
     {
         "title": "Item Locks",
@@ -447,7 +447,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Ma Enchants",
@@ -456,7 +456,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Patchouli",
@@ -465,7 +465,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Sophisticated Backpacks",
@@ -474,7 +474,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks"
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks"
     },
     {
         "title": "Tesseract",
@@ -483,7 +483,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Trading Post",
@@ -492,7 +492,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/trading-post"
+        "Link": "https://modrinth.com/mod/trading-post"
     },
     {
         "title": "Trashcans",
@@ -501,7 +501,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/trash-cans"
+        "Link": "https://modrinth.com/mod/trash-cans"
     },
     {
         "title": "Create Deco",
@@ -510,7 +510,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Terrestria",
@@ -519,7 +519,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Advanced Reborn",
@@ -528,7 +528,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Kibe",
@@ -537,7 +537,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Gliders",
@@ -546,7 +546,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Simple Voice Radio",
@@ -555,7 +555,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Fabric Seasons: Extras",
@@ -564,7 +564,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Artifacts",
@@ -573,7 +573,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Naturalist",
@@ -582,7 +582,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Fabric Seasons",
@@ -591,7 +591,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "SeasonHUD",
@@ -600,7 +600,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Tiered",
@@ -609,7 +609,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Pure Copper Tools",
@@ -618,7 +618,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Paladins & Priests (RPG Series)",
@@ -627,7 +627,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Numismatic Overhaul",
@@ -636,7 +636,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Cosmetic Nametags",
@@ -645,7 +645,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Hardcore Revival",
@@ -654,7 +654,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "EnvironmentZ",
@@ -663,7 +663,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Cinderscapes",
@@ -672,7 +672,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Chronopyre",
@@ -681,7 +681,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Block Runner",
@@ -690,7 +690,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Spell Engine",
@@ -699,7 +699,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/spell-engine"
+        "Link": "https://modrinth.com/mod/spell-engine"
     },
     {
         "title": "Botania",
@@ -708,7 +708,7 @@
         "verified": false,
         "author": "mewnn",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Beautify: Refabricated",
@@ -717,7 +717,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/beautify-refabricated"
+        "Link": "https://modrinth.com/mod/beautify-refabricated"
     },
     {
         "title": "Backpacked",
@@ -726,7 +726,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/backpacked"
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/backpacked"
     },
     {
         "title": "Item Alchemy",
@@ -735,7 +735,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Tokenable Furnaces and Storage",
@@ -744,7 +744,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "SkyLib",
@@ -753,7 +753,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Cloth Config API",
@@ -762,7 +762,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "RelicEX",
@@ -771,7 +771,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "PlayerEX",
@@ -780,7 +780,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "MapFrontiers",
@@ -789,7 +789,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "WizardsEX",
@@ -798,7 +798,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Joy of Painting",
@@ -807,7 +807,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Universal Graves",
@@ -816,7 +816,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Forgotten Graves",
@@ -825,7 +825,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Charm of undying",
@@ -834,7 +834,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Expanded Delight",
@@ -843,7 +843,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Spectum",
@@ -852,7 +852,7 @@
         "verified": false,
         "author": "",
         "completed": false,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Charm",
@@ -861,7 +861,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Wizards (RPG Series)",
@@ -870,7 +870,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/wizards"
+        "Link": "https://modrinth.com/mod/wizards"
     },
     {
         "title": "Create Crafts & Additions",
@@ -879,7 +879,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/createaddition"
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/createaddition"
     },
     {
         "title": "Ender Storage",
@@ -888,7 +888,7 @@
         "verified": false,
         "author": "",
         "completed": false,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Simple Storage Network",
@@ -897,7 +897,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/simple-storage-network"
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/simple-storage-network"
     },
     {
         "title": "Tool's Complement",
@@ -906,7 +906,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "link": "https://modrinth.com/mod/tools-complement"
+        "Link": "https://modrinth.com/mod/tools-complement"
     },
     {
         "title": "Biome Makeover",
@@ -915,7 +915,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": false,
-        "link": ""
+        "Link": ""
     },
     {
         "title": "Overworld Quartz ore",
@@ -924,7 +924,6 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "link": ""
+        "Link": ""
     }
-    
 ]
