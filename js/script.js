@@ -451,7 +451,6 @@ if (showMoreButton) {
     showMoreButton.addEventListener('click', () => {
         displayedItems += 15;
             loadAndDisplayData(currentTab);
-            backtotop.style.display = 'block';
         
     });
 }
