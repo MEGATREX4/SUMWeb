@@ -57,8 +57,10 @@ function autoOpenTab(tabName) {
         case 'official':
             showOfficialTranslations();
             break;
+        case 'frommembers':
+            loadAndDisplayFromMembersTranslations();
         default:
-            // Виконати дії за замовчуванням, якщо вкладка не відома
+            showAllTranslations();
             break;
     }
 }

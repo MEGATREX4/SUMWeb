@@ -85,9 +85,7 @@ body {
 
 }
 
-#notcompleted{
-    cursor: default;
-}
+
 
 .header {
     color: #dbe1f8;
@@ -300,31 +298,6 @@ body {
     margin-bottom: 40px;
 }
 
-.notcompleted{
-    background: linear-gradient(135deg,
-    rgba(126, 113, 41,.3)0%,
-    rgba(126, 113, 41,.3) 25%,
-    rgba(197, 186, 118,.3) 25%,
-    rgba(197, 186, 118,.3) 50%,
-    rgba(126, 113, 41,.3) 50%,
-    rgba(126, 113, 41,.3) 75%,
-    rgba(197, 186, 118,.3) 75%,
-    rgba(197, 186, 118,.3) 100%);
-}
-
-.notcompleted:hover{
-    background: linear-gradient(135deg,
-    rgba(126, 113, 41,.3)0%,
-    rgba(126, 113, 41,.3) 25%,
-    rgba(197, 186, 118,.3) 25%,
-    rgba(197, 186, 118,.3) 50%,
-    rgba(126, 113, 41,.3) 50%,
-    rgba(126, 113, 41,.3) 75%,
-    rgba(197, 186, 118,.3) 75%,
-    rgba(197, 186, 118,.3) 100%);
-
-    color: white;
-}
 
 
 .footer {

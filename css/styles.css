@@ -123,7 +123,7 @@ body {
 }
 
 #notcompleted{
-    cursor: default;
+    cursor: pointer;
 }
 
 .header {
@@ -364,14 +364,14 @@ body {
 
 .notcompleted:hover{
     background: linear-gradient(135deg,
-    rgba(197, 186, 118,.3)0%,
-    rgba(197, 186, 118,.3) 25%,
-    rgba(126, 113, 41,.3) 25%,
-    rgba(126, 113, 41,.3) 50%,
-    rgba(197, 186, 118,.3) 50%,
-    rgba(197, 186, 118,.3) 75%,
-    rgba(126, 113, 41,.3) 75%,
-    rgba(126, 113, 41,.3) 100%);
+    rgba(99, 89, 34, 0.6)0%,
+    rgba(99, 89, 34, 0.6) 25%,
+    rgba(167, 158, 106, 0.6) 25%,
+    rgba(167, 158, 106, 0.6) 50%,
+    rgba(99, 89, 34, 0.6) 50%,
+    rgba(99, 89, 34, 0.6) 75%,
+    rgba(167, 158, 106, 0.6) 75%,
+    rgba(167, 158, 106, 0.6) 100%);
 
     color: white;
 }
@@ -476,4 +476,5 @@ body, html {
 
 .spantranslate{
     font-size: 10px;
+    opacity: 40%;
 }
