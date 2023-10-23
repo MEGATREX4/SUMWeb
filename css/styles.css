@@ -350,7 +350,7 @@ body {
     margin-bottom: 40px;
 }
 
-.notcompleted{
+.notcompleted, .NotCompletedTab{
     background: linear-gradient(135deg,
     rgba(126, 113, 41,.3)0%,
     rgba(126, 113, 41,.3) 25%,
