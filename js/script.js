@@ -82,9 +82,15 @@ if (item.description === "") {
         // Перевірка значення тегу 'completed'
         if (item.completed === false) {
             // Якщо 'completed' дорівнює false, встановлюємо текст кнопки "в процесі"
-            translationButton.textContent = 'В процесі';
             translationButton.classList.add('notcompleted'); // Додаємо клас 'notcompleted'
             translationButton.setAttribute("id", "notcompleted");
+            translationButton.href = 'https://www.buymeacoffee.com/megatrex4';
+            siteURL = 'https://www.buymeacoffee.com/megatrex4';
+            const siteName = extractSiteName(siteURL);
+            translationButton.innerHTML = `В процесі&ensp; <span class="spantranslate">(${siteName})</span>`;
+            translationButton.href = siteURL;
+
+
         } else {
             // Інакше встановлюємо текст кнопки "Переклад"
             translationButton.textContent = 'Переклад';
