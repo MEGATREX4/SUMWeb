@@ -476,6 +476,4 @@ body, html {
 
 .spantranslate{
     font-size: 10px;
-    position: absolute;
-    bottom: calc(+25px);
 }
