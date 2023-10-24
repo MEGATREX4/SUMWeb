@@ -300,7 +300,29 @@ body {
     opacity: 50%;
     margin-top: -10px;
     font-family: 'Noto Serif', serif;
+    display: inline-block;
 }
+
+
+    .scrolling-text {
+        white-space: nowrap; /* Prevent text from wrapping to the next line */
+        overflow: hidden; /* Hide the overflow text */
+        position: relative; /* Needed for animation */
+    }
+
+    .scrolling-text p {
+        display: inline-block;
+        animation: scroll 10s linear infinite; /* Adjust speed as needed */
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(20%); /* Start from the right edge */
+        }
+        100% {
+            transform: translateX(-100%); /* Scroll to the left edge */
+        }
+    }
 
 .tab, #searchbtn, .addbutton, #show-more-button, .soc-button{
     font-size: 17px;

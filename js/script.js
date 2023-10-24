@@ -66,14 +66,24 @@ if (item.description === "") {
         popupElement.style.display = 'none'; // Приховувати pop-up, якщо текст менше 100 символів
     }
 }
-
-        
-
-        // Додавання імені автора або "команда СУМ", якщо автор не вказаний
         const authorElement = document.createElement('p');
         authorElement.classList.add('author');
         authorElement.textContent = `Автор(и): ${item.author || 'Команда СУМ'}`;
-
+        
+        // Create a container div for the author and its scrolling effect
+        const authorContainer = document.createElement('div');
+        authorContainer.classList.add('author-container');
+        
+        // Add the author element to the author container
+        authorContainer.appendChild(authorElement);
+        
+        // Check if the author text has more than 27 characters and add the scrolling effect if true
+        if (authorElement.textContent.length > 28) {
+            authorContainer.classList.add('scrolling-text');
+        }
+        
+        // Add the author container to the item container
+        itemContainer.appendChild(authorContainer);
         // Додавання кнопки "Переклад" з посиланням на GitHub
         const translationButton = document.createElement('a');
         translationButton.classList.add('translation-button');
@@ -156,7 +166,10 @@ if (item.description === "") {
         itemContainer.appendChild(titleElement);
         descriptionContainer.appendChild(descriptionElement);
         itemContainer.appendChild(descriptionContainer);
+        itemContainer.appendChild(authorContainer);
+        
         itemContainer.appendChild(authorElement); // Додавання елементу із ім'ям автора або "команда СУМ"
+        authorContainer.appendChild(authorElement);
         itemContainer.appendChild(translationButton); // Додавання кнопки "Переклад"
 
         cardContainer.appendChild(itemContainer);
