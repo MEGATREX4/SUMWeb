@@ -133,6 +133,10 @@
     
 }
 
+.coffee{
+    background-image: url(/images/coffee.png);
+}
+
 .mas{
     background-image: url(/images/socials/mastodon.png);
 }
@@ -146,7 +150,7 @@
     background-image: url(/images/socials/twitter.png);
 }
 
-.dona, .mono, .mas,.tel,.sky,.twi{
+.dona, .mono, .mas,.tel,.sky,.twi, .coffee{
     background-size:cover;
 }
 

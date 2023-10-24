@@ -96,7 +96,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": ""
+        "Link": "https://modrinth.com/mod/rottencreatures"
     },
     {
         "title": "Nether's Exoticism",
@@ -925,5 +925,14 @@
         "author": "",
         "completed": true,
         "Link": ""
+    },
+    {
+        "title": "Create",
+        "description": "Mod пропонує різноманітні інструменти та блоки для будівництва, декорування та естетичної автоматизації в стилі стімпанк.",
+        "image": "https://media.forgecdn.net/avatars/393/435/637588742363737916.png",
+        "verified": true,
+        "author": "Tapio, MartianDill, Eric_Mensy, Dasventur, Koto Fickus",
+        "completed": true,
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/create"
     }
 ]
