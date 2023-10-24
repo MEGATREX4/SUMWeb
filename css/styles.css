@@ -304,25 +304,31 @@ body {
 }
 
 
-    .scrolling-text {
-        white-space: nowrap; /* Prevent text from wrapping to the next line */
-        overflow: hidden; /* Hide the overflow text */
-        position: relative; /* Needed for animation */
-    }
+.scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
 
-    .scrolling-text p {
-        display: inline-block;
-        animation: scroll 10s linear infinite; /* Adjust speed as needed */
-    }
+.scrolling-text p {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    width: 100%; /* Ensure the text takes the full width */
+}
 
-    @keyframes scroll {
-        0% {
-            transform: translateX(20%); /* Start from the right edge */
-        }
-        100% {
-            transform: translateX(-100%); /* Scroll to the left edge */
-        }
+@keyframes scroll {
+    0% {
+        transform: translateX(10%);
     }
+    50% {
+        transform: translateX(-110%);
+    }
+    100%{
+        transform: translateX(10%);
+    }
+}
+
+    
 
 .tab, #searchbtn, .addbutton, #show-more-button, .soc-button{
     font-size: 17px;
