@@ -84,8 +84,8 @@ if (item.description === "") {
             // Якщо 'completed' дорівнює false, встановлюємо текст кнопки "в процесі"
             translationButton.classList.add('notcompleted'); // Додаємо клас 'notcompleted'
             translationButton.setAttribute("id", "notcompleted");
-            translationButton.href = 'https://www.buymeacoffee.com/megatrex4';
-            siteURL = 'https://www.buymeacoffee.com/megatrex4';
+            translationButton.href = item.Link || 'https://www.buymeacoffee.com/megatrex4';
+            siteURL = item.Link || 'https://www.buymeacoffee.com/megatrex4';
             const siteName = extractSiteName(siteURL);
             translationButton.innerHTML = `В процесі&ensp; <span class="spantranslate">(${siteName})</span>`;
             translationButton.href = siteURL;
@@ -557,7 +557,7 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
 
 
 
-
+showAllTranslations();
 // Завантажити дані з файлу game.json при запуску сторінки
 loadTranslationsFromFile('mods.json', 1, displayedItems);
 
