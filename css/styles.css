@@ -13,6 +13,12 @@ background-size: cover!important;
     body {
         font-size: 16px;
 
+    .tabs{
+        scale: 99%;
+    }
+    .tab{
+        min-width: 130px!important;
+    }
         
     }
     .margin{
@@ -100,9 +106,7 @@ background-size: cover!important;
         width: 60px!important;
         height: 60px!important;
     }
-    .tab{
-        min-width: 160px;
-    }
+
 }
 .pc-only{
     display: block;
@@ -350,11 +354,11 @@ button:hover{
 
 }
 
-.tab{
-    min-width: 180px;
+.tab, div.tab{
+    min-width: 150px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center!important;
+    align-items: center!important;
 }
 
 .translation-button {
