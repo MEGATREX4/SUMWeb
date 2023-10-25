@@ -274,7 +274,14 @@ body {
 
 .tabs {
     display: flex;
-    justify-content: center; /* Ця властивість центрує елементи горизонтально */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    min-width: 150px;
+    display: flex;
+    justify-content: center!important;
+    max-width: 960px;
 }
 
 .tab {
@@ -284,6 +291,14 @@ body {
     padding: 30px 20px;
     border-radius: 30px;
     margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    min-width: 150px;
+    display: flex;
+    justify-content: center!important;
 }
 
 .tab.active {
@@ -350,13 +365,6 @@ button:hover{
     -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.18);
     -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.18);
 
-}
-
-.tab, div.tab{
-    min-width: 150px;
-    display: flex;
-    justify-content: center!important;
-    align-items: center!important;
 }
 
 .translation-button {
