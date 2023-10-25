@@ -13,7 +13,6 @@
 }
 
 .textabout p {
-    flex: 1; /* Розширюємо textabout на всю доступну ширину */
     color:#dbe1f8;
 }
 
@@ -67,9 +66,10 @@
     margin-top: 20px;
     width: 100%;
     align-items: center;
-    justify-content: center; /* Додайте цей рядок для центрування тексту по горизонталі */
+    justify-content: center;
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .smalll:hover{
@@ -111,6 +111,8 @@
     padding: 20px;
     border-radius: 20px;
     color: #dbe1f8;
+    vertical-align:middle;
+    align-items: stretch;
 
 }
 
@@ -125,37 +127,48 @@
 
 
 .dona{
-    background-image: url(/images/Donatello.png);
+    background-image: url(https://i.ibb.co/5TWKmT3/Donatello.png);
 }
 
 .mono{
-    background-image: url(/images/monobank.png);
+    background-image: url(https://i.ibb.co/6tmFX5Q/monobank.png);
     
 }
 
 .coffee{
-    background-image: url(/images/coffee.png);
+    background-image: url(https://i.ibb.co/DQFNtYQ/coffee.png);
 }
 
 .mas{
-    background-image: url(/images/socials/mastodon.png);
+    background-image: url(https://i.ibb.co/MnSqzb0/mastodon.png);
 }
 .tel{
-    background-image: url(/images/socials/telegram.png);
+    background-image: url(https://i.ibb.co/XSnjmgr/telegram.png);
 }
 .sky{
-    background-image: url(/images/socials/bluesky.png);
+    background-image: url(https://i.ibb.co/Q9bvj3t/bluesky.png);
 }
 .twi{
-    background-image: url(/images/socials/twitter.png);
+    background-image: url(https://i.ibb.co/m9Xd6w3/twitter.png);
 }
 
 .dona, .mono, .mas,.tel,.sky,.twi, .coffee{
     background-size:cover;
 }
 
+.mas, .tel, .twi, .sky{
+    min-width: 59px;
+    min-height: 59px;
+    margin: 5px;
+}
+
 .mas:hover,.tel:hover,.sky:hover,.twi:hover{
     filter: grayscale(60%);
+}
+
+.don, .mono, .coffee{
+    min-width: 176px;
+    
 }
 
 .terms{

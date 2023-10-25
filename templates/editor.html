@@ -37,7 +37,7 @@
             {% for card in data %}
             <div class="card" data-title="{{ card.title }}">
                 <button class="delete-button"><i class="fa fa-trash" aria-hidden="true"></i> Видалити запис</button>
-                <img class="imageitem" src="{{ card.image or 'static/default-image.png' }}" alt="немає зображення">
+                <img class="imageitem" src="{{ card.image or 'https://i.ibb.co/wpwMCLY/default-image.png' }}" alt="немає зображення">
                 <h3>{{ card.title }}</h3>
                 <p>{{ card.description }}</p>
                 <span class="ver">Офіційно: {{ 'Так' if card.verified else 'Ні' }}</span>

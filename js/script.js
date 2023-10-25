@@ -30,7 +30,7 @@ function displayTranslations(data, currentPage, itemsPerPage) {
 if (item.image !== "") {
     imageElement.style.backgroundImage = `url('${item.image}')`;
 } else {
-    imageElement.style.backgroundImage = `url('images/default-image.png')`;
+    imageElement.style.backgroundImage = `url('https://i.ibb.co/wpwMCLY/default-image.png')`;
 }
 
 

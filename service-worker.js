@@ -5,7 +5,7 @@ const filesToCache = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/images/icon.png',
+  'https://i.ibb.co/tQsvMtK/android.png',
   // Add more paths to your static assets here
 ];
 
