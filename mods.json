@@ -739,7 +739,7 @@
     },
     {
         "title": "Tokenable Furnaces and Storage",
-        "description": "Додано кілька нових типів скринь, скринь з пастками, бочок, шалкерів, печей, плавильних печей, коптилень та мішочків, які є швидшими та ефективнішими, ніж ванільні аналоги.",
+        "description": "Додає кілька нових типів скринь, скринь з пастками, бочок, шалкерів, печей, плавильних печей, коптилень та мішочків, які є швидшими та ефективнішими, ніж ванільні аналоги.",
         "image": "https://i.ibb.co/CnN1RYc/amethyst-blast-front.png",
         "verified": false,
         "author": "Команда СУМ",
@@ -766,7 +766,7 @@
     },
     {
         "title": "RelicEX",
-        "description": "Додано сумісні елементи Trinket для атрибутів PlayerEx.",
+        "description": "Додає предмети які сумісні з Trinket для атрибутів PlayerEx.",
         "image": "https://cdn.modrinth.com/data/LwwtuiRk/icon.png",
         "verified": false,
         "author": "Команда СУМ",
