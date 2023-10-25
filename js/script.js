@@ -1,4 +1,5 @@
 //script.js
+
 function displayTranslations(data, currentPage, itemsPerPage) {
     const cardContainer = document.querySelector('.container-content #data-container');
     
@@ -76,6 +77,10 @@ if (item.description === "") {
         
         // Add the author element to the author container
         authorContainer.appendChild(authorElement);
+        authorElement.setAttribute('title', `Автор(и): ${item.author || 'Команда СУМ'}`);
+
+        
+
         
         // Check if the author text has more than 27 characters and add the scrolling effect if true
         if (authorElement.textContent.length > 28) {

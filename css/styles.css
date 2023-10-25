@@ -314,17 +314,18 @@ body {
     display: inline-block;
     animation: scroll 10s linear infinite;
     width: 100%; /* Ensure the text takes the full width */
+    
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(10%);
+        transform: translateX(3%);
     }
     50% {
-        transform: translateX(-110%);
+        transform: translateX(-100%);
     }
     100%{
-        transform: translateX(10%);
+        transform: translateX(3%);
     }
 }
 
