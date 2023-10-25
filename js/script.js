@@ -356,7 +356,7 @@ function loadAndDisplayData(tab) {
     } else if (tab === 'official') {
         dataToDisplay = officialData;
     } else if (tab === 'frommembers') {
-        dataToDisplay = fromMembersData;
+        dataToDisplay = frommembers;
     } else {
         dataToDisplay = minecraftData.concat(gamesData);
     }
@@ -459,17 +459,19 @@ function loadAndDisplayNotCompletedData() {
 
 function loadAndDisplayFromMembersTranslations() {
     // Set the current tab to 'frommembers'
+    
     currentTab = 'frommembers';
 
     // Define the file paths for the data
-    const fromMembersDataFiles = [
+    const frommembersFiles = [
         'other.json',
         'mods.json',
         // Add more file paths as needed
     ];
+    
 
     // Fetch data from each data file
-    const requests = fromMembersDataFiles.map(fileName => {
+    const requests = frommembersFiles.map(fileName => {
         return fetch(fileName)
             .then(response => response.json())
             .then(data => data);
@@ -481,19 +483,20 @@ function loadAndDisplayFromMembersTranslations() {
             const mergedData = [].concat(...dataArray); // Merge data from different files
 
             // Filter the data to show items from members
-            const fromMembersData = mergedData.filter(item => {
+            const frommembers = mergedData.filter(item => {
                 const author = item.author ? item.author.toLowerCase() : '';
                 return author !== '' && author.toLowerCase() !== 'команда сум';
             });
-
+            
             // Update the visibility of the "Show More" button
             const showMoreButton = document.getElementById('show-more-button');
             if (showMoreButton) {
-                showMoreButton.style.display = displayedItems >= fromMembersData.length ? 'none' : 'block';
+                showMoreButton.style.display = displayedItems >= frommembers.length ? 'none' : 'block';
             }
+            
 
             // Display translations from members
-            displayTranslations(fromMembersData.slice(0, displayedItems), 1, displayedItems);
+            displayTranslations(frommembers.slice(0, displayedItems), 1, displayedItems);
 
             // Set the active tab to "frommembers"
             setActiveTab(document.querySelector('[data-tab="frommembers"]'));
@@ -512,14 +515,23 @@ function loadAndDisplayFromMembersTranslations() {
 
 // Додайте обробник події для кнопки "Показати більше"
 // Add this event listener for the "Show More" button
+// Add this event listener for the "Show More" button
 const showMoreButton = document.getElementById('show-more-button');
 if (showMoreButton) {
     showMoreButton.addEventListener('click', () => {
-        displayedItems += 15;
+        displayedItems += 15; // Increase the number of displayed items
+
+        // Load and display more data based on the current tab
+        if (currentTab === 'frommembers') {
+            // Load more items for the "frommembers" tab
+            loadAndDisplayFromMembersTranslations();
+        } else {
+            // Load more items for other tabs
             loadAndDisplayData(currentTab);
-        
+        }
     });
 }
+
 
 
 
@@ -555,7 +567,7 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
             } else if (fileName === 'other.json') {
                 gamesData = data;
             }
-
+            displayedItems = 15;
             // Hide loading animation after loading the data
             const overlay = document.querySelector('.overlay');
             overlay.style.display = 'none';
