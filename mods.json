@@ -22,7 +22,7 @@
         "description": "технічний мод з певним шармом, заснований на ідеях та концепціях. Загалом, це про технології, натхненні реалізмом.",
         "image": "https://media.forgecdn.net/avatars/334/842/637469274508716717.png",
         "verified": true,
-        "author": "",
+        "author": "MEGATREX4, hnufelka",
         "completed": true,
         "Link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering"
     },
@@ -928,11 +928,20 @@
     },
     {
         "title": "Create",
-        "description": "Mod пропонує різноманітні інструменти та блоки для будівництва, декорування та естетичної автоматизації в стилі стімпанк.",
+        "description": "Мод пропонує різноманітні інструменти та блоки для будівництва, декорування та естетичної автоматизації в стилі стімпанк.",
         "image": "https://media.forgecdn.net/avatars/393/435/637588742363737916.png",
         "verified": true,
         "author": "Tapio, MartianDill, Eric_Mensy, Dasventur, Koto Fickus",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/create"
+        "Link": "https://modrinth.com/mod/create-fabric"
+    },
+    {
+        "title": "Create: Steam 'n' Rails",
+        "description": "Додає більше контенту в Create - залізниця чудовий інструмент для транспортування ваших ресурсів або створення мегабура який викопає вам весь чанк.",
+        "image": "https://cdn.modrinth.com/data/ZzjhlDgM/23d42e3d1c878cb77f9e74a3f78fed2d011ed937.png",
+        "verified": true,
+        "author": "",
+        "completed": true,
+        "Link": "https://modrinth.com/mod/create-steam-n-rails"
     }
 ]
