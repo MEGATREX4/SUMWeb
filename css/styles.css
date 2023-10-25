@@ -85,6 +85,8 @@ background-size: cover!important;
         height: 170px;
     }
 
+
+    
 }
 }
 @media (max-width: 443px){
@@ -97,6 +99,9 @@ background-size: cover!important;
     .searchbtn{
         width: 60px!important;
         height: 60px!important;
+    }
+    .tab{
+        min-width: 160px;
     }
 }
 .pc-only{
@@ -319,22 +324,29 @@ body {
 
 @keyframes scroll {
     0% {
-        transform: translateX(3%);
+        transform: translateX(30%);
     }
     50% {
-        transform: translateX(-100%);
+        transform: translateX(-105%);
     }
     100%{
-        transform: translateX(3%);
+        transform: translateX(30%);
     }
 }
 
-    
+button:hover{
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.98);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.98);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.98);
+}
 
 .tab, #searchbtn, .addbutton, #show-more-button, .soc-button{
     font-size: 17px;
     font-family: 'Rubik', sans-serif!important;
     font-weight: 200!important;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.18);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.18);
 
 }
 
@@ -438,16 +450,19 @@ body, html {
 
 .custom-tooltip {
     position: absolute;
-    background-color: #1d1b1e;
+    background-color: #293927;
     color: #e6e6e6;
     padding: 15px;
     border-radius: 15px;
     z-index: 999;
-    left: -50%;
-    top: -10px;
-    transform: translateX(-28%) translateY(-54%);
+    top: 0px;
+    transform: translateX(-50%) translateY(-10%);
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
+
 }
 
 
@@ -507,3 +522,5 @@ body, html {
     font-size: 10px;
     opacity: 40%;
 }
+
+

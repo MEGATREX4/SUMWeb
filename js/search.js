@@ -3,7 +3,7 @@ let allData = []; // Сюди зберігати всі дані з файлів
 
 // Функція завантаження даних з файлів і збереження їх
 function loadDataFromFiles() {
-    fetch('game.json')
+    fetch('other.json')
         .then(response => response.json())
         .then(data => {
             allData = allData.concat(data);
@@ -11,7 +11,7 @@ function loadDataFromFiles() {
             displayTranslations(allData, 1, 999999); // Змініть параметри, які вам потрібні
         })
         .catch(error => {
-            console.error('Помилка завантаження JSON даних з файлу game.json:', error);
+            console.error('Помилка завантаження JSON даних з файлу other.json:', error);
         });
 
     fetch('mods.json')

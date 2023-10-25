@@ -10,7 +10,7 @@
     },
     {
         "title": "Gobber 2",
-        "description": "Мод Gobber призначений для того, щоб зробити гру в Minecraft більш захоплюючою, надаючи покращену броню, інструменти та зброю.",
+        "description": "Мод Gobber призначений для того, щоб зробити гру більш захоплюючою, надаючи покращену броню, інструменти та зброю.",
         "image": "https://media.forgecdn.net/avatars/265/418/637229299628778865.png",
         "verified": false,
         "author": "",
@@ -22,7 +22,7 @@
         "description": "технічний мод з певним шармом, заснований на ідеях та концепціях. Загалом, це про технології, натхненні реалізмом.",
         "image": "https://media.forgecdn.net/avatars/334/842/637469274508716717.png",
         "verified": true,
-        "author": "MEGATREX4, hnufelka",
+        "author": "MEGATREX4, hnufelka, CakesTwix, ICHTLAY",
         "completed": true,
         "Link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering"
     },
@@ -91,7 +91,7 @@
     },
     {
         "title": "Rotten Creatures",
-        "description": "Мод, який має на меті додати до Minecraft багато нових чудових зомбі-мобів!",
+        "description": "Мод, який має на меті додати до гри багато нових чудових зомбі-мобів!",
         "image": "https://cdn.modrinth.com/data/5Zusp48B/47a8369c7bc216fdc69e2ab709d5c0a7b9f8e255.jpeg",
         "verified": true,
         "author": "",
@@ -226,7 +226,7 @@
     },
     {
         "title": "Create Stuff & Additions",
-        "description": "Додає нове обладнання, інструменти та гаджети, які підвищують ваші фізичні здібності та дають нові способи руху. Вам знадобляться різні види палива, такі як пар, теплова енергія або гідравлічна енергія, залежно від типу вашого обладнання. Цей мод також додає багато рецептів, які роблять деякі предмети Minecraft створюваними за допомогою нових способів.",
+        "description": "Додає нове обладнання, інструменти та гаджети, які підвищують ваші фізичні здібності та дають нові способи руху. Вам знадобляться різні види палива, такі як пар, теплова енергія або гідравлічна енергія, залежно від типу вашого обладнання. Цей мод також додає багато рецептів, які роблять деякі предмети гри створюваними за допомогою нових способів.",
         "image": "https://cdn.modrinth.com/data/aq9qUUQG/d2ca5daa0a97d343afc67d273f3b5f6eeac2ba52.png",
         "verified": false,
         "author": "",
@@ -850,7 +850,7 @@
         "description": "Магічний мод, що базується на розвитку та дослідженні, де ви комбінуєте кольори для створення магічних інструментів і машин, з кінцевою метою дізнатися, що лежить під колись непроникною підлогою Bedrock.",
         "image": "https://cdn.modrinth.com/data/3rc31Hgo/70ab94a9c980769dd3f2d17850aef9f6df497ab7.png",
         "verified": false,
-        "author": "",
+        "author": "Команда СУМ(MEGATREX4, hnufelka)",
         "completed": false,
         "Link": ""
     },
@@ -907,15 +907,6 @@
         "author": "",
         "completed": true,
         "Link": "https://modrinth.com/mod/tools-complement"
-    },
-    {
-        "title": "Biome Makeover",
-        "description": "Мод, який бере біоми ванілі і надає їм свіжий шар фарби.",
-        "image": "https://cdn.modrinth.com/data/jG8Q2YwT/icon.png",
-        "verified": false,
-        "author": "Команда СУМ",
-        "completed": false,
-        "Link": ""
     },
     {
         "title": "Overworld Quartz ore",

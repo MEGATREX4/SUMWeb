@@ -138,7 +138,7 @@ if (item.description === "") {
                     const tooltip = document.querySelector('.custom-tooltip');
                     if (tooltip) {
                         // Задати текст підказки відповідно до вашого потреби
-                        tooltip.querySelector('.tooltip-content').textContent = 'Ця відмітка означає що розробник додав переклад в свій мод і він вже вбудований, нічого довантажувати не треба';
+                        tooltip.querySelector('.tooltip-content').textContent = item.tolltip || 'Ця відмітка означає що розробник додав переклад в свій продукт і він вже вбудований, нічого довантажувати і встановлювати не треба';
                         
                         // Показати підказку і визначити її позицію
                         tooltip.style.display = 'block';
@@ -385,7 +385,7 @@ function loadOfficialData() {
 
     // You should provide the file paths for the official data files
     const officialDataFiles = [
-        'game.json',
+        'other.json',
         'mods.json',
         // Add more file paths as needed
     ];
@@ -423,7 +423,7 @@ function loadAndDisplayNotCompletedData() {
 
     // You should provide the file paths for the not completed data files
     const notCompletedDataFiles = [
-        'game.json',
+        'other.json',
         'mods.json',
         // Add more file paths as needed
     ];
@@ -463,8 +463,8 @@ function loadAndDisplayFromMembersTranslations() {
 
     // Define the file paths for the data
     const fromMembersDataFiles = [
+        'other.json',
         'mods.json',
-        'game.json',
         // Add more file paths as needed
     ];
 
@@ -552,7 +552,7 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
         .then(data => {
             if (fileName === 'mods.json') {
                 minecraftData = data;
-            } else if (fileName === 'game.json') {
+            } else if (fileName === 'other.json') {
                 gamesData = data;
             }
 
@@ -576,11 +576,11 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
 
 
 showAllTranslations();
-// Завантажити дані з файлу game.json при запуску сторінки
+// Завантажити дані з файлу other.json при запуску сторінки
 loadTranslationsFromFile('mods.json', 1, displayedItems);
 
 // Завантажити дані з файлу mods.json при запуску сторінки
-loadTranslationsFromFile('game.json', 1, displayedItems);
+loadTranslationsFromFile('other.json', 1, displayedItems);
 
 // Відображення всіх перекладів за замовчуванням при завантаженні сторінки
 showAllTranslations();
