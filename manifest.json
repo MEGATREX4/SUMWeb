@@ -1,7 +1,7 @@
 {
     "name": "Спільнота Українізації Модів",
     "short_name": "СУМ",
-    "start_url": "",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#7e292a",
     "theme_color": "#000000",
