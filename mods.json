@@ -147,10 +147,10 @@
         "title": "Applied Energistics 2",
         "description": "Applied Energistics 2 (AE2) - це комплексний мод для Minecraft, який представляє унікальний підхід до управління внутрішньоігровими запасами.",
         "image": "https://i.ibb.co/Brq3L82/controller.png",
-        "verified": false,
+        "verified": true,
         "author": "",
         "completed": true,
-        "Link": ""
+        "Link": "https://modrinth.com/mod/ae2"
     },
     {
         "title": "Bartering Station",
