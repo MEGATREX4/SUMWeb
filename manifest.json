@@ -1,15 +1,59 @@
 {
-    "name": "Спільнота Українізації Модів",
     "short_name": "СУМ",
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#7e292a",
-    "theme_color": "#000000",
+    "name": "Спільнота українізації модів",
     "icons": [
       {
-        "src": "/images/android.png",
-        "sizes": "144x144",
-        "type": "image/png"
+        "src": "/icons/android.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "/icons/android.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#7e292a",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#0000",
+    "shortcuts": [
+      {
+        "name": "Головна",
+        "short_name": "Головна",
+        "url": "index.html",
+        "icons": [
+          {
+            "src": "/icons/home.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          }
+        ]
+      },
+      {
+        "name": "Додати переклад",
+        "short_name": "Додати",
+        "url": "addtranslation.html",
+        "icons": [
+          {
+            "src": "/icons/plus.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          }
+        ]
+      },
+      {
+        "name": "Про нас",
+        "short_name": "Про нас",
+        "url": "about.html",
+        "icons": [
+          {
+            "src": "/icons/user.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          }
+        ]
       }
     ]
   }
