@@ -53,7 +53,6 @@
 <div class="containerform">
     <div class="mobile-only"> </div>
     <div class="form">
-        <button id="goBackButton"><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp&nbspНазад</button>
         <h2>Додавання перекладу мода</h2>
         <form id="translationForm" action="https://docs.google.com/forms/d/e/1FAIpQLSd-uYhHxSskbOC_64FonftTAV6zjs2yiyAP4kMU62v17TSdhg/formResponse">
         <div class="forminput">
@@ -94,6 +93,17 @@
 </div>
 </div>
 
+
+<div class="mobile-only mobile-only-visability">
+    <div class="mobilecontainer">
+        <button class="home"><i class="fa fa-home" aria-hidden="true"></i></button>            
+        <button class="share" id="sharebtn" onclick="window.open('/about.html', '_self')"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+        <button class="addbutton" onclick="window.open('/addtranslation.html', '_self')" id="addbutton"><i class="fa fa-plus faadd mobileadd" aria-hidden="true"></i></button>
+        <button class="search" id="searchbtn" id="scrollButton" onclick="focusSearchInput()"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <button class="info"><i class="fa fa-info" aria-hidden="true"></i></button> 
+
+    </div>
+</div>
 <script>
     const goBackButton = document.getElementById('goBackButton');
   
@@ -149,7 +159,7 @@
     <div class="footer">
         <p>&copy; 2023 Спільнота українізації модів</p>
         <p>Створено в Києві з 💜</p>
-        <p>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</p>
+        <p class="margin">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</p>
 
     </div>
 
