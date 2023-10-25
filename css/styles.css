@@ -73,6 +73,8 @@ background-size: cover!important;
     }
     .margin{
         margin-bottom: calc(+20%);
+        margin-left: 10px;
+        margin-right: 30px;
     }
 
     .header {
