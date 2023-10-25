@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/load.css">
     <link rel="stylesheet" href="css/notcompleted.css">
+    <link rel="manifest" href="/manifest.json">
+
 
     <meta property="og:title" content="Спільнота українізації модів">
     <meta property="og:description" content="Тут ви зможете зайти переклади модів для майнкрафту, або перелкди інших ігор, також можна запропонувати свій переклад(виключно моди майнкрафт)">
@@ -40,7 +42,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet"></head>
 <body>
+    <script>
+                if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch((error) => {
+              console.error('Service Worker registration failed:', error);
+            });
+        }
 
+    </script>
 
     <script src="js/tabs.js"></script>
 
