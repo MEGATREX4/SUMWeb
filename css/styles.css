@@ -6,6 +6,58 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 background-color: #1d1b1e;
 background-size: cover!important;
 }
+
+@media (max-width: 768px) {
+    /* Adjust header font size and padding */
+    .header .headertext {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+    
+    /* Center-align text in header */
+    .header-content img,
+    .header-content .headertext {
+        text-align: center;
+    }
+    
+    /* Style search input and button for mobile */
+    .search-container input[type="text"] {
+        width: 80%;
+        margin-right: 0;
+    }
+    
+    .search-container button#searchbtn {
+        width: 18%;
+    }
+    
+    /* Center-align tab text for mobile */
+    .tabs .tab {
+        text-align: center;
+    }
+    
+    /* Adjust container padding */
+    .container-content {
+        padding: 20px;
+    }
+    
+    /* Style "Show More" button for mobile */
+    .show-more-button {
+        width: 100%;
+    }
+    
+    /* Mobile menu buttons */
+    .mobile-only button {
+        width: 20%;
+    }
+    
+    /* Hide the PC-only class */
+    .pc-only {
+        display: none;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     html{
         background-size: cover!important;
