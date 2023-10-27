@@ -1,12 +1,10 @@
-const cacheName = 'your-app-cache-v1';
+const cacheName = 'SUMTRANSLATE BETA 0.9';
+const maxImageAge = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 
 // Files to cache
-const filesToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
+const imageFilesToCache = [
   'https://i.ibb.co/tQsvMtK/android.png',
-  // Add more paths to your static assets here
+  // Add more image URLs to be cached here
 ];
 
 // Install event
@@ -14,7 +12,8 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(cacheName)
       .then((cache) => {
-        return cache.addAll(filesToCache);
+        // Cache only image files
+        return cache.addAll(imageFilesToCache);
       })
   );
 });
@@ -39,30 +38,44 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
-        // Cache hit - return response
         if (response) {
+          // Check if the cached image is too old
+          const cachedDate = new Date(response.headers.get('date'));
+          const currentDate = new Date();
+          if (currentDate - cachedDate > maxImageAge) {
+            // Image is older than the threshold, refresh it
+            return fetchAndCache(event.request);
+          }
           return response;
         }
 
-        // Clone the request because it's a stream and can only be consumed once
-        const fetchRequest = event.request.clone();
+        const url = new URL(event.request.url);
 
-        return fetch(fetchRequest).then((response) => {
-          // Check if we received a valid response
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
-          }
-
-          // Clone the response to cache it
-          const responseToCache = response.clone();
-
-          caches.open(cacheName)
-            .then((cache) => {
-              cache.put(event.request, responseToCache);
-            });
-
-          return response;
-        });
+        if (imageFilesToCache.includes(url.href)) {
+          // Image is not in the cache, fetch it and cache it
+          return fetchAndCache(event.request);
+        } else {
+          // For non-image files, fetch them directly from the network
+          return fetch(event.request);
+        }
       })
     );
 });
+
+function fetchAndCache(request) {
+  return fetch(request).then((response) => {
+    if (!response || response.status !== 200 || response.type !== 'basic') {
+      return response;
+    }
+
+    // Clone the response to cache it
+    const responseToCache = response.clone();
+
+    caches.open(cacheName)
+      .then((cache) => {
+        cache.put(request, responseToCache);
+      });
+
+    return response;
+  });
+}

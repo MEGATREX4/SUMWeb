@@ -84,6 +84,7 @@ background-size: cover!important;
     .pc-only{
         display: none!important;
     }
+    
     .mobile-only-visability{
         display: block!important; /* Показувати меню на мобільних пристроях */
     }

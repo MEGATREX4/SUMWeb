@@ -934,5 +934,14 @@
         "author": "Команда СУМ, MartianDill, Eugene Hordei",
         "completed": true,
         "Link": "https://modrinth.com/mod/create-steam-n-rails"
+    },
+    {
+        "title": "Presence Footsteps",
+        "description": "Мод на звуки ходьби, це все...",
+        "image": "https://cdn.modrinth.com/data/rcTfTZr3/icon.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
     }
 ]
