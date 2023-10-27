@@ -129,7 +129,11 @@ if (item.description === "") {
                 // Створити значок <i> для галочки
                 
                 const icon = document.createElement('i');
-                itemContainer.id = 'verified';
+                if (item.hasOwnProperty('semiverified') && item['semiverified'] === true) {
+                    itemContainer.id = 'semiverified';
+                  } else {
+                    itemContainer.id = 'verified';
+                  }
                 icon.classList.add('fa', 'fa-question-circle-o', 'translation-icon', 'left-icon'); // Додати класи для значка галочки
                 
             
@@ -138,7 +142,7 @@ if (item.description === "") {
                     const tooltip = document.querySelector('.custom-tooltip');
                     if (tooltip) {
                         // Задати текст підказки відповідно до вашого потреби
-                        tooltip.querySelector('.tooltip-content').textContent = item.tolltip || 'Ця відмітка означає що розробник додав переклад в свій продукт і він вже вбудований, нічого довантажувати і встановлювати не треба';
+                        tooltip.querySelector('.tooltip-content').textContent = item.tooltip || 'Ця відмітка означає що розробник додав переклад в свій продукт і він вже вбудований, нічого довантажувати і встановлювати не треба';
                         
                         // Показати підказку і визначити її позицію
                         tooltip.style.display = 'block';

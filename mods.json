@@ -94,9 +94,12 @@
         "description": "Мод, який має на меті додати до гри багато нових чудових зомбі-мобів!",
         "image": "https://cdn.modrinth.com/data/5Zusp48B/47a8369c7bc216fdc69e2ab709d5c0a7b9f8e255.jpeg",
         "verified": true,
-        "author": "",
+        "author": "Команда СУМ, unroman",
         "completed": true,
-        "Link": "https://modrinth.com/mod/rottencreatures"
+        "Link": "https://modrinth.com/mod/rottencreatures",
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
+        "semiverified": true
+
     },
     {
         "title": "Nether's Exoticism",
@@ -678,10 +681,10 @@
         "title": "Chronopyre",
         "description": "Вночі або під час грози гравці можуть клацнути правою кнопкою миші на запаленому багатті порожньою рукою, щоб почати відпочивати біля нього. Коли достатня кількість гравців відпочине, що визначається звичайним ігровим правилом \"Відсоток сплячих гравців\", хід часу прискориться, перетворивши ніч, яка зазвичай триває 10 хвилин, на 2 хвилини. ",
         "image": "https://cdn.modrinth.com/data/cwSDoWuv/icon.png",
-        "verified": false,
+        "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": ""
+        "Link": "https://modrinth.com/mod/chronopyre"
     },
     {
         "title": "Block Runner",
@@ -697,7 +700,7 @@
         "description": "API(бібліотека з функціями) для інших модів в RPG Series.",
         "image": "https://cdn.modrinth.com/data/XvoWJaA2/9f3d222d82aebadd5325ae53a927463f1e20abd0.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "Команда СУМ, unroman",
         "completed": true,
         "Link": "https://modrinth.com/mod/spell-engine"
     },
@@ -868,7 +871,7 @@
         "description": "🧙🏻‍♂️ Знищуйте ворогів за допомогою таємної магії, магії вогню та морозу",
         "image": "https://cdn.modrinth.com/data/NkGaQMDA/affd534063e5388c759a9415988091e9804dce2a.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "Команда СУМ, unroman",
         "completed": true,
         "Link": "https://modrinth.com/mod/wizards"
     },
@@ -943,5 +946,175 @@
         "author": "",
         "completed": true,
         "Link": null
+    },
+    {
+        "title": "Sprint O' Meter",
+        "description": "Широко налаштовувана система витривалості.",
+        "image": "https://cdn.modrinth.com/data/exveatcq/icon.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "Your Reputation",
+        "description": "Плагін WTHIT/Jade, який відображає вашу репутацію у підказці з кожним селянином.",
+        "image": "https://cdn.modrinth.com/data/MrLyhFlg/89f913657af93613aab2d1c8fe92ea4dee947746.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "More Banner Features",
+        "description": "Додано багато нових крутих функцій для стягів.",
+        "image": "https://cdn.modrinth.com/data/FOaR4sIZ/e9747b0a53bcfac270fec714ddcb18252f44ce5f.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "MC Dungeons Armors",
+        "description": "Ви коли-небудь хотіли мати обладунки з Minecraft Dungeons у своєму світі Minecraft? Ну, тепер це можливо! MC Dungeons Armors [MCDA] має на меті (з часом) перенести всі ці обладунки, і навіть більше, з Minecraft Dungeons до Minecraft.",
+        "image": "https://media.forgecdn.net/avatars/338/757/637478036163612181.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "MC Dungeons Enchanting",
+        "description": "Тепер, з існуванням модів MC Dungeons Weapons та MC Dungeons Armor для Fabric, єдиною складовою, якої бракує для розширення можливостей спорядження в Minecraft Dungeons, є унікальна система зачарування. Що ж, MC Dungeons Enchanting додає цю систему в Minecraft Java!",
+        "image": "https://cdn.modrinth.com/data/iwkcspV8/d8d859f66af46006ee01ddce0e5e6d0e4831bfc1.png",
+        "verified": true,
+        "author": "",
+        "completed": true,
+        "Link": null,
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
+        "semiverified": true
+
+    },
+    {
+        "title": "Mana Visualizer",
+        "description": "Простий мод, додає в Ботанію відображення кількості мани в басейнах.",
+        "image": "https://cdn.modrinth.com/data/YcdpjV3k/c03e83fed475339350fe326797c2bcd1d0c406b8.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "Guarding",
+        "description": "Простий мод для Fabric, який додає нові функції до щитів, щоб зробити їх більш довершеними.",
+        "image": "https://cdn.modrinth.com/data/aV1COQ7a/06f546fee278185cbd142b93ca7e60feed017020.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "Fabric Shield Lib",
+        "description": "Додає щитам можливість зачарування, а також є чудовим інструментом, за допомогою якого модороби можуть легко додавати нові щити та зачарування для щитів!",
+        "image": "https://cdn.modrinth.com/data/7SDalH12/icon.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "Expanded copper",
+        "description": "Додає більше \"м'яких\" до ваніли застосувань для міді.",
+        "image": "https://cdn.modrinth.com/data/kJ08cVvv/42b268e6f31ace5bcd9c1691e59f1f98fc6fa9d4.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "Equipment Compare",
+        "description": "Порівняння екіпірованих інструментів, зброї та обладунків.",
+        "image": "https://media.forgecdn.net/avatars/476/686/637770200277803086.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "Link": ""
+    },
+    {
+        "title": "Echo Chest",
+        "description": "Додає абсолютно новий тип скрині! Працює як звичайна скриня, але з родзинкою: будь-які предмети, що падають поблизу (в радіусі 8 блоків), будуть швидко зібрані скринею. ",
+        "image": "https://cdn.modrinth.com/data/m3pkVbY8/b873e18b049ca60825ba62cfde75568e93ff6193.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "Dark Waters",
+        "description": " Він додає нових мобів, які з'являються лише під час штормів в океані.  У штормах є щось приховане, і воно наближається.  Якщо ви почуєте грім.... вже занадто пізно.",
+        "image": "https://cdn.modrinth.com/data/pe7gyI14/icon.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "Deeper and Darker",
+        "description": "Більше блоків, предметів, обладунків і прихованих таємниць, що доповнюють новий біом Deep Dark.",
+        "image": "https://cdn.modrinth.com/data/fnAffV0n/cbcb38cd738e0b0d1c4b583d5bfb56838a4b101d.png",
+        "verified": false,
+        "author": "",
+        "completed": false,
+        "Link": null
+    },
+    {
+        "title": "Improved End",
+        "description": "Мод, який додає тонни нових блоків, біомів та мобів до Енду.",
+        "image": "https://cdn.modrinth.com/data/1qFhISD7/df7dcb73db634df5508b348ae129312129f06f1a.png",
+        "verified": false,
+        "author": "",
+        "completed": false,
+        "Link": null
+    },
+    {
+        "title": "Critters and Companions",
+        "description": "Додає кілька нових милих друзів у ваш світ!",
+        "image": "https://cdn.modrinth.com/data/Yd4wb5wZ/23a98a43d2f494e58da746ad00ff7bcffa3b36d2.png",
+        "verified": true,
+        "author": "",
+        "completed": true,
+        "Link": null,
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman та mewnn, можна знайти на Curse Forge або Modrinth",
+        "semiverified": true
+    },
+    {
+        "title": "Jewelry (RPG Series)",
+        "description": "Ще один з модів RPG Series, додає декілька різних типів, ювелірних прикрас з різними покращеннями гравця.",
+        "image": "https://cdn.modrinth.com/data/sNJAIjUm/7222c935fe80cdee63617b79427736e5616f2512.png",
+        "verified": false,
+        "author": "Команда СУМ",
+        "completed": true,
+        "Link": ""
+    },
+    {
+        "title": "Cosmetic Armor",
+        "description": "До слотів Trinkets додається ще один – косметична броня, дуже цікава у використанні механіка, можна разом носити гарну броню і міцну.",
+        "image": "https://media.forgecdn.net/avatars/332/317/637463248304263412.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "Link": null
+    },
+    {
+        "title": "Better Combat",
+        "description": "⚔️ Легка, видовищна та весела система ближнього бою від Minecraft Dungeons.",
+        "image": "https://cdn.modrinth.com/data/5sy6g3kz/icon.png",
+        "verified": true,
+        "author": "Команда СУМ, unroman",
+        "completed": true,
+        "Link": null,
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
+        "semiverified": true
+
     }
 ]

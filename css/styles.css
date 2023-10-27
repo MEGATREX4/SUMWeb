@@ -247,6 +247,10 @@ body {
     box-shadow:0px 0px 0px 3px #4e6d4a inset;
 }
 
+#semiverified{
+    box-shadow:0px 0px 0px 3px #b48457 inset!important;
+}
+
 
 
 .image-container {
@@ -532,6 +536,33 @@ body, html {
 
 
 .custom-tooltip .tooltip-content {
+    /* Стилі для вмісту підказки */
+    max-width: 200px; /* Обмежити ширину тексту до 200 пікселів */
+    overflow: auto; /* Додати прокручування, якщо текст не поміщається */
+    white-space: normal; /* Дозволити перенос тексту */
+    word-wrap: break-word; /* Розділити слова, якщо вони не вміщаються */
+}
+
+
+.semicustom-tooltip {
+    position: absolute;
+    background-color: #755d45;
+    color: #e6e6e6;
+    padding: 15px;
+    border-radius: 15px;
+    z-index: 999;
+    top: 0px;
+    transform: translateX(-50%) translateY(-10%);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.28);
+
+}
+
+
+.semicustom-tooltip .semitooltip-content {
     /* Стилі для вмісту підказки */
     max-width: 200px; /* Обмежити ширину тексту до 200 пікселів */
     overflow: auto; /* Додати прокручування, якщо текст не поміщається */

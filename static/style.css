@@ -41,7 +41,7 @@ body {
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .card-container, .card {
@@ -52,7 +52,10 @@ body {
     align-content: flex-start;
     align-items: flex-start;
 }
-
+.addinputp{
+    width: 40%!important;
+    display: flex;
+}
 
 .card {
     display: flex!important;
@@ -66,10 +69,8 @@ body {
     text-align: left;
     min-height: 450px!important;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
     flex-wrap: nowrap;
+    align-items: center;
 }
 .delete-button{
     width: 50%!important;
@@ -114,9 +115,9 @@ body {
 }
 
 .dialog input {
-    width: 100%;
+    width: 70%!important;
     padding: 5px;
-    margin: 5px 0;
+    margin: 5px 5px;
 }
 
 .dialog button {
@@ -136,21 +137,16 @@ body {
     border: 1px solid #7e292a;
     display: flex!important;
     position: absolute;
-    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
     background-color: #2b2222;
     padding: 50px 0;
     font-family: 'Ubuntu', sans-serif;
     color: #dbe1f8;
     height: 300px;
-    width: 200px;
+    width: 260px;
     cursor: move;
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     bottom: 35%;
     right: 20px;
@@ -158,11 +154,17 @@ body {
     z-index: 1000;
     border-radius: 20px;
     box-shadow: -7px -6px 21px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: -7px -6px 21px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -7px -6px 21px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -7px -6px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -7px -6px 21px 0px rgba(0,0,0,0.75);
+    justify-content: center;
+    align-content: space-around;
+
 }
 
-
+input {
+    padding: 20px!important;
+    width: 89%;
+}
 .addbutttt{
     display: flex!important;
     justify-content: center;
