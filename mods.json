@@ -99,7 +99,6 @@
         "Link": "https://modrinth.com/mod/rottencreatures",
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true
-
     },
     {
         "title": "Nether's Exoticism",
@@ -993,7 +992,6 @@
         "Link": null,
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true
-
     },
     {
         "title": "Mana Visualizer",
@@ -1115,6 +1113,14 @@
         "Link": null,
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true
-
+    },
+    {
+        "title": "Archeology Mod",
+        "description": "Додає археологію з Minecraft Live 2020 на старі версії гри(1.17-1.19)",
+        "image": "https://cdn.modrinth.com/data/LWE2KdIY/178fbaad3c8212c16509520c7da018119d4bd3f1.png",
+        "verified": true,
+        "author": "Команда СУМ",
+        "completed": true,
+        "Link": "https://modrinth.com/mod/archeology"
     }
 ]
