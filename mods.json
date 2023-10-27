@@ -572,10 +572,13 @@
         "title": "Artifacts",
         "description": "Має на меті зробити дослідження більш корисним, додаючи різні потужні предмети, які не можна виготовити.",
         "image": "https://cdn.modrinth.com/data/P0Mu4wcQ/icon.png",
-        "verified": false,
+        "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": ""
+        "Link": "",
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge та Modrinth",
+        "semiverified": true
+
     },
     {
         "title": "Naturalist",
