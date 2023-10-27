@@ -578,7 +578,6 @@
         "Link": "",
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge та Modrinth",
         "semiverified": true
-
     },
     {
         "title": "Naturalist",
@@ -855,7 +854,7 @@
         "description": "Магічний мод, що базується на розвитку та дослідженні, де ви комбінуєте кольори для створення магічних інструментів і машин, з кінцевою метою дізнатися, що лежить під колись непроникною підлогою Bedrock.",
         "image": "https://cdn.modrinth.com/data/3rc31Hgo/70ab94a9c980769dd3f2d17850aef9f6df497ab7.png",
         "verified": false,
-        "author": "Команда СУМ - MEGATREX4, hnufelka",
+        "author": "Команда СУМ",
         "completed": false,
         "Link": ""
     },
@@ -1125,5 +1124,14 @@
         "author": "Команда СУМ",
         "completed": true,
         "Link": "https://modrinth.com/mod/archeology"
+    },
+    {
+        "title": "MC Dungeons Weapons",
+        "description": "Ви коли-небудь хотіли мати зброю з підземель Minecraft у своєму світі Minecraft? Що ж, тепер це можливо! MC Dungeons Weapons (MCDW) має на меті (з часом) перенести всю цю зброю, і навіть більше, з Minecraft Dungeons до Minecraft.",
+        "image": "https://media.forgecdn.net/avatars/308/444/637391793275773439.png",
+        "verified": false,
+        "author": "",
+        "completed": false,
+        "Link": null
     }
 ]
