@@ -1091,10 +1091,10 @@
         "title": "Jewelry (RPG Series)",
         "description": "Ще один з модів RPG Series, додає декілька різних типів, ювелірних прикрас з різними покращеннями гравця.",
         "image": "https://cdn.modrinth.com/data/sNJAIjUm/7222c935fe80cdee63617b79427736e5616f2512.png",
-        "verified": false,
+        "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": ""
+        "Link": "https://modrinth.com/mod/jewelry"
     },
     {
         "title": "Cosmetic Armor",
@@ -1123,6 +1123,15 @@
         "verified": false,
         "author": "",
         "completed": false,
+        "Link": null
+    },
+    {
+        "title": "Projectile Damage Attribute",
+        "description": "Додає новий атрибут до луків та інших предметів які можуть метати снаряди.",
+        "image": "https://cdn.modrinth.com/data/AOyJhFvl/c28de9e969cab71d086e66b89a104ee019f0a6fb.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
         "Link": null
     }
 ]
