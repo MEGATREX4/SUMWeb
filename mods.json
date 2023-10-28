@@ -610,10 +610,10 @@
         "title": "Tiered",
         "description": "Кожен інструмент, зброя та обладунки, які ви виготовляєте, матимуть спеціальний модифікатор, який надає додаткові бонуси до статів та здібностей.",
         "image": "https://cdn.modrinth.com/data/fQL9oTmq/eac8f0456ff42af60eaf503e996a98f6107b0dee.png",
-        "verified": false,
+        "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": ""
+        "Link": "https://modrinth.com/mod/tieredz"
     },
     {
         "title": "Pure Copper Tools",
@@ -646,10 +646,10 @@
         "title": "Cosmetic Nametags",
         "description": "додає слот для ярликів/бірок до Trinkers, візуально змінюючи ваше ім'я користувача",
         "image": "https://cdn.modrinth.com/data/SL46MNwR/d6a46de9827ca68c91f360a6fd6d3c35d60d9a0c.png",
-        "verified": false,
+        "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": ""
+        "Link": "https://modrinth.com/mod/cosmetic-nametags"
     },
     {
         "title": "Hardcore Revival",
@@ -664,10 +664,10 @@
         "title": "EnvironmentZ",
         "description": "Додає суворі умови навколишнього середовища в Minecraft. Зберігайте прохолоду в спекотних і тепло в холодних біомів. Ви замерзнете, якщо температура опуститься до 0°C, якщо, звсіно, не захищені від холоду. Та переконайтеся, що не носите броню аби захистилися від спеки, якщо температура надто висока.",
         "image": "https://cdn.modrinth.com/data/TggYmc6t/4bab25a93f9e7f06aa22ff3cf44b8b1c829927d4.png",
-        "verified": false,
+        "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": ""
+        "Link": "https://modrinth.com/mod/environmentz"
     },
     {
         "title": "Cinderscapes",
@@ -999,10 +999,10 @@
         "title": "Mana Visualizer",
         "description": "Простий мод, додає в Ботанію відображення кількості мани в басейнах.",
         "image": "https://cdn.modrinth.com/data/YcdpjV3k/c03e83fed475339350fe326797c2bcd1d0c406b8.png",
-        "verified": false,
-        "author": "",
+        "verified": true,
+        "author": "Команда СУМ",
         "completed": true,
-        "Link": null
+        "Link": "https://modrinth.com/mod/mana-visualizer"
     },
     {
         "title": "Guarding",
@@ -1115,15 +1115,6 @@
         "Link": null,
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true
-    },
-    {
-        "title": "Archeology Mod",
-        "description": "Додає археологію з Minecraft Live 2020 на старі версії гри(1.17-1.19)",
-        "image": "https://cdn.modrinth.com/data/LWE2KdIY/178fbaad3c8212c16509520c7da018119d4bd3f1.png",
-        "verified": true,
-        "author": "Команда СУМ",
-        "completed": true,
-        "Link": "https://modrinth.com/mod/archeology"
     },
     {
         "title": "MC Dungeons Weapons",
