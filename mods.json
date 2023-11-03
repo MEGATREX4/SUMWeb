@@ -655,10 +655,10 @@
         "title": "Hardcore Revival",
         "description": "Ви коли-небудь грали з друзями в багатокористувацьку гру з гардкором, і раптом ваш товариш помер через дурну помилку, поки ви просто сиділи вдома? Зазвичай вам доводилося перезавантажувати гру, навіть якщо ви не зробили нічого поганого, але цей мод змінює це.",
         "image": "https://cdn.modrinth.com/data/HqKoXaXz/icon.png",
-        "verified": false,
+        "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": ""
+        "Link": "https://www.curseforge.com/minecraft/mc-mods/hardcore-revival"
     },
     {
         "title": "EnvironmentZ",
