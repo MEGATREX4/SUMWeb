@@ -620,3 +620,18 @@ body, html {
 }
 
 
+.count{
+    background-color: #7e292a!important;
+    color: #dbe1f8;
+    width: 40%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 15px 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}

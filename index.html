@@ -53,18 +53,25 @@
 
     <script src="js/tabs.js"></script>
 
+
+    
+
     <div class="header">
         <div class="header-content">
             <img src="header-image.png" alt="Спільнота українізації модів">
             <h1 id="targetElement" class="headertext">Спільнота українізації модів</h1>
+            
         </div>
     </div>
 
-            <div class="search-container">
+
+
+
+
+    <div class="search-container">
                 <button class="addbutton pc-only" onclick="window.open('/addtranslation.html', '_self')" id="addbutton"><i class="fa fa-plus faadd" aria-hidden="true"></i></button>
                 <input type="text" id="search" placeholder="Пошук...">
                 <button id="searchbtn" class="pc-only" onclick="performSearch()"><i class="fa fa-search" aria-hidden="true"></i></button>
-                
             </div>
 
     <div class="div">
@@ -90,11 +97,11 @@
 </script>
     <div class="concon">
     <div class="container">
-        
+        <div class="count">Всього перекладів&nbsp;<span id="translationCount">0</span></div>            
         <div class="container-content">
             <!-- Контейнер для карточок -->
             <div id="data-container">
-                <!-- Карточки будуть додаватися за допомогою JavaScript -->
+                                <!-- Карточки будуть додаватися за допомогою JavaScript -->
             </div>
             <div class="button-container">
             <button id="show-more-button" class="show-more-button">Показати більше</button>

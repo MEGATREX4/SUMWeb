@@ -383,6 +383,35 @@ function loadAndDisplayData(tab) {
     displayTranslations(dataToDisplay.slice(startIndex, endIndex), 1, displayedItems);
 }
 
+async function countElementsInJSONFile(filePath) {
+    try {
+        const response = await fetch(filePath);
+        const data = await response.json();
+        return data.length;
+    } catch (error) {
+        console.error('Error counting elements:', error);
+        return 0;
+    }
+}
+
+async function countTotalTranslations() {
+    const modsCount = await countElementsInJSONFile('mods.json');
+    const otherCount = await countElementsInJSONFile('other.json');
+
+    const totalTranslations = modsCount + otherCount;
+
+    // Display the total count in the specified element
+    const translationCountElement = document.getElementById('translationCount');
+    if (translationCountElement) {
+        translationCountElement.textContent = totalTranslations;
+    }
+}
+
+// Call the function to count and display the total translations
+countTotalTranslations();
+
+
+
 
 function loadOfficialData() {
     currentTab = 'official'; // Set the current tab to 'official'
