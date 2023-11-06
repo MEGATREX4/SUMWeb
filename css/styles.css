@@ -623,8 +623,8 @@ body, html {
 .count{
     background-color: #7e292a!important;
     color: #dbe1f8;
-    width: 40%;
-    height: 40px;
+    width: 70%;
+    height: 50px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
