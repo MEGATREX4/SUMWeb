@@ -47,7 +47,7 @@ background-size: cover!important;
     
     /* Mobile menu buttons */
     .mobile-only button {
-        width: 20%;
+        width: 100%;
     }
     
     /* Hide the PC-only class */
@@ -102,7 +102,18 @@ background-size: cover!important;
 
     #searchbtn, #sharebtn, .home, .info{
         background-color: #131214!important;
-        font-size: 17px!important;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+
+    }
+
+    .butntxt{
+        font-size: 12px!important;
     }
     #searchbtn:hover, #sharebtn:hover, .home:hover, .info:hover{
         box-shadow: none!important;
