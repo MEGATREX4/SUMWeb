@@ -140,29 +140,35 @@
 }
 
 .mas{
-    background-image: url(https://i.ibb.co/MnSqzb0/mastodon.png);
+    background-image: url(https://i.imgur.com/8BxM6bl.png)!important;
 }
 .tel{
-    background-image: url(https://i.ibb.co/XSnjmgr/telegram.png);
+    background-image: url(https://i.imgur.com/NQkU9OZ.png)!important;
 }
 .sky{
-    background-image: url(https://i.ibb.co/Q9bvj3t/bluesky.png);
+    background-image: url(https://i.imgur.com/mXiCcw3.png)!important;
 }
 .twi{
-    background-image: url(https://i.ibb.co/m9Xd6w3/twitter.png);
+    background-image: url(https://i.imgur.com/eijxRPN.png)!important;
+}
+.yt{
+    background-image: url(https://i.imgur.com/1zePk3y.png)!important;
+}
+.insta{
+    background-image: url(https://i.imgur.com/udY5eqG.png)!important;
 }
 
 .dona, .mono, .mas,.tel,.sky,.twi, .coffee{
     background-size:cover;
 }
 
-.mas, .tel, .twi, .sky{
+.mas, .tel, .twi, .sky, .yt, .insta{
     min-width: 59px;
     min-height: 59px;
     margin: 5px;
 }
 
-.mas:hover,.tel:hover,.sky:hover,.twi:hover{
+.mas:hover,.tel:hover,.sky:hover,.twi:hover, .yt:hover, .insta:hover{
     filter: grayscale(60%);
 }
 

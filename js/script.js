@@ -620,7 +620,6 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
 
 
 
-showAllTranslations();
 // Завантажити дані з файлу other.json при запуску сторінки
 loadTranslationsFromFile('mods.json', 1, displayedItems);
 
@@ -629,3 +628,4 @@ loadTranslationsFromFile('other.json', 1, displayedItems);
 
 // Відображення всіх перекладів за замовчуванням при завантаженні сторінки
 showAllTranslations();
+showTab('all');
