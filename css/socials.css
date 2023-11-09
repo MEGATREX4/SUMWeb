@@ -20,12 +20,13 @@ div{
     font-weight: 600;
     letter-spacing: 2px;
     cursor: pointer;
-    background-size: cover;
+    background-size: calc(100%);
 }
 
 .socbutton:hover{
     background-color: #c57976;
     color: #601216;
+    filter: grayscale(60%);
 }
 
 .textblock{
