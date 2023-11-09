@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Спільнота українізації модів</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
+    <meta property="og:title" content="Спільнота українізації модів">
+    <meta property="og:description" content="Тут ви зможете зайти переклади модів для майнкрафту, або перелкди інших ігор, також можна запропонувати свій переклад(виключно моди майнкрафт)">
+    <meta property="og:image" content="https://i.ibb.co/mzgZHKj/icon.png">
+    <meta property="og:url" content="https://sumtranslate.netlify.app/">
+
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/mzgZHKj/icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet"></head>
+
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/notcompleted.css">
+    <link rel="stylesheet" href="css/FAQ.css">
+    <link rel="stylesheet" href="css/socials.css">
+    <body>
+
+    <div class="header">
+        <div class="header-content">
+            <img src="header-image.png" alt="Спільнота українізації модів">
+            <h1 class="headertext">Спільнота українізації модів</h1>
+        </div>
+    </div>
+    <div class="search-container">
+        <button class="addbutton pc-only" onclick="window.open('/addtranslation.html', '_self')" id="addbutton"><i class="fa fa-plus faadd" aria-hidden="true"></i></button>
+        <input type="text" id="search" onclick="window.open('/index.html', '_self')" placeholder="Пошук...">
+        <button id="searchbtn" class="pc-only" onclick="window.open('/index.html', '_self')"><i class="fa fa-search" aria-hidden="true"></i></button>
+        
+    </div>
+    <div class="div">
+        <!-- Додайте вкладки -->
+        <div class="tabs container" id="tabs">
+            <div class="tab" data-tab="all" onclick="redirectToIndex('all')">Всі переклади </div>
+            <div class="tab" data-tab="minecraft" onclick="redirectToIndex('minecraft')">Майнкрафт моди</div>
+            <div class="tab" data-tab="games" onclick="redirectToIndex('games')">Ігри/Програми</div>
+            <div class="tab NotCompletedTab" data-tab="notcompleted" onclick="redirectToIndex('notcompleted')">В роботі</div>
+            <div class="tab" data-tab="official" onclick="redirectToIndex('official')">Офіційні</div>
+            <div class="tab" data-tab="frommembers" onclick="redirectToIndex('frommembers')">Від учасників</div>
+            <div class="tab pc-only" onclick="window.open('/about.html', '_self')">Про нас</div>
+            <div class="tab pc-only" onclick="window.open('/FAQ.html', '_self')">FAQ</div>
+        </div>
+        
+        
+
+        <script>
+            function redirectToIndex(tabName) {
+              window.location.href = `/index.html?tab=${tabName}`;
+            }
+            </script>
+</div>
+
+<div class="container FAQcontcont">
+<div class="FAQcont">
+    <div class="textblock">Тут можна підтримати нас копійкою</div>
+    <div onclick="window.open('https://donatello.to/MEGATREX4', '_blank')" class="socbutton donatello">Donatello</div>
+    <div onclick="window.open('https://www.buymeacoffee.com/megatrex4', '_blank')" class="socbutton BMC">Buy Me a Coffee</div>
+    <div onclick="window.open('https://send.monobank.ua/jar/3eoWaEfxde', '_blank')" class="socbutton monobank">Monobank</div>
+    <div class="textblock">Це наші мережі, тут можна знайти багато цікавого</div>
+    <div onclick="window.open('https://t.me/SUMTranslate', '_blank')" class="socbutton telegram">Telegram</div>
+    <div onclick="window.open('https://mastodon.social/@SUMTranslate', '_blank')" class="socbutton mastodon">Mastodon</div>
+    <div onclick="window.open('https://twitter.com/SUMTranslate', '_blank')" class="socbutton twitter">X (екс Twitter)</div>
+    <div onclick="window.open('https://bsky.app/profile/sumtranslate.bsky.social', '_blank')" class="socbutton bluesky">Bluesky</div>
+    <div onclick="window.open('https://www.youtube.com/@sumtranslate', '_blank')" class="socbutton YouTube">YouTube</div>
+    <div onclick="window.open('https://www.instagram.com/sumtranslate/', '_blank')" class="socbutton instagram">Instagram</div>
+
+
+
+<div class="mobile-only mobile-only-visability">
+    <div class="mobilecontainer">
+        <button class="home" onclick="window.open('/index.html', '_self')"><i class="fa fa-home" aria-hidden="true"></i></button>            
+        <button class="share" id="sharebtn" onclick="window.open('/about.html', '_self')"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+        <button class="addbutton" onclick="window.open('/addtranslation.html', '_self')" id="addbutton"><i class="fa fa-plus faadd mobileadd" aria-hidden="true"></i></button>
+        <button class="search" id="searchbtn" id="scrollButton" onclick="focusSearchInput()"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <button class="info" onclick="window.open('/FAQ.html', '_self')"><i class="fa fa-info" aria-hidden="true"></i></button> 
+
+    </div>
+</div>
+</div>
+</div>
+    <div class="footer">
+        <p>&copy; 2023 Спільнота українізації модів</p>
+        <p>Створено в Києві з 💜</p>
+        <p class="margin">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</p>
+
+    </div>
+    </body>
+</html>
