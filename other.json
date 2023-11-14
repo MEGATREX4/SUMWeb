@@ -17,8 +17,8 @@
         "Link": "https://github.com/lay295/TwitchDownloader"
     },
     {
-        "title": "Modrinth",
-        "description": "Лаунчер майнкрафт з відкритим кодом і власною бібліотекою модів, збірок, ресурспаків тощо.",
+        "title": "Modrinth (сайт)",
+        "description": "Сайт творців лаунчера майнкрафт з відкритим кодом і власною бібліотекою модів, збірок, ресурспаків тощо.",
         "image": "https://raw.githubusercontent.com/modrinth/art/main/Branding/Favicon/favicon__512x512.png",
         "verified": true,
         "author": "",
