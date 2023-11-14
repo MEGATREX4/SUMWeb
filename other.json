@@ -22,7 +22,7 @@
         "image": "https://raw.githubusercontent.com/modrinth/art/main/Branding/Favicon/favicon__512x512.png",
         "verified": true,
         "author": "Команда СУМ, MeDustyy, OmniverseTraitor, Artem Nizhensky, Alexosh",
-        "completed": false,
+        "completed": true,
         "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались).",
         "Link": "https://crowdin.com/project/modrinth",
         "semiverified": true
