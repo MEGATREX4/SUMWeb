@@ -15,5 +15,17 @@
         "completed": true,
         "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(автор(и) крутий).",
         "Link": "https://github.com/lay295/TwitchDownloader"
+    },
+    {
+        "title": "Modrinth",
+        "description": "Лаунчер майнкрафт з відкритим кодом і власною бібліотекою модів, збірок, ресурспаків тощо.",
+        "image": "https://github.com/lay295/TwitchDownloader/raw/master/TwitchDownloaderWPF/Images/Logo.png",
+        "verified": true,
+        "author": "",
+        "completed": true,
+        "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались).",
+        "Link": "https://github.com/lay295/TwitchDownloader",
+        "semiverified": true
     }
+
 ]
