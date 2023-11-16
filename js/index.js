@@ -1,3 +1,4 @@
+//index.js
 document.addEventListener('DOMContentLoaded', function () {
     // Define the function to change the active tab
     function changeTab(tabName) {
