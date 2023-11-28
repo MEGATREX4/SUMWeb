@@ -1133,5 +1133,14 @@
         "author": "",
         "completed": true,
         "Link": null
+    },
+    {
+        "title": "Alex's Caves",
+        "description": "Дослідіть п'ять нових рідкісних печерних біомів, прихованих під поверхнею світу...",
+        "image": "https://media.forgecdn.net/avatars/891/449/638332962331987353.png",
+        "verified": false,
+        "author": "moralniy, InertFall",
+        "completed": true,
+        "Link": null
     }
 ]
