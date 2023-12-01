@@ -20,14 +20,14 @@ function updateMetaKeywords(keywords) {
 // Function to combine and modify keywords
 function combineAndModifyKeywords(otherData, modsData) {
     // Extract title lines from other.json and mods.json
-    const otherTitles = otherData.map(item => `${item.title} українською`);
-    const modsTitles = modsData.map(item => `${item.title} українською`);
+    const otherTitles = otherData.map(item => [`${item.title} українською`, `${item.title} СУМ`, `${item.title}`, `скачать ${item.title}`, `завантажити ${item.title}`, `мод ${item.title}`]);
+    const modsTitles = modsData.map(item => [`${item.title} українською`, `${item.title} СУМ`, `${item.title}`, `скачать ${item.title}`, `завантажити ${item.title}`, `мод ${item.title}`],);
 
     // Combine titles from both files
     const combinedTitles = [...otherTitles, ...modsTitles];
 
     // Combine all keywords
-    const combinedKeywords = [...combinedTitles, 'українізація модів', 'інші ключові слова...', 'MEGATREX4', 'СУМ МАЙНКРАФТ', 'СУМ 60 секунд', 'СУМ 60 seconds', 'MEGATREX4 переклад', 'MEGATREX4 стрім', 'спільнота українізації модів', 'СУМ', 'СУМ спільнота українізації модів', 'українізація модів', 'моди', 'майнкрафт моди', 'моди українською', 'моди майнкрафт українською', 'моди скачати', 'моди завантажити', 'моди майнкрафт завантажити', 'моди MEGATRE4', 'MEGATREX4 ютуб', 'MEGATREX4 Youtube', 'MEGATREX4 Twitch', 'геймінг', 'Minecraft', 'переклад модів', 'геймерська спільнота', 'українська мова', 'Crowdin', 'аматорський переклад', 'СУМ', 'Спільнота Українізації Модів', 'українські гравці', 'онлайн-ігри', 'грейдерське спільнота', 'модифікації для гри'];
+    const combinedKeywords = [...combinedTitles.flat(), 'українізація модів', 'MEGATREX4', 'СУМ МАЙНКРАФТ', 'СУМ 60 секунд', 'СУМ 60 seconds', 'MEGATREX4 переклад', 'MEGATREX4 стрім', 'спільнота українізації модів', 'СУМ', 'СУМ спільнота українізації модів', 'українізація модів', 'моди', 'майнкрафт моди', 'моди українською', 'моди майнкрафт українською', 'моди скачати', 'моди завантажити', 'моди майнкрафт завантажити', 'моди MEGATRE4', 'MEGATREX4 ютуб', 'MEGATREX4 Youtube', 'MEGATREX4 Twitch', 'геймінг', 'Minecraft', 'переклад модів', 'геймерська спільнота', 'українська мова', 'Crowdin', 'аматорський переклад', 'СУМ', 'Спільнота Українізації Модів', 'українські гравці', 'онлайн-ігри', 'грейдерське спільнота', 'модифікації для гри'];
 
     // Join keywords into a string
     const keywordsString = combinedKeywords.join(', ');
