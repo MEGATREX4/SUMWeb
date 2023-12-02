@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /templates/editor.html
+Disallow: /static/
+Disallow: /.well-known/
+Disallow: /LICENSE
+Disallow: /app.py
+Disallow: /sitemap2.xml
+Disallow: /sitemap_4403020.xml
+
+Sitemap: https://sumtranslate.netlify.app/sitemap.xml
