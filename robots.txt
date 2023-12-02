@@ -1,4 +1,5 @@
-User-agent: *
+User-agent: Googlebot
+User-agent: AdsBot-Google
 Disallow: /templates/editor.html
 Disallow: /static/
 Disallow: /.well-known/
