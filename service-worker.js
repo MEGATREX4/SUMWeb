@@ -1,4 +1,4 @@
-const cacheName = 'SUMTRANSLATE_REL_'; // Update cache name to trigger the installation of a new service worker
+const cacheName = 'SUMTRANSLATE_REL_5'; // Update cache name to trigger the installation of a new service worker
 const maxImageAge = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 
 // Included domains for image caching
@@ -44,6 +44,31 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+// Function to fetch and cache an image
+function fetchAndCache(request) {
+  return fetch(request)
+    .then((response) => {
+      if (!response || response.status !== 200 || response.type !== 'basic') {
+        console.error(`Failed to fetch resource: ${request.url}`, response);
+        throw new Error(`Failed to fetch resource: ${request.url}`);
+      }
+
+      // Clone the response to cache it
+      const responseToCache = response.clone();
+
+      caches.open(cacheName).then((cache) => {
+        cache.put(request, responseToCache);
+        console.log(`Image cached: ${request.url}`);
+      });
+
+      return response;
+    })
+    .catch((error) => {
+      console.error(`Fetch error for resource: ${request.url}`, error);
+      throw error;
+    });
+}
+
 // Fetch event
 self.addEventListener('fetch', (event) => {
   console.log('Fetch event intercepted:', event.request.url);
@@ -71,6 +96,7 @@ self.addEventListener('fetch', (event) => {
         return fetch(fetchRequest).then((response) => {
           // Check if we received a valid response
           if (!response || response.status !== 200 || response.type !== 'basic') {
+            console.error(`Failed to fetch resource: ${event.request.url}`, response);
             return response;
           }
 
@@ -86,30 +112,9 @@ self.addEventListener('fetch', (event) => {
           return response;
         });
       })
-    );
+      .catch((error) => {
+        console.error(`Fetch error for resource: ${event.request.url}`, error);
+        // You can handle the error gracefully or fallback to a default image here
+      })
+  );
 });
-
-// Function to fetch and cache an image
-function fetchAndCache(request) {
-  return fetch(request)
-    .then((response) => {
-      if (!response || response.status !== 200 || response.type !== 'basic') {
-        console.error(`Failed to fetch resource: ${request.url}`, response);
-        throw new Error('Failed to fetch resource');
-      }
-
-      // Clone the response to cache it
-      const responseToCache = response.clone();
-
-      caches.open(cacheName).then((cache) => {
-        cache.put(request, responseToCache);
-        console.log(`Image cached: ${request.url}`);
-      });
-
-      return response;
-    })
-    .catch((error) => {
-      console.error(`Fetch error for resource: ${request.url}`, error);
-      throw error;
-    });
-}
