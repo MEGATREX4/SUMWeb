@@ -7,7 +7,9 @@ const includedImageDomains = [
   'cdn.modrinth.com/data/',
   'imgur.com',
   'i.ibb.co',
-  'github.com'
+  'raw.github.com/',
+  'imgbb.com',
+  'ibb.co'
 ];
 
 // Files to cache
