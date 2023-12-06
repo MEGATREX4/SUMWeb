@@ -9,7 +9,7 @@
     {
         "title": "Twitch Downloader",
         "description": "Програма з відкритим кодом для зручного завантаження відео і кліпів з Twitch, є функція промальовування чату, масового завантаження та завантаження JSON/TXT файлу чату",
-        "image": "https://github.com/lay295/TwitchDownloader/raw/master/TwitchDownloaderWPF/Images/Logo.png",
+        "image": "https://raw.githubusercontent.com/lay295/TwitchDownloader/master/TwitchDownloaderWPF/Images/Logo.png",
         "verified": true,
         "author": "MEGATREX4",
         "completed": true,
