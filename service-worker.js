@@ -4,7 +4,7 @@ const maxImageAge = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 // Included domains for image caching
 const includedImageDomains = [
   'curseforge.com',
-  'modrinth.com',
+  'cdn.modrinth.com/data/',
   'imgur.com',
   'i.ibb.co',
   'github.com'
