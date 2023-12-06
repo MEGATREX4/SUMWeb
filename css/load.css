@@ -10,11 +10,19 @@
    align-items: center!important;
    z-index: 9999!important;
    opacity: 1!important;
-   animation: fadeOut 2s linear 2s forwards!important;
+   animation: fadeOut 2s linear forwards!important; /* Adjust the duration as needed */
+}
+
+.spinner-container {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .spinner {
-   position: relative;
    width: 50px; /* Adjust the size as needed */
    height: 50px; /* Adjust the size as needed */
    border-radius: 50%;
@@ -25,7 +33,6 @@
 
 /* Additional styles to center the spinner within the overlay */
 .overlay:before {
-   content: '';
    display: inline-block;
    height: 100%;
    vertical-align: middle;
@@ -33,7 +40,6 @@
 }
 
 .spinner:before {
-   content: '';
    display: block;
    height: 100%;
    margin-top: -0.5em; /* Adjust if needed */
