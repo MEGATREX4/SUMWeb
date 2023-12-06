@@ -14,7 +14,6 @@ const filesToCache = [
 
 // Install event
 self.addEventListener('install', (event) => {
-  console.log('Service Worker installed');
 
   event.waitUntil(
     caches.open(cacheName)
@@ -26,7 +25,6 @@ self.addEventListener('install', (event) => {
 
 // Activate event
 self.addEventListener('activate', (event) => {
-  console.log('Service Worker activated');
 
   event.waitUntil(
     caches.keys().then((cacheNames) => {
@@ -43,7 +41,6 @@ self.addEventListener('activate', (event) => {
 
 // Fetch event
 self.addEventListener('fetch', (event) => {
-  console.log('Fetch event intercepted:', event.request.url);
 
   const requestUrl = new URL(event.request.url);
   const isIncludedImageDomain = includedImageDomains.some(domain => requestUrl.hostname.includes(domain));
@@ -53,7 +50,6 @@ self.addEventListener('fetch', (event) => {
       .then((response) => {
         // Cache hit - return response
         if (response) {
-          console.log('Cache hit:', event.request.url);
           return response;
         }
 
@@ -77,7 +73,6 @@ self.addEventListener('fetch', (event) => {
           caches.open(cacheName)
             .then((cache) => {
               cache.put(event.request, responseToCache);
-              console.log(`Image cached: ${requestUrl.href}`);
             });
 
           return response;
@@ -100,7 +95,6 @@ function fetchAndCache(request) {
 
       caches.open(cacheName).then((cache) => {
         cache.put(request, responseToCache);
-        console.log(`Image cached: ${request.url}`);
       });
 
       return response;
