@@ -38,7 +38,18 @@
      
     <link rel="stylesheet" href="css/FAQ.css">
     <body>
+        <script>
+            if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch((error) => {
+          console.error('Service Worker registration failed:', error);
+        });
+    }
 
+</script>
     <div class="header">
         <div class="header-content">
             <img src="header-image.png" alt="Спільнота українізації модів">
