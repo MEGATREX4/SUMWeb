@@ -47,20 +47,26 @@ self.addEventListener('fetch', (event) => {
 });
 
 function fetchAndCache(request) {
-  return fetch(request).then((response) => {
-    if (!response || response.status !== 200 || response.type !== 'basic') {
-      throw new Error('Failed to fetch resource');
-    }
+  return fetch(request)
+    .then((response) => {
+      if (!response || response.status !== 200 || response.type !== 'basic') {
+        console.error(`Failed to fetch resource: ${request.url}`, response);
+        throw new Error('Failed to fetch resource');
+      }
 
-    // Clone the response to cache it
-    const responseToCache = response.clone();
+      // Clone the response to cache it
+      const responseToCache = response.clone();
 
-    caches.open(cacheName).then((cache) => {
-      cache.put(request, responseToCache);
+      caches.open(cacheName).then((cache) => {
+        cache.put(request, responseToCache);
+      });
+
+      return response;
+    })
+    .catch((error) => {
+      console.error(`Fetch error for resource: ${request.url}`, error);
+      throw error;
     });
-
-    return response;
-  });
 }
 
 
