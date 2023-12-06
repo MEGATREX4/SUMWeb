@@ -1,4 +1,4 @@
-const cacheName = 'SUMTRANSLATE_BETA_0.9';
+const cacheName = 'SUMTRANSLATE_REL_1';
 const maxImageAge = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 
 // Domains to automatically cache images from
@@ -62,3 +62,54 @@ function fetchAndCache(request) {
     return response;
   });
 }
+
+
+
+function displayCacheSize() {
+  caches.open(cacheName).then((cache) => {
+    cache.keys().then((keys) => {
+      const size = keys.reduce((acc, key) => {
+        return acc + key.url.length;
+      }, 0);
+      console.log(`Cache size: ${Math.round(size / 1024)} KB`);
+    });
+  });
+}
+
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open(cacheName).then((cache) => {
+      return cache.addAll([]);
+    })
+  );
+});
+
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      if (response) {
+        return response;
+      }
+
+      return fetch(event.request).then((response) => {
+        if (
+          !response ||
+          response.status !== 200 ||
+          response.type !== 'basic' ||
+          !imageDomainsToCache.some((domain) => event.request.url.includes(domain))
+        ) {
+          return response;
+        }
+
+        const responseToCache = response.clone();
+
+        caches.open(cacheName).then((cache) => {
+          cache.put(event.request, responseToCache);
+          displayCacheSize(); // Call the function to display cache size
+        });
+
+        return response;
+      });
+    })
+  );
+});
