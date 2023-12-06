@@ -7,7 +7,8 @@ const includedImageDomains = [
   'cdn.modrinth.com/data/',
   'imgur.com',
   'i.ibb.co',
-  'raw.github.com/',
+  'raw.github.com',
+  'github.com',
   'imgbb.com',
   'ibb.co'
 ];
