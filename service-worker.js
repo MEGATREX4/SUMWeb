@@ -3,8 +3,6 @@ const maxImageAge = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 
 // Files to cache
 const filesToCache = [
-  '/',
-  '/index.html',
   '/manifest.json',
   'https://i.ibb.co/tQsvMtK/android.png',
   // Add more paths to your static assets here
