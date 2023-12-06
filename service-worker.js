@@ -15,7 +15,7 @@ const includedImageDomains = [
 
 // Files to cache
 const filesToCache = [
-  '/manifest.json',
+  'manifest.json',
   'https://i.ibb.co/tQsvMtK/android.png',
   // Add more paths to your static assets and documentation files here
 ];
