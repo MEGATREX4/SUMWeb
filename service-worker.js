@@ -1,4 +1,4 @@
-const cacheName = 'SUMTRANSLATE_REL_3'; // Update cache name to trigger the installation of a new service worker
+const cacheName = 'SUMTRANSLATE_REL_4'; // Update cache name to trigger the installation of a new service worker
 const maxImageAge = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 
 // Included domains for image caching
