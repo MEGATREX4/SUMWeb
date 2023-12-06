@@ -46,6 +46,14 @@ self.addEventListener('activate', (event) => {
 
 // Function to fetch and cache an image
 function fetchAndCache(request) {
+  const requestUrl = new URL(request.url);
+
+  // Skip caching resources with 'chrome-extension' scheme
+  if (requestUrl.protocol === 'chrome-extension:') {
+    console.warn(`Skipping caching resource with 'chrome-extension' scheme: ${request.url}`);
+    return fetch(request);
+  }
+
   return fetch(request)
     .then((response) => {
       if (!response || response.status !== 200 || response.type !== 'basic') {
@@ -68,6 +76,7 @@ function fetchAndCache(request) {
       throw error;
     });
 }
+
 
 // Fetch event
 self.addEventListener('fetch', (event) => {
