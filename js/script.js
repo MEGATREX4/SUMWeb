@@ -583,9 +583,12 @@ function setActiveTab(tabElement) {
 
 // Add this function to show the loading animation
 function showLoadingAnimation() {
-    const overlay = document.querySelector('.overlay');
+    const overlay = document.querySelector('.overlay');    
     overlay.style.display = 'block';
+    
+
 }
+
 
 // Modify your existing loadTranslationsFromFile function
 function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
@@ -601,9 +604,12 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
                 gamesData = data;
             }
             displayedItems = 15;
-            // Hide loading animation after loading the data
-            const overlay = document.querySelector('.overlay');
-            overlay.style.display = 'none';
+
+            // Introduce a delay of 1 second before hiding the loading animation
+            setTimeout(() => {
+                const overlay = document.querySelector('.overlay');
+                overlay.style.display = 'none';
+            }, 500); // 1000 milliseconds = 1 second
 
             loadAndDisplayData(currentTab);
         })
@@ -615,6 +621,7 @@ function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
             overlay.style.display = 'none';
         });
 }
+
 
 
 
