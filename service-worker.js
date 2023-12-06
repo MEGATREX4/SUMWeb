@@ -75,6 +75,7 @@ self.addEventListener('fetch', (event) => {
           caches.open(cacheName)
             .then((cache) => {
               cache.put(event.request, responseToCache);
+              console.log(`Image cached: ${requestUrl.href}`);
             });
 
           return response;
@@ -97,6 +98,7 @@ function fetchAndCache(request) {
 
       caches.open(cacheName).then((cache) => {
         cache.put(request, responseToCache);
+        console.log(`Image cached: ${request.url}`);
       });
 
       return response;
