@@ -1053,7 +1053,7 @@
         "title": "Dark Waters",
         "description": " Він додає нових мобів, які з'являються лише під час штормів в океані.  У штормах є щось приховане, і воно наближається.  Якщо ви почуєте грім.... вже занадто пізно.",
         "image": "https://cdn.modrinth.com/data/pe7gyI14/icon.png",
-        "verified": false,
+        "verified": true,
         "author": "",
         "completed": true,
         "Link": null
