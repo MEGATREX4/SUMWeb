@@ -543,11 +543,6 @@ function loadAndDisplayFromMembersTranslations() {
 }
 
 
-
-
-
-// Додайте обробник події для кнопки "Показати більше"
-// Add this event listener for the "Show More" button
 // Add this event listener for the "Show More" button
 const showMoreButton = document.getElementById('show-more-button');
 if (showMoreButton) {
