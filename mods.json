@@ -1008,7 +1008,7 @@
         "title": "Guarding",
         "description": "Простий мод для Fabric, який додає нові функції до щитів, щоб зробити їх більш довершеними.",
         "image": "https://cdn.modrinth.com/data/aV1COQ7a/06f546fee278185cbd142b93ca7e60feed017020.png",
-        "verified": false,
+        "verified": true,
         "author": "",
         "completed": true,
         "Link": null
