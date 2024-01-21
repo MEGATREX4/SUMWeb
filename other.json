@@ -1,10 +1,15 @@
 [
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/biomemakeoverua/localized.svg",
+            "status2": "https://badges.crowdin.net/60seconds-part2/localized.svg"
+        },
         "title": "60 Seconds",
         "description": "60 Seconds! - це похмура комедійна атомна пригода про пошук і виживання. Зберіть припаси та врятуйте свою сім'ю до того, як вибухне ядерна бомба. Залишайтеся живими у своєму укритті від радіоактивних опадів. Приймайте складні рішення, розподіляйте їжу та полюйте на тарганів-мутантів. І, можливо, виживете. А може, й ні.",
         "image": "https://i.imgur.com/ppB4GQP.png",
         "author": "MEGATREX4, Artem Tsynoborenko",
-        "completed": false
+        "completed": false,
+        "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались)."
     },
     {
         "title": "Twitch Downloader",

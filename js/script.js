@@ -1,8 +1,6 @@
-//script.js
-
 function displayTranslations(data, currentPage, itemsPerPage) {
     const cardContainer = document.querySelector('.container-content #data-container');
-    
+
     // Select and remove only the existing translation items
     const existingItems = cardContainer.querySelectorAll('.item');
     existingItems.forEach(item => {
@@ -26,12 +24,12 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         const imageElement = document.createElement('div');
         imageElement.classList.add('image');
 
-// Встановлення фонового зображення для imageElement
-if (item.image !== "") {
-    imageElement.style.backgroundImage = `url('${item.image}')`;
-} else {
-    imageElement.style.backgroundImage = `url('https://i.ibb.co/wpwMCLY/default-image.png')`;
-}
+        // Встановлення фонового зображення для imageElement
+        if (item.image !== "") {
+            imageElement.style.backgroundImage = `url('${item.image}')`;
+        } else {
+            imageElement.style.backgroundImage = `url('https://i.ibb.co/wpwMCLY/default-image.png')`;
+        }
 
 
         const titleElement = document.createElement('h2');
@@ -40,53 +38,72 @@ if (item.image !== "") {
 
         const descriptionContainer = document.createElement('div');
         descriptionContainer.classList.add('description-container');
+                // Create a container for status images
+        const statusContainer = document.createElement('div');
+        statusContainer.classList.add('status-container');
+
+        // Check if the translation has a "status" property with an object of named statuses
+        if (item.hasOwnProperty('status') && typeof item.status === 'object') {
+          for (const statusName in item.status) {
+            if (item.status.hasOwnProperty(statusName)) {
+              const statusImage = item.status[statusName];
+              if (statusImage.endsWith('.svg')) {
+                const statusImageElement = document.createElement('img');
+                statusImageElement.src = statusImage;
+                statusImageElement.classList.add('statusimage'); // Додавання класу "statusimage"
+                statusImageElement.alt = statusName; // Set alt text to the status name
+                statusContainer.appendChild(statusImageElement);
+              }
+            }
+          }
+        }
 
         const descriptionElement = document.createElement('p');
-descriptionElement.classList.add('description');
+        descriptionElement.classList.add('description');
+        const popupElement = document.createElement('div');
+        popupElement.classList.add('popup');
+        
 
-const popupElement = document.createElement('div');
-popupElement.classList.add('popup');
+        if (item.description === "") {
+            const errorText = "Мод/гра поки не має опису, це може бути помилкою, тому зверніться до розробників через пошту, або в соц мережах";
+            descriptionElement.textContent = errorText;
+            descriptionElement.classList.add('descerror'); // Додавання класу "descerror"
 
-if (item.description === "") {
-    const errorText = "Мод/гра поки не має опису, це може бути помилкою, тому зверніться до розробників через пошту, або в соц мережах";
-    descriptionElement.textContent = errorText;
-    descriptionElement.classList.add('descerror'); // Додавання класу "descerror"
+            popupElement.textContent = errorText;
+            popupElement.classList.add('descerror'); // Додавання класу "descerror"
+        } else {
+            const descriptionText = item.description.length > 100
+                ? item.description.slice(0, 100) + '...'
+                : item.description;
 
-    popupElement.textContent = errorText;
-    popupElement.classList.add('descerror'); // Додавання класу "descerror"
-} else {
-    const descriptionText = item.description.length > 100
-        ? item.description.slice(0, 100) + '...'
-        : item.description;
+            descriptionElement.textContent = descriptionText;
 
-    descriptionElement.textContent = descriptionText;
-    
-    if (item.description.length > 100) {
-        popupElement.textContent = item.description;
-    } else {
-        popupElement.style.display = 'none'; // Приховувати pop-up, якщо текст менше 100 символів
-    }
-}
+            if (item.description.length > 100) {
+                popupElement.textContent = item.description;
+            } else {
+                popupElement.style.display = 'none'; // Приховувати pop-up, якщо текст менше 100 символів
+            }
+        }
         const authorElement = document.createElement('p');
         authorElement.classList.add('author');
         authorElement.textContent = `Автор(и): ${item.author || 'Команда СУМ'}`;
-        
+
         // Create a container div for the author and its scrolling effect
         const authorContainer = document.createElement('div');
         authorContainer.classList.add('author-container');
-        
+
         // Add the author element to the author container
         authorContainer.appendChild(authorElement);
         authorElement.setAttribute('title', `Автор(и): ${item.author || 'Команда СУМ'}`);
 
-        
 
-        
+
+
         // Check if the author text has more than 27 characters and add the scrolling effect if true
         if (authorElement.textContent.length > 28) {
             authorContainer.classList.add('scrolling-text');
         }
-        
+
         // Add the author container to the item container
         itemContainer.appendChild(authorContainer);
         // Додавання кнопки "Переклад" з посиланням на GitHub
@@ -99,8 +116,8 @@ if (item.description === "") {
             // Якщо 'completed' дорівнює false, встановлюємо текст кнопки "в процесі"
             translationButton.classList.add('notcompleted'); // Додаємо клас 'notcompleted'
             translationButton.setAttribute("id", "notcompleted");
-            translationButton.href = item.Link || 'https://www.buymeacoffee.com/megatrex4';
-            siteURL = item.Link || 'https://www.buymeacoffee.com/megatrex4';
+            translationButton.href = item.Link || 'https://donatello.to/MEGATREX4';
+            siteURL = item.Link || 'https://donatello.to/MEGATREX4';
             const siteName = extractSiteName(siteURL);
             translationButton.innerHTML = `В процесі&ensp; <span class="spantranslate">(${siteName})</span>`;
             translationButton.href = siteURL;
@@ -122,35 +139,35 @@ if (item.description === "") {
                 translationButton.innerHTML = `Переклад&ensp; <span class="spantranslate">(${siteName})</span>`;
                 translationButton.href = siteURL;
             }
-            
- // Посилання на GitHub
-            
+
+            // Посилання на GitHub
+
             if (item.hasOwnProperty('verified') && item.verified === true) {
                 // Створити значок <i> для галочки
-                
+
                 const icon = document.createElement('i');
                 if (item.hasOwnProperty('semiverified') && item['semiverified'] === true) {
                     itemContainer.id = 'semiverified';
-                  } else {
+                } else {
                     itemContainer.id = 'verified';
-                  }
+                }
                 icon.classList.add('fa', 'fa-question-circle-o', 'translation-icon', 'left-icon'); // Додати класи для значка галочки
-                
-            
+
+
                 // Додати обробник подій для показу підказки при наведенні
                 icon.addEventListener('mouseenter', function () {
                     const tooltip = document.querySelector('.custom-tooltip');
                     if (tooltip) {
                         // Задати текст підказки відповідно до вашого потреби
                         tooltip.querySelector('.tooltip-content').textContent = item.tooltip || 'Ця відмітка означає що розробник додав переклад в свій продукт і він вже вбудований, нічого довантажувати і встановлювати не треба';
-                        
+
                         // Показати підказку і визначити її позицію
                         tooltip.style.display = 'block';
                         tooltip.style.left = `${icon.getBoundingClientRect().left}px`;
                         tooltip.style.top = `${icon.getBoundingClientRect().top - tooltip.offsetHeight}px`;
                     }
                 });
-            
+
                 // Додати обробник події для приховування підказки при виході миші
                 icon.addEventListener('mouseleave', function () {
                     const tooltip = document.querySelector('.custom-tooltip');
@@ -158,85 +175,53 @@ if (item.description === "") {
                         tooltip.style.display = 'none'; // Приховати підказку
                     }
                 });
-            
+
                 // Додати значок на сторінку (в ваш контейнер або елемент, де ви його вставляєте)
                 translationButton.insertBefore(icon, translationButton.firstChild);
-                
+
             }
-            
+
         }
-        
+
 
         // Додавання pop-up вікна перед описом
         descriptionContainer.appendChild(popupElement);
-        
+
         imageContainer.appendChild(imageElement);
         itemContainer.appendChild(imageContainer);
         itemContainer.appendChild(titleElement);
+        descriptionContainer.appendChild(statusContainer);
         descriptionContainer.appendChild(descriptionElement);
         itemContainer.appendChild(descriptionContainer);
         itemContainer.appendChild(authorContainer);
-        
+
         itemContainer.appendChild(authorElement); // Додавання елементу із ім'ям автора або "команда СУМ"
         authorContainer.appendChild(authorElement);
         itemContainer.appendChild(translationButton); // Додавання кнопки "Переклад"
 
         cardContainer.appendChild(itemContainer);
 
-// Додавання обробників подій для показу/приховування pop-up
-descriptionContainer.addEventListener('mouseenter', () => {
-    if (item.description.length > 100) {
-        popupElement.style.display = 'block';
-        // Знайдіть елемент .description та додайте йому клас hide
-        const description = itemContainer.querySelector('.description');
-        if (description) {
-            description.classList.add('hide');
-        }
-    }
-});
-
-descriptionContainer.addEventListener('mouseleave', () => {
-    popupElement.style.display = 'none';
-    // Знайдіть елемент .description та видаліть з нього клас hide
-    const description = itemContainer.querySelector('.description');
-    if (description) {
-        description.classList.remove('hide');
-    }
-});
-    }
-}
-
-function loadTranslationsFromFile(fileName, currentPage, itemsPerPage) {
-    fetch(fileName)
-        .then(response => response.json())
-        .then(data => {
-            // Показати дані з вказаного файлу, вказавши поточну сторінку та кількість елементів на сторінці
-            displayTranslations(data, currentPage, itemsPerPage);
-        })
-        .catch(error => {
-            console.error(`Помилка завантаження JSON даних з файлу ${fileName}:`, error);
+        // Додавання обробників подій для показу/приховування pop-up
+        descriptionContainer.addEventListener('mouseenter', () => {
+            if (item.description.length > 100) {
+                popupElement.style.display = 'block';
+                // Знайдіть елемент .description та додайте йому клас hide
+                const description = itemContainer.querySelector('.description');
+                if (description) {
+                    description.classList.add('hide');
+                }
+            }
         });
-}
 
-function loadAndDisplayNotCompletedData() {
-    currentTab = 'notcompleted'; // Оновлюємо поточну вкладку в 'notcompleted'
-    const notCompletedData = minecraftData.concat(gamesData).filter(item => item.completed === false);
-    const startIndex = 0;
-    const endIndex = displayedItems;
-
-    const showMoreButton = document.getElementById('show-more-button');
-
-    if (endIndex >= notCompletedData.length) {
-        if (showMoreButton) {
-            showMoreButton.style.display = 'none';
-        }
-    } else {
-        if (showMoreButton) {
-            showMoreButton.style.display = 'block';
-        }
+        descriptionContainer.addEventListener('mouseleave', () => {
+            popupElement.style.display = 'none';
+            // Знайдіть елемент .description та видаліть з нього клас hide
+            const description = itemContainer.querySelector('.description');
+            if (description) {
+                description.classList.remove('hide');
+            }
+        });
     }
-
-    displayTranslations(notCompletedData.slice(startIndex, endIndex), 1, displayedItems);
 }
 
 
@@ -245,6 +230,12 @@ function loadAndDisplayNotCompletedData() {
 function extractSiteName(url) {
     // Remove "https://", "http://", or "www." from the beginning
     let siteName = url.replace(/^(https?:\/\/)?(www\.)?/, '');
+
+    // Remove ".to" from the URL
+    siteName = siteName.replace(/\.to/, '');
+
+    // Remove "MEGATREX4" from the URL
+    siteName = siteName.replace(/MEGATREX4/, '');
 
     // Remove everything after the first "/" or the top-level domain (e.g., ".com")
     siteName = siteName.replace(/\/|\.com.*/, '');

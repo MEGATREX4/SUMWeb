@@ -655,3 +655,15 @@ body, html {
     font-family: 'Nunito', sans-serif;
     font-size: 17px;
 }
+
+
+.status-container{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 220px;
+}
+
+.statusimage{
+    margin: 5px 5px;
+}

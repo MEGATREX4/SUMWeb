@@ -850,7 +850,10 @@
         "Link": ""
     },
     {
-        "title": "Spectum",
+        "status": {
+            "status1": "https://badges.crowdin.net/spectrumua/localized.svg"
+        },
+        "title": "Spectrum",
         "description": "Магічний мод, що базується на розвитку та дослідженні, де ви комбінуєте кольори для створення магічних інструментів і машин, з кінцевою метою дізнатися, що лежить під колись непроникною підлогою Bedrock.",
         "image": "https://cdn.modrinth.com/data/3rc31Hgo/70ab94a9c980769dd3f2d17850aef9f6df497ab7.png",
         "verified": false,
@@ -1059,6 +1062,9 @@
         "Link": null
     },
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/spectrumua/localized.svg"
+        },
         "title": "Deeper and Darker",
         "description": "Більше блоків, предметів, обладунків і прихованих таємниць, що доповнюють новий біом Deep Dark.",
         "image": "https://cdn.modrinth.com/data/fnAffV0n/cbcb38cd738e0b0d1c4b583d5bfb56838a4b101d.png",
@@ -1068,6 +1074,9 @@
         "Link": null
     },
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/spectrumua/localized.svg"
+        },
         "title": "Improved End",
         "description": "Мод, який додає тонни нових блоків, біомів та мобів до Енду.",
         "image": "https://cdn.modrinth.com/data/1qFhISD7/df7dcb73db634df5508b348ae129312129f06f1a.png",
@@ -1117,6 +1126,9 @@
         "semiverified": true
     },
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/spectrumua/localized.svg"
+        },
         "title": "MC Dungeons Weapons",
         "description": "Ви коли-небудь хотіли мати зброю з підземель Minecraft у своєму світі Minecraft? Що ж, тепер це можливо! MC Dungeons Weapons (MCDW) має на меті (з часом) перенести всю цю зброю, і навіть більше, з Minecraft Dungeons до Minecraft.",
         "image": "https://media.forgecdn.net/avatars/308/444/637391793275773439.png",
