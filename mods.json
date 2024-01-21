@@ -1154,5 +1154,14 @@
         "author": "moralniy, InertFall",
         "completed": true,
         "Link": null
+    },
+    {
+        "title": "Tinkers' Levelling Addon",
+        "description": "Цей аддон додає один новий модифікатор для інструментів та обладунків - рівні покращення. На відміну від оригінального аддону, рівень інструментів не доступне з самого початку і повинно застосовуватися до кожного предмета спорядження окремо.",
+        "image": "https://media.forgecdn.net/avatars/646/14/638046711047330737.png",
+        "verified": false,
+        "author": "Ymna_ytka",
+        "completed": true,
+        "Link": null
     }
 ]
