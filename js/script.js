@@ -228,20 +228,33 @@ function displayTranslations(data, currentPage, itemsPerPage) {
 
 
 function extractSiteName(url) {
+    // Check if the URL contains "store.steampowered.com"
+    if (url.includes("store.steampowered.com")) {
+        return "steam";
+    }
+
     // Remove "https://", "http://", or "www." from the beginning
     let siteName = url.replace(/^(https?:\/\/)?(www\.)?/, '');
 
-    // Remove ".to" from the URL
-    siteName = siteName.replace(/\.to/, '');
-
-    // Remove "MEGATREX4" from the URL
-    siteName = siteName.replace(/MEGATREX4/, '');
+    // Remove ".to" and "MEGATREX4" from the URL
+    siteName = siteName.replace(/\.to|MEGATREX4/, '');
 
     // Remove everything after the first "/" or the top-level domain (e.g., ".com")
-    siteName = siteName.replace(/\/|\.com.*/, '');
+    siteName = siteName.replace(/\/.*/, '');
 
     return siteName;
 }
+
+// Example usage with your Steam URL
+const steamURL = "https://store.steampowered.com/app/2239140/Grapples_Galore/";
+const extractedSiteNameSteam = extractSiteName(steamURL);
+console.log(extractedSiteNameSteam);
+
+// Example usage with your previous URL
+const otherURL = "https://example.to/MEGATREX4/somepath";
+const extractedSiteNameOther = extractSiteName(otherURL);
+console.log(extractedSiteNameOther);
+
 
 
 

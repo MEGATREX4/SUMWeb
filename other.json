@@ -31,6 +31,15 @@
         "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались).",
         "Link": "https://crowdin.com/project/modrinth",
         "semiverified": true
+    },
+    {
+        "title": "Grapples Galore",
+        "description": "Grapples Galore - це динамічний багатокористувацький онлайн-шутер з фізично реалізованими гаками, активними реґдоллами та захопливими перестрілками.",
+        "image": "https://qame.info/wp-content/uploads/2023/11/72926_main_library_600x900_2x-1.jpg.webp",
+        "verified": true,
+        "author": "moralniy, awzix",
+        "completed": true,
+        "Link": "https://store.steampowered.com/app/2239140/Grapples_Galore"
     }
 
 ]
