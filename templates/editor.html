@@ -35,8 +35,8 @@
     </div>
         <div class="card-container">
             {% for card in data %}
-            <div class="card" data-title="{{ card.title }}">
-                <button class="delete-button"><i class="fa fa-trash" aria-hidden="true"></i> Видалити запис</button>
+            <div class="card" data-id="{{ card.id }}" data-title="{{ card.title }}">
+                <button class="delete-button"><i class="fa fa-trash" aria-hidden="true"></i> Видалити запис {{card.id}}</button>
                 <img class="imageitem" src="{{ card.image or 'https://i.ibb.co/wpwMCLY/default-image.png' }}" alt="немає зображення">
                 <h3>{{ card.title }}</h3>
                 <p>{{ card.description }}</p>
@@ -44,8 +44,9 @@
                 <span class="ove">Завершено: {{ 'Так' if card.completed else 'Ні' }}</span>
                 <span class="">Автор: <span class="author">{{ card.author or 'Команда СУМ'}}</span></span>
                 <span class="site-link"> <a class="site-linka" href="{{card.link}}" target="_blank">Посилання: {{card.link|urlparse or 'немає' }}</a></span>
-                <button class="edit-button buttonshow">Редагувати</button>
-                <div class="form" style="display: none;">
+                <button class="edit-button buttonshow" data-card-id="{{ card.id }}">Редагувати</button>
+                <div data-id="{{ card.id }}" class="form" style="display: none;">
+                    <form data-id="{{ card.id }}" class="form" action="">
                     <input type="text" placeholder="Новий заголовок" class="new-title">
                     <input type="text" placeholder="Новий опис" class="new-description">
                     <input type="text" placeholder="Нове зображення" class="new-image"> <!-- Додано поле для зображення -->
@@ -60,6 +61,7 @@
                     <div class="editbuttons">
                         <button class="save-button">Зберегти</button>
                     <button class="cancel-button">Скасувати</button>
+                </form>
                 </div>
                 </div>
                 
@@ -69,7 +71,7 @@
         </div>
         <div id="adddiv" class="adddiv modal">
             <div class="addbutttt">
-                <button class="add-button"><i class="smallicon fa fa-plus-square" aria-hidden="true"></i></button>
+                <button id="add-button" class="add-button"><i class="smallicon fa fa-plus-square" aria-hidden="true"></i></button>
             </div>
             <div class="addinput">
                 <input class="addinputp" type="text" id="new-title" placeholder="Заголовок">

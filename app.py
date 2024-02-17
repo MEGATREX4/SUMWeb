@@ -13,6 +13,10 @@ app.debug = True
 # Зчитування даних з JSON файлу
 data_file = "mods.json"  # Шлях до вашого JSON-файлу
 
+def generate_formatted_id():
+    data = read_data_from_file()  # Make sure data is defined or passed as an argument
+    return f"{len(data) + 1:06d}"
+
 def read_data_from_file():
     try:
         with open(data_file, 'r', encoding='utf-8') as file:
@@ -45,20 +49,20 @@ def editor():
 
 @app.route('/delete_card', methods=['POST'])
 def delete_card_handler():
-    data = request.get_json()  # Отримання даних з POST-запиту у форматі JSON
-    card_title = data.get('title')
+    data = request.get_json()
+    card_id = data.get('id')  # Change 'title' to 'id'
 
-    if card_title is not None:
-        print(f'{Fore.YELLOW}Стараємось видалити картку: {card_title}{Style.RESET_ALL}')
+    if card_id is not None:
+        print(f'{Fore.YELLOW}Trying to delete card with id: {card_id}{Style.RESET_ALL}')
         data = read_data_from_file()
         for card in data:
-            if 'title' in card and card['title'] == card_title:
+            if 'id' in card and card['id'] == card_id:  # Check against 'id' instead of 'title'
                 data.remove(card)
                 save_data_to_file(data)
-                print(f'{Fore.GREEN}Видалено картку: {card_title}{Style.RESET_ALL}')  # Повідомлення про видалену картку у консоль
-                return '', 204  # Успішна відповідь без тіла
+                print(f'{Fore.GREEN}Deleted card with id: {card_id}{Style.RESET_ALL}')
+                return '', 204  # Successful response without a body
 
-    return f'{Fore.RED}Картку не знайдено{Style.RESET_ALL}', 404
+    return f'{Fore.RED}Card not found{Style.RESET_ALL}', 404
 
 @app.route('/add_card', methods=['POST'])
 def add_card():
@@ -84,9 +88,10 @@ def add_card():
             return f'{Fore.RED}Картка з таким заголовком вже існує{Style.RESET_ALL}', 400
 
     # Генерування нового унікального 'id'
-    new_id = len(data) + 1
+    new_id = generate_formatted_id()
 
     new_card = {
+        'id': new_id,
         'title': new_title,
         'description': new_description,
         'image': new_image,
@@ -106,10 +111,13 @@ def edit_card():
         return f'{Fore.RED}Непідтримуваний тип медіа{Style.RESET_ALL}', 415
 
     data = request.get_json()
-    card_title = data.get('title')
+    card_id = data.get('id')  # Change 'title' to 'id'
 
-    if card_title is not None:
-        print(f'{Fore.YELLOW}Стараємось оновити: {card_title}{Style.RESET_ALL}')
+    if card_id is not None:
+        print(f'{Fore.YELLOW}Стараємось оновити: {card_id}{Style.RESET_ALL}')
+        
+        print('Received data:', data)  # Print received data for debugging
+
         new_title = urllib.parse.unquote(data.get('newTitle', ''))
         new_description = urllib.parse.unquote(data.get('newDescription', ''))
         new_image = urllib.parse.unquote(data.get('newImage', ''))
@@ -124,7 +132,7 @@ def edit_card():
         updated_card = None
 
         for card in data:
-            if 'title' in card and card['title'] == card_title:
+            if 'id' in card and card['id'] == card_id:
                 card['title'] = new_title
                 card['description'] = new_description
                 card['image'] = new_image
@@ -138,7 +146,7 @@ def edit_card():
 
         if updated:
             save_data_to_file(data)
-            print(f'{Fore.GREEN}Оновлено картку: {new_title}{Style.RESET_ALL}')
+            print(f'{Fore.GREEN}Оновлено картку: {card_id} {new_title} {new_description} {new_image} {new_author} {new_verified} {new_completed} {new_Link}')
             return jsonify(updated_card)  # Повернення зміненої картки у відповіді
         else:
             return f'{Fore.RED}Картку не знайдено{Style.RESET_ALL}', 404

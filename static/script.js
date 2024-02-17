@@ -18,12 +18,12 @@ $(document).ready(function () {
     });
 
     function deleteCard(cardDiv) {
-        const cardTitle = cardDiv.data('title');
-        if (confirm(`Видалити запис "${cardTitle}"? Дані запису видаляться назавжди.`)) {
+        const cardId = cardDiv.data('id');  // Assuming you store the card ID in a 'data-id' attribute
+        if (confirm(`Видалити запис з ID "${cardId}"? Дані запису видаляться назавжди.`)) {
             $.ajax({
                 type: 'POST',
                 url: '/delete_card',
-                data: JSON.stringify({ title: cardTitle }),
+                data: JSON.stringify({ id: cardId }),  // Change 'title' to 'id'
                 contentType: 'application/json',
                 success: function () {
                     cardDiv.remove();
@@ -32,109 +32,53 @@ $(document).ready(function () {
         }
     }
 
-    function saveUpdatedCard(cardDiv, form) {
-        const cardTitle = cardDiv.data('title');
-        const cardTitleElement = cardDiv.find('h3');
-        const cardDescriptionElement = cardDiv.find('p');
-        const cardImageElement = cardDiv.find('.imageitem');
-        const cardAuthorElement = cardDiv.find('.author');
-        const cardVerifiedElement = cardDiv.find('.ver');
-        const cardCompletedElement = cardDiv.find('.ove');
-        const cardLinkElement = cardDiv.find('.site-linka');
-    
-        let newTitle = form.find('.new-title').val();
-        let newDescription = form.find('.new-description').val();
-        let newImage = form.find('.new-image').val();
-        let newAuthor = form.find('.new-author').val();
-        let newVerified = form.find('.new-verified').prop('checked');
-        let newCompleted = form.find('.new-completed').prop('checked');
-        let newLink = form.find('.new-link').val();
-    
-        const currentLink = cardLinkElement.attr('href') || '';
-    
-        const isDataChanged =
-            newTitle !== cardTitleElement.text() ||
-            newDescription !== cardDescriptionElement.text() ||
-            newImage !== cardImageElement.attr('src') ||
-            newAuthor !== cardAuthorElement.text() ||
-            newVerified !== cardVerifiedElement.text().includes('Так') ||
-            newCompleted !== cardCompletedElement.text().includes('Так') ||
-            newLink !== currentLink;
-    
-        if (!isDataChanged) {
-            form.hide();
-            return;
-        }
-    
-        const formData = {
-            title: cardTitle,
-        };
-    
-        if (newTitle) {
-            formData.newTitle = encodeURIComponent(newTitle);
-        }
-        if (newDescription) {
-            formData.newDescription = encodeURIComponent(newDescription);
-        }
-        if (newImage) {
-            formData.newImage = encodeURIComponent(newImage);
-        }
-        if (newAuthor) {
-            formData.newAuthor = encodeURIComponent(newAuthor);
-        }
-        if (newVerified) {
-            formData.newVerified = newVerified;
-        }
-        if (newCompleted) {
-            formData.newCompleted = newCompleted;
-        }
-        if (newLink && newLink !== '#') {
-            formData.newLink = encodeURIComponent(newLink);
-        }
+    function saveUpdatedCard(cardForm) {
+        const cardId = cardForm.data('id');
+        const formData = cardForm.serialize();  // Serialize the form data
     
         $.ajax({
             type: 'POST',
-            url: '/edit_card',
-            data: JSON.stringify(formData),
-            contentType: 'application/json',
+            url: `/edit_card/${cardId}`,  // Update the URL to include the cardId in the route
+            data: formData,
             success: function (response) {
-                form.hide();
-                if (formData.newTitle) {
-                    cardTitleElement.text(decodeURIComponent(response.title));
+                // Handle the response from the server
+                console.log('Server response:', response);
+    
+                // Assuming the server returns updated data, you can update the card elements
+                const cardDiv = $(`[data-id="${cardId}"]`);
+                const cardTitleElement = cardDiv.find('h3');
+                const cardDescriptionElement = cardDiv.find('p');
+                // Update other elements as needed
+    
+                // Example: Update the title if the server response contains the updated title
+                if (response.title) {
+                    cardTitleElement.text(response.title);
                 }
-                if (formData.newDescription) {
-                    cardDescriptionElement.text(decodeURIComponent(response.description));
-                }
-                if (formData.newImage) {
-                    cardImageElement.attr('src', decodeURIComponent(response.image));
-                }
-                if (formData.newAuthor) {
-                    cardAuthorElement.text(decodeURIComponent(response.author));
-                }
-                if (formData.newVerified) {
-                    cardVerifiedElement.text('Офіційно: ' + (response.verified ? 'Так' : 'Ні'));
-                }
-                if (formData.newCompleted) {
-                    cardCompletedElement.text('Завершено: ' + (response.completed ? 'Так' : 'Ні'));
-                }
-                if (formData.newLink) {
-                    cardLinkElement.attr('href', decodeURIComponent(response.link));
-                }
+    
+                // Hide the form
+                cardForm.hide();
+            },
+            error: function (error) {
+                // Handle errors, if any
+                console.error('Error:', error);
             },
         });
     }
     
 
-    $('.save-button').click(function () {
-        const cardDiv = $(this).closest('.card');
-        const form = cardDiv.find('.form');
-        saveUpdatedCard(cardDiv, form);
-    });
+// Update the click event to submit the form
+$('.save-button').click(function (event) {
+    event.preventDefault();  // Prevent the default form submission
+    const cardForm = $(this).closest('form');
+    saveUpdatedCard(cardForm);
+});
 
-    $('.cancel-button').click(function () {
-        const form = $(this).closest('.form');
-        form.hide();
-    });
+// Add a click event for the cancel button to hide the form
+$('.cancel-button').click(function (event) {
+    event.preventDefault();
+    const cardForm = $(this).closest('form');
+    cardForm.hide();
+});
 
     $('.add-button').click(function () {
         const newTitle = $('#new-title').val();
