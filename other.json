@@ -20,7 +20,7 @@
     "author": "MEGATREX4",
     "completed": true,
     "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(автор(и) крутий).",
-    "Link": "https://github.com/lay295/TwitchDownloader",
+    "link": "https://github.com/lay295/TwitchDownloader",
     "id": "000129"
   },
   {
@@ -31,7 +31,7 @@
     "author": "Команда СУМ, MeDustyy, OmniverseTraitor, Artem Nizhensky, Alexosh",
     "completed": true,
     "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались).",
-    "Link": "https://crowdin.com/project/modrinth",
+    "link": "https://crowdin.com/project/modrinth",
     "semiverified": true,
     "id": "000130"
   },
@@ -42,7 +42,7 @@
     "verified": true,
     "author": "moralniy, awzix",
     "completed": true,
-    "Link": "https://store.steampowered.com/app/2239140/Grapples_Galore",
+    "link": "https://store.steampowered.com/app/2239140/Grapples_Galore",
     "id": "000131"
   }
 ]

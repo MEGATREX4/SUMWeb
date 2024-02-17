@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+from flask import request
 import json
 import urllib.parse
 from jinja2 import Environment
@@ -73,9 +74,12 @@ def add_card():
     new_author = data.get('author')
     new_verified = data.get('verified')
     new_completed = data.get('completed')
-    new_Link = data.get('Link')
+    new_link = data.get('link')  # Update to 'link'
     
-    print(f'{Fore.GREEN}Додано нову картку: {new_title} з даними {data}{Style.RESET_ALL}')  # Повідомлення про додану картку у консоль
+    # Генерування нового унікального 'id'
+    new_id = generate_formatted_id()
+
+    print(f'{Fore.GREEN}Додано нову картку: {new_title} з даними id:{new_id}{data}{Style.RESET_ALL}')  # Повідомлення про додану картку у консоль
 
     if not new_title:
         return f'{Fore.RED}Помилка: Запис не має заголовку.{Style.RESET_ALL}', 400
@@ -87,9 +91,6 @@ def add_card():
         if card['title'] == new_title:
             return f'{Fore.RED}Картка з таким заголовком вже існує{Style.RESET_ALL}', 400
 
-    # Генерування нового унікального 'id'
-    new_id = generate_formatted_id()
-
     new_card = {
         'id': new_id,
         'title': new_title,
@@ -98,60 +99,51 @@ def add_card():
         'verified': new_verified,
         'author': new_author,
         'completed': new_completed,
-        'Link': new_Link
+        'link': new_link
     }
 
     data.append(new_card)
     save_data_to_file(data)
     return jsonify(new_card)
 
-@app.route('/edit_card', methods=['POST'])
-def edit_card():
-    if request.content_type != 'application/json':
-        return f'{Fore.RED}Непідтримуваний тип медіа{Style.RESET_ALL}', 415
+@app.route('/edit_card/<string:card_id>', methods=['POST'])
+def edit_card(card_id):
+    if request.content_type != 'application/x-www-form-urlencoded':
+        return f'{Fore.RED}Unsupported media type{Style.RESET_ALL}', 415
 
-    data = request.get_json()
-    card_id = data.get('id')  # Change 'title' to 'id'
+    # Assuming you are using the request.form to get form data
+    new_title = request.form.get('new-title', '')
+    new_description = request.form.get('new-description', '')
+    new_image = request.form.get('new-image', '')
+    new_author = request.form.get('new-author', '')
+    new_verified = request.form.get('new-verified', type=bool, default=False)
+    new_completed = request.form.get('new-completed', type=bool, default=False)
+    new_link = request.form.get('new-link', '')
 
-    if card_id is not None:
-        print(f'{Fore.YELLOW}Стараємось оновити: {card_id}{Style.RESET_ALL}')
-        
-        print('Received data:', data)  # Print received data for debugging
+    data = read_data_from_file()
 
-        new_title = urllib.parse.unquote(data.get('newTitle', ''))
-        new_description = urllib.parse.unquote(data.get('newDescription', ''))
-        new_image = urllib.parse.unquote(data.get('newImage', ''))
-        new_author = urllib.parse.unquote(data.get('newAuthor', ''))
-        new_verified = data.get('newVerified', False)
-        new_completed = data.get('newCompleted', False)
-        new_Link = urllib.parse.unquote(data.get('newLink', ''))
+    updated = False
+    updated_card = None
 
-        data = read_data_from_file()
+    for card in data:
+        if 'id' in card and card['id'] == card_id:
+            card['title'] = new_title
+            card['description'] = new_description
+            card['image'] = new_image
+            card['author'] = new_author
+            card['verified'] = new_verified
+            card['completed'] = new_completed
+            card['link'] = new_link
+            updated = True
+            updated_card = card
+            break
 
-        updated = False
-        updated_card = None
-
-        for card in data:
-            if 'id' in card and card['id'] == card_id:
-                card['title'] = new_title
-                card['description'] = new_description
-                card['image'] = new_image
-                card['author'] = new_author
-                card['verified'] = new_verified
-                card['completed'] = new_completed
-                card['Link'] = new_Link
-                updated = True
-                updated_card = card
-                break
-
-        if updated:
-            save_data_to_file(data)
-            print(f'{Fore.GREEN}Оновлено картку: {card_id} {new_title} {new_description} {new_image} {new_author} {new_verified} {new_completed} {new_Link}')
-            return jsonify(updated_card)  # Повернення зміненої картки у відповіді
-        else:
-            return f'{Fore.RED}Картку не знайдено{Style.RESET_ALL}', 404
+    if updated:
+        save_data_to_file(data)
+        print(f'{Fore.GREEN}Картку {new_title}(id: {card_id}) оновлено з даними title: {new_title}, description: {new_description}, image link: {new_image}, author: {new_author}, is verified: {new_verified}, is completed: {new_completed}, link: {new_link}{Style.RESET_ALL}')
+        return jsonify(updated_card)  # Return the updated card in the response
     else:
-        return f'{Fore.RED}Некоректні дані{Style.RESET_ALL}', 400
+        return f'{Fore.RED}Card not found{Style.RESET_ALL}', 404
 
 
 if __name__ == '__main__':

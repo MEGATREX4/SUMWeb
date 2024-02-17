@@ -27,14 +27,14 @@
     
 }
 
-.Links{
+.links{
     padding: 1.5px 5px;
     background-color: #20202c;
     color: white;
     border-radius: 5px;
     text-decoration: none;
 }
-.Links:hover{
+.links:hover{
     padding: 1.5px 5px;
     background-color: #33333d;
     color: white;

@@ -6,7 +6,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/apotheosis",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/apotheosis",
         "id": "000001"
     },
     {
@@ -16,7 +16,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000002"
     },
     {
@@ -26,7 +26,7 @@
         "verified": true,
         "author": "MEGATREX4, hnufelka, CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering",
         "id": "000003"
     },
     {
@@ -36,7 +36,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000004"
     },
     {
@@ -46,7 +46,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/delightful",
+        "link": "https://modrinth.com/mod/delightful",
         "id": "000005"
     },
     {
@@ -56,7 +56,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/ends-delight",
+        "link": "https://modrinth.com/mod/ends-delight",
         "id": "000006"
     },
     {
@@ -66,7 +66,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000007"
     },
     {
@@ -76,7 +76,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000008"
     },
     {
@@ -86,7 +86,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000009"
     },
     {
@@ -96,7 +96,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000010"
     },
     {
@@ -106,7 +106,7 @@
         "verified": true,
         "author": "Команда СУМ, unroman",
         "completed": true,
-        "Link": "https://modrinth.com/mod/rottencreatures",
+        "link": "https://modrinth.com/mod/rottencreatures",
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true,
         "id": "000011"
@@ -118,17 +118,17 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000012"
     },
     {
         "title": "Nether's Delight",
         "description": "Використовуючи передові мисливські техніки та кулінарні навички, ви зможете приготувати безліч огидних страв і покритих мохом закусок, і навіть трохи довше прожити в Незері!",
         "image": "https://cdn.modrinth.com/data/Vv0RM7WN/bcc7b753ece2584ea956888971a98dc7f3045319.png",
-        "verified": false,
-        "author": "",
+        "verified": true,
+        "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000013"
     },
     {
@@ -138,17 +138,17 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000014"
     },
     {
         "title": "The One Probe",
-        "description": "TOP, альтернатива WAILA, яка показує інформацію про те, на що ви дивитеся (істоти, блоки, предмети)",
+        "description": "TOP, альтернівапатива WAILA, яка показує інформацію про те, на що ви дивитеся (істоти, блоки, предмети)",
         "image": "https://cdn.modrinth.com/data/Eyw0UxEx/ca066fbe30ebf9357896ae53711b86460159aedf.png",
-        "verified": false,
-        "author": "",
+        "verified": true,
+        "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000015"
     },
     {
@@ -158,7 +158,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000016"
     },
     {
@@ -168,7 +168,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": "https://modrinth.com/mod/ae2",
+        "link": "https://modrinth.com/mod/ae2",
         "id": "000017"
     },
     {
@@ -178,7 +178,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/bartering-station",
+        "link": "https://modrinth.com/mod/bartering-station",
         "id": "000018"
     },
     {
@@ -188,7 +188,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/chunk-loaders",
+        "link": "https://modrinth.com/mod/chunk-loaders",
         "id": "000019"
     },
     {
@@ -198,7 +198,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000020"
     },
     {
@@ -208,7 +208,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/magnum-torch",
+        "link": "https://modrinth.com/mod/magnum-torch",
         "id": "000021"
     },
     {
@@ -218,7 +218,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000022"
     },
     {
@@ -228,7 +228,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000023"
     },
     {
@@ -238,7 +238,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000024"
     },
     {
@@ -248,7 +248,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000025"
     },
     {
@@ -258,7 +258,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000026"
     },
     {
@@ -268,7 +268,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000027"
     },
     {
@@ -278,7 +278,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000028"
     },
     {
@@ -288,7 +288,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/configured",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/configured",
         "id": "000029"
     },
     {
@@ -298,7 +298,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000030"
     },
     {
@@ -308,7 +308,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/crafting-station",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/crafting-station",
         "id": "000031"
     },
     {
@@ -318,7 +318,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000032"
     },
     {
@@ -328,7 +328,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000033"
     },
     {
@@ -338,7 +338,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000034"
     },
     {
@@ -348,7 +348,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000035"
     },
     {
@@ -358,7 +358,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000036"
     },
     {
@@ -368,7 +368,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000037"
     },
     {
@@ -378,7 +378,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000038"
     },
     {
@@ -388,7 +388,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/keymap",
+        "link": "https://modrinth.com/mod/keymap",
         "id": "000039"
     },
     {
@@ -398,7 +398,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/crafting-tweaks",
+        "link": "https://modrinth.com/mod/crafting-tweaks",
         "id": "000040"
     },
     {
@@ -408,7 +408,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000041"
     },
     {
@@ -418,7 +418,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000042"
     },
     {
@@ -428,7 +428,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/ae2things",
+        "link": "https://modrinth.com/mod/ae2things",
         "id": "000043"
     },
     {
@@ -438,7 +438,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/ae2wtlib",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/ae2wtlib",
         "id": "000044"
     },
     {
@@ -448,7 +448,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000045"
     },
     {
@@ -458,7 +458,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000046"
     },
     {
@@ -468,7 +468,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000047"
     },
     {
@@ -478,7 +478,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000048"
     },
     {
@@ -488,7 +488,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/immersiveposts",
+        "link": "https://modrinth.com/mod/immersiveposts",
         "id": "000049"
     },
     {
@@ -498,7 +498,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000050"
     },
     {
@@ -508,7 +508,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000051"
     },
     {
@@ -518,7 +518,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000052"
     },
     {
@@ -528,7 +528,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
         "id": "000053"
     },
     {
@@ -538,7 +538,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000054"
     },
     {
@@ -548,7 +548,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/trading-post",
+        "link": "https://modrinth.com/mod/trading-post",
         "id": "000055"
     },
     {
@@ -558,7 +558,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/trash-cans",
+        "link": "https://modrinth.com/mod/trash-cans",
         "id": "000056"
     },
     {
@@ -568,7 +568,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000057"
     },
     {
@@ -578,7 +578,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000058"
     },
     {
@@ -588,7 +588,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000059"
     },
     {
@@ -598,7 +598,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000060"
     },
     {
@@ -608,7 +608,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000061"
     },
     {
@@ -618,7 +618,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000062"
     },
     {
@@ -628,7 +628,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000063"
     },
     {
@@ -638,7 +638,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge та Modrinth",
         "semiverified": true,
         "id": "000064"
@@ -650,7 +650,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000065"
     },
     {
@@ -660,7 +660,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000066"
     },
     {
@@ -670,7 +670,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000067"
     },
     {
@@ -680,7 +680,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/tieredz",
+        "link": "https://modrinth.com/mod/tieredz",
         "id": "000068"
     },
     {
@@ -690,7 +690,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000069"
     },
     {
@@ -700,7 +700,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000070"
     },
     {
@@ -710,7 +710,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000071"
     },
     {
@@ -720,7 +720,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/cosmetic-nametags",
+        "link": "https://modrinth.com/mod/cosmetic-nametags",
         "id": "000072"
     },
     {
@@ -730,7 +730,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/hardcore-revival",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/hardcore-revival",
         "id": "000073"
     },
     {
@@ -740,7 +740,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/environmentz",
+        "link": "https://modrinth.com/mod/environmentz",
         "id": "000074"
     },
     {
@@ -750,7 +750,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000075"
     },
     {
@@ -760,7 +760,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/chronopyre",
+        "link": "https://modrinth.com/mod/chronopyre",
         "id": "000076"
     },
     {
@@ -770,7 +770,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000077"
     },
     {
@@ -780,7 +780,7 @@
         "verified": true,
         "author": "Команда СУМ, unroman",
         "completed": true,
-        "Link": "https://modrinth.com/mod/spell-engine",
+        "link": "https://modrinth.com/mod/spell-engine",
         "id": "000078"
     },
     {
@@ -790,7 +790,7 @@
         "verified": false,
         "author": "mewnn",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000079"
     },
     {
@@ -800,7 +800,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/beautify-refabricated",
+        "link": "https://modrinth.com/mod/beautify-refabricated",
         "id": "000080"
     },
     {
@@ -810,7 +810,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/backpacked",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/backpacked",
         "id": "000081"
     },
     {
@@ -820,7 +820,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000082"
     },
     {
@@ -830,7 +830,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000083"
     },
     {
@@ -840,7 +840,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000084"
     },
     {
@@ -850,7 +850,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000085"
     },
     {
@@ -860,7 +860,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000086"
     },
     {
@@ -870,7 +870,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000087"
     },
     {
@@ -880,7 +880,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000088"
     },
     {
@@ -890,7 +890,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000089"
     },
     {
@@ -900,7 +900,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000090"
     },
     {
@@ -910,7 +910,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000091"
     },
     {
@@ -920,7 +920,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000092"
     },
     {
@@ -930,7 +930,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000093"
     },
     {
@@ -940,7 +940,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000094"
     },
     {
@@ -953,7 +953,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": false,
-        "Link": "",
+        "link": "",
         "id": "000095"
     },
     {
@@ -963,7 +963,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000096"
     },
     {
@@ -973,7 +973,7 @@
         "verified": true,
         "author": "Команда СУМ, unroman",
         "completed": true,
-        "Link": "https://modrinth.com/mod/wizards",
+        "link": "https://modrinth.com/mod/wizards",
         "id": "000097"
     },
     {
@@ -983,7 +983,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/createaddition",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/createaddition",
         "id": "000098"
     },
     {
@@ -993,7 +993,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000099"
     },
     {
@@ -1003,7 +1003,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/simple-storage-network",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/simple-storage-network",
         "id": "000100"
     },
     {
@@ -1013,7 +1013,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": "https://modrinth.com/mod/tools-complement",
+        "link": "https://modrinth.com/mod/tools-complement",
         "id": "000101"
     },
     {
@@ -1023,7 +1023,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000102"
     },
     {
@@ -1033,7 +1033,7 @@
         "verified": true,
         "author": "Tapio, MartianDill, Eric_Mensy, Dasventur, Koto Fickus",
         "completed": true,
-        "Link": "https://modrinth.com/mod/create-fabric",
+        "link": "https://modrinth.com/mod/create-fabric",
         "id": "000103"
     },
     {
@@ -1043,7 +1043,7 @@
         "verified": true,
         "author": "Команда СУМ, MartianDill, Eugene Hordei",
         "completed": true,
-        "Link": "https://modrinth.com/mod/create-steam-n-rails",
+        "link": "https://modrinth.com/mod/create-steam-n-rails",
         "id": "000104"
     },
     {
@@ -1053,7 +1053,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000105"
     },
     {
@@ -1063,7 +1063,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000106"
     },
     {
@@ -1073,7 +1073,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000107"
     },
     {
@@ -1083,7 +1083,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000108"
     },
     {
@@ -1093,7 +1093,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": "https://modrinth.com/mod/mcda",
+        "link": "https://modrinth.com/mod/mcda",
         "id": "000109"
     },
     {
@@ -1103,7 +1103,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true,
         "id": "000110"
@@ -1115,7 +1115,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/mana-visualizer",
+        "link": "https://modrinth.com/mod/mana-visualizer",
         "id": "000111"
     },
     {
@@ -1125,7 +1125,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000112"
     },
     {
@@ -1135,7 +1135,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000113"
     },
     {
@@ -1145,7 +1145,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000114"
     },
     {
@@ -1155,7 +1155,7 @@
         "verified": false,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "id": "000115"
     },
     {
@@ -1165,7 +1165,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000116"
     },
     {
@@ -1175,7 +1175,7 @@
         "verified": true,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000117"
     },
     {
@@ -1188,7 +1188,7 @@
         "verified": false,
         "author": "",
         "completed": false,
-        "Link": null,
+        "link": null,
         "id": "000118"
     },
     {
@@ -1201,7 +1201,7 @@
         "verified": false,
         "author": "",
         "completed": false,
-        "Link": null,
+        "link": null,
         "id": "000119"
     },
     {
@@ -1211,7 +1211,7 @@
         "verified": true,
         "author": "Команда СУМ, unroman, mewnn",
         "completed": true,
-        "Link": null,
+        "link": null,
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman та mewnn, можна знайти на Curse Forge або Modrinth",
         "semiverified": true,
         "id": "000120"
@@ -1223,7 +1223,7 @@
         "verified": true,
         "author": "Команда СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/jewelry",
+        "link": "https://modrinth.com/mod/jewelry",
         "id": "000121"
     },
     {
@@ -1233,7 +1233,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000122"
     },
     {
@@ -1243,7 +1243,7 @@
         "verified": true,
         "author": "Команда СУМ, unroman",
         "completed": true,
-        "Link": null,
+        "link": null,
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true,
         "id": "000123"
@@ -1258,7 +1258,7 @@
         "verified": false,
         "author": "",
         "completed": false,
-        "Link": null,
+        "link": null,
         "id": "000124"
     },
     {
@@ -1268,7 +1268,7 @@
         "verified": false,
         "author": "",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000125"
     },
     {
@@ -1278,7 +1278,7 @@
         "verified": false,
         "author": "moralniy, InertFall",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000126"
     },
     {
@@ -1288,7 +1288,7 @@
         "verified": false,
         "author": "Ymna_ytka",
         "completed": true,
-        "Link": null,
+        "link": null,
         "id": "000127"
     }
 ]

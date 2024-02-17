@@ -10,9 +10,9 @@ $(document).ready(function () {
     
 
     $('.site-link').each(function () {
-        const fullLink = $(this).attr('href');
-        if (fullLink) {
-            const hostname = new URL(fullLink).hostname;
+        const fulllink = $(this).attr('href');
+        if (fulllink) {
+            const hostname = new URL(fulllink).hostname;
             $(this).text(hostname);
         }
     });
@@ -32,37 +32,40 @@ $(document).ready(function () {
         }
     }
 
-    function saveUpdatedCard(cardForm) {
-        const cardId = cardForm.data('id');
-        const formData = cardForm.serialize();  // Serialize the form data
+    function saveUpdatedCard(cardDiv, form) {
+        const cardId = cardDiv.data('id');
+    
+        // Retrieve form input values here
+        let newTitle = form.find('.new-title').val();
+        let newDescription = form.find('.new-description').val();
+        let newImage = form.find('.new-image').val();
+        let newAuthor = form.find('.new-author').val();
+        let newVerified = form.find('.new-verified').prop('checked');
+        let newCompleted = form.find('.new-completed').prop('checked');
+        let newlink = form.find('.new-link').val();
+    
     
         $.ajax({
             type: 'POST',
-            url: `/edit_card/${cardId}`,  // Update the URL to include the cardId in the route
-            data: formData,
+            url: `/edit_card/${cardId}`,
+            data: {
+                'new-title': newTitle,
+                'new-description': newDescription,
+                'new-image': newImage,
+                'new-author': newAuthor,
+                'new-verified': newVerified,
+                'new-completed': newCompleted,
+                'new-link': newlink
+            },
+            contentType: 'application/x-www-form-urlencoded',  // Set the correct Content-Type
             success: function (response) {
-                // Handle the response from the server
-                console.log('Server response:', response);
-    
-                // Assuming the server returns updated data, you can update the card elements
-                const cardDiv = $(`[data-id="${cardId}"]`);
-                const cardTitleElement = cardDiv.find('h3');
-                const cardDescriptionElement = cardDiv.find('p');
-                // Update other elements as needed
-    
-                // Example: Update the title if the server response contains the updated title
-                if (response.title) {
-                    cardTitleElement.text(response.title);
-                }
-    
-                // Hide the form
-                cardForm.hide();
+                // Handle the success response
             },
             error: function (error) {
-                // Handle errors, if any
-                console.error('Error:', error);
-            },
+                // Handle the error response
+            }
         });
+        
     }
     
 
@@ -70,8 +73,10 @@ $(document).ready(function () {
 $('.save-button').click(function (event) {
     event.preventDefault();  // Prevent the default form submission
     const cardForm = $(this).closest('form');
-    saveUpdatedCard(cardForm);
+    const cardDiv = cardForm.closest('.card');  // Add this line to get the cardDiv
+    saveUpdatedCard(cardDiv, cardForm);  // Pass cardDiv and cardForm as arguments
 });
+
 
 // Add a click event for the cancel button to hide the form
 $('.cancel-button').click(function (event) {
@@ -85,11 +90,9 @@ $('.cancel-button').click(function (event) {
         const newDescription = $('#new-description').val();
         const newImage = $('#new-image').val();
         const newAuthor = $('#new-author').val();
-        const newLink = $('#new-link').val();
+        const newlink = $('#new-link').val();
         const newVerified = $('#new-verified').prop('checked');
         const newCompleted = $('#new-completed').prop('checked');
-
-
 
         const formData = JSON.stringify({
             title: newTitle,
@@ -98,38 +101,39 @@ $('.cancel-button').click(function (event) {
             verified: newVerified,
             author: newAuthor,
             completed: newCompleted,
-            link: newLink,
+            link: newlink,  // Here it is "link"
         });
 
-        $.ajax({
-            type: 'POST',
-            url: '/add_card',
-            data: formData,
-            contentType: 'application/json',
-            success: function (response) {
-                const newCardHtml = `
-                    <!-- Ваш HTML-код для нової карточки -->
-                `;
-                const newCard = $(newCardHtml);
-                $('.card-container').append(newCard);
+    $.ajax({
+        type: 'POST',
+        url: '/add_card',
+        data: formData,
+        contentType: 'application/json',
+        success: function (response) {
+            const newCardHtml = `
+                <!-- Ваш HTML-код для нової карточки -->
+            `;
+            const newCard = $(newCardHtml);
+            $('.card-container').append(newCard);
 
-                newCard.find('.delete-button').click(function () {
-                    deleteCard(newCard);
-                });
-                newCard.find('.edit-button').click(function () {
-                    editCard(newCard);
-                });
+            newCard.find('.delete-button').click(function () {
+                deleteCard(newCard);
+            });
+            newCard.find('.edit-button').click(function () {
+                editCard(newCard);
+            });
 
-                $('#new-title').val('');
-                $('#new-description').val('');
-                $('#new-image').val('');
-                $('#new-author').val('');
-                $('#new-link').val('');
-                $('#new-verified').prop('checked', false);
-                $('#new-completed').prop('checked', false);
-            },
-        });
+            $('#new-title').val('');
+            $('#new-description').val('');
+            $('#new-image').val('');
+            $('#new-author').val('');
+            $('#new-link').val('');
+            $('#new-verified').prop('checked', false);
+            $('#new-completed').prop('checked', false);
+        },
     });
+    
+});
 
     function editCard(card) {
         const form = card.find('.form');
@@ -141,7 +145,7 @@ $('.cancel-button').click(function (event) {
         const currentAuthor = card.find('.author').text();
         const currentVerified = card.find('.ver').text().includes('Так');
         const currentCompleted = card.find('.ove').text().includes('Так');
-        const currentLink = card.find('.link').find('a').attr('href');
+        const currentlink = card.find('.link').find('a').attr('href');
 
         form.find('.new-title').val(currentTitle);
         form.find('.new-description').val(currentDescription);
@@ -149,7 +153,7 @@ $('.cancel-button').click(function (event) {
         form.find('.new-author').val(currentAuthor);
         form.find('.new-verified').prop('checked', currentVerified);
         form.find('.new-completed').prop('checked', currentCompleted);
-        form.find('.new-link').val(currentLink);
+        form.find('.new-link').val(currentlink);
     }
 
     $('.edit-button').click(function () {
