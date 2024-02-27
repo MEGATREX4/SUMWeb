@@ -53,7 +53,14 @@ function performSearch() {
         const searchResults = allData.filter(item => {
             const titleText = item.title.toLowerCase();
             const descriptionText = item.description.toLowerCase();
-            return titleText.includes(searchTerm) || descriptionText.includes(searchTerm);
+            const authorText = item.author.toLowerCase();
+            const idText = item.id.toLowerCase();
+
+            // Check if the search term is present in title, description, author, or id
+            return titleText.includes(searchTerm) ||
+                   descriptionText.includes(searchTerm) ||
+                   authorText.includes(searchTerm) ||
+                   idText.includes(searchTerm);
         });
 
         displayTranslations(searchResults, 1, 99999999); // You can adjust the number of items per page

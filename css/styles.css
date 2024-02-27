@@ -604,8 +604,11 @@ body, html {
     max-width: 960px;
     margin: 20px auto;
     display: flex;
-    flex-wrap: wrap; /* Змінюємо розміщення на згорнуту обгортку */
+    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .container-content {
@@ -655,6 +658,7 @@ body, html {
     border-radius: 15px 15px;
     font-family: 'Nunito', sans-serif;
     font-size: 17px;
+    min-width: 312px;
 }
 
 
