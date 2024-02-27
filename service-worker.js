@@ -46,7 +46,7 @@ self.addEventListener('fetch', (event) => {
   const isIncludedImageDomain = includedImageDomains.some(domain => requestUrl.hostname.includes(domain));
 
   // Exclude JavaScript and JSON files from caching
-  if (requestUrl.pathname.endsWith('.js') || requestUrl.pathname.endsWith('.json')) {
+  if (requestUrl.pathname.endsWith('.js') || requestUrl.pathname.endsWith('.json') || requestUrl.pathname.endsWith('.css')) {
     return;
   }
 
