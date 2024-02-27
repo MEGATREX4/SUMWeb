@@ -44,5 +44,25 @@
     "completed": true,
     "link": "https://store.steampowered.com/app/2239140/Grapples_Galore",
     "id": "000131"
+  },
+  {
+      "id": "000128",
+      "title": "The Henry Stickmin Collection",
+      "description": "Вибір власного варіанта шляху, де поразка приносить набагато більше задоволення, ніж здобуття успіху.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1089980/header.jpg?t=1619212064",
+      "verified": false,
+      "author": "Команда СУМ, Patsiuk Localizator",
+      "completed": false,
+      "link": ""
+  },
+  {
+      "id": "000132",
+      "title": "Ages of Conflict: World War Simulator",
+      "description": "Ages of Conflict - це універсальна гра в жанрі картографічного симулятора, де ви створюєте власні або випадкові нації за допомогою ШІ та спостерігаєте за їхньою боротьбою у нескінченній кількості світів. Командуйте націями, щоб змінити події у світі на свій розсуд.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2186320/header.jpg?t=1708790926",
+      "verified": false,
+      "author": "Команда СУМ, Patsiuk Localizator",
+      "completed": false,
+      "link": ""
   }
 ]

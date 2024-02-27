@@ -15,12 +15,30 @@ app.debug = True
 data_file = "mods.json"  # Шлях до вашого JSON-файлу
 
 def generate_formatted_id():
-    data = read_data_from_file()  # Make sure data is defined or passed as an argument
-    return f"{len(data) + 1:06d}"
+    # Read data from mods.json and other.json
+    mods_data = read_data_from_file("mods.json")
+    other_data = read_data_from_file("other.json")
 
-def read_data_from_file():
+    # Combine data from both files
+    all_data = mods_data + other_data
+
+    # Check if there is any data
+    if all_data:
+        # Get the maximum id from the combined data
+        max_id = max(int(card.get('id', 0)) for card in all_data)
+        new_id = max_id + 1
+    else:
+        # If no data, start with id 1
+        new_id = 1
+
+    return f"{new_id:06d}"
+
+
+
+
+def read_data_from_file(file_path):
     try:
-        with open(data_file, 'r', encoding='utf-8') as file:
+        with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
         return data
     except FileNotFoundError:
@@ -34,18 +52,19 @@ def save_data_to_file(data):
 def urlparse(url):
     from urllib.parse import urlparse
     netloc = urlparse(url).netloc
-    if netloc.startswith(b"www."):  # Convert the prefix to bytes
-        netloc = netloc[4:]  # Видаляємо "www." з початку
-    if netloc.endswith(b".com"):  # Convert the suffix to bytes
-        netloc = netloc[:-4]  # Видаляємо ".com" з кінця
-    return netloc.decode('utf-8')  # Decode the bytes back to a string
+    if netloc.startswith("www."):
+        netloc = netloc[4:]
+    if netloc.endswith(".com"):
+        netloc = netloc[:-4]
+    return netloc
+
 
 
 app.jinja_env.filters['urlparse'] = urlparse
 
 @app.route('/')
 def editor():
-    data = read_data_from_file()
+    data = read_data_from_file(data_file)
     return render_template('editor.html', data=data)
 
 @app.route('/delete_card', methods=['POST'])
@@ -55,7 +74,7 @@ def delete_card_handler():
 
     if card_id is not None:
         print(f'{Fore.YELLOW}Trying to delete card with id: {card_id}{Style.RESET_ALL}')
-        data = read_data_from_file()
+        data = read_data_from_file(data_file)
         for card in data:
             if 'id' in card and card['id'] == card_id:  # Check against 'id' instead of 'title'
                 data.remove(card)
@@ -84,7 +103,7 @@ def add_card():
     if not new_title:
         return f'{Fore.RED}Помилка: Запис не має заголовку.{Style.RESET_ALL}', 400
 
-    data = read_data_from_file()
+    data = read_data_from_file(data_file)
 
     # Перевірка, чи не існує картки з таким же title
     for card in data:
@@ -120,7 +139,7 @@ def edit_card(card_id):
     new_completed = request.form.get('new-completed', type=bool, default=False)
     new_link = request.form.get('new-link', '')
 
-    data = read_data_from_file()
+    data = read_data_from_file(data_file)
 
     updated = False
     updated_card = None

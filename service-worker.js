@@ -1,5 +1,5 @@
 const cacheName = 'SUMTRANSLATE_REL_'; // Update cache name to trigger the installation of a new service worker
-const maxImageAge = 1 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
+const maxImageAge = 12 * 60 * 60 * 1000; // 7 days in milliseconds
 
 // Included domains for image caching
 const includedImageDomains = [
@@ -45,8 +45,8 @@ self.addEventListener('fetch', (event) => {
   const requestUrl = new URL(event.request.url);
   const isIncludedImageDomain = includedImageDomains.some(domain => requestUrl.hostname.includes(domain));
 
-  // Exclude JavaScript files from caching
-  if (requestUrl.pathname.endsWith('.js')) {
+  // Exclude JavaScript and JSON files from caching
+  if (requestUrl.pathname.endsWith('.js') || requestUrl.pathname.endsWith('.json')) {
     return;
   }
 
