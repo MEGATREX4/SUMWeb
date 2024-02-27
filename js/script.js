@@ -238,14 +238,14 @@ function displayTranslations(data, currentPage, itemsPerPage) {
 function extractSiteName(url) {
     // Check if the URL contains "store.steampowered.com"
     if (url.includes("store.steampowered.com")) {
-        return "steam";
+        return "steam.com";
     }
 
     // Remove "https://", "http://", or "www." from the beginning
     let siteName = url.replace(/^(https?:\/\/)?(www\.)?/, '');
 
     // Remove ".to" and "MEGATREX4" from the URL
-    siteName = siteName.replace(/\.to|MEGATREX4/, '');
+    siteName = siteName.replace(/\|MEGATREX4/, '');
 
     // Remove everything after the first "/" or the top-level domain (e.g., ".com")
     siteName = siteName.replace(/\/.*/, '');
