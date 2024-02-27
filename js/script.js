@@ -123,8 +123,8 @@ function displayTranslations(data, currentPage, itemsPerPage) {
             // Якщо 'completed' дорівнює false, встановлюємо текст кнопки "в процесі"
             translationButton.classList.add('notcompleted'); // Додаємо клас 'notcompleted'
             translationButton.setAttribute("id", "notcompleted");
-            translationButton.href = item.Link || 'https://donatello.to/MEGATREX4';
-            siteURL = item.Link || 'https://donatello.to/MEGATREX4';
+            translationButton.href = item.link || 'https://donatello.to/MEGATREX4';
+            siteURL = item.link || 'https://donatello.to/MEGATREX4';
             const siteName = extractSiteName(siteURL);
             translationButton.innerHTML = `В процесі&ensp; <span class="spantranslate">(${siteName})</span>`;
             translationButton.href = siteURL;
@@ -133,8 +133,8 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         } else {
             // Інакше встановлюємо текст кнопки "Переклад"
             translationButton.textContent = 'Переклад';
-            if (item.hasOwnProperty('Link') && item.Link) {
-                const siteURL = item.Link;
+            if (item.hasOwnProperty('link') && item.link) {
+                const siteURL = item.link;
                 const siteName = extractSiteName(siteURL);
                 translationButton.innerHTML = `Переклад&ensp; <span class="spantranslate">(${siteName})</span>`;
                 translationButton.href = siteURL;
