@@ -23,6 +23,7 @@ function displayTranslations(data, currentPage, itemsPerPage) {
 
         const imageElement = document.createElement('div');
         imageElement.classList.add('image');
+        imageElement.id = `${item.id}`; // Assuming the ID is stored in the 'id' property of the item
 
         // Встановлення фонового зображення для imageElement
         if (item.image !== "") {
@@ -38,6 +39,12 @@ function displayTranslations(data, currentPage, itemsPerPage) {
 
         const descriptionContainer = document.createElement('div');
         descriptionContainer.classList.add('description-container');
+
+        // Create a container for the ID display
+        const idContainer = document.createElement('div');
+        idContainer.classList.add('id-container');
+        idContainer.textContent = `id: ${item.id}`; // Assuming the ID is stored in the 'id' property of the item
+
                 // Create a container for status images
         const statusContainer = document.createElement('div');
         statusContainer.classList.add('status-container');
@@ -190,6 +197,7 @@ function displayTranslations(data, currentPage, itemsPerPage) {
         imageContainer.appendChild(imageElement);
         itemContainer.appendChild(imageContainer);
         itemContainer.appendChild(titleElement);
+        descriptionContainer.appendChild(idContainer);
         descriptionContainer.appendChild(statusContainer);
         descriptionContainer.appendChild(descriptionElement);
         itemContainer.appendChild(descriptionContainer);

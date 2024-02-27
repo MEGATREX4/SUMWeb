@@ -668,3 +668,15 @@ body, html {
 .statusimage{
     margin: 5px 5px;
 }
+
+.id-container{
+    position: absolute;
+    width: 100%;
+    top: 4px;
+    display: flex;
+    margin-left: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    color:#51404049;
+    
+}

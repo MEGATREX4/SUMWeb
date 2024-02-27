@@ -85,24 +85,28 @@ $('.cancel-button').click(function (event) {
     cardForm.hide();
 });
 
-    $('.add-button').click(function () {
-        const newTitle = $('#new-title').val();
-        const newDescription = $('#new-description').val();
-        const newImage = $('#new-image').val();
-        const newAuthor = $('#new-author').val();
-        const newlink = $('#new-link').val();
-        const newVerified = $('#new-verified').prop('checked');
-        const newCompleted = $('#new-completed').prop('checked');
+$('.add-button').click(function () {
+    const newTitle = $('#new-title').val();
+    const newDescription = $('#new-description').val();
+    const newImage = $('#new-image').val();
+    const newAuthor = $('#new-author').val();
+    const newlink = $('#new-link').val();
+    const newVerified = $('#new-verified').prop('checked');
+    const newCompleted = $('#new-completed').prop('checked');
 
-        const formData = JSON.stringify({
-            title: newTitle,
-            description: newDescription,
-            image: newImage,
-            verified: newVerified,
-            author: newAuthor,
-            completed: newCompleted,
-            link: newlink,  // Here it is "link"
-        });
+    // Get the selected file path based on the radio button selection
+    const selectedFilePath = $('input[name="file-selection"]:checked').val();
+
+    const formData = JSON.stringify({
+        title: newTitle,
+        description: newDescription,
+        image: newImage,
+        verified: newVerified,
+        author: newAuthor,
+        completed: newCompleted,
+        link: newlink,
+        file_path: selectedFilePath
+    });
 
     $.ajax({
         type: 'POST',
@@ -110,27 +114,11 @@ $('.cancel-button').click(function (event) {
         data: formData,
         contentType: 'application/json',
         success: function (response) {
-            const newCardHtml = `
-                <!-- Ваш HTML-код для нової карточки -->
-            `;
-            const newCard = $(newCardHtml);
-            $('.card-container').append(newCard);
-
-            newCard.find('.delete-button').click(function () {
-                deleteCard(newCard);
-            });
-            newCard.find('.edit-button').click(function () {
-                editCard(newCard);
-            });
-
-            $('#new-title').val('');
-            $('#new-description').val('');
-            $('#new-image').val('');
-            $('#new-author').val('');
-            $('#new-link').val('');
-            $('#new-verified').prop('checked', false);
-            $('#new-completed').prop('checked', false);
+            // Handle success
         },
+        error: function (error) {
+            // Handle error
+        }
     });
     
 });

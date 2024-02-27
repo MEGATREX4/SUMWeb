@@ -185,3 +185,15 @@ input {
 .new-description{
     height: calc(+20%);
 }
+
+.choosefile {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.radiochoose {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}

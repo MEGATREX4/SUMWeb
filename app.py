@@ -14,13 +14,15 @@ app.debug = True
 # Зчитування даних з JSON файлу
 data_file = "mods.json"  # Шлях до вашого JSON-файлу
 
-def generate_formatted_id():
-    # Read data from mods.json and other.json
-    mods_data = read_data_from_file("mods.json")
-    other_data = read_data_from_file("other.json")
 
-    # Combine data from both files
-    all_data = mods_data + other_data
+
+def generate_formatted_id(file_paths):
+    all_data = []
+
+    # Read data from all specified files and merge into one list
+    for file_path in file_paths:
+        file_data = read_data_from_file(file_path)
+        all_data.extend(file_data)
 
     # Check if there is any data
     if all_data:
@@ -36,17 +38,30 @@ def generate_formatted_id():
 
 
 
+
+
+
+
+
+
 def read_data_from_file(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
         return data
     except FileNotFoundError:
+        print(f'{Fore.RED}Error: File {file_path} not found{Style.RESET_ALL}')
         return []
 
-def save_data_to_file(data):
-    with open(data_file, 'w', encoding='utf-8') as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
+
+def save_data_to_file(data, file_path):
+    try:
+        with open(file_path, 'w', encoding='utf-8') as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+    except FileNotFoundError:
+        print(f'{Fore.RED}Error: File {file_path} not found{Style.RESET_ALL}')
+
+
 
 # Додавання фільтра urlparse до Jinja2
 def urlparse(url):
@@ -86,29 +101,31 @@ def delete_card_handler():
 
 @app.route('/add_card', methods=['POST'])
 def add_card():
-    data = request.get_json()  # Отримання даних з POST-запиту у форматі JSON
+    data = request.get_json()
     new_title = data.get('title')
     new_description = data.get('description')
     new_image = data.get('image')
     new_author = data.get('author')
     new_verified = data.get('verified')
     new_completed = data.get('completed')
-    new_link = data.get('link')  # Update to 'link'
-    
-    # Генерування нового унікального 'id'
-    new_id = generate_formatted_id()
+    new_link = data.get('link')
+    file_path = data.get('file_path', 'mods.json')  # Default to 'mods.json' if not provided
 
-    print(f'{Fore.GREEN}Додано нову картку: {new_title} з даними id:{new_id}{data}{Style.RESET_ALL}')  # Повідомлення про додану картку у консоль
+    # Генерування нового унікального 'id' based on data from both mods.json and other.json
+    new_id = generate_formatted_id(['mods.json', 'other.json'])
+
+
+    print(f'{Fore.GREEN}Added a new card: {new_title} with id: {new_id}{data}{Style.RESET_ALL}')
 
     if not new_title:
-        return f'{Fore.RED}Помилка: Запис не має заголовку.{Style.RESET_ALL}', 400
+        return f'{Fore.RED}Error: Record has no title.{Style.RESET_ALL}', 400
 
-    data = read_data_from_file(data_file)
+    # Load data from the specified file
+    data = read_data_from_file(file_path)
 
-    # Перевірка, чи не існує картки з таким же title
     for card in data:
         if card['title'] == new_title:
-            return f'{Fore.RED}Картка з таким заголовком вже існує{Style.RESET_ALL}', 400
+            return f'{Fore.RED}A card with the same title already exists{Style.RESET_ALL}', 400
 
     new_card = {
         'id': new_id,
@@ -122,8 +139,10 @@ def add_card():
     }
 
     data.append(new_card)
-    save_data_to_file(data)
+    save_data_to_file(data, file_path)
     return jsonify(new_card)
+
+
 
 @app.route('/edit_card/<string:card_id>', methods=['POST'])
 def edit_card(card_id):
