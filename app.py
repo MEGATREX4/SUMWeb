@@ -177,11 +177,12 @@ def edit_card(card_id):
             break
 
     if updated:
-        save_data_to_file(data)
+        save_data_to_file(data, data_file)  # Pass the file_path parameter
         print(f'{Fore.GREEN}Картку {new_title}(id: {card_id}) оновлено з даними title: {new_title}, description: {new_description}, image link: {new_image}, author: {new_author}, is verified: {new_verified}, is completed: {new_completed}, link: {new_link}{Style.RESET_ALL}')
         return jsonify(updated_card)  # Return the updated card in the response
     else:
         return f'{Fore.RED}Card not found{Style.RESET_ALL}', 404
+
 
 
 if __name__ == '__main__':

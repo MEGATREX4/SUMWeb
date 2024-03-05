@@ -28,7 +28,7 @@
         "description": "Сайт творців лаунчера майнкрафт з відкритим кодом і власною бібліотекою модів, збірок, ресурспаків тощо.",
         "image": "https://raw.githubusercontent.com/modrinth/art/main/Branding/Favicon/favicon__512x512.png",
         "verified": true,
-        "author": "Команда СУМ, MeDustyy, OmniverseTraitor, Artem Nizhensky, Alexosh",
+        "author": "СУМ, MeDustyy, OmniverseTraitor, Artem Nizhensky, Alexosh",
         "completed": true,
         "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались).",
         "link": "https://crowdin.com/project/modrinth",
@@ -46,22 +46,28 @@
         "id": "000131"
     },
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/the-henry-stickmin-collection/localized.svg"
+        },
         "id": "000128",
         "title": "The Henry Stickmin Collection",
         "description": "Вибір власного варіанта шляху, де поразка приносить набагато більше задоволення, ніж здобуття успіху.",
         "image": "https://i.imgur.com/3uAWpcv.png",
         "verified": false,
-        "author": "Команда СУМ, Patsiuk Localizator",
+        "author": "СУМ, Patsiuk Localizator",
         "completed": false,
         "link": "https://t.me/patsyuk_localizator"
     },
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/ages-of-conflict-UA/localized.svg"
+        },
         "id": "000132",
         "title": "Ages of Conflict: World War Simulator",
         "description": "Ages of Conflict - це універсальна гра в жанрі картографічного симулятора, де ви створюєте власні або випадкові нації за допомогою ШІ та спостерігаєте за їхньою боротьбою у нескінченній кількості світів. Командуйте націями, щоб змінити події у світі на свій розсуд.",
         "image": "https://i.imgur.com/qDLRhqZ.png",
         "verified": false,
-        "author": "Команда СУМ, Patsiuk Localizator",
+        "author": "СУМ, Patsiuk Localizator",
         "completed": false,
         "link": "https://t.me/patsyuk_localizator"
     }
