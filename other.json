@@ -70,5 +70,15 @@
         "author": "СУМ, Patsiuk Localizator",
         "completed": false,
         "link": "https://t.me/patsyuk_localizator"
+    },
+    {
+        "id": "000133",
+        "title": "No Man's Sky",
+        "description": "No Man's Sky (укр. Нічийне небо) — відеогра жанру action-adventure/виживання, розроблена британською інді-студією Hello Games. У No Man's Sky гравець виступає дослідником процедурно генерованого всесвіту, в якому досліджує численні планети і шукає пригоди, самостійно творячи сюжет.",
+        "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/2413/5c214b6568870e2f036270f0e8528048563f9a9929d138de.png",
+        "verified": false,
+        "author": "Dragon Kreig",
+        "completed": false,
+        "link": "https://t.me/the_dragons_manuscript"
     }
 ]
