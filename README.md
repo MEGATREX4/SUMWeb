@@ -15,17 +15,19 @@ Used tools, libraries and languages:<br>
 ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+<br>
+Hosted by Netlify <br> [![Netlify Status](https://api.netlify.com/api/v1/badges/f6a068e4-aeef-4a28-a9ac-350b4e1e03ba/deploy-status)](https://app.netlify.com/sites/sumtranslate/deploys)
 
 ### our social media
-* [monobank](https://send.monobank.ua/jar/3eoWaEfxde)
-* [donatello](https://donatello.to/MEGATREX4)
+* [![Mono - Bank](https://img.shields.io/static/v1?label=Mono&message=Bank&color=2ea44f)](https://send.monobank.ua/jar/3eoWaEfxde)
+* [<img src="https://img.shields.io/badge/chainlink-375BD2?style=for-the-badge&logo=chainlink&logoColor=white">](https://donatello.to/MEGATREX4)
 * [mastadon](https://mastodon.social/@SUMTranslate)
-* [telegram](https://t.me/SUMTranslate)
+* [<img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white">](https://t.me/SUMTranslate)
 * [blue sky](https://bsky.app/profile/sumtranslate.bsky.social)
-* [Twitter (X)](https://twitter.com/SUMTranslate)
-* [Instagram](https://www.instagram.com/sumtranslate/)
-* [YouTube](https://www.youtube.com/@sumtranslate)
-* [TikTok](https://www.tiktok.com/@sumtranslate)
+* [<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">](https://twitter.com/SUMTranslate)
+* [<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">](https://www.instagram.com/sumtranslate/)
+* [<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">](https://www.youtube.com/@sumtranslate)
+* [<img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white">]([https://link-to-your-URL/](https://www.tiktok.com/@sumtranslate))
 
 **SUM is not commercial**
 **work exclusively at the expense of donors**
@@ -139,4 +141,4 @@ This function is called to display all translations by default when the page loa
 
 
 
-Hosted by Netlify <br> [![Netlify Status](https://api.netlify.com/api/v1/badges/f6a068e4-aeef-4a28-a9ac-350b4e1e03ba/deploy-status)](https://app.netlify.com/sites/sumtranslate/deploys)
+
