@@ -2,12 +2,19 @@
 
 
 
-web - https://sumtranslate.netlify.app/
+webpage - https://sumtranslate.netlify.app/
 
 We are a group of amateurs who are passionate about Minecraft and, of course, other games. Our mission is to make these games available to the Ukrainian audience by translating various mods or games, programs.<br>
 We believe that the Ukrainian language should be accessible to all players, so we devote a lot of time and effort to translation to make this possible.<br>
 You can follow our process in the community's social media, where we post links to Crowdin.<br>
 And most importantly, you can join the translation process with us! Join our community!<br>
+
+Used tools, libraries and languages:<br>
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
+![JSQ](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ### our social media
 * [monobank](https://send.monobank.ua/jar/3eoWaEfxde)
