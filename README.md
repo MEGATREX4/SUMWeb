@@ -16,7 +16,7 @@ Used tools, libraries and languages:<br>
 ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 <br>
-Hosted by Netlify <br> [![Netlify Status](https://api.netlify.com/api/v1/badges/f6a068e4-aeef-4a28-a9ac-350b4e1e03ba/deploy-status)](https://app.netlify.com/sites/sumtranslate/deploys)
+Hosted by Netlify <br> [![Netlify Status](https://api.netlify.com/api/v1/badges/2cdefe4e-57cb-4ba2-a397-374973534931/deploy-status)](https://app.netlify.com/sites/patsiukui/deploys)
 
 ### our social media
 * [![Mono - Bank](https://img.shields.io/static/v1?label=Mono&message=Bank&color=2ea44f)](https://send.monobank.ua/jar/3eoWaEfxde)
