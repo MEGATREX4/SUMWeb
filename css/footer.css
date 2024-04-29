@@ -1,0 +1,28 @@
+.footer {
+    margin: 0;
+    margin: 20px;
+    border-radius: 0% 0% 0.5rem 0.5rem / 0% 0% 25% 25%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    gap: 20px;
+}
+
+.footertext {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.2rem;
+    color: #b0bac53b;
+    font-family: var(--font-family);
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+

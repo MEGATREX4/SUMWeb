@@ -9,8 +9,11 @@
         "image": "https://i.imgur.com/ppB4GQP.png",
         "author": "MEGATREX4, Artem Tsynoborenko",
         "completed": false,
-        "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались).",
-        "id": "000128"
+        "id": "000128",
+        "translation": "https://crowdin.com/project/60secondsua",
+        "link": [
+            "https://store.steampowered.com/app/368360/60_Seconds/"
+        ]
     },
     {
         "title": "Twitch Downloader",
@@ -20,7 +23,9 @@
         "author": "MEGATREX4",
         "completed": true,
         "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(автор(и) крутий).",
-        "link": "https://github.com/lay295/TwitchDownloader",
+        "link": [
+            "https://github.com/lay295/TwitchDownloader"
+        ],
         "id": "000129"
     },
     {
@@ -31,7 +36,10 @@
         "author": "СУМ, MeDustyy, OmniverseTraitor, Artem Nizhensky, Alexosh",
         "completed": true,
         "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались).",
-        "link": "https://crowdin.com/project/modrinth",
+        "translation": "https://crowdin.com/project/modrinth",
+        "link": [
+            "https://modrinth.com/"
+        ],
         "semiverified": true,
         "id": "000130"
     },
@@ -42,43 +50,95 @@
         "verified": true,
         "author": "moralniy, awzix",
         "completed": true,
-        "link": "https://store.steampowered.com/app/2239140/Grapples_Galore",
+        "link": [
+            "https://store.steampowered.com/app/2239140/Grapples_Galore"
+        ],
         "id": "000131"
     },
     {
         "status": {
             "status1": "https://badges.crowdin.net/the-henry-stickmin-collection/localized.svg"
         },
-        "id": "000128",
+        "id": "000134",
         "title": "The Henry Stickmin Collection",
-        "description": "Вибір власного варіанта шляху, де поразка приносить набагато більше задоволення, ніж здобуття успіху.",
+        "description": "Колекція Генрі Стікміна (Henry Stickmin Collection) - це відроджена та оновлена класика Newgrounds, що обирає свій власний шлях. Ця епопея з 6 ігор завершується кількома цілком канонічними, надзвичайно різними кінцівками. На кожному етапі подорожі ви можете вибирати між такими варіантами, як телепорт або покликати на допомогу свого приятеля Чарльза. Правильний вибір просуне історію вперед, але неправильний вибір призведе до невдачі. Якщо ви дійшли до кінця з першої спроби, значить, ви робите це неправильно. Поразка - це половина задоволення.",
         "image": "https://i.imgur.com/3uAWpcv.png",
         "verified": false,
         "author": "СУМ, Patsiuk Localizator",
         "completed": false,
-        "link": "https://t.me/patsyuk_localizator"
+        "translation": "https://t.me/patsyuk_localizator",
+        "link": [
+            "https://store.steampowered.com/app/1089980/The_Henry_Stickmin_Collection/"
+        ],
+        "gameversion": "",
+        "categories": []
     },
     {
         "status": {
             "status1": "https://badges.crowdin.net/ages-of-conflict-UA/localized.svg"
         },
-        "id": "000132",
         "title": "Ages of Conflict: World War Simulator",
         "description": "Ages of Conflict - це універсальна гра в жанрі картографічного симулятора, де ви створюєте власні або випадкові нації за допомогою ШІ та спостерігаєте за їхньою боротьбою у нескінченній кількості світів. Командуйте націями, щоб змінити події у світі на свій розсуд.",
         "image": "https://i.imgur.com/qDLRhqZ.png",
         "verified": false,
         "author": "СУМ, Patsiuk Localizator",
         "completed": false,
-        "link": "https://t.me/patsyuk_localizator"
+        "translation": "https://t.me/patsyuk_localizator",
+        "link": [
+            "https://store.steampowered.com/app/2186320/Ages_of_Conflict_World_War_Simulator/"
+        ],
+        "id": "000132"
     },
     {
         "id": "000133",
         "title": "No Man's Sky",
-        "description": "No Man's Sky (укр. Нічийне небо) — відеогра жанру action-adventure/виживання, розроблена британською інді-студією Hello Games. У No Man's Sky гравець виступає дослідником процедурно генерованого всесвіту, в якому досліджує численні планети і шукає пригоди, самостійно творячи сюжет.",
+        "description": "No Man's Sky (укр. Нічийне небо) — відеогра жанру action-adventure/виживання, розроблена британською інді-студією Hello Games. \nУ No Man's Sky гравець виступає дослідником процедурно генерованого всесвіту, в якому досліджує численні планети і шукає пригоди, самостійно творячи сюжет.",
         "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/2413/5c214b6568870e2f036270f0e8528048563f9a9929d138de.png",
         "verified": false,
         "author": "Dragon Kreig",
         "completed": false,
-        "link": "https://t.me/the_dragons_manuscript"
+        "translation": "https://t.me/the_dragons_manuscript",
+        "link": [
+            "https://store.steampowered.com/app/275850/No_Mans_Sky/"
+        ]
+    },
+    {
+        "title": "Vintage Story",
+        "gameversion": "",
+        "engine": "OpenTK, ManicDigger",
+        "categories": [
+            "Пісочниця",
+            "Виживання",
+            "Відкритий світ"
+        ],
+        "description": "Vintage Story - гра-пісочниця з елементами виживання розроблена та видана Anego Studios. Засновники Anego Studios Тайрон та Ірена Медлінєр розпочали розробку самостійної гри на основі модифікації Vintagecraft для Minecraft. Перші версії гри були доступні для завантаження абсолютно безкоштовно. На цей час гра знаходиться в стадії раннього доступу і має як однокористувацький, так і розрахований на багато користувачів режими.",
+        "image": "https://upload.wikimedia.org/wikipedia/ru/1/1b/Vintage_Story_Logo.png",
+        "verified": true,
+        "author": "Vintage Story українською",
+        "completed": true,
+        "translation": "https://crowdin.com/project/vintage-story-game/uk",
+        "link": [
+            "https://www.vintagestory.at/"
+        ],
+        "id": "000135"
+    },
+    {
+        "title": "Windowkill",
+        "gameversion": "",
+        "engine": "Godot",
+        "categories": [
+            "Аркада",
+            "Стрілянка"
+        ],
+        "description": "Windowkill - це стрілянка двома стіками, але саме вікно гри постійно буде наближатися до вас. Стріляйте по краях вікна, щоб збільшити його на екрані, поки ви б'єтеся та ухиляєтеся від ворогів і босів у їхніх власних вікнах.",
+        "image": "https://cdn2.steamgriddb.com/thumb/bcadc3889bd9d0a670f4a64ba89f58e8.jpg",
+        "verified": true,
+        "author": "СУМ, Patsiuk Localizator, DarkPrince",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://store.steampowered.com/app/2726450/Windowkill/"
+        ],
+        "id": "000137"
     }
 ]

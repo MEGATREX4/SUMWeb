@@ -1,0 +1,44 @@
+[
+    {
+        "authorID": "MEGATREX4",
+        "authorImage": "https://i.imgur.com/CuDYeIj.jpg",
+        "authorName": "MEGATREX4",
+        "authorAbout": "Засновник СУМ, ютубер, cтрімер, перекладач."
+    },
+    {
+        "authorID": "hnufelka",
+        "authorImage": "https://i.imgur.com/z6D0Q0H.jpeg",
+        "authorName": "hnufelka",
+        "authorAbout": "Перекладачка, коректорка."
+    },
+    {
+        "authorID": "CakesTwix",
+        "authorImage": "https://avatars.githubusercontent.com/u/57946485?v=4",
+        "authorName": "CakesTwix",
+        "authorAbout": "любитель вільного ПЗ."
+    },
+    {
+        "authorID": "Artem",
+        "authorImage": "https://pbs.twimg.com/profile_images/1689762283772092416/_zCiH9CV_400x400.jpg",
+        "authorName": "Artem Tsynoborenko",
+        "authorAbout": "Перекладач JackboxUA, аматорське озвучення."
+    },
+    {
+        "authorID": "kork0za",
+        "authorImage": "https://pbs.twimg.com/profile_images/1774705403202265088/02s2MoVk_400x400.jpg",
+        "authorName": "Коркóза",
+        "authorAbout": "Юпупер, застовник Patsiuk Localizator."
+    },
+    {
+        "authorID": "Nemejcyk",
+        "authorImage": "https://i.imgur.com/TBXqeOd.jpeg",
+        "authorName": "Nemejčyk",
+        "authorAbout": "Котик, що вже третій рік своїми лапками перекладає ігри"
+    },
+    {
+        "authorID": "Erik_Mensy",
+        "authorImage": "https://i.imgur.com/iLUJNz5.jpeg",
+        "authorName": "Erik_Mensy",
+        "authorAbout": "Роботяга, займається перекладами 5 років."
+    }
+]

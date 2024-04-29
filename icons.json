@@ -1,0 +1,43 @@
+{
+    "completed": {
+      "name": "NotCompleted",
+      "FilterTitle": "У роботі",
+      "icon_id": 1,
+      "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B0BAC5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' width='24' height='24'%3E%3Cpath d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z' fill='none'%3E%3C/path%3E%3C/svg%3E",
+      "title": "У роботі"
+    },
+    "semiverified": {
+      "icon_id": 2,
+      "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0{fill:none;stroke:%23B0BAC5;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;} %3C/style%3E %3Cpath class='st0' d='M6.7,4.9h10.6c1,0,1.8,0.8,1.8,1.8v10.6c0,1-0.8,1.8-1.8,1.8H6.7c-1,0-1.8-0.8-1.8-1.8V6.7C4.9,5.7,5.7,4.9,6.7,4.9z'/%3E %3Crect x='9.3' y='9.3' class='st0' width='5.3' height='5.3'/%3E %3Cline class='st0' x1='9.3' y1='2.2' x2='9.3' y2='4.9'/%3E %3Cline class='st0' x1='14.7' y1='2.2' x2='14.7' y2='4.9'/%3E %3Cline class='st0' x1='9.3' y1='19.1' x2='9.3' y2='21.8'/%3E %3Cline class='st0' x1='14.7' y1='19.1' x2='14.7' y2='21.8'/%3E %3Cline class='st0' x1='19.1' y1='9.3' x2='21.8' y2='9.3'/%3E %3Cline class='st0' x1='19.1' y1='13.8' x2='21.8' y2='13.8'/%3E %3Cline class='st0' x1='2.2' y1='9.3' x2='4.9' y2='9.3'/%3E %3Cline class='st0' x1='2.2' y1='13.8' x2='4.9' y2='13.8'/%3E %3C/svg%3E",
+      "title": "Розробник або додасть, або існує ще один переклад"
+    },
+    "verified": {
+      "name": "Official",
+      "FilterTitle": "Офіційні",
+      "icon_id": 3,
+      "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0{fill:none;stroke:%23B0BAC5;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;} %3C/style%3E %3Ccircle class='st0' cx='12' cy='12' r='9.6'/%3E %3Cline class='st0' x1='2.4' y1='12' x2='21.6' y2='12'/%3E %3Cpath class='st0' d='M12,2.4c2.4,2.6,3.8,6.1,3.9,9.6c-0.1,3.6-1.4,7-3.9,9.6C9.6,19,8.2,15.6,8.1,12C8.2,8.4,9.6,5,12,2.4z'/%3E %3C/svg%3E",
+      "title": "Розробник додав переклад в гру"
+    },
+    "minecraft": {
+      "name": "Mods",
+      "FilterTitle": "Моди",
+      "icon_id": 4,
+      "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 24 24' xml:space='preserve' width='24' height='24'%3E%3Cpath fill='none' stroke='%23B0BAC5' stroke-width='2px' stroke-linecap='round' stroke-linejoin='round' d='M2.7 6.6v10.8l9.3 5.3 9.3-5.3V6.6L12 1.3zm0 0L12 12m9.3-5.4L12 12m0 10.7V12'/%3E%3C/svg%3E",
+      "title": "Це майнкрафт мод"
+    },
+    "other": {
+      "name": "Other",
+      "FilterTitle": "Інші",
+      "icon_id": 5,
+      "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24' aria-hidden='true' width='24' height='24'%3E%3Crect width='20' height='14' x='2' y='3' rx='2' ry='2' stroke='%23B0BAC5' fill='none' stroke-width='2px'%3E%3C/rect%3E%3Cpath d='M8 21h8m-4-4v4' stroke='%23B0BAC5' fill='none' stroke-width='2px'%3E%3C/path%3E%3C/svg%3E",
+      "title": "Це програма або гра"
+    },
+    "FromMembers": {
+      "name": "FromMembers",
+      "FilterTitle": "Від учасників",
+      "icon_id": 6,
+      "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2' stroke='%23B0BAC5' fill='none' stroke-width='2px'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4' stroke='%23B0BAC5' fill='none' stroke-width='2px'%3E%3C/circle%3E%3C/svg%3E",
+      "title": "Цей переклад прислав учасник спільноти"
+    }
+  }
+  

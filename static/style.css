@@ -1,199 +1,176 @@
-html{
-    font-family: 'Nunito', sans-serif!important;
-    color:#dbdbdb!important;
-}
-
-
-.dialog {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    justify-content: center!important;
-    align-items: center!important;
-}
-
-.imageitem{
-    height: 200px;
-    width: 200px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-
-.dialog-content {
-
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-
-body {
-    background-color: #1d1b1e;
+*{
     margin: 0;
-    padding: 0;
+    color: #b0bac5;
+
+}
+
+html{
+    background-color: #16181c;
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.card-container, .card {
-    display: flex!important;
-    justify-content: center;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: flex-start;
 }
-.addinputp{
-    width: 40%!important;
+
+.Items {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 12px;
+    gap: 10px;
+    color: #b0bac5;
 }
 
-.card {
-    display: flex!important;
-    width: 280px;
-    background-color: #2b2222;
-    border: 1px solid #7e292a;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    display: inline-block;
-    text-align: left;
-    min-height: 450px!important;
+.card{
+    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-.delete-button{
-    width: 50%!important;
-    margin-bottom: 5px;
-}
-
-.add-button, .delete-button{
-    background-color: #7e292a;
-    font-family: 'Ubuntu', sans-serif;
-    color: #dbe1f8;
-    border: none;
-    height: 60px;
-    width: 60px;
-    align-items: center;
-    align-content: center;
-    border-radius: 20px;
-}
-
-
-.card h3 {
-    margin: 0;
-}
-
-.edit-button {
-    background-color: #7e292a;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.edit-button:hover, .add-button:hover, .delete-button:hover, .site-linka:hover {
-    background-color: #c57976;
-}
-
-
-/* Додані стилі для центрування */
-
-.dialog h3 {
-    margin: 0;
-}
-
-.dialog input {
-    width: 70%!important;
+    width: 250px;
     padding: 5px;
-    margin: 5px 5px;
+    background-color: #26292f;
+    border-radius: 0.5rem;
 }
 
-.dialog button {
-    background-color: #7e292a;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+.description{
+    height: 72px;
 }
 
-.dialog button:hover {
-    background-color: #c57976;
+#editModal{
+    display: none;
 }
 
-.adddiv{
-    border: 1px solid #7e292a;
-    display: flex!important;
-    position: absolute;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #2b2222;
-    padding: 50px 0;
-    font-family: 'Ubuntu', sans-serif;
-    color: #dbe1f8;
-    height: 300px;
-    width: 260px;
-    cursor: move;
+.modal-content {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    z-index: 100;
+    background-color: #16181cb7;
+    top: 0;
+    left: 0;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainmodalcont{
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#editCategories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.EditCategoryItem{
+    width: 170px;
+    gap: 5px;
+}
+
+.EditCategoryItem label{
+    margin-left: 5px;
+}
+
+input, .CreateForm input, #description, .editForm, #source, button[type=submit] {
+    color: black;
+}
+
+.editForm {
+    display: flex;
+    background-color: #16181c;
+    padding: 20px 10px;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    width: 520px;
+    row-gap: 10px;
+    position: relative;
+    overflow:scroll;
+    overflow-x: auto;
+}
+
+.editForm label{
+    margin-top: 10px;
+}
+
+.editForm button[type=submit] {
+    padding: 5px;
+    width: 150px;
+}
+
+.editLinkSection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px
+}
+
+.editLinkSection input{
+    width: calc(50% - 25px);
+}
+
+.close{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(129, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+#description{
+    max-width: 290px;
+}
+
+#editDescription{
+    min-height: 250px;
+    max-width: 495px;
+    color: black;
+}
+
+.first{
+    min-width: 296.977px;
+}
+
+.CreateForm{
     position: fixed;
-    bottom: 35%;
-    right: 20px;
-    cursor: pointer;
-    z-index: 1000;
-    border-radius: 20px;
-    box-shadow: -7px -6px 21px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -7px -6px 21px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -7px -6px 21px 0px rgba(0,0,0,0.75);
-    justify-content: center;
-    align-content: space-around;
-
+    overflow-y: scroll;
+    height: 95%;
 }
 
-input {
-    padding: 20px!important;
-    width: 89%;
-}
-.addbutttt{
-    display: flex!important;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    
-}
-
-/* Add this CSS code to your existing styles */
-.table-container {
-    position: relative; /* Add this to establish a positioning context */
-    left: calc(20px); /* Move the table 200 pixels to the left */
-    margin: 0 auto; /* Center the table horizontally */
-}
-
-.new-description{
-    height: calc(+20%);
-}
-
-.choosefile {
-    margin-top: 15px;
-    margin-bottom: 15px;
+.modal-header{
+    margin-top: 5px;
     display: flex;
-    flex-direction: column;
 }
-.radiochoose {
+
+.modal-footer{
+    width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
+}
+
+#websitesresult{
+    width: 400px;
+    min-height: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.card-image{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.25rem;
 }

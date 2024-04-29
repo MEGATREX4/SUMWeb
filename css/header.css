@@ -1,0 +1,92 @@
+.header {
+    margin: 0;
+    width: 100%;
+    min-height: 42px;
+    margin-bottom: 20px;
+    border-radius: 0% 0% 0.5rem 0.5rem / 0% 0% 25% 25%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 0.5rem 0;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo {
+    min-width: 39px;
+    min-height: 39px;
+    max-width: 39px;
+    max-height: 39px;
+    background-size: cover;
+    margin-left: 20px;
+    display: flex;
+}
+
+.headerbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-normal);
+    font-weight: var(--thick-font-weight);
+    color: var(--text-color);
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hbtn {
+    color: var(--text-color);
+    padding: 10px 15px;
+    border-radius: var(--medium-border-radius);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hbtn:visited{
+    color: var(--text-color);
+}
+
+.addtranslation {
+    background-color: var(--primary-color);;
+    color: var(--header-color);
+}
+
+.addtranslation:hover {
+    background-color: var(--linkhover);
+}
+
+.addtranslation:visited {
+    color: var(--header-color);
+}
+
+.title-display {
+    background-color: var(--additional-color);
+    border: 1px solid #cccccc10;
+    border-radius: var(--normal-border-radius);
+    color: var(--header-color);
+    padding: 5px 10px;
+    font-size: var(--font-size-small);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: var(--thick-font-weight);
+    gap: 5px;
+    position: relative; /* Add position relative */
+}
+
+.title-display::before {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Position below the title-div */
+    left: 50%; /* Position in the middle horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--additional-color) transparent transparent transparent; /* Transparent borders except for the top */
+}

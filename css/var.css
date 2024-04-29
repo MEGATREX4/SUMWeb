@@ -1,0 +1,38 @@
+/* Define CSS variables for colors */
+:root {
+    --item-background-color: #26292f;
+    --header-color: #ecf9fb;
+    --border-color: #ffffff1a;
+    --background-color: #16181c;
+    --text-color: #b0bac5;
+    --paragraph-color: #c7cbcc;
+    --primary-color: #7e292a;
+    --secondary-color: #ffb3b0;
+    --additional-color: #263b3f;
+    --linkhover: #8d383a;
+
+    --small-border-radius: 0.25rem;
+    --normal-border-radius: 0.3rem;
+    --medium-border-radius: 0.5rem;
+    --border-radius: 1rem;
+
+  }
+  
+  /* Define CSS variables for font size */
+  :root {
+    --font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+    --font-size-xsmall: 10px;
+    --font-size-xxsmall: 13px;
+    --font-size-small: 14px;
+    --font-size-medium: 15px;
+    --font-size-normal: 16px;
+    --font-size-large: 17px;
+    --font-size-xlarge: 20px;
+    --font-size-xxlarge: 23px;
+    --font-size-etraxlarge: 25px;
+
+    --more-thick-font-weight: 600;
+    --thick-font-weight: 500;
+    --noraml-font-weight: 400;
+  }

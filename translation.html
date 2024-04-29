@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СУМ - надіслати переклад</title>
+    <meta name="description">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/translation.css">
+
+    <link rel="icon" type=" image/x-icon" href="https://i.imgur.com/hJZwHlR.png">
+
+
+    <link rel="stylesheet" href="css/var.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index" class="logo">
+            <svg id="be03f596-d4a4-4aa0-b150-31f929567437" data-name="Шар 1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 370 370">
+                <defs>
+                    <style>
+                        .b7f69e4e-d2aa-4f23-9e30-20b0a6dd5fff {
+                            fill: snow;
+                        }
+
+                        .a83e0ca3-bfc9-4cd3-95a9-f4d9c9eb972d {
+                            fill: #873735;
+                        }
+                    </style>
+                </defs>
+                <rect class="b7f69e4e-d2aa-4f23-9e30-20b0a6dd5fff" width="370" height="370" rx="50" />
+                <path class="a83e0ca3-bfc9-4cd3-95a9-f4d9c9eb972d"
+                    d="M296.71,124.58c17.26,0,34.53,0,51.8,0,11.16,0,19.05,5.52,24.32,15.1,2.39,4.33,2.89,9.11,3.1,14,.56,12.51.88,25,1.79,37.51a26.4,26.4,0,0,1-26.84,28.39A31.83,31.83,0,0,0,319.3,244a26.33,26.33,0,0,0,.29,13.48c4.93,18.33,21.31,30,38.26,36.53,24.89,9.44,21.7,51.93,19.34,73.53-1.89,13.62-13.48,20-26.56,19.79-30.51.07-61,.37-91.54,0-63.61,1-118-51.7-124.87-114-6.86-54.5,22.59-110.48,70.43-137.11a98.44,98.44,0,0,1,35.92-11.45C259.26,124.38,278,124.68,296.71,124.58Z"
+                    transform="translate(-80 -71)" />
+            </svg></a>
+
+        <div class="headerbtn">
+            <a href="index" class="main hbtn">Головна</a>
+            <a href="about" class="team hbtn">Про нас</a>
+            <a href="faq" class="faq hbtn">ЧАПИ</a>
+
+
+            <a href="translation" class="addtranslation hbtn">Додати переклад</a>
+
+        </div>
+    </div>
+    <div class="TotalContainer">
+        <div class="TotalTranslation"><span id="TotalTranslation">Ми переклали: 000</span></div>
+    </div>
+    <div id="AddItemContainer" class="AddItemContainer">
+        <div class="form">
+            <form id="TranslationForm">
+                <label for="entry.1605450482">Назва перекладеного <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <input id="ItemName" type="text" name="entry.1605450482" required>
+                <label for="entry.2129753653">Ваше ім'я/назва команди <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <input id="Name" type="text" name="entry.2129753653" required>
+                <label for="entry.112020502">Значок/логотип перекладеного <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <input id="Image" type="text" name="entry.112020502" required>
+                <label for="entry.500673411">Посилання на гру/мод(можна декілька) <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <input id="GMUrl" type="text" name="entry.500673411">
+                <label for="entry.56713701">Посилання на переклад <span class="info" alt="Не обов'язкове поле якщо ваш переклад додано до перекладеного" title="Не обов'язкове поле якщо ваш переклад додано до перекладеного">?</span> </label>
+                <input id="TrnalstionLink" type="text" name="entry.56713701">
+                <label id="added" for="entry.666320625" required>Чи додали ваш переклад офіційно <span class="required"
+                        alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <div class="radio">
+                    <label for="entry.666320625">Так</label>
+                    <input value="True" type="radio" name="entry.666320625">
+                    <label for="entry.666320625">Ні</label>
+                    <input value="False" type="radio" name="entry.666320625">
+                </div>
+                <label for="entry.785774625">Контакти для зв'язку <span class="required" alt="Обов'язкове поле"
+                        title="Обов'язкове поле">*</span> </label>
+                <input id="Contact" type="text" name="entry.785774625" required>
+                <div class="processingCont">
+                    <input type="checkbox" name="Processing " id="Processing" required>
+                    <div class="Processing">Я дозволяю обробку даних та їх використання на сайті СУМ
+                        <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span>
+                    </div>
+                </div>
+                <button id="submit" type="submit" class="submit hbtn">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Attach event listener to the submit button
+            const submitButton = document.getElementById('submit');
+            if (submitButton) {
+                submitButton.addEventListener('click', sendContact);
+            } else {
+                console.error('Submit button not found');
+            }
+
+            async function sendContact(ev) {
+                ev.preventDefault();
+
+                const itemname = document.getElementById('ItemName').value;
+                const name = document.getElementById('Name').value;
+                const image = document.getElementById('Image').value;
+                const gmurl = document.getElementById('GMUrl').value;
+                const trnalstionLink = document.getElementById('TrnalstionLink').value;
+                const added = document.querySelector('input[name="entry.666320625"]:checked') ? document.querySelector('input[name="entry.666320625"]:checked').value : null;
+                const contact = document.getElementById('Contact').value;
+                const processingCheckbox = document.getElementById('Processing');
+
+                // Check if all required fields are filled in and Processing checkbox is checked
+                if (!itemname || !name || !image || !contact || !added || !processingCheckbox.checked) {
+                    alert('Будь ласка, заповніть всі обов\'язкові поля та підтвердіть обробку даних.');
+                    return;
+                }
+
+                const timestamp = new Date().toISOString();
+
+                let thumbnail = null; // Initialize thumbnail variable
+
+                // Check if the image URL is valid
+                if (isValidImageUrl(image)) {
+                    thumbnail = { url: image }; // Set thumbnail URL if image is valid
+                }
+
+                const webhookBody = {
+                    embeds: [{
+                        title: itemname,
+                        fields: [
+                            { name: ':paintbrush: Назва перекладеного', value: itemname },
+                            { name: ':bust_in_silhouette: Ваше ім\'я/назва команди', value: name },
+                            { name: ':frame_photo: Зображення перекладеного', value: image },
+                            { name: ':paperclips: Посилання на гру/мод(можна декілька)', value: gmurl },
+                            { name: ':link: Посилання на переклад', value: trnalstionLink },
+                            { name: ':eyes: Чи додали ваш перклад офіційно', value: added },
+                            { name: ':thread: Контакти для зв\'язку', value: contact },
+                        ],
+                        thumbnail: thumbnail, // Include thumbnail if valid
+                        timestamp: timestamp // Add timestamp to the embed
+                    }],
+                };
+
+                const webhookUrl = 'https://discord.com/api/webhooks/1201289349308874863/YfVwUk2F2_DgZCJdcD_2CRA5YtOE8eGcgjIwH-STiOTkkp2_0md3woK9oVydSEn2D7Pv';
+
+                const response = await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(webhookBody),
+                });
+
+                if (response.ok) {
+                    const form = document.querySelector('form');
+
+                    const formData = new FormData(form);
+
+                    const googleFormsUrl = 'https://docs.google.com/forms/d/1UaAQAJ1iZWmhDKxmbCytomdZpDgu_y7mh72oenMzUY8/formResponse';
+
+                    try {
+                        // Send POST request to Google Forms
+                        const response = await fetch(googleFormsUrl, {
+                            method: 'POST',
+                            body: formData,
+                            mode: 'no-cors'
+                        });
+
+                        // Redirect to another page after successful submission
+                        if (response.ok) {
+                            window.location.href = 'submited';
+                        } else {
+                            window.location.href = 'submited';
+                        }
+                    } catch (error) {
+                        window.location.href = 'submited';
+                    }
+                } else {
+                    alert('Сталась якась помилка, перевірте введені дані та спробуйте ще раз.');
+                }
+            }
+
+            // Function to validate image URL
+            function isValidImageUrl(url) {
+                // Regular expression to match image URL format
+                const regex = /(https?:\/\/.*\.(?:png|jpg|jpeg|gif|bmp|svg))/i;
+                return regex.test(url);
+            }
+        });
+    </script>
+
+
+    <div class="footer">
+        <div class="footertext">
+            <div class="infotext">© 2024 Спільнота українізації модів</div>
+            <div class="infotext">Створив MEGATREX4 з 💜 до вас</div>
+            <div class="infotext">THIS PRODUCT IS NOT SUPPORTED BY OR AFFILIATED WITH MOJANG MICROSOFT OR STEAM.</div>
+        </div>
+        <script type="module" src="js/countTranslations.js"></script>
+
+        <script src="js/logo.js"></script>
+</body>
+
+</html>

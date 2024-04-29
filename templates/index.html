@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СУМ - Create Record</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='newlinks.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='edit.js') }}" defer"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <h1>Create Record</h1>
+            <form class="CreateForm" action="/create" method="POST">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br><br>
+                <label for="gameversion">Game Version:</label>
+                <input type="text" id="gameversion" name="gameversion"><br><br>
+                <label for="engine">Engine:</label>
+                <input type="text" id="engine" name="engine"><br><br>
+                <div id="category-section" style="display: block;">
+                    <label>Categories:</label><br>
+                    <div id="categories"></div><br>
+                </div>
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+                <label for="image">Image URL:</label>
+                <input type="text" id="image" name="image"><br><br>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author"><br><br>
+                <label for="translation">Translation:</label>
+                <input type="text" id="translation" name="translation"><br><br>
+                <label for="link">Links:</label><br>
+                <div id="link-section">
+                    <!-- Invisible link inputs -->
+                    <input type="text" id="link1" name="link[]" placeholder="Link 1" style="display: block;">
+                    <input type="text" id="link2" name="link[]" placeholder="Link 2" style="display: none;">
+                    <input type="text" id="link3" name="link[]" placeholder="Link 3" style="display: none;">
+                    <input type="text" id="link4" name="link[]" placeholder="Link 4" style="display: none;">
+
+                </div>
+                <label for="verified">Verified:</label>
+                <input type="checkbox" id="verified" name="verified"><br><br>
+                <label for="completed">Completed:</label>
+                <!-- chechbox completed with checked mark -->
+                <input type="checkbox" id="completed" name="completed" checked><br><br>
+                <label for="source">Save to:</label>
+                <select id="source" name="source">
+                    <option value="mods">Mods</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <button type="submit">Create Record</button>
+            </form>
+        </div>
+        <div class="second">
+            <h1>Edit Record</h1>
+            <div class="Items" id="Items">
+
+            </div>
+        </div>
+        <!-- Modal for editing -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <div class="mainmodalcont">
+        <div class="modal-header"><h2>Edit Record</h2><span class="close" onclick="closeEditModal()">&times;</span></div>
+        <form class="editForm" id="editForm" action="/edit" method="POST">
+            <label for="editTitle">Title:</label>
+            <input type="text" id="editTitle" name="editTitle">
+            <label for="editGameVersion">Game Version:</label>
+            <input type="text" id="editGameVersion" name="editGameVersion">
+            <label for="editEngine">Engine:</label>
+            <input type="text" id="editEngine" name="editEngine">
+            <!-- Add other fields similar to the Create Record form -->
+            <label>Categories:</label>
+            <div id="editCategories">
+                <!-- This section will be populated dynamically with checkboxes -->
+            </div>
+            <label for="editOtherCategories">Other Categories:</label>
+            <input type="text" id="editOtherCategories" name="editOtherCategories">
+
+            <label for="editDescription">Description:</label>
+            <textarea id="editDescription" name="editDescription" rows="4" cols="50"></textarea>
+            <label for="editImage">Image URL:</label>
+            <input type="text" id="editImage" name="editImage">
+            <label for="editAuthor">Author:</label>
+            <input type="text" id="editAuthor" name="editAuthor">
+            <label for="editTranslation">Translation:</label>
+            <input type="text" id="editTranslation" name="editTranslation">
+            <label for="editLink">Links:</label>
+            
+            <div class="editLinkSection" id="editLinkSection">
+                {% for i in range(4) %}
+                <input type="text" id="editLink{{ i + 1 }}" name="editLink[]" placeholder="Link {{ i + 1 }}" style="display: none;">
+                {% endfor %}
+            </div>
+            <div class="label"><label for="editVerified">Verified:</label>
+            <input type="checkbox" id="editVerified" name="editVerified"></div>
+            <div class="label"><label for="editCompleted">Completed:</label>
+            <input type="checkbox" id="editCompleted" name="editCompleted"></div>
+            <!-- Hidden input field for the item ID -->
+            <input type="hidden" id="editItemId" name="editItemId">
+            <!-- Submit button for saving changes -->
+            <div class="modal-footer">
+                <button type="submit">Save Changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+    </div>
+
+  <script src="js/logo.js"></script>
+</body>
+
+</html>

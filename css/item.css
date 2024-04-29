@@ -1,0 +1,218 @@
+@media only screen and (max-width: 767px) {
+    .buttonContainer {
+        flex-direction: column!important;
+        flex-wrap: wrap!important;
+        align-items: stretch!important;
+    }
+}   
+
+.itemimage {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--medium-border-radius);
+}
+
+.ItemContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.itemdescriptioncont {
+    font-family: var(--font-family);
+    color: var(--header-color);
+    margin-top: 3px;
+}
+
+.itemdescription, .itemtitle, .itemtranslator, .iteminfo {
+    font-family: var(--font-family);
+    color: var(--header-color);
+}
+
+.itemdescription {
+    margin: 10px 0;
+}
+
+.itemtitle {
+    font-size: var(--font-size-etraxlarge);
+    margin-bottom: 5px;
+}
+
+.ItemContainerInfo {
+    display: flex;
+    background-color: var(--item-background-color);
+    border-radius: var(--medium-border-radius);
+    padding: 1rem;
+    width: 864px;
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--border-color);
+}
+
+.ItemImageContainer {
+    margin-right: 15px;
+    width: 100px;
+}
+
+.ItemTextContainer {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tooltip {
+    padding: 20px;
+    background-color: var(--additional-color);
+    border-radius: var(--medium-border-radius);
+    margin-bottom: 1.5rem;
+    font-family: var(--font-family);
+    color: var(--header-color);
+    font-weight: 500;
+    text-align: center;
+    width: 432px;
+}
+
+.TextImageContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.TextImageContainer p{
+    font-size: var(--font-size-normal);
+}
+
+.ItemTopContainer {
+    display: flex;
+}
+
+.tooltipContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.error404 {
+    display: flex;
+    background-color: var(--item-background-color);
+    border-radius: var(--medium-border-radius);
+    width: 864px;
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.textcontainer404 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1a1c1f;
+    padding: 10px;
+    border-radius: var(--medium-border-radius);
+}
+
+.text404 {
+    font-family: var(--font-family);
+    color: var(--header-color);
+    font-weight: 500;
+    font-size: var(--font-size-xxlarge);
+}
+
+.text404::before {
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.479);
+}
+
+.container404 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.button404 {
+    font-family: var(--font-family);
+    color: var(--header-color);
+    font-weight: 500;
+    font-size: var(--font-size-medium);
+    background-color: var(--primary-color);;
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.185);
+    padding: 0.8rem;
+    border-radius: var(--medium-border-radius);
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.link {
+    text-decoration: none;
+    background-color: var(--primary-color);;
+    color: var(--header-color);
+    border-radius: var(--small-border-radius);
+    padding: 9px 30px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 500;
+    text-align: center;
+}
+
+.link:hover {
+    background-color: var(--linkhover);
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 4px;
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: var(--small-border-radius);
+}
+
+.category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+}
+
+.category-icon, .category-icon svg {
+    width: 1em;
+    height: 1em;
+}
+
+.space {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.IconContainer {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap!important;
+    justify-content:flex-start!important;
+}

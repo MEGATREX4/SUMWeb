@@ -1,66 +1,215 @@
+html {
+    scroll-behavior: smooth;
+}
 
-.FAQcont{
+.selection {
+    background-color: #33333d;
+    padding: 0px 4px;
+    letter-spacing: 0.5px;
+    border-radius: var(--small-border-radius);
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+    color: var(--header-color);
+}
+
+.faqtitle {
+    font-family: var(--font-family);
+    color: var(--header-color);
+    font-weight: var(--thick-font-weight);
+    text-align: center;
+    padding-top: 10px;
+    font-size: var(--font-size-etraxlarge);
+    padding-bottom: 15px;
+}
+
+.paragraph {
+    font-family: var(--font-family);
+    color: var(--paragraph-color);
+    font-weight: var(--noraml-font-weight);
+    font-size: var(--font-size-normal);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 624px;
-    border-radius: 15px;
-    color: #dfdfdf;
-    font-size: 17px;
-    line-height: 1.5;
-    background-color: #2b2222;
-    margin: 20px;
-    padding: 20px;
-
+    max-width: 600px;
+    line-height: 24px;
 }
 
-.addFAQ{
-    background-color: #373221;
-    padding: 1px 1px;
-    border-radius: 5px;
-    line-height: 1.5;
-    width: 29px;
-    height: 29px;
-    align-items: center;
+h4 {
+    font-family: var(--font-family);
+    color: var(--header-color);
+    font-weight: var(--thick-font-weight);
+    font-size: var(--font-size-xlarge);
     text-align: center;
-    vertical-align: middle;
-    
+    padding: 30px 0 10px 0;
 }
 
-.links{
-    padding: 1.5px 5px;
-    background-color: #20202c;
-    color: white;
-    border-radius: 5px;
+.ItemContainerInfo {
+    align-items: center;
+}
+
+.paragraph p {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.paragraph p a {
+    color: var(--header-color);
+    padding: 1px 5px;
+    background-color: var(--primary-color);; 
+    border-radius: var(--small-border-radius);
     text-decoration: none;
-}
-.links:hover{
-    padding: 1.5px 5px;
-    background-color: #33333d;
-    color: white;
+    hyphens: none;
+    white-space: nowrap;
 }
 
-.FAQcontcont{
+.paragraph p a:hover {
+    background-color: var(--linkhover);
+}
+
+.paragraph p {
+    font-size: var(--font-size-normal);
+}
+
+.paragraph li {
+    text-align: justify;
+}
+
+.warning {
+    background-color: var(--additional-color);
+    padding: 20px 10px;
+    border-radius: var(--medium-border-radius);
     display: flex;
-    font-family: 'Ubuntu', sans-serif;
-    border-radius: 20px;
-    color: #dbe1f8;
-}
-
-.githubpath{
-    background-color: #252525;
-    padding: 1.5px 5px;
-    letter-spacing: 2px;
-}
-
-.par{
-    font-size: 17px;
-    text-align:justify;
-}
-
-h1, h2{
     align-items: center;
+    justify-content: center;
     text-align: center;
-    vertical-align: middle;
-    margin-bottom: -10px;
+    font-family: var(--font-family);
+    font-weight: var(--thick-font-weight);
+}
+
+.paragraph h2, .paragraph h3 {
+    color: var(--paragraph-color);
+}
+
+.contents {
+    background-color: #474753;
+    border-radius: var(--medium-border-radius);
+    font-family: var(--font-family);
+    color: var(--paragraph-color);
+    font-weight: var(--noraml-font-weight);
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tocList {
+    padding: 15px 20px;
+}
+
+.tocListContainer {
+    margin-bottom: 10px;
+}
+
+.toctitle {
+    color: var(--paragraph-color);
+    font-weight: 700;
+    background-color: #33333d;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 6px 6px 0% 0%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.toctitle p {
+    margin-left: 20px;
+}
+
+.contents ul {
+    list-style-type: none;
+    padding-left: 0;
+    max-width: calc(100% - 35px);
+}
+
+.contents ul li {
+    margin-bottom: 5px;
+}
+
+.contents ul li a {
+    text-decoration: none;
+    color: var(--paragraph-color);
+    display: block;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.contents ul li a:hover {
+    background-color: #1d1b1b;
+}
+
+.first-degree {
+    font-size: var(--font-size-normal);
+    margin-left: 20px;
+}
+
+.second-degree {
+    margin-left: 40px;
+    font-size: var(--font-size-normal);
+}
+
+.third-degree {
+    margin-left: 60px;
+    font-size: var(--font-size-normal);
+}
+
+.authorcontainer {
+    border-radius: var(--medium-border-radius);
+    font-family: var(--font-family);
+    color: var(--paragraph-color);
+    font-weight: var(--noraml-font-weight);
+    max-width: 500px;
+    width: 100%;
+}
+
+.articleauthor {
+    width: 100%;
+    display: flex;
+    font-family: var(--font-family);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author p {
+    padding: 0!important;
+}
+
+.author img {
+    border-radius: var(--medium-border-radius);
+    width: 50px;
+    height: 50px;
+}
+
+.author-image {
+    margin-right: 5px;
+}
+
+.author-info {
+    margin-left: 5px;
+}
+
+.author-name {
+    font-weight: var(--thick-font-weight);
+    color: var(--header-color);
+}
+
+.paragraph p .author-about {
+    color: var(--paragraph-color);
+    font-size: 13px!important;
 }

@@ -1,83 +1,161 @@
 [
     {
         "title": "Apotheosis",
-        "description": "Можливості варіюються від простих змін, таких як вища цукрова тростина, до масштабних капітальних ремонтів основних систем, таких як зачарування.",
+        "gameversion": "1.12.2+",
+        "engine": "Forge, NeoForge",
+        "categories": [
+            "Ігрові механіки",
+            "Магія",
+            "Корисні функції"
+        ],
+        "description": "Apotheosis - це контент-мод, який дозволяє вам стати сильнішими, ніж будь-коли раніше, але при цьому намагається зберегти вірність ванільній механіці в серці. Кожна функція ретельно підібрана, щоб відчувати себе цілісною та завершеною. \r\nМожливості варіюються від простих змін, як-от вища цукрова тростина, до масштабних переробок основних систем, як-от зачарування. \r\nApotheosis поділяється на модулі, кожен з яких має певну спрямованість.  Модулі є незалежними, кожен з них можна вимкнути за бажанням, хоча вони часто взаємодіють з іншими модулями.  За замовчуванням усі модулі увімкнені.",
         "image": "https://media.forgecdn.net/avatars/806/643/638174667713250064.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/apotheosis",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/apotheosis"
+        ],
         "id": "000001"
     },
     {
         "title": "Gobber 2",
-        "description": "Мод Gobber призначений для того, щоб зробити гру більш захоплюючою, надаючи покращену броню, інструменти та зброю.",
+        "description": "Потужна броня, інструменти, зброя, персні, медальйони та посохи.\r\nМод Gobber створений для того, щоб зробити гру в Minecraft більш насиченою, надаючи покращену броню, інструменти та зброю. Крім того, мод надає спеціальні предмети (персні, посохи та медальйони), які покращують якість життя та надають різноманітні зручності. Дехто може вважати ці предмети надмірно потужними, але, на мою думку, це питання вибору.",
         "image": "https://media.forgecdn.net/avatars/265/418/637229299628778865.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000002"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/gobber"
+        ],
+        "id": "000002",
+        "gameversion": "1.18+",
+        "categories": [
+            "Спорядження",
+            "Магія",
+            "Корисні функції"
+        ],
+        "engine": "Forge, Fabric"
     },
     {
         "title": "Immersive Engineering",
-        "description": "технічний мод з певним шармом, заснований на ідеях та концепціях. Загалом, це про технології, натхненні реалізмом.",
+        "description": "Immersive Engineering - це технічний мод з певним шармом, заснований на ідеях та концепціях, більшість ресурсів якого створено Дем'єном Хазардом (Damien Hazard).\r\nЗагалом, це технології, натхненні реалізмом:\r\nЗамість червоних трубок, що світяться, він пропонує реальні лінії електропередач, що звисають.\r\nЗамість одного блоку, який чарівним чином випльовує пил, коли в нього кладуть руду, він пропонує дробарку, великий мультиблок (5x3x3), який має колеса, що обертаються, і випльовує частинки, коли він розбиває руду.\r\nЗамість лазера, який перетворює енергію на магічне світло і руду, вона пропонує екскаватор, ще один масивний, ресурсоємний мультиблок (3x7x8), який витягує руду з землі за допомогою великого обертового ковша.\r\nЯ маю на увазі зробити технічні моди більш збалансованими і красивими, а також додати власну родзинку, зробивши ставку на ретро-футуризм (згадайте BioShock, Order 1886, SkyCaptain і World of Tomorrow), а не на клінічні біло-сірі кубики майбутнього.",
         "image": "https://media.forgecdn.net/avatars/334/842/637469274508716717.png",
         "verified": true,
-        "author": "MEGATREX4, hnufelka, CakesTwix, ICHTLAY",
+        "author": "СУМ, MEGATREX4, hnufelka, CakesTwix, ICHTLAY",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering",
-        "id": "000003"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering",
+            "https://modrinth.com/mod/immersiveengineering"
+        ],
+        "id": "000003",
+        "gameversion": "1.7.10",
+        "categories": [
+            "Декорації",
+            "Спорядження",
+            "Ігрові механіки",
+            "Зберігання",
+            "Технології",
+            "Корисні функції",
+            "Генерація створення"
+        ],
+        "engine": "Forge, NeoForge"
     },
     {
         "title": "Spice of Life: SPE",
-        "description": "Цей мод додає переваги від вживання різноманітної їжі у Minecraft. Він відстежує ваш раціон і дає вам атрибути або ефекти на основі вашої оцінки різноманітності.",
+        "description": "Мод, призначений для заохочення різноманітності харчування! Цей проект є розвилкою Spice of Life: Картопляна версія, яка в свою чергу була вилкою Spice of Life: Морквяна версія. Картопляна та Морквяна вилки мають однакову мету - винагородити гравця за вживання різноманітної їжі. Однак є дві основні відмінності:\r\nЗамість того, щоб постійно давати гравцеві максимум здоров'я, коли він їсть нову їжу, Картопляна версія дає змінні переваги в залежності від того, наскільки різноманітним є поточний раціон гравця. Отже, якщо гравець отримує користь від вживання великої кількості нових продуктів, він повинен підтримувати цей рівень різноманітності, щоб зберегти цю користь. Це має заохочувати автоматизацію різноманітних систем виробництва їжі, а не заохочувати гравця їсти кожну їжу один раз.\r\nКористь від різноманітності раціону повністю настроюється і не обмежується лише максимальним здоров'ям. Переваги можуть бути модифікаторами будь-якого атрибуту, наприклад, максимального здоров'я, шкоди від атаки, броні, швидкості пересування тощо, або будь-якого ефекту від зілля, від ванілі або будь-якого мода. Пороги для отримання переваг, точний розрахунок різноманітності їжі, те, наскільки кожна окрема їжа сприяє різноманітності, і багато іншого можна налаштовувати.",
         "image": "https://media.forgecdn.net/avatars/570/46/637930919653071925.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000004"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/spice-of-life-sweet-potato-edition"
+        ],
+        "id": "000004",
+        "gameversion": "1.18.2+",
+        "categories": [
+            "Їжа",
+            "Ігрові механіки"
+        ],
+        "engine": "Forge"
     },
     {
         "title": "delightful",
-        "description": "Налаштовуваний аддон Farmer's Delight з функціями сумісності та захоплюючими новими продуктами.",
+        "description": "Налаштовуване доповнення до Farmer's Delight з новими видами їжі, спорядження та продуктів.",
         "image": "https://cdn.modrinth.com/data/JtSnhtNJ/707d7697b315dd6dfc84648c893bf3e057bb3e34.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/delightful",
-        "id": "000005"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/delightful",
+            "https://modrinth.com/mod/delightful"
+        ],
+        "id": "000005",
+        "gameversion": "1.19+",
+        "categories": [
+            "Спорядження",
+            "Їжа",
+            "Зберігання",
+            "Корисні функції",
+            "Генерація створення"
+        ],
+        "engine": "Forge, NeoForge"
     },
     {
         "title": "End's Delight",
-        "description": "End's Delight - це аддон-мод для Farmer's Delight, заснований на додаванні кулінарного контенту з предметів Енду!",
+        "description": "End's Delight - це аддон-мод для Farmer's Delight, заснований на додаванні нового кулінарного контенту з предметів Енду!",
         "image": "https://cdn.modrinth.com/data/yHN0njMr/8b215554e49c51cb5bb5ded435263d2078e0829e.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/ends-delight",
-        "id": "000006"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ends-delight",
+            "https://modrinth.com/mod/ends-delight"
+        ],
+        "id": "000006",
+        "gameversion": "1.16.5+",
+        "categories": [
+            "Їжа",
+            "Генерація створення"
+        ],
+        "engine": "Fabric, Forge"
     },
     {
         "title": "Framed Compacting Drawers",
-        "description": "Це аддон-мод до Storage Drawers, який додає безмежно велику кількість нових ящиків до гри.",
+        "description": "Це доповнення до Storage Drawers, який додає нові шухляди, контролери та інші блоки з основного моду.\r\nВсі шухляди можна оздобити з кожної сторони будь-яким блоком в грі(підтримуються навіть блоки з інших модів).",
         "image": "https://media.forgecdn.net/avatars/264/387/637226486288344415.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000007"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers"
+        ],
+        "id": "000007",
+        "gameversion": "1.12.2+",
+        "categories": [
+            "Декорації",
+            "Зберігання",
+            "Корисні функції"
+        ],
+        "engine": "Forge"
     },
     {
         "title": "Frozen Delight",
-        "description": "Frozen Delight - це просте, але якісне доповнення для Farmer's Delight, яке робить його більш сумісним з Frozen Up!",
+        "description": "Frozen Delight - це просте, але якісне доповнення для Farmer's Delight, яке робить його більш сумісним з Frozen Up! На вас чекають не тільки нові види смачної їжі, але й корисні рецепти для її приготування та виживання. Ви можете дізнатися більше про вміст на Вікі розробників або на сторінках CurseForge чи Modrinth.",
         "image": "https://media.forgecdn.net/avatars/807/186/638176014809459782.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000008"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/frozen-delight/"
+        ],
+        "id": "000008",
+        "gameversion": "Forge",
+        "engine": "1.16.5+",
+        "categories": [
+            "Їжа",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Frozen Up",
@@ -86,40 +164,71 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000009"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/frozen-up"
+        ],
+        "id": "000009",
+        "gameversion": "1.16.4+",
+        "engine": "Forge, Fabric",
+        "categories": []
     },
     {
         "title": "Ore Excavation",
-        "description": "Дозволяє гравцям видобувати цілі жили руди, рубати цілі дерева або виконувати будь-які інші дії з інструментами за один раз. ",
+        "description": "Видобувайте цілі жили руди, вирубуйте цілі дерева або виконуйте будь-яку іншу дію за допомогою інструментів одним рухом. Для розробників мод-паків також доступні прості та зрозумілі налаштування, такі як чорні списки інструментів або блоків, обмеження розміру, частота спрацьовування та багато іншого!",
         "image": "https://media.forgecdn.net/avatars/50/412/636090834615920242.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000010"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ore-excavation",
+            "https://modrinth.com/mod/ore-excavation"
+        ],
+        "id": "000010",
+        "gameversion": "1.7.10+",
+        "categories": [
+            "Управління",
+            "Корисні функції"
+        ],
+        "engine": "Forge"
     },
     {
         "title": "Rotten Creatures",
-        "description": "Мод, який має на меті додати до гри багато нових чудових зомбі-мобів!",
+        "description": "Rotten Creatures - це мод, створений RPorotos і розроблений Fusion Studio, який додає багато нових зомбі-мобів з індивідуальними особливостями!",
         "image": "https://cdn.modrinth.com/data/5Zusp48B/47a8369c7bc216fdc69e2ab709d5c0a7b9f8e255.jpeg",
         "verified": true,
         "author": "СУМ, unroman",
         "completed": true,
-        "link": "https://modrinth.com/mod/rottencreatures",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/rotten-creatures",
+            "https://modrinth.com/mod/rottencreatures"
+        ],
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true,
-        "id": "000011"
+        "id": "000011",
+        "gameversion": "",
+        "categories": [
+            "Моби"
+        ]
     },
     {
         "title": "Nether's Exoticism",
-        "description": "Додає 5 екзотичних фруктів, які існують в реальному житті, кожен біом Nether отримує фрукт.",
+        "description": "Nether's Exotism - це мод, який додає 5 екзотичних фруктів, які існують в реальному житті, кожен біом Пекла отримує фрукт. Ви можете споживати ці фрукти безпосередньо і мати деякі спеціальні ефекти, але ви також можете зробити з ними щось інше...",
         "image": "https://cdn.modrinth.com/data/3e4LaIlU/37235ed4c98620770a66e50018669b6bdfa00388.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000012"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/nethers-exoticism",
+            "https://modrinth.com/mod/nethers-exoticism"
+        ],
+        "id": "000012",
+        "gameversion": "1.16.5",
+        "engine": "Forge",
+        "categories": [
+            "Пригоди",
+            "Їжа",
+            "Генерація створення"
+        ]
     },
     {
         "title": "Nether's Delight",
@@ -128,7 +237,10 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/nethers-delight",
+            "https://modrinth.com/mod/nethers-delight"
+        ],
         "id": "000013"
     },
     {
@@ -138,38 +250,71 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/nethers-cruelty"
+        ],
         "id": "000014"
     },
     {
         "title": "The One Probe",
-        "description": "TOP, альтернівапатива WAILA, яка показує інформацію про те, на що ви дивитеся (істоти, блоки, предмети)",
+        "description": "One Probe (або скорочено TOP) - це більш імерсивна версія WAILA. Ви не бачите інформаційну підказку постійно, а лише тоді, коли тримаєте такий собі зонд у руці (зауважте, що цей мод можна налаштувати так, щоб він показував інформацію постійно, щось схоже на WAILA).",
         "image": "https://cdn.modrinth.com/data/Eyw0UxEx/ca066fbe30ebf9357896ae53711b86460159aedf.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000015"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/the-one-probe",
+            "https://modrinth.com/mod/the-one-probe"
+        ],
+        "id": "000015",
+        "gameversion": "",
+        "categories": [
+            "Бібліотеки",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Storage Drawers",
-        "description": "Ящики для зберігання запозичили ідеї від Jabba та Bibliocraft, що дозволило створити високофункціональне, компактне та естетичне рішення для зберігання.",
+        "description": "Зберігайте речі, якими ви найчастіше користуєтесь, під рукою. Ящики для зберігання запозичили ідеї з Jabba та Bibliocraft, що дозволило створити функціональне, компактне та естетичне рішення для зберігання, яке доповнює, а не замінює ці модулі.\r\nУ цих контейнерах немає традиційного інвентарю з комірками. Взаємодія відбувається за допомогою кліків, як у інших схожих модів. Натискання на одну з шухляд спереду призведе до взаємодії з цією шухлядою.",
         "image": "https://media.forgecdn.net/avatars/10/842/635468327818431130.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000016"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/storage-drawers",
+            "https://modrinth.com/mod/storagedrawers"
+        ],
+        "id": "000016",
+        "gameversion": "1.7.10+",
+        "engine": "Forge, NeoForge",
+        "categories": [
+            "Спорядження",
+            "Зберігання",
+            "Транспортування",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Applied Energistics 2",
-        "description": "Applied Energistics 2 (AE2) - це комплексний мод для Minecraft, який представляє унікальний підхід до управління внутрішньоігровими запасами.",
+        "description": "Applied Energistics 2 (AE2) - це комплексний мод для Minecraft, який представляє унікальний підхід до управління внутрішньоігровими ресурсами. Він представляє футуристичну тематику, засновану на технологіях і зосереджену на концепції використання енергії та технологій для перетворення матерії в енергію і навпаки.",
         "image": "https://i.ibb.co/Brq3L82/controller.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/ae2",
-        "id": "000017"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2",
+            "https://modrinth.com/mod/ae2"
+        ],
+        "id": "000017",
+        "gameversion": "1.18+",
+        "engine": "Forge, NeoForge, Fabric",
+        "categories": [
+            "Декорації",
+            "Спорядження",
+            "Зберігання",
+            "Технології",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Bartering Station",
@@ -178,8 +323,17 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/bartering-station",
-        "id": "000018"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/bartering-station",
+            "https://modrinth.com/mod/bartering-station"
+        ],
+        "id": "000018",
+        "gameversion": "Forge, NeoForge, Fabric",
+        "engine": "1.19.2+",
+        "categories": [
+            "Ігрові механіки",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Chunk Loaders",
@@ -188,8 +342,17 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/chunk-loaders",
-        "id": "000019"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/chunk-loaders",
+            "https://modrinth.com/mod/chunk-loaders"
+        ],
+        "id": "000019",
+        "gameversion": "Forge, NeoForge, Fabric, Quilt",
+        "engine": "F",
+        "categories": [
+            "Технології",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Catalogue",
@@ -198,38 +361,75 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000020"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/catalogue-fabric",
+            "https://www.curseforge.com/minecraft/mc-mods/catalogue"
+        ],
+        "id": "000020",
+        "gameversion": "1.16.3+",
+        "engine": "Forge, NeoForge, Fabric",
+        "categories": [
+            "Бібліотеки",
+            "Управління",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Magnum Torch",
-        "description": "Магнітний смолоскип додає три види дуже потужних смолоскипів, які не дають мобам нереститися на величезній території. Запобігатимуться лише природні нерестилища, тому, наприклад, нерестилища та рейди все ще працюватимуть, як і раніше.",
+        "description": "Magnum Torch додає три види дуже потужних смолоскипів, які не дають мобам з'являтись поблизу. Запобігатимуться лише природний спавн, тому, наприклад, спавнер та рейди все ще працюватимуть, як і раніше.\r\nВміст:\r\nДекілька типів факелів, якиі ви створюєте, кожен вид визначає, яким мобам буде заборонено спавнитись. Лише нові моби не можуть відтворюватися, моби, які вже є у світі, не зникнуть миттєво після розміщення цього факела!",
         "image": "https://media.forgecdn.net/avatars/511/74/637828965575792853.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/magnum-torch",
-        "id": "000021"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/magnum-torch-forge",
+            "https://modrinth.com/mod/magnum-torch"
+        ],
+        "id": "000021",
+        "gameversion": "1.18.2+",
+        "engine": "Forge, NeoForge, Fabric",
+        "categories": [
+            "Корисні функції"
+        ]
     },
     {
         "title": "Create : Misc & Things",
-        "description": "додає корисні, будівельні та веселі дрібнички, які чудово вписуються візуально до моду Create.",
+        "description": "Create : Misc & Things додає трохи корисних штук для будівництва та веселих трохи дрібниць, які жуть і не вписуватись в стиль, але круто ж! Пістолет з носиком, вокзальний гучномовець, будівельні блоки, залізнодорожні знаки, картки пропуску, новий метод створення клею.",
         "image": "https://media.forgecdn.net/avatars/873/437/638293470247022480.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000022"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/create-misc-and-things",
+            "https://modrinth.com/mod/create-misc-and-things"
+        ],
+        "id": "000022",
+        "gameversion": "1.18.2+",
+        "engine": "Forge",
+        "categories": [
+            "Декорації",
+            "Технології",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Create Central Kitchen",
-        "description": "мод, який пропонує більше інструментів та методів для автоматизації приготування їжі для інших модів у Create. ",
+        "description": "Пропонує більше інструментів та методів для автоматизації приготування їжі з інших модів за допомогою Create.\r\nПро мод мало чого можна сказати, але він дійсно дуже допомагає в створені заводів для їжі з Farmer`s Delight. Нові прилади допоможуть порізати, змішати та розтопити інгрідієнти для їжі.",
         "image": "https://media.forgecdn.net/avatars/770/583/638109213062028041.png",
         "verified": false,
-        "author": "СУМ",
+        "author": "СУМ, V972",
         "completed": true,
-        "link": "",
-        "id": "000023"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/create-central-kitchen",
+            "https://modrinth.com/mod/create-central-kitchen"
+        ],
+        "id": "000023",
+        "gameversion": "1.18.2+",
+        "engine": "Forge, NeoForge",
+        "categories": [
+            "Їжа",
+            "Технології"
+        ]
     },
     {
         "title": "Create Enchantment Industry",
@@ -238,8 +438,21 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000024"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/create-enchantment-industry",
+            "https://www.curseforge.com/minecraft/mc-mods/create-enchantment-industry-fabric",
+            "https://modrinth.com/mod/create-enchantment-industry",
+            "https://modrinth.com/mod/create-enchantment-industry-fabric"
+        ],
+        "id": "000024",
+        "gameversion": "1.18.2+",
+        "engine": "Forge, NeoForge, Fabric, Quilt",
+        "categories": [
+            "Ігрові механіки",
+            "Зберігання",
+            "Технології",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Create Slice & Dice",
@@ -248,7 +461,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000025"
     },
     {
@@ -258,7 +471,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000026"
     },
     {
@@ -268,7 +481,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000027"
     },
     {
@@ -278,7 +491,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000028"
     },
     {
@@ -288,7 +501,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/configured",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/configured"
+        ],
         "id": "000029"
     },
     {
@@ -298,7 +513,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000030"
     },
     {
@@ -308,7 +523,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/crafting-station",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/crafting-station"
+        ],
         "id": "000031"
     },
     {
@@ -318,7 +535,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000032"
     },
     {
@@ -328,7 +545,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000033"
     },
     {
@@ -338,7 +555,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000034"
     },
     {
@@ -348,7 +565,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000035"
     },
     {
@@ -358,7 +575,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000036"
     },
     {
@@ -368,7 +585,7 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000037"
     },
     {
@@ -378,7 +595,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000038"
     },
     {
@@ -388,7 +605,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/keymap",
+        "link": [
+            "https://modrinth.com/mod/keymap"
+        ],
         "id": "000039"
     },
     {
@@ -398,7 +617,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/crafting-tweaks",
+        "link": [
+            "https://modrinth.com/mod/crafting-tweaks"
+        ],
         "id": "000040"
     },
     {
@@ -408,7 +629,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000041"
     },
     {
@@ -418,7 +639,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000042"
     },
     {
@@ -428,7 +649,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/ae2things",
+        "link": [
+            "https://modrinth.com/mod/ae2things"
+        ],
         "id": "000043"
     },
     {
@@ -438,7 +661,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/ae2wtlib",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ae2wtlib"
+        ],
         "id": "000044"
     },
     {
@@ -448,8 +673,14 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
-        "id": "000045"
+        "link": [],
+        "id": "000045",
+        "gameversion": "",
+        "categories": [
+            "Декорації",
+            "Спорядження",
+            "Ігрові механіки"
+        ]
     },
     {
         "title": "Create Confectionery",
@@ -458,7 +689,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000046"
     },
     {
@@ -468,7 +699,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000047"
     },
     {
@@ -478,7 +709,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000048"
     },
     {
@@ -488,7 +719,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/immersiveposts",
+        "link": [
+            "https://modrinth.com/mod/immersiveposts"
+        ],
         "id": "000049"
     },
     {
@@ -498,7 +731,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000050"
     },
     {
@@ -508,7 +741,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000051"
     },
     {
@@ -518,7 +751,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000052"
     },
     {
@@ -528,7 +761,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks"
+        ],
         "id": "000053"
     },
     {
@@ -538,7 +773,7 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000054"
     },
     {
@@ -548,7 +783,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/trading-post",
+        "link": [
+            "https://modrinth.com/mod/trading-post"
+        ],
         "id": "000055"
     },
     {
@@ -558,7 +795,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/trash-cans",
+        "link": [
+            "https://modrinth.com/mod/trash-cans"
+        ],
         "id": "000056"
     },
     {
@@ -568,7 +807,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000057"
     },
     {
@@ -578,7 +817,9 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [
+            "https://modrinth.com/mod/terrestria"
+        ],
         "id": "000058"
     },
     {
@@ -588,7 +829,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000059"
     },
     {
@@ -598,7 +839,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000060"
     },
     {
@@ -608,7 +849,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000061"
     },
     {
@@ -618,7 +859,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000062"
     },
     {
@@ -628,7 +869,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000063"
     },
     {
@@ -638,7 +879,7 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge та Modrinth",
         "semiverified": true,
         "id": "000064"
@@ -650,7 +891,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000065"
     },
     {
@@ -660,7 +901,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000066"
     },
     {
@@ -670,7 +911,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000067"
     },
     {
@@ -680,7 +921,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/tieredz",
+        "link": [
+            "https://modrinth.com/mod/tieredz"
+        ],
         "id": "000068"
     },
     {
@@ -690,7 +933,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000069"
     },
     {
@@ -700,7 +943,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000070"
     },
     {
@@ -710,7 +953,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000071"
     },
     {
@@ -720,7 +963,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/cosmetic-nametags",
+        "link": [
+            "https://modrinth.com/mod/cosmetic-nametags"
+        ],
         "id": "000072"
     },
     {
@@ -730,7 +975,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/hardcore-revival",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/hardcore-revival"
+        ],
         "id": "000073"
     },
     {
@@ -740,7 +987,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/environmentz",
+        "link": [
+            "https://modrinth.com/mod/environmentz"
+        ],
         "id": "000074"
     },
     {
@@ -750,7 +999,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000075"
     },
     {
@@ -760,7 +1009,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/chronopyre",
+        "link": [
+            "https://modrinth.com/mod/chronopyre"
+        ],
         "id": "000076"
     },
     {
@@ -770,7 +1021,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000077"
     },
     {
@@ -780,7 +1031,9 @@
         "verified": true,
         "author": "СУМ, unroman",
         "completed": true,
-        "link": "https://modrinth.com/mod/spell-engine",
+        "link": [
+            "https://modrinth.com/mod/spell-engine"
+        ],
         "id": "000078"
     },
     {
@@ -790,7 +1043,7 @@
         "verified": false,
         "author": "mewnn",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000079"
     },
     {
@@ -800,7 +1053,9 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/beautify-refabricated",
+        "link": [
+            "https://modrinth.com/mod/beautify-refabricated"
+        ],
         "id": "000080"
     },
     {
@@ -810,7 +1065,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/backpacked",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/backpacked"
+        ],
         "id": "000081"
     },
     {
@@ -820,7 +1077,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000082"
     },
     {
@@ -830,7 +1087,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000083"
     },
     {
@@ -840,7 +1097,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000084"
     },
     {
@@ -850,7 +1107,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000085"
     },
     {
@@ -860,7 +1117,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000086"
     },
     {
@@ -870,7 +1127,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000087"
     },
     {
@@ -880,7 +1137,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000088"
     },
     {
@@ -890,7 +1147,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000089"
     },
     {
@@ -900,7 +1157,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000090"
     },
     {
@@ -910,7 +1167,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000091"
     },
     {
@@ -920,7 +1177,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000092"
     },
     {
@@ -930,7 +1187,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000093"
     },
     {
@@ -940,7 +1197,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000094"
     },
     {
@@ -953,7 +1210,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": false,
-        "link": "",
+        "link": [],
         "id": "000095"
     },
     {
@@ -963,7 +1220,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000096"
     },
     {
@@ -973,7 +1230,9 @@
         "verified": true,
         "author": "СУМ, unroman",
         "completed": true,
-        "link": "https://modrinth.com/mod/wizards",
+        "link": [
+            "https://modrinth.com/mod/wizards"
+        ],
         "id": "000097"
     },
     {
@@ -983,7 +1242,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/createaddition",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/createaddition"
+        ],
         "id": "000098"
     },
     {
@@ -993,7 +1254,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000099"
     },
     {
@@ -1003,7 +1264,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://www.curseforge.com/minecraft/mc-mods/simple-storage-network",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/simple-storage-network"
+        ],
         "id": "000100"
     },
     {
@@ -1013,7 +1276,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/tools-complement",
+        "link": [
+            "https://modrinth.com/mod/tools-complement"
+        ],
         "id": "000101"
     },
     {
@@ -1023,7 +1288,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000102"
     },
     {
@@ -1033,7 +1298,9 @@
         "verified": true,
         "author": "Tapio, MartianDill, Eric_Mensy, Dasventur, Koto Fickus",
         "completed": true,
-        "link": "https://modrinth.com/mod/create-fabric",
+        "link": [
+            "https://modrinth.com/mod/create-fabric"
+        ],
         "id": "000103"
     },
     {
@@ -1043,7 +1310,9 @@
         "verified": true,
         "author": "СУМ, MartianDill, Eugene Hordei, Isengrimus",
         "completed": true,
-        "link": "https://modrinth.com/mod/create-steam-n-rails",
+        "link": [
+            "https://modrinth.com/mod/create-steam-n-rails"
+        ],
         "id": "000104"
     },
     {
@@ -1053,7 +1322,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000105"
     },
     {
@@ -1063,7 +1332,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000106"
     },
     {
@@ -1073,7 +1342,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000107"
     },
     {
@@ -1083,7 +1352,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000108"
     },
     {
@@ -1093,7 +1362,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/mcda",
+        "link": [
+            "https://modrinth.com/mod/mcda"
+        ],
         "id": "000109"
     },
     {
@@ -1103,7 +1374,7 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true,
         "id": "000110"
@@ -1115,7 +1386,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/mana-visualizer",
+        "link": [
+            "https://modrinth.com/mod/mana-visualizer"
+        ],
         "id": "000111"
     },
     {
@@ -1125,7 +1398,7 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000112"
     },
     {
@@ -1135,7 +1408,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000113"
     },
     {
@@ -1145,7 +1418,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000114"
     },
     {
@@ -1155,7 +1428,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": "",
+        "link": [],
         "id": "000115"
     },
     {
@@ -1165,7 +1438,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000116"
     },
     {
@@ -1175,7 +1448,7 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000117"
     },
     {
@@ -1188,7 +1461,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": false,
-        "link": null,
+        "link": [],
         "id": "000118"
     },
     {
@@ -1201,7 +1474,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": false,
-        "link": null,
+        "link": [],
         "id": "000119"
     },
     {
@@ -1211,7 +1484,7 @@
         "verified": true,
         "author": "СУМ, unroman, mewnn",
         "completed": true,
-        "link": null,
+        "link": [],
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman та mewnn, можна знайти на Curse Forge або Modrinth",
         "semiverified": true,
         "id": "000120"
@@ -1223,7 +1496,9 @@
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": "https://modrinth.com/mod/jewelry",
+        "link": [
+            "https://modrinth.com/mod/jewelry"
+        ],
         "id": "000121"
     },
     {
@@ -1233,7 +1508,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000122"
     },
     {
@@ -1243,7 +1518,7 @@
         "verified": true,
         "author": "СУМ, unroman",
         "completed": true,
-        "link": null,
+        "link": [],
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
         "semiverified": true,
         "id": "000123"
@@ -1258,7 +1533,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": false,
-        "link": null,
+        "link": [],
         "id": "000124"
     },
     {
@@ -1268,7 +1543,7 @@
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000125"
     },
     {
@@ -1278,7 +1553,7 @@
         "verified": false,
         "author": "moralniy, InertFall",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000126"
     },
     {
@@ -1288,7 +1563,89 @@
         "verified": false,
         "author": "Ymna_ytka",
         "completed": true,
-        "link": null,
+        "link": [],
         "id": "000127"
+    },
+    {
+        "title": "Create: Numismatics",
+        "gameversion": "1.20.1+",
+        "engine": "Forge, NeoForge, Fabric, Quilt",
+        "categories": [
+            "Декорації",
+            "Економіка",
+            "Ігрові механіки",
+            "Корисні функції"
+        ],
+        "description": "Create: Numismatics - це новаторський економічний мод, розроблений для шанувальників Minecraft, який обіцяє простоту у створенні крамниць для гравців та водночас розвиває складні економічні починання на основі редстоуну. Він може похвалитися кількома ключовими особливостями такими як банківські картки, ID-картки, різні номінали монет, сполох-банкір.",
+        "image": "https://cdn.modrinth.com/data/Jdbbtt0i/d564adc868dd6702b9a0d031972cfab2d158f1ac.png",
+        "verified": true,
+        "author": "Nemejčyk",
+        "completed": true,
+        "translation": "https://crowdin.com/project/numismatics/uk",
+        "link": [
+            "https://modrinth.com/mod/numismatics",
+            "https://www.curseforge.com/minecraft/mc-mods/numismatics"
+        ],
+        "id": "000138"
+    },
+    {
+        "title": "Create: Encased",
+        "gameversion": "1.18.2+",
+        "engine": "Forge",
+        "categories": [
+            "Декорації",
+            "Технології"
+        ],
+        "description": "Create Encased - невеликий аддон до Create Mod\r\n\r\nЦей аддон дозволяє використовувати всі обсадні матеріали у валах, зубчастих колесах та трубах",
+        "image": "https://media.forgecdn.net/avatars/849/748/638250932531442863.png",
+        "verified": true,
+        "author": "Nemejčyk",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/create-encased",
+            "https://modrinth.com/mod/create-encased"
+        ],
+        "id": "000139"
+    },
+    {
+        "title": "Design n' Decor",
+        "gameversion": "1.18.2+",
+        "engine": "Forge, NeoForge, Fabric, Quilt",
+        "categories": [
+            "Декорації",
+            "Корисні функції"
+        ],
+        "description": "Create: Design 'n' Decor - це аддон до Create, що фокусується на функціях декорування, які розширюють базові можливості Create, орієнтуючись при цьому на відгуки спільноти.\r\n\r\nДо нього входять варіанти звичайних блоків, такі як багато нових котлів, дробильних коліс, сховищ, а також додаткові блоки для Create: Design 'n' Decor, на думку розробників, добре вписується в Create!",
+        "image": "https://cdn.modrinth.com/data/x49wilh8/819c2cd03f3fc28aa64db424ce9cf5f0509fca0b.png",
+        "verified": true,
+        "author": "Nemejčyk",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/create-design-n-decor",
+            "https://www.curseforge.com/minecraft/mc-mods/create-design-n-decor"
+        ],
+        "id": "000140"
+    },
+    {
+        "title": "Create: Sweets & Treats",
+        "gameversion": "1.20.1+",
+        "engine": "Forge",
+        "categories": [
+            "Їжа",
+            "Ігрові механіки",
+            "Управління"
+        ],
+        "description": "Create Sweets And Treats - це аддон для мода Create, який представляє смачний набір продуктів харчування, підвищуючи автоматизацію та насолоду від ваших кулінарних пригод у Minecraft. ",
+        "image": "https://cdn.modrinth.com/data/FS7yzdnX/99820c2f027edfe2843c48795871043d90980303.png",
+        "verified": false,
+        "author": "Nemejčyk",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/create-sweets-and-treats"
+        ],
+        "id": "000141"
     }
 ]
