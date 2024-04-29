@@ -140,5 +140,61 @@
             "https://store.steampowered.com/app/2726450/Windowkill/"
         ],
         "id": "000137"
+    },
+    {
+        "title": "ASTRONEER",
+        "gameversion": "",
+        "engine": "Unreal Engine 4",
+        "categories": [
+            "Пригоди",
+            "Пісочниця"
+        ],
+        "description": "Досліджуйте та змінюйте далекі світи! Дія гри Astroneer розгортається у міжгалактичній епосі Великих географічних відкриттів 25-го століття, де астронавти досліджують кордони космосу, ризикуючи життям у суворих умовах, щоб зробити рідкісні відкриття та розгадати таємниці всесвіту.\r\nУ цій космічній пісочниці гравці можуть разом будувати власні бази на землі та під землею, створювати транспортні засоби для дослідження величезної сонячної системи, а також використовувати місцевість для створення всього, що вони можуть собі уявити. Творчість та винахідливість гравця — це ключ до процвітання в захопливих планетарних пригодах! В Astroneer ви можете все.",
+        "image": "https://upload.wikimedia.org/wikipedia/en/a/a9/Astroneer_cover_art.jpg",
+        "verified": false,
+        "author": "Nemejčyk, Фольклорист",
+        "completed": true,
+        "translation": "https://steamcommunity.com/sharedfiles/filedetails/?id=3135049718",
+        "link": [
+            "https://store.steampowered.com/app/361420/ASTRONEER/",
+            "https://t.me/furslaters_ua#000142"
+        ],
+        "id": "000142"
+    },
+    {
+        "title": "POSTAL: Brain Damaged",
+        "gameversion": "",
+        "engine": "Unity",
+        "categories": [],
+        "description": "POSTAL: Brain Damaged — це нова, орієнтована на екшн версія культової серії ігор «Running With Scissors» із ретро-графікою та стрімким, сучасним ігроладом. Проїдьтеся на диких американських гірках через викривлену країну чудес, ув'язнену в безладному мозку оскаженілого Чувака. Відтепер все це доступно рідною мовою!\r\n\r\nЦя локалізація замінює англійську мову\r\nПеревірено на Steam та GOG версіях гри\r\nПерекладено текст та більшість текстур (за винятком незначної кількості 3D-тексту)",
+        "image": "https://i1.sndcdn.com/artworks-ywe6hAAHnoEXNYEy-dmYlwA-t500x500.jpg",
+        "verified": false,
+        "author": "Nemejčyk, Tudzer",
+        "completed": true,
+        "translation": "https://steamcommunity.com/sharedfiles/filedetails/?id=3089509366",
+        "link": [
+            "https://store.steampowered.com/app/1359980/POSTAL_Brain_Damaged/",
+            "https://t.me/furslaters_ua"
+        ],
+        "id": "000143"
+    },
+    {
+        "title": "Victoria 3",
+        "gameversion": "",
+        "engine": "Clausewitz Engine",
+        "categories": [
+            "Економіка"
+        ],
+        "description": "Студія Paradox запрошує вас побудувати своє ідеальне суспільство в бурхливому і трансформаційному 19-му столітті. Збалансуйте конкуруючі інтереси у вашому суспільстві та завоюйте своє місце під сонцем у Victoria 3, одній з найочікуваніших ігор в історії Paradox. \nВ цій пригоді вас очікує - ідеальний симулятор суспільства, глибока економічна система, відкриття на великій сцені",
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/fb/Victoria_3_cover_art.jpg",
+        "verified": false,
+        "author": "Godrezky, Nemejčyk, Andry_Vesty, _rlly_, remark644",
+        "completed": true,
+        "translation": "https://steamcommunity.com/sharedfiles/filedetails/?id=2884178988",
+        "link": [
+            "https://store.steampowered.com/app/529340/Victoria_3/",
+            "https://t.me/by_godresky"
+        ],
+        "id": "000144"
     }
 ]

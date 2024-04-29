@@ -14,11 +14,11 @@ def load_data(filename):
 
 def get_max_id():
     # Load data from mods.json
-    with open('mods.json', 'r') as mods_file:
+    with open('mods.json', 'r', encoding='utf-8') as mods_file:
         mods_data = json.load(mods_file)
 
     # Load data from other.json
-    with open('other.json', 'r') as other_file:
+    with open('other.json', 'r', encoding='utf-8') as other_file:
         other_data = json.load(other_file)
 
     # Combine data from both files
@@ -71,7 +71,18 @@ def create_record():
         # Extract the source from the form data
         source = request.form.get('source', None)
 
+        
+
         if source is not None:
+            categories_from_form = request.form.getlist('categories[]')
+            # Extract additional categories from the other categories field
+            other_categories = request.form.get('additional_categories').split(',')
+            # Remove spaces before and after each category, and filter out empty strings
+            categories_from_form = [category.strip() for category in categories_from_form if category.strip()]
+            other_categories = [category.strip() for category in other_categories if category.strip()]
+
+
+            
             # Create the new record without the 'source' key
             new_record = {
                 "title": request.form['title'],
@@ -88,6 +99,10 @@ def create_record():
                 "id": get_max_id(),
                 "source": source  # Add the extracted source to the new record
             }
+            updated_categories = categories_from_form + other_categories
+    
+            # Update the record with the combined categories
+            new_record['categories'] = updated_categories
 
             print("New Record:", new_record)  # Debug message to check new record
             save_record(new_record)  # Save the new record with the correct source
@@ -180,7 +195,6 @@ def fetch_item_by_id(item_id):
     return jsonify({'error': 'Item not found'}), 404
 
 
-
 # Route to handle editing an item
 @app.route('/edit', methods=['POST'])
 def edit_record():
@@ -244,13 +258,6 @@ def edit_record():
         return redirect(url_for('home'))
 
 
-
-
-
-
-
-
-
 # Function to update the item in the JSON file
 def update_item_in_json_file(updated_item):
     filename = 'mods.json' if updated_item.get('source') == 'mods' else 'other.json'
@@ -271,6 +278,7 @@ def update_item_in_json_file(updated_item):
     # Write the updated records back to the file
     with open(filename, 'w', encoding='utf-8') as file:
         json.dump(records, file, indent=4, ensure_ascii=False)
+
 
 # Route to handle the update item request
 @app.route('/update_item', methods=['POST'])
