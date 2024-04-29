@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             caches.keys().then(function(cacheNames) {
                 cacheNames.forEach(function(cacheName) {
                     // Check if the cache name matches the specified pattern
-                    if (cacheName.startsWith('SUMTRANSLATE_REL_')) {
+                    if (cacheName.startsWith('SUMTRANSLATE_REL_') && cacheName.endsWith('CACHE')) {
                         // Clear the cache
                         caches.delete(cacheName).then(function() {
                             console.log('Cache', cacheName, 'has been cleared.');
