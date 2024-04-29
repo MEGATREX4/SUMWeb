@@ -64,15 +64,14 @@
 }
 
 .tooltip {
-    padding: 20px;
     background-color: var(--additional-color);
+    padding: 10px 20px;
     border-radius: var(--medium-border-radius);
-    margin-bottom: 1.5rem;
+    margin: 20px 0;
     font-family: var(--font-family);
     color: var(--header-color);
-    font-weight: 500;
-    text-align: center;
-    width: 432px;
+    font-weight: bold;
+    /* width: 432px; */
 }
 
 .TextImageContainer {

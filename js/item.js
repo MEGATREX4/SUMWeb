@@ -191,8 +191,13 @@ async function updateItemPage() {
                     // ogImage.setAttribute('property', 'og:image');
                     // ogImage.setAttribute('content', selectedItem.image);
                     // document.head.appendChild(ogImage);
-                    
 
+                    // update meta twitter:image
+                    // const twitterImage = document.createElement('meta');
+                    // twitterImage.setAttribute('name', 'twitter:image');
+                    // twitterImage.setAttribute('content', selectedItem.image);
+                    // document.head.appendChild(twitterImage);
+                    
                     //update meta twitter:description
                     const twitterDescription = document.createElement('meta');
                     twitterDescription.setAttribute('name', 'twitter:description');
@@ -205,15 +210,8 @@ async function updateItemPage() {
                     twitterTitle.setAttribute('content', "СУМ" + " - переклад " + selectedItem.title);
                     document.head.appendChild(twitterTitle);
 
-                    // update meta twitter:image
-                    // const twitterImage = document.createElement('meta');
-                    // twitterImage.setAttribute('name', 'twitter:image');
-                    // twitterImage.setAttribute('content', selectedItem.image);
-                    // document.head.appendChild(twitterImage);
-
-
                 // Create HTML string for tooltip content
-                const tooltipContent = selectedItem.tooltip ? selectedItem.tooltip : (selectedItem.verified ? 'Переклад вже в моді! Завантаження додаткових файлів не потрібно. Насолоджуйтеся грою з українською локалізацією!' : '');
+                const tooltipContent = selectedItem.tooltip ? selectedItem.tooltip : (selectedItem.verified ? 'Переклад вже в грі! Завантаження додаткових файлів не потрібно. Насолоджуйтеся грою з українською локалізацією!' : '');
 
                 // Create HTML string for tooltip
                 const tooltipHTML = tooltipContent
@@ -257,6 +255,8 @@ async function updateItemPage() {
                             </div>
                         </div>
                         <div class="ItemTextContainer">
+                        
+
                             <h2 class="itemtitle">${selectedItem.title}</h2>
                             ${gameVersionText}
                             ${engineText}
@@ -265,6 +265,7 @@ async function updateItemPage() {
                         </div>
                         </div>
                         <div class="ItemBottomContainer">
+                        ${tooltipHTML}
                         <div class="itemdescriptioncont"><h2>Опис</h2>${generateDescriptionParagraphs(selectedItem.description)}</div>
                         <div class="buttonContainer">
                             ${generateLinkDivs(selectedItem.link)}
