@@ -73,6 +73,10 @@ $(document).ready(() => {
         if (trimmedLink.startsWith("steamcommunity.com")) {
             return "SteamCommunity";
         }
+
+        if (trimmedLink.startsWith("docs.google.com/")) {
+            return "Google Docs";
+        }
         // Remove everything after the first "/"
         trimmedLink = trimmedLink.split('/')[0];
     
