@@ -201,5 +201,26 @@
             "https://t.me/by_godresky#000144"
         ],
         "id": "000144"
+    },
+    {
+        "title": "uaVSMods",
+        "gameversion": "",
+        "engine": "",
+        "categories": [
+            "Переклад",
+            "Vintage Story"
+        ],
+        "description": "Мод до популярної гри Vintage Story, що автоматично додає переклади до гри, як пише розробник - мод-оверлей, який дає змогу перекласти моди українською мовою без перезбірки самого мода з додаванням нової мови.",
+        "image": "https://raw.githubusercontent.com/CakesTwix/uaVSMods/main/modicon.png",
+        "verified": false,
+        "author": "CakesTwix, ICHTLAY",
+        "completed": true,
+        "translation": "https://mods.vintagestory.at/show/mod/7419",
+        "link": [
+            "https://github.com/CakesTwix/uaVSMods",
+            "https://docs.google.com/document/d/1eB86kxg5lhcAgbkd3hLoUgsez7wMUMTYmB6Mfs4SBbs/edit?pli=1",
+            "https://docs.google.com/document/d/1QuBZRx2gLl0JT9_KHLaLoWzH-sOIOqspA4fy4dpVLaQ/edit?usp=sharing"
+        ],
+        "id": "000145"
     }
 ]
