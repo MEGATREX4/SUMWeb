@@ -68,7 +68,7 @@
     min-width: 100px;
     min-height: 100px;
     border-radius: var(--medium-border-radius);
-    background-size: cover;
+    background-size: cover!important;
 }
 
 .randomItemTitle{

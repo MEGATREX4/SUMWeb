@@ -33,7 +33,7 @@ $(document).ready(() => {
             // Generate HTML for selected items
             const itemsHTML = selectedItems.map(item => `
                 <div class="randomItem" onclick="window.open('item.html?id=${item.id}', '_self')">
-                    <img class="randomItemImage" src="${item.image}" alt="${item.title}">
+                    <div class="randomItemImage" style="background: url(&quot;${item.image}&quot;)" alt="${item.title}"></div>
                     <h3 class="randomItemTitle" title="${item.title}">${truncateText(item.title, 15)}</h3>
                     <div class="randomItemAuthor"><p class="randomItemAuthorText" title="${item.author}">від ${truncateText(item.author, 10)}</p></div>
                 </div>
