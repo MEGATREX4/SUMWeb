@@ -116,7 +116,6 @@ function getStatusClasses(mod, modsData, otherData) {
 function getIconData(statusClasses) {
   // Replace this with the actual path to your Icons.json file
   const iconsJsonPath = 'icons.json';
-
   // Return a Promise for fetching and processing the icon data
   return fetch(iconsJsonPath)
     .then(response => response.json())
