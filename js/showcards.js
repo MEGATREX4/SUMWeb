@@ -304,18 +304,7 @@ function FetchFilterIcons() {
 }
 
 
-// Function to fetch filter icons from icons.json
-function FetchFilterIcons() {
-  // Replace this with the actual path to your icons.json file
-  const iconsJsonPath = 'icons.json';
 
-  return fetch(iconsJsonPath)
-    .then(response => response.json())
-    .catch(error => {
-      console.error('Error fetching filter icons:', error);
-      return {};
-    });
-}
 
 // Constant object mapping filter variable names to display names and icons
 const filterDisplayNames = {
