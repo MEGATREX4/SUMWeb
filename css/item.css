@@ -31,6 +31,10 @@
     color: var(--header-color);
 }
 
+.itemtranslator {
+    width: calc(100% - 90px);
+}
+
 .itemdescription {
     margin: 10px 0;
 }
