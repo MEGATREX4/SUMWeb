@@ -19,6 +19,10 @@
   .CPContainer {
     order: 2; /* Move CPContainer below FiltersContainer */
   }
+
+  .CPContainer{
+    min-width: calc(100vw - 20px)!important;
+  }
 }
 
 /* Media query for screens between 768px and 1023px */
@@ -67,7 +71,21 @@ html {
   background-color: var(--background-color);
 }
 
+.CardsContainer {
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(268px, 290px));
+  gap: 0.5rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
 .card {
+  grid-template-rows: subgrid;
+  grid-row: span 2;
+  display: grid;
+
   padding: 1rem;
   margin: 10px;
   width: 250px;
@@ -79,7 +97,7 @@ html {
 }
 
 .CPContainer {
-  min-width: calc(100vw - 330px);
+  min-width: calc(100vw - 340px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -170,16 +188,7 @@ p {
   align-items: center;
 }
 
-.CardsContainer {
-  max-width: 1420px;
-  min-height: 850px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  width: 100%;
-}
+
 
 .description-container {
   display: flex;
@@ -339,7 +348,7 @@ p {
 }
 
 .IconContainer {
-  margin-top: calc(auto + 3px); 
+  margin-top: 0; 
   display: flex;
   justify-content: flex-end;
   align-items: center;

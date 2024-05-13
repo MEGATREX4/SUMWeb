@@ -29,7 +29,7 @@ function createModCard(mod) {
   card.innerHTML = `
     <div class="TopCardContainer">
       <div class="cardimage" style="background-image: url('${mod.image}')" title="Зображення ${mod.title}" style="max-width: 100%;"></div>
-      <div id="${mod.id}" class="textContainer"><h2 title="${mod.title} українською" class="modtitle">${truncateText(mod.title, 20)}</h2>
+      <div id="${mod.id}" class="textContainer"><h2 title="${mod.title} українською" class="modtitle">${truncateText(mod.title, 35)}</h2>
       <p>від <span title="${(mod.author)}" class="author">${truncateText(mod.author, 15)}</span>
       </div>
     </div>
@@ -743,7 +743,7 @@ Promise.all([
     const uniqueAuthors = getUniqueAuthors(mods, other);
 
     // Initialize page size and current page from URL parameters
-    pageSize = 12;
+    pageSize = 15;
     currentPage = parseInt(new URLSearchParams(window.location.search).get('page')) || 1;
 
     // Save and load initial URL parameters

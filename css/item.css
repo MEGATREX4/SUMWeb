@@ -213,7 +213,7 @@
 }
 
 .IconContainer {
-    margin-top: 5px;
+    margin-top: 5px!important;
     width: 100%;
     display: flex;
     flex-wrap: wrap!important;
