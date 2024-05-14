@@ -30,7 +30,7 @@ function createModCard(mod) {
     <div class="TopCardContainer">
       <div class="cardimage" style="background-image: url('${mod.image}')" title="Зображення ${mod.title}" style="max-width: 100%;"></div>
       <div id="${mod.id}" class="textContainer"><h2 title="${mod.title} українською" class="modtitle">${truncateText(mod.title, 35)}</h2>
-      <p>від <span title="${(mod.author)}" class="author">${truncateText(mod.author, 15)}</span>
+      <p>від <span title="${(mod.author)}" class="author">${truncateText(mod.author, 35)}</span>
       </div>
     </div>
   `;
@@ -41,7 +41,7 @@ function createModCard(mod) {
 
   const shortDescription = document.createElement('p');
   shortDescription.classList.add('short-description');
-  const trimmedDescription = mod.description.length > 100 ? mod.description.substring(0, 80) + '...' : mod.description;
+  const trimmedDescription = mod.description.length > 100 ? mod.description.substring(0, 100) + '...' : mod.description;
   const cleanDescription = trimmedDescription.replace(/\r\n/g, '').replace(/\n/g, ''); // Replace \r\n with empty string and \n with empty string
   shortDescription.innerText = cleanDescription;
   descriptionContainer.appendChild(shortDescription);
