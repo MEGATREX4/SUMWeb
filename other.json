@@ -5,14 +5,22 @@
             "status2": "https://badges.crowdin.net/60seconds-part2/localized.svg"
         },
         "title": "60 Seconds",
-        "description": "60 Seconds! - це похмура комедійна атомна пригода про пошук і виживання. Зберіть припаси та врятуйте свою сім'ю до того, як вибухне ядерна бомба. Залишайтеся живими у своєму укритті від радіоактивних опадів. Приймайте складні рішення, розподіляйте їжу та полюйте на тарганів-мутантів. І, можливо, виживете. А може, й ні.",
+        "description": "60 Seconds! - це похмура комедійна атомна пригода про пошук і виживання. Зберіть припаси та врятуйте свою сім'ю до того, як вибухне ядерна бомба. Залишайтеся живими у своєму укритті. Приймайте складні рішення, розподіляйте їжу та полюйте на тарганів-мутантів. І по можливості - виживіть.",
         "image": "https://i.imgur.com/ppB4GQP.png",
         "author": "СУМ - MEGATREX4, Artem Tsynoborenko, kateryna.nevirkovets, Ivan Will_Saber, Микита Nighty_Star",
         "completed": false,
         "id": "000128",
         "translation": "https://crowdin.com/project/60secondsua",
         "link": [
-            "https://store.steampowered.com/app/368360/60_Seconds/"
+            "https://store.steampowered.com/app/368360/60_Seconds/#000128"
+        ],
+        "gameversion": "",
+        "verified": false,
+        "engine": "Unity",
+        "categories": [
+            "Виживання",
+            "Постапокаліптика",
+            "Інді"
         ]
     },
     {
