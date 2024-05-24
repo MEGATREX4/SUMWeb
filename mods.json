@@ -202,7 +202,7 @@
             "https://www.curseforge.com/minecraft/mc-mods/rotten-creatures",
             "https://modrinth.com/mod/rottencreatures"
         ],
-        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на CurseForge або Modrinth",
         "semiverified": true,
         "id": "000011",
         "gameversion": "",
@@ -726,7 +726,7 @@
     },
     {
         "title": "Item Locks",
-        "description": "ItemLocks дозволяє вам заблокувати слоти для предметів у вашому інвентарі, щоб ви не могли переміщати предмети мимоволі.",
+        "description": "ItemLocks дозволяє вам заблокувати комірки у вашому інвентарі, щоб ви не могли переміщати предмети мимоволі.",
         "image": "https://cdn.modrinth.com/data/tJzrFuyy/44ebf30cca22d764ffffd3428bc7613e58e7a69f.png",
         "verified": false,
         "author": "СУМ",
@@ -880,7 +880,7 @@
         "author": "СУМ",
         "completed": true,
         "link": [],
-        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge та Modrinth",
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на CurseForge та Modrinth",
         "semiverified": true,
         "id": "000064"
     },
@@ -958,7 +958,7 @@
     },
     {
         "title": "Cosmetic Nametags",
-        "description": "додає слот для ярликів/бірок до Trinkers, візуально змінюючи ваше ім'я користувача",
+        "description": "додає комірку для ярликів/бірок в Trinkers, візуально змінюючи ваше ім'я/нік",
         "image": "https://cdn.modrinth.com/data/SL46MNwR/d6a46de9827ca68c91f360a6fd6d3c35d60d9a0c.png",
         "verified": true,
         "author": "СУМ",
@@ -1182,7 +1182,7 @@
     },
     {
         "title": "Charm of undying",
-        "description": "Він використовує Curios API або Trinkets API, щоб додати новий слот, до інвентарю гравця і дозволяє помістити тотем безсмертя в цей слот.",
+        "description": "Він використовує Curios API або Trinkets API, щоб додати нову комірку, до інвентарю гравця і дозволяє помістити тотем безсмертя в нього.",
         "image": "https://cdn.modrinth.com/data/b5GyyYkp/5f9c2502f872d94bea7becca36584e364ce8d322.png",
         "verified": false,
         "author": "СУМ",
@@ -1375,7 +1375,7 @@
         "author": "СУМ",
         "completed": true,
         "link": [],
-        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на CurseForge або Modrinth",
         "semiverified": true,
         "id": "000110"
     },
@@ -1485,7 +1485,7 @@
         "author": "СУМ, unroman, mewnn",
         "completed": true,
         "link": [],
-        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman та mewnn, можна знайти на Curse Forge або Modrinth",
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman та mewnn, можна знайти на CurseForge або Modrinth",
         "semiverified": true,
         "id": "000120"
     },
@@ -1503,7 +1503,7 @@
     },
     {
         "title": "Cosmetic Armor",
-        "description": "До слотів Trinkets додається ще один – косметична броня, дуже цікава у використанні механіка, можна разом носити гарну броню і міцну.",
+        "description": "До комірок Trinkets додається ще декілька – косметична броня, дуже цікава у використанні механіка, можна разом носити гарну броню і міцну.",
         "image": "https://media.forgecdn.net/avatars/332/317/637463248304263412.png",
         "verified": false,
         "author": "СУМ",
@@ -1519,7 +1519,7 @@
         "author": "СУМ, unroman",
         "completed": true,
         "link": [],
-        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
+        "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на CurseForge або Modrinth",
         "semiverified": true,
         "id": "000123"
     },
@@ -1718,5 +1718,48 @@
             "https://minestar.com.ua/"
         ],
         "id": "000148"
+    },
+    {
+        "title": "Scout",
+        "gameversion": "1.18.2+",
+        "engine": "Fabric, Quilt",
+        "categories": [
+            "Спорядження",
+            "Ігрові механіки",
+            "Зберігання"
+        ],
+        "description": "Scout - це мод, орієнтований на \"фізичне\" розширення інвентарю (додавання комірок) шляхом носіння різних типів сумок. Мод значною мірою натхненний торбами від makamys.\r\n\r\nСумки екіпіруються в комірки Trinkets. Сумки мають додаткові комірки на ногах.\r\n\r\nПредмети зберігаються на предметі сумки. У підказці предмета є попередній перегляд, щоб побачити, що знаходиться всередині.",
+        "image": "https://cdn.modrinth.com/data/QRYqnI15/icon.png",
+        "verified": false,
+        "author": "СУМ",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/scout",
+            "https://modrinth.com/mod/scout"
+        ],
+        "id": "000149"
+    },
+    {
+        "title": "Trinkets",
+        "gameversion": "1.17+",
+        "engine": "Fabric, Quilt",
+        "categories": [
+            "Спорядження",
+            "Ігрові механіки",
+            "Управління"
+        ],
+        "description": "Trinkets додає до Minecraft нові комірки. Групи комірок - це колекції для певної частини тіла або більш невизначеної області. За замовчуванням існує 6 груп комірок (голова, груди, ноги, ступні, кисті рук, руки), але за бажанням можна додати більше груп. Інтерфейс Trinkets інтуїтивно зрозумілий, доступний і намагається покінчити з безладом. Його система означає, що у вас ніколи не буде комірки, яка ні для чого не використовується, оскільки моди роблять запити на ті комірки, яких потребують.\r\n\r\nTranslated with www.DeepL.com/Translator (free version)",
+        "image": "https://cdn.modrinth.com/data/5aaWibi9/icon.png",
+        "verified": true,
+        "author": "СУМ",
+        "completed": true,
+        "tooltip": "Окрім нашого перекладу ще є офіційний, можна знайти на CurseForge або Modrinth",
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/trinkets",
+            "https://www.curseforge.com/minecraft/mc-mods/trinkets"
+        ],
+        "id": "000150"
     }
 ]
