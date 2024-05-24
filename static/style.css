@@ -14,16 +14,26 @@ html{
 }
 
 .Items {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 12px;
-    gap: 10px;
+    width: calc(100vw - 320px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(268px, 290px));
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
     color: #b0bac5;
 }
 
+.edit-btn{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
 .card{
-    display: flex;
+    grid-template-rows: subgrid;
+    grid-row: span 8;
+    display: grid;
+    
     flex-direction: column;
     width: 250px;
     padding: 5px;
@@ -33,6 +43,7 @@ html{
 
 .description{
     height: 72px;
+    overflow: hidden;
 }
 
 #editModal{

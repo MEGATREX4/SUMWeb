@@ -1673,5 +1673,50 @@
             "https://www.curseforge.com/minecraft/mc-mods/lootr-fabric#000146"
         ],
         "id": "000146"
+    },
+    {
+        "title": "Extended Drawers",
+        "gameversion": "1.18.2+",
+        "engine": "Fabric, Quilt",
+        "categories": [
+            "Ігрові механіки",
+            "Зберігання",
+            "Корисні функції"
+        ],
+        "description": "Мод, натхненний Storage Drawers, який дозволяє легко створювати потужні, але не надто складні системи зберігання даних за допомогою простих компонентів.\r\n",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/719/605/256/256/638075687057656911.png",
+        "verified": false,
+        "author": "Minestar + СУМ",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/extended-drawers#000147",
+            "https://www.curseforge.com/minecraft/mc-mods/extended-drawers#000147",
+            "https://minestar.com.ua/#000147"
+        ],
+        "id": "000147"
+    },
+    {
+        "title": "Modern Industrialization",
+        "gameversion": "1.16.2+",
+        "engine": "Fabric(до 1.21 включно), Forge",
+        "categories": [
+            "Спорядження",
+            "Ігрові механіки",
+            "Зберігання",
+            "Технології",
+            "Генерація створення"
+        ],
+        "description": "Сучасний мод на технології, натхненний GregTech, але тут прибрали всі нудні частини, і як сказав розробник \"йдемо у власному напрямку\".\r\n\r\nНе забудьте встановити EMI, JEI або REI, щоб бачити рецепти в грі. Рекомендуємо також використовувати Jade! Це необов'язково, але дуже допомагає!",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/298/282/256/256/637348455539175628.png",
+        "verified": false,
+        "author": "Minestar",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/modern-industrialization",
+            "https://minestar.com.ua/"
+        ],
+        "id": "000148"
     }
 ]

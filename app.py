@@ -71,24 +71,21 @@ def create_record():
         # Extract the source from the form data
         source = request.form.get('source', None)
 
-        
-
         if source is not None:
-            categories_from_form = request.form.getlist('categories[]')
+            # Extract categories from the form
+            categories_from_form = request.form.getlist('categories')
             # Extract additional categories from the other categories field
             other_categories = request.form.get('additional_categories').split(',')
             # Remove spaces before and after each category, and filter out empty strings
             categories_from_form = [category.strip() for category in categories_from_form if category.strip()]
             other_categories = [category.strip() for category in other_categories if category.strip()]
 
-
-            
             # Create the new record without the 'source' key
             new_record = {
                 "title": request.form['title'],
                 "gameversion": request.form['gameversion'],
                 "engine": request.form['engine'],
-                "categories": request.form.getlist('categories'),
+                "categories": [],  # Initialize with an empty list
                 "description": request.form['description'],
                 "image": request.form['image'],
                 "verified": True if request.form.get('verified') == 'on' else False,
@@ -99,6 +96,7 @@ def create_record():
                 "id": get_max_id(),
                 "source": source  # Add the extracted source to the new record
             }
+            # Combine categories from form and additional categories
             updated_categories = categories_from_form + other_categories
     
             # Update the record with the combined categories
@@ -111,6 +109,7 @@ def create_record():
             print("Error: Source not found in form data")
 
     return render_template('index.html')
+
 
 
 
