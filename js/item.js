@@ -393,7 +393,7 @@ function updateTotalTranslation(mods, other) {
   
       if (totalTranslationSpan) {
         const totalTranslations = mods.length + other.length;
-        totalTranslationSpan.textContent = `Ми переклали: ${totalTranslations}`;
+        totalTranslationSpan.textContent = `Спільнота переклала: ${totalTranslations}`;
       } else {
         console.error("Error: TotalTranslation span not found!");
       }

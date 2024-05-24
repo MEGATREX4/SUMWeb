@@ -19,7 +19,7 @@ export async function countTranslations() {
         const totalTranslationSpan = document.getElementById('TotalTranslation');
 
         if (totalTranslationSpan) {
-            totalTranslationSpan.textContent = `Ми переклали: ${totalTranslations}`;
+            totalTranslationSpan.textContent = `Спільнота переклала: ${totalTranslations}`;
         } else {
             console.error("Error: TotalTranslation span not found!");
         }
