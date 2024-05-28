@@ -162,175 +162,163 @@ async function fetchCategoryIcons() {
 
 
     // Function to update the item page with the fetched data
-async function updateItemPage() {
-    try {
-        const itemId = getItemId();
-
-        if (itemId) {
-            const { selectedItem, modsData, otherData } = await fetchItemData(itemId);
-
-            if (selectedItem) {
-                document.title = "СУМ" + " - переклад " + selectedItem.title;
-
-                const categoryIcons = await fetchCategoryIcons();
-
+    async function updateItemPage() {
+        try {
+            const itemId = getItemId();
+    
+            if (itemId) {
+                const { selectedItem, modsData, otherData } = await fetchItemData(itemId);
+    
+                if (selectedItem) {
+                    document.title = "СУМ" + " - переклад " + selectedItem.title;
+    
+                    const categoryIcons = await fetchCategoryIcons();
+    
                     // Update meta description
                     const metaDescription = document.createElement('meta');
                     metaDescription.setAttribute('name', 'description');
                     metaDescription.setAttribute('content', selectedItem.description);
                     document.head.appendChild(metaDescription);
+    
                     // Update og:description
                     const ogDescription = document.createElement('meta');
                     ogDescription.setAttribute('property', 'og:description');
                     ogDescription.setAttribute('content', truncateText(selectedItem.description, 120));
                     document.head.appendChild(ogDescription);
-
-                    //update og:title
-                    //update meta og:title
+    
+                    // Update og:title
                     const ogTitle = document.createElement('meta');
                     ogTitle.setAttribute('property', 'og:title');
                     ogTitle.setAttribute('content', "СУМ" + " - переклад " + selectedItem.title);
                     document.head.appendChild(ogTitle);
-
-                    //update og:image
-                    //update meta og:image
-                    // const ogImage = document.createElement('meta');
-                    // ogImage.setAttribute('property', 'og:image');
-                    // ogImage.setAttribute('content', selectedItem.image);
-                    // document.head.appendChild(ogImage);
-
-                    // update meta twitter:image
-                    // const twitterImage = document.createElement('meta');
-                    // twitterImage.setAttribute('name', 'twitter:image');
-                    // twitterImage.setAttribute('content', selectedItem.image);
-                    // document.head.appendChild(twitterImage);
-                    
-                    //update meta twitter:description
+    
+                    // Update meta twitter:description
                     const twitterDescription = document.createElement('meta');
                     twitterDescription.setAttribute('name', 'twitter:description');
                     twitterDescription.setAttribute('content', truncateText(selectedItem.description, 120));
                     document.head.appendChild(twitterDescription);
-
-                    //update meta twitter:title
+    
+                    // Update meta twitter:title
                     const twitterTitle = document.createElement('meta');
                     twitterTitle.setAttribute('name', 'twitter:title');
                     twitterTitle.setAttribute('content', "СУМ" + " - переклад " + selectedItem.title);
                     document.head.appendChild(twitterTitle);
-
-                // Create HTML string for tooltip content
-                const tooltipContent = selectedItem.tooltip ? selectedItem.tooltip : (selectedItem.verified ? 'Переклад вже в грі! Завантаження додаткових файлів не потрібно. Насолоджуйтеся грою з українською локалізацією!' : '');
-
-                // Create HTML string for tooltip
-                const tooltipHTML = tooltipContent
-                    ? `<div id="tooltip" class="tooltip">${tooltipContent}</div>`
+    
+                    // Create HTML string for tooltip content
+                    const tooltipContent = selectedItem.tooltip ? selectedItem.tooltip : (selectedItem.verified ? 'Переклад вже в грі! Завантаження додаткових файлів не потрібно. Насолоджуйтеся грою з українською локалізацією!' : '');
+    
+                    // Create HTML string for tooltip
+                    const tooltipHTML = tooltipContent
+                        ? `<div id="tooltip" class="tooltip">${tooltipContent}</div>`
+                        : '';
+    
+                    // Determine if the item is from mods.json
+                    const isMod = modsData.some(mod => mod.id === selectedItem.id);
+                    const isVerified = modsData.some(mod => mod.id === selectedItem.id && mod.verified);
+    
+                    // Determine the game version text
+                    const gameVersionText = selectedItem.gameversion && selectedItem.gameversion.length > 0 ? `<p class="gameversion iteminfo">Версія гри: ${selectedItem.gameversion}</p>` : '';
+    
+                    const engineText = selectedItem.engine && selectedItem.engine.length > 0 ? `<p class="engine iteminfo">Рушій: ${selectedItem.engine}</p>` : '';
+    
+                    const categoriesText = selectedItem.categories && selectedItem.categories.length > 0 ? `
+                        <div class="categories iteminfo">Категорії:&nbsp; 
+                            ${selectedItem.categories.map(category => {
+                                const categoryIcon = categoryIcons.find(icon => icon.title === category);
+                                // Generate a random color within a range
+                                const randomColor = getRandomDarkColor('#000000', '#FFFFFF', 0.5);
+                                return `
+                                    <span class="category" style="background-color: ${categoryIcon ? categoryIcon.color : randomColor};">
+                                        ${categoryIcon && categoryIcon.icon ? `<div class="category-icon">${categoryIcon.icon}</div>` : ''}
+                                        ${category}
+                                    </span>`;
+                            }).join('<i class="space"></i>')}
+                        </div>` 
                     : '';
-
-                // Determine if the item is from mods.json
-                const isMod = modsData.some(mod => mod.id === selectedItem.id);
-                const isVerified = modsData.some(mod => mod.id === selectedItem.id && mod.verified);
-
-                // Determine the game version text
-                const gameVersionText = selectedItem.gameversion && selectedItem.gameversion.length > 0 ? `<p class="gameversion iteminfo">Версія гри: ${selectedItem.gameversion}</p>` : '';
-
-                const engineText = selectedItem.engine && selectedItem.engine.length > 0 ? `<p class="engine iteminfo">Рушій: ${selectedItem.engine}</p>` : '';
-                
-                const categoriesText = selectedItem.categories && selectedItem.categories.length > 0 ? `
-                    <div class="categories iteminfo">Категорії:&nbsp; 
-                        ${selectedItem.categories.map(category => {
-                            const categoryIcon = categoryIcons.find(icon => icon.title === category);
-                            // Generate a random color within a range
-                            const randomColor = getRandomDarkColor('#000000', '#FFFFFF', 0.5);
-                            return `
-                                <span class="category" style="background-color: ${categoryIcon ? categoryIcon.color : randomColor};">
-                                    ${categoryIcon && categoryIcon.icon ? `<div class="category-icon">${categoryIcon.icon}</div>` : ''}
-                                    ${category}
-                                </span>`;
-                        }).join('<i class="space"></i>')}
-                    </div>` 
-                : '';
-
-
-                // Create HTML string for item data
-                const itemHTML = `
-                <div class="ItemContainerInfo">
-                    <div class="TextImageContainer">
-                    <div class="ItemTopContainer">
-                        <div class="ItemImageContainer">
-                            <div class="itemimage" style="background-image: url('${selectedItem.image}');" title="${selectedItem.title} Image" style="max-width: 100%;"></div>
-                            <div id="IconContainer" class="IconContainer">
-                                
+    
+                    // Preprocess description to replace single newlines with double newlines
+                    const preprocessedDescription = selectedItem.description.replace(/\n/g, '\n\n');
+    
+                    // Convert Markdown description to HTML and wrap in a container with the class itemdescription
+                    const descriptionHTML = `<div class="itemdescription">${marked.parse(preprocessedDescription)}</div>`;
+    
+                    // Create HTML string for item data
+                    const itemHTML = `
+                    <div class="ItemContainerInfo">
+                        <div class="TextImageContainer">
+                        <div class="ItemTopContainer">
+                            <div class="ItemImageContainer">
+                                <div class="itemimage" style="background-image: url('${selectedItem.image}');" title="${selectedItem.title} Image" style="max-width: 100%;"></div>
+                                <div id="IconContainer" class="IconContainer">
+                                    
+                                </div>
+                            </div>
+                            <div class="ItemTextContainer">
+                                <h2 class="itemtitle">${selectedItem.title}</h2>
+                                ${gameVersionText}
+                                ${engineText}
+                                ${categoriesText}
+                                <p class="itemtranslator">Автори перекладу: ${selectedItem.author}</p>
+                            </div>
+                            </div>
+                            <div class="ItemBottomContainer">
+                            ${tooltipHTML}
+                            <div class="itemdescriptioncont"><h2>Опис</h2>${descriptionHTML}</div>
+                            <div class="buttonContainer">
+                                ${generateLinkDivs(selectedItem.link)}
+                                ${generateTranslationDiv(selectedItem.translation, isMod, isVerified)}
+                            </div>
                             </div>
                         </div>
-                        <div class="ItemTextContainer">
-                        
-
-                            <h2 class="itemtitle">${selectedItem.title}</h2>
-                            ${gameVersionText}
-                            ${engineText}
-                            ${categoriesText}
-                            <p class="itemtranslator">Автори перекладу: ${selectedItem.author}</p>
-                        </div>
-                        </div>
-                        <div class="ItemBottomContainer">
-                        ${tooltipHTML}
-                        <div class="itemdescriptioncont"><h2>Опис</h2>${generateDescriptionParagraphs(selectedItem.description)}</div>
-                        <div class="buttonContainer">
-                            ${generateLinkDivs(selectedItem.link)}
-                            ${generateTranslationDiv(selectedItem.translation, isMod, isVerified)}
-                        </div>
-
-                        </div>
                     </div>
-                </div>
-            `;
-
-                // Set innerHTML of the item container
-                $('#ItemContainer').html(itemHTML);
-
-
-                // Set innerHTML of the item container
-                $('#ItemContainer').html(itemHTML);
-
-                // Update the total translation count
-                updateTotalTranslation(modsData, otherData);
-                populateIconContainer(selectedItem, modsData, otherData);
-
+                `;
+    
+                    // Set innerHTML of the item container
+                    $('#ItemContainer').html(itemHTML);
+    
+                    // Update the total translation count
+                    updateTotalTranslation(modsData, otherData);
+                    populateIconContainer(selectedItem, modsData, otherData);
+    
+                } else {
+                    document.title = "Йой, халепа";
+    
+                    // No item ID provided, display a default image
+                    const defaultItemHTML = `
+                        <div class="ItemContainerInfo">
+                            <img src="https://i.imgur.com/yXSBdgZ.png" height="300px" alt="Зображення ''щось не так''">
+                            <div class="text404">Йой, халепа, щось сталось не так.</div>
+                            <div class="text404">Такої сторінки не знайдено.</div>
+                            <a href="index" class="button404">Перейти на головну</a>
+                        </div>
+                    `;
+                    $('#ItemContainer').html(defaultItemHTML);
+                }
             } else {
                 document.title = "Йой, халепа";
-
                 // No item ID provided, display a default image
                 const defaultItemHTML = `
                     <div class="ItemContainerInfo">
+                    <div class="error404">
                         <img src="https://i.imgur.com/yXSBdgZ.png" height="300px" alt="Зображення ''щось не так''">
+                        <div class="container404">
+                        <div class="textcontainer404">
                         <div class="text404">Йой, халепа, щось сталось не так.</div>
-                        <div class="text404">Такої сторінки не знайдено.</div>
+                        <div class="text404">Такої сторінки не знайдено.</div></div>
                         <a href="index" class="button404">Перейти на головну</a>
+                        </div>
+                    </div>
                     </div>
                 `;
                 $('#ItemContainer').html(defaultItemHTML);
             }
-        } else {
-            document.title = "Йой, халепа";
-            // No item ID provided, display a default image
-            const defaultItemHTML = `
-                <div class="ItemContainerInfo">
-                <div class="error404">
-                    <img src="https://i.imgur.com/yXSBdgZ.png" height="300px" alt="Зображення ''щось не так''">
-                    <div class="container404">
-                    <div class="textcontainer404">
-                    <div class="text404">Йой, халепа, щось сталось не так.</div>
-                    <div class="text404">Такої сторінки не знайдено.</div></div>
-                    <a href="index" class="button404">Перейти на головну</a>
-                    </div>
-                </div>
-                </div>
-            `;
-            $('#ItemContainer').html(defaultItemHTML);
+        } catch (error) {
+            console.error("Error updating item page:", error);
         }
-    } catch (error) {
-        console.error("Error updating item page:", error);
     }
-}
+    
+    
+    
 
 
     // Call the function to update the item page when the DOM is loaded
