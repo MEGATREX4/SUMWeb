@@ -1981,5 +1981,28 @@
             "https://www.curseforge.com/minecraft/mc-mods/easy-magic"
         ],
         "id": "000160"
+    },
+    {
+        "title": "Tetra",
+        "gameversion": "1.12.2+",
+        "engine": "Forge, NeoForge",
+        "categories": [
+            "Спорядження",
+            "Ігрові механіки",
+            "Технології",
+            "Корисні функції",
+            "Генерація створення"
+        ],
+        "description": "Tetra обертається навколо модульних елементів і намагається поєднати їх з іншими концепціями, такими як пригоди та технології.\r\n\r\nПочаток роботи\r\n1. Змайструйте молоток з двох палиць і двох дощок\r\n2. Змайструйте і поставте ванільний верстат\r\n3. Клацніть правою кнопкою миші на столі з молотком, щоб перетворити його на модовий верстак\r\n4. Створіть ванільну зброю, щит, інструменти або лук і покладіть їх на цей верстак",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/145/263/256/256/636561479419470125.png",
+        "verified": false,
+        "author": "GirkaRyba/Elinchi",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/tetra",
+            "https://modrinth.com/mod/tetra"
+        ],
+        "id": "000161"
     }
 ]
