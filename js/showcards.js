@@ -15,7 +15,6 @@ function createModCard(mod) {
   // Call getStatusClasses with modsData and otherData
   let statusClasses = getStatusClasses(mod, modsData, otherData);
 
-
   // Only add the status classes if they are not empty
   if (statusClasses.length > 0) {
     statusClasses.forEach(statusClass => {
@@ -29,90 +28,62 @@ function createModCard(mod) {
   card.innerHTML = `
     <div class="TopCardContainer">
       <div class="cardimage" style="background-image: url('${mod.image}')" title="Зображення ${mod.title}" style="max-width: 100%;"></div>
-      <div id="${mod.id}" class="textContainer"><h2 title="${mod.title} українською" class="modtitle">${truncateText(mod.title, 35)}</h2>
-      <p>від <span title="${(mod.author)}" class="author">${truncateText(mod.author, 35)}</span>
+      <div id="${mod.id}" class="textContainer">
+        <h2 title="${mod.title} українською" class="modtitle">${truncateText(mod.title, 35)}</h2>
+        <p>від <span title="${mod.author}" class="author">${truncateText(mod.author, 35)}</span></p>
       </div>
     </div>
   `;
 
+  // Add click event listener to redirect to the item page
+  card.addEventListener('click', () => {
+    window.location.href = `item.html?id=${mod.id}`;
+  });
+
+  // Append the card to the CardsContainer
+  document.querySelector('.CardsContainer').appendChild(card);
+
+  // Add description block
   const descriptionContainer = document.createElement('div');
   descriptionContainer.classList.add('description-container');
   card.appendChild(descriptionContainer);
 
-// Preprocess the Markdown content to remove horizontal rules, image links, and treat regular links as plain text
-const cleanedDescription = mod.description
+  // Preprocess the Markdown content to remove unwanted elements
+  const cleanedDescription = mod.description
     .replace(/^-{3,}\s*$/gm, '')               // Remove horizontal rules
     .replace(/!\[.*?\]\(.*?\)/g, '')           // Remove image links in Markdown
     .replace(/\[(.*?)\]\(.*?\)/g, '$1')        // Treat regular Markdown links as plain text
     .replace(/!\[.*?\]\s*/g, '')               // Remove any remaining image Markdown syntax
     .replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|heic|ico|tif)(\?[^\s]*)?/gi, '') // Remove direct image URLs with extensions
-    .replace(/https?:\/\/[^\s]+/gi, '');       // Remove any remaining URLs
+    .replace(/https?:\/\/[^\s]+/gi, '')       // Remove any remaining URLs
+    .replace(/\r\n/g, '')                     // Remove line breaks
+    .replace(/\n/g, '');                      // Remove line breaks
 
-// Trim the description to 100 characters after cleaning
-const trimmedDescription = cleanedDescription.length > 100 ? cleanedDescription.substring(0, 100) + '...' : cleanedDescription;
+  // Trim the description to 100 characters after cleaning
+  const trimmedDescription = cleanedDescription.length > 100 ? cleanedDescription.substring(0, 100) + '...' : cleanedDescription;
 
-// Remove line breaks and replace them with an empty string
-const finalDescription = trimmedDescription.replace(/\r\n/g, '').replace(/\n/g, '');
+  // Convert Markdown to HTML using marked
+  const markdownHTML = marked.parse(trimmedDescription);
 
-// Convert Markdown to HTML using marked
-const markdownHTML = marked.parse(finalDescription);
+  // Create a new paragraph element for the description
+  const descriptionParagraph = document.createElement('p');
+  descriptionParagraph.classList.add('short-description');
+  descriptionParagraph.innerHTML = markdownHTML;
 
-// Create a new paragraph element
-const shortDescription = document.createElement('p');
+  // Append the description paragraph to the description container
+  descriptionContainer.appendChild(descriptionParagraph);
 
-// Add a class to the paragraph element
-shortDescription.classList.add('short-description');
-
-// Set the HTML content of the paragraph
-shortDescription.innerHTML = markdownHTML;
-
-// Append the paragraph element to the description container
-descriptionContainer.appendChild(shortDescription);
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // Add icons based on status classes
+  // Add icon container
   if (statusClasses.length > 0) {
     const iconContainer = document.createElement('div');
     iconContainer.classList.add('IconContainer');
+    card.appendChild(iconContainer);
 
-    // Use Promise to get icon data
+    // Use Promise to get icon data and add icons to the container
     addIcons(iconContainer, statusClasses);
-
-    // Append the IconContainer to descriptionContainer
-    descriptionContainer.appendChild(iconContainer);
   }
-
-  // Add a click event listener to redirect to the item page when clicking on cardimage or textContainer
-  const clickableElements = card.querySelectorAll('.cardimage, .modtitle');
-  clickableElements.forEach(element => {
-    element.addEventListener('click', (event) => {
-      // Prevent following the link if the click is not on cardimage or textContainer
-      if (!event.target.classList.contains('cardimage') && !event.target.classList.contains('modtitle')) {
-        return;
-      }
-
-      // Extract the mod ID from the clicked card
-      const modId = mod.id;
-
-      // Redirect to item with the mod ID as a query parameter
-      window.location.href = `item.html?id=${modId}`;
-    });
-  });
-
-  // Append the card to the CardsContainer
-  document.querySelector('.CardsContainer').appendChild(card);
 }
+
 
 
 
