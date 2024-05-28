@@ -39,12 +39,44 @@ function createModCard(mod) {
   descriptionContainer.classList.add('description-container');
   card.appendChild(descriptionContainer);
 
-  const shortDescription = document.createElement('p');
-  shortDescription.classList.add('short-description');
-  const trimmedDescription = mod.description.length > 100 ? mod.description.substring(0, 100) + '...' : mod.description;
-  const cleanDescription = trimmedDescription.replace(/\r\n/g, '').replace(/\n/g, ''); // Replace \r\n with empty string and \n with empty string
-  shortDescription.innerText = cleanDescription;
-  descriptionContainer.appendChild(shortDescription);
+// Preprocess the Markdown content to remove horizontal rules, image links, and treat regular links as plain text
+const cleanedDescription = mod.description
+    .replace(/^-{3,}\s*$/gm, '')               // Remove horizontal rules
+    .replace(/!\[.*?\]\(.*?\)/g, '')           // Remove image links in Markdown
+    .replace(/\[(.*?)\]\(.*?\)/g, '$1')        // Treat regular Markdown links as plain text
+    .replace(/!\[.*?\]\s*/g, '')               // Remove any remaining image Markdown syntax
+    .replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|heic|ico|tif)(\?[^\s]*)?/gi, '') // Remove direct image URLs with extensions
+    .replace(/https?:\/\/[^\s]+/gi, '');       // Remove any remaining URLs
+
+// Trim the description to 100 characters after cleaning
+const trimmedDescription = cleanedDescription.length > 100 ? cleanedDescription.substring(0, 100) + '...' : cleanedDescription;
+
+// Remove line breaks and replace them with an empty string
+const finalDescription = trimmedDescription.replace(/\r\n/g, '').replace(/\n/g, '');
+
+// Convert Markdown to HTML using marked
+const markdownHTML = marked.parse(finalDescription, markedOptions);
+
+// Create a new paragraph element
+const shortDescription = document.createElement('p');
+
+// Add a class to the paragraph element
+shortDescription.classList.add('short-description');
+
+// Set the HTML content of the paragraph
+shortDescription.innerHTML = markdownHTML;
+
+// Append the paragraph element to the description container
+descriptionContainer.appendChild(shortDescription);
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,9 +1,5 @@
 [
     {
-        "status": {
-            "status1": "https://badges.crowdin.net/biomemakeoverua/localized.svg",
-            "status2": "https://badges.crowdin.net/60seconds-part2/localized.svg"
-        },
         "title": "60 Seconds",
         "description": "60 Seconds! - це похмура комедійна атомна пригода про пошук і виживання. Зберіть припаси та врятуйте свою сім'ю до того, як вибухне ядерна бомба. Залишайтеся живими у своєму укритті. Приймайте складні рішення, розподіляйте їжу та полюйте на тарганів-мутантів. І по можливості - виживіть.",
         "image": "https://i.imgur.com/ppB4GQP.png",
@@ -64,9 +60,6 @@
         "id": "000131"
     },
     {
-        "status": {
-            "status1": "https://badges.crowdin.net/the-henry-stickmin-collection/localized.svg"
-        },
         "id": "000134",
         "title": "The Henry Stickmin Collection",
         "description": "Колекція Генрі Стікміна (Henry Stickmin Collection) - це відроджена та оновлена класика Newgrounds, що обирає свій власний шлях. Ця епопея з 6 ігор завершується кількома цілком канонічними, надзвичайно різними кінцівками. На кожному етапі подорожі ви можете вибирати між такими варіантами, як телепорт або покликати на допомогу свого приятеля Чарльза. Правильний вибір просуне історію вперед, але неправильний вибір призведе до невдачі. Якщо ви дійшли до кінця з першої спроби, значить, ви робите це неправильно. Поразка - це половина задоволення.",
@@ -82,9 +75,6 @@
         "categories": []
     },
     {
-        "status": {
-            "status1": "https://badges.crowdin.net/ages-of-conflict-UA/localized.svg"
-        },
         "title": "Ages of Conflict: World War Simulator",
         "description": "Ages of Conflict - це універсальна гра в жанрі картографічного симулятора, де ви створюєте власні або випадкові нації за допомогою ШІ та спостерігаєте за їхньою боротьбою у нескінченній кількості світів. Командуйте націями, щоб змінити події у світі на свій розсуд.",
         "image": "https://i.imgur.com/qDLRhqZ.png",
@@ -139,14 +129,14 @@
             "Стрілянка",
             "Мандрівний бойовик"
         ],
-        "description": "Щось не так з вікнами...\r\n\r\nWindowkill - це стрілянка двома стіками, але саме ігрове вікно постійно наближається до вас.\r\nЦя гра є експериментальною, ваш екран і є ігровим полем. Вікна рухаються і зміщуються на екрані під час гри.\r\n\r\nРекомендується грати на миші та клавіатурі, але контроллер також підтримується.\r\n\r\nРозробник torcado / Композитор keestak",
+        "description": "Щось не так з вікном...   \r\n\r\n![](https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2726450/extras/bar.png?t=1713454758)  \r\n\r\nWindowkill - це стрілянка двома стіками, але саме ігрове вікно постійно наближається до вас.  \r\nЦя гра є експериментальною, ваш екран і є ігровим полем. Вікна рухаються і зміщуються на екрані під час гри.  \r\n  \r\n![](https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2726450/extras/gif2.gif?t=1713454758)\r\n\r\nІгролад\r\n-------\r\n\r\n*   Керування як у стрілянках двома стіками  \r\n    \r\n*   Смерть з повною втратою досвіду як в класичних мандрівних іграх  \r\n    \r\n*   Екрани магазинів  \r\n    \r\n*   Покращення та перки  \r\n    \r\n*   Орди ворогів і босів  \r\n    \r\n*   Кілька унікальних персонажів  \r\n    \r\n*   Локальний кооператив  \r\n    \r\n*   Досягнення з відкриттям нових можливостей  \r\n    \r\n*   Секрети\r\n\r\nМультиплеєр\r\n-----------\r\n\r\n![](https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2726450/extras/gif3.gif?t=1713454758)\r\n\r\nДосягнення, статистика та інше\r\n------------------------------\r\n\r\n![](https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2726450/extras/gif1.gif?t=1713454758)  \r\n  \r\nРекомендується грати на миші та клавіатурі, але контроллер також підтримується.  \r\n  \r\nРозробник torcado  // Композитор keestak",
         "image": "https://cdn2.steamgriddb.com/thumb/bcadc3889bd9d0a670f4a64ba89f58e8.jpg",
         "verified": true,
         "author": "СУМ, Patsiuk Localizator, DarkPrince",
         "completed": true,
         "translation": "",
         "link": [
-            "https://store.steampowered.com/app/2726450/Windowkill/#000137#000137"
+            "https://store.steampowered.com/app/2726450/Windowkill/#000137#000137#000137#000137#000137#000137"
         ],
         "id": "000137"
     },

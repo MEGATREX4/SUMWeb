@@ -5,14 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>СУМ - Create Record</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
     <script src="{{ url_for('static', filename='newlinks.js') }}" defer></script>
-    <script src="{{ url_for('static', filename='edit.js') }}" defer"></script>
+    <script src="{{ url_for('static', filename='edit.js') }}" defer></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    </head>
+</head>
 
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize SimpleMDE for the create form description field
+            var simplemdeCreate = new SimpleMDE({ element: document.getElementById("description") });
+    
+            
+    
+            // To handle form submission, you may need to sync the markdown content back to the textarea
+            document.querySelector('.CreateForm').addEventListener('submit', function () {
+                document.getElementById('description').value = simplemdeCreate.value();
+            });
+    
+            
+        });
+    </script>
+    
     <div class="container">
         <div class="first">
             <h1>Create Record</h1>
@@ -84,7 +102,7 @@
             <input type="text" id="editOtherCategories" name="editOtherCategories">
 
             <label for="editDescription">Description:</label>
-            <textarea id="editDescription" name="editDescription" rows="4" cols="50"></textarea>
+                <textarea id="editDescription" name="editDescription" rows="4" cols="50"></textarea>
             <label for="editImage">Image URL:</label>
             <input type="text" id="editImage" name="editImage">
             <label for="editAuthor">Author:</label>

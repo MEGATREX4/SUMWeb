@@ -14,9 +14,9 @@ html{
 }
 
 .Items {
-    width: calc(100vw - 320px);
+    width: calc(100vw - 420px);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(268px, 290px));
+    grid-template-columns: repeat(auto-fill, minmax(237px, 286px));
     gap: 0.5rem;
     align-items: center;
     justify-items: center;
@@ -149,14 +149,15 @@ input, .CreateForm input, #description, .editForm, #source, button[type=submit] 
     color: black;
 }
 
-.first{
-    min-width: 296.977px;
+.first {
+    min-width: 396.977px;
 }
 
-.CreateForm{
+.CreateForm {
     position: fixed;
     overflow-y: scroll;
     height: 95%;
+    width: 396.977px;
 }
 
 .modal-header{
