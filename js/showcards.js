@@ -55,7 +55,7 @@ const trimmedDescription = cleanedDescription.length > 100 ? cleanedDescription.
 const finalDescription = trimmedDescription.replace(/\r\n/g, '').replace(/\n/g, '');
 
 // Convert Markdown to HTML using marked
-const markdownHTML = marked.parse(finalDescription, markedOptions);
+const markdownHTML = marked.parse(finalDescription);
 
 // Create a new paragraph element
 const shortDescription = document.createElement('p');
