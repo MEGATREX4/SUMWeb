@@ -160,6 +160,37 @@ async function fetchCategoryIcons() {
     }
 }
 
+function updatePageMeta(selectedItem) {
+    document.title = "СУМ" + " - переклад " + selectedItem.title;
+
+    const cleanedDescription = selectedItem.description
+        .replace(/^-{3,}\s*$/gm, '')               // Remove horizontal rules
+        .replace(/!\[.*?\]\(.*?\)/g, '')           // Remove image links in Markdown
+        .replace(/\[(.*?)\]\(.*?\)/g, '$1')        // Treat regular Markdown links as plain text
+        .replace(/!\[.*?\]\s*/g, '')               // Remove any remaining image Markdown syntax
+        .replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|heic|ico|tif)(\?[^\s]*)?/gi, '') // Remove direct image URLs with extensions
+        .replace(/https?:\/\/[^\s]+/gi, '')       // Remove any remaining URLs
+        .replace(/\r\n/g, '')                     // Remove line breaks
+        .replace(/\n/g, '');                      // Remove line breaks
+
+    const metaTags = [
+        { name: 'description', content: cleanedDescription },
+        { property: 'og:description', content: truncateText(cleanedDescription, 120) },
+        { property: 'og:title', content: "СУМ" + " - переклад " + selectedItem.title },
+        { name: 'twitter:description', content: truncateText(cleanedDescription, 120) },
+        { name: 'twitter:title', content: "СУМ" + " - переклад " + selectedItem.title }
+    ];
+
+    metaTags.forEach(tag => {
+        const element = document.createElement(tag.hasOwnProperty('name') ? 'meta' : 'meta');
+        for (const key in tag) {
+            element.setAttribute(key, tag[key]);
+        }
+        document.head.appendChild(element);
+    });
+}
+
+
 
     // Function to update the item page with the fetched data
     async function updateItemPage() {
@@ -174,35 +205,7 @@ async function fetchCategoryIcons() {
     
                     const categoryIcons = await fetchCategoryIcons();
     
-                    // Update meta description
-                    const metaDescription = document.createElement('meta');
-                    metaDescription.setAttribute('name', 'description');
-                    metaDescription.setAttribute('content', selectedItem.description);
-                    document.head.appendChild(metaDescription);
-    
-                    // Update og:description
-                    const ogDescription = document.createElement('meta');
-                    ogDescription.setAttribute('property', 'og:description');
-                    ogDescription.setAttribute('content', truncateText(selectedItem.description, 120));
-                    document.head.appendChild(ogDescription);
-    
-                    // Update og:title
-                    const ogTitle = document.createElement('meta');
-                    ogTitle.setAttribute('property', 'og:title');
-                    ogTitle.setAttribute('content', "СУМ" + " - переклад " + selectedItem.title);
-                    document.head.appendChild(ogTitle);
-    
-                    // Update meta twitter:description
-                    const twitterDescription = document.createElement('meta');
-                    twitterDescription.setAttribute('name', 'twitter:description');
-                    twitterDescription.setAttribute('content', truncateText(selectedItem.description, 120));
-                    document.head.appendChild(twitterDescription);
-    
-                    // Update meta twitter:title
-                    const twitterTitle = document.createElement('meta');
-                    twitterTitle.setAttribute('name', 'twitter:title');
-                    twitterTitle.setAttribute('content', "СУМ" + " - переклад " + selectedItem.title);
-                    document.head.appendChild(twitterTitle);
+                    updatePageMeta(selectedItem)
     
                     // Create HTML string for tooltip content
                     const tooltipContent = selectedItem.tooltip ? selectedItem.tooltip : (selectedItem.verified ? 'Переклад вже в грі! Завантаження додаткових файлів не потрібно. Насолоджуйтеся грою з українською локалізацією!' : '');
@@ -281,49 +284,33 @@ async function fetchCategoryIcons() {
                     populateIconContainer(selectedItem, modsData, otherData);
     
                 } else {
-                    document.title = "Йой, халепа";
-    
-                    // No item ID provided, display a default image
-                    const defaultItemHTML = `
-                        <div class="ItemContainerInfo">
-                            <img src="https://i.imgur.com/yXSBdgZ.png" height="300px" alt="Зображення ''щось не так''">
-                            <div class="text404">Йой, халепа, щось сталось не так.</div>
-                            <div class="text404">Такої сторінки не знайдено.</div>
-                            <a href="index" class="button404">Перейти на головну</a>
-                        </div>
-                    `;
-                    $('#ItemContainer').html(defaultItemHTML);
-                }
+                    handle404Error()}
             } else {
-                document.title = "Йой, халепа";
-                // No item ID provided, display a default image
-                const defaultItemHTML = `
-                    <div class="ItemContainerInfo">
-                    <div class="error404">
-                        <img src="https://i.imgur.com/yXSBdgZ.png" height="300px" alt="Зображення ''щось не так''">
-                        <div class="container404">
-                        <div class="textcontainer404">
-                        <div class="text404">Йой, халепа, щось сталось не так.</div>
-                        <div class="text404">Такої сторінки не знайдено.</div></div>
-                        <a href="index" class="button404">Перейти на головну</a>
-                        </div>
-                    </div>
-                    </div>
-                `;
-                $('#ItemContainer').html(defaultItemHTML);
+                handle404Error()
             }
         } catch (error) {
             console.error("Error updating item page:", error);
         }
     }
-    
-    
-    
-
-
-    // Call the function to update the item page when the DOM is loaded
+        // Call the function to update the item page when the DOM is loaded
     updateItemPage();
 });
+
+
+function handle404Error() {
+    document.title = "Йой, халепа";
+
+    const defaultItemHTML = `
+        <div class="ItemContainerInfo">
+            <img src="https://i.imgur.com/yXSBdgZ.png" height="300px" alt="Зображення ''щось не так''">
+            <div class="text404">Йой, халепа, щось сталось не так.</div>
+            <div class="text404">Такої сторінки не знайдено.</div>
+            <a href="index" class="button404">Перейти на головну</a>
+        </div>
+    `;
+    $('#ItemContainer').html(defaultItemHTML);
+}
+
 
 // Function to generate a random color within a range and make it darker
 function getRandomDarkColor(min, max, factor) {
