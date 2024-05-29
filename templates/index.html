@@ -16,23 +16,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
-<body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Initialize SimpleMDE for the create form description field
-            var simplemdeCreate = new SimpleMDE({ element: document.getElementById("description") });
-    
-            
-    
-            // To handle form submission, you may need to sync the markdown content back to the textarea
-            document.querySelector('.CreateForm').addEventListener('submit', function () {
-                document.getElementById('description').value = simplemdeCreate.value();
-            });
-    
-            
-        });
-    </script>
-    
+<body>    
     <div class="container">
         <div class="first">
             <h1>Create Record</h1>

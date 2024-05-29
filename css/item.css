@@ -44,6 +44,7 @@
     display: block;
     border-radius: var(--medium-border-radius);
     padding: 1px;
+    max-height: 400px;
 }
 
 .itemdescription a{

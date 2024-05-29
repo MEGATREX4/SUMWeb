@@ -1,4 +1,80 @@
-// Function to fetch data from mods.json and other.json
+// edit.js
+// edit.js
+document.addEventListener("DOMContentLoaded", function () {
+    var simplemdeEdit = new SimpleMDE({ element: document.getElementById("editDescription") });
+
+    // Add event listener to the edit form to sync SimpleMDE content before submitting
+    document.querySelector('.editForm').addEventListener('submit', function () {
+        document.getElementById('editDescription').value = simplemdeEdit.value();
+    });
+
+    window.openEditModal = function(itemId) {
+        clearEditModalFields();
+
+        $.ajax({
+            url: '/fetch_item_by_id/' + itemId,
+            method: 'GET',
+            success: function(item) {
+                $('#editItemId').val(itemId);
+                $('#editTitle').val(item.title);
+                $('#editGameVersion').val(item.gameversion);
+                $('#editEngine').val(item.engine);
+                simplemdeEdit.value(item.description);  // Set the content of the SimpleMDE editor
+                $('#editImage').val(item.image);
+                $('#editAuthor').val(item.author);
+                $('#editTranslation').val(item.translation);
+                populateEditCategories(item.categories);
+
+                $.ajax({
+                    url: '/fetch_all_categories',
+                    method: 'GET',
+                    success: function(allCategories) {
+                        var availableCategories = allCategories;
+                        var otherCategories = item.categories.filter(function(category) {
+                            return !availableCategories.includes(category);
+                        });
+                        $('#editOtherCategories').val(otherCategories.join(', '));
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error fetching categories:', error);
+                    }
+                });
+
+                for (var i = 0; i < item.link.length; i++) {
+                    $('#editLink' + (i + 1)).val(item.link[i]);
+                }
+
+                $('#editVerified').prop('checked', item.verified);
+                $('#editCompleted').prop('checked', item.completed);
+
+                var scrollToElement = $('#' + itemId);
+                if (scrollToElement.length) {
+                    $('html, body').animate({
+                        scrollTop: scrollToElement.offset().top
+                    }, 500);
+                }
+
+                $('#editModal').css('display', 'flex');
+
+                $(document).on('keydown', function(event) {
+                    if (event.keyCode === 27) {
+                        closeEditModal();
+                    }
+                });
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching item:', error);
+            }
+        });
+    }
+});
+
+function clearEditModalFields() {
+    $('#editForm')[0].reset();
+    simplemdeEdit.value('');
+}
+
+
 function fetchItems() {
     $.ajax({
         url: '/fetch_items',
@@ -15,53 +91,52 @@ function fetchItems() {
 }
 
 // Call fetchItems function when the document is ready
-$(document).ready(function () {
-    fetchItems();
+$(document).ready(function() {
+    displayCards();
 });
 
-
-// Function to fetch data from the server and display cards
 function displayCards() {
-    // Store the current scroll position
     var scrollPosition = $(window).scrollTop();
 
     $.ajax({
         url: '/fetch_items',
         method: 'GET',
         success: function(data) {
-            // Clear the existing cards
             $('#Items').empty();
             
-            // Sort the data by ID
             data.sort(function(a, b) {
-                return parseInt(a.id) - parseInt(b.id);
+                // Handle cases where date is missing
+                if (!a.date && !b.date) {
+                    return parseInt(a.id) - parseInt(b.id);
+                }
+                if (!a.date) return -1;
+                if (!b.date) return 1;
+                
+                var dateA = new Date(a.date.split('/').reverse().join('-'));
+                var dateB = new Date(b.date.split('/').reverse().join('-'));
+                return dateA - dateB;
             });
             
-            // Loop through the sorted data and create cards
             data.forEach(function(item) {
-                // Format the item ID with leading zeros
-                var formattedId = item.id.padStart(6, '0'); // Assuming the ID should have 6 digits
-                
-                // Truncate the description if it's longer than 100 characters
+                var formattedId = item.id.padStart(6, '0');
                 var truncatedDescription = item.description.length > 100 ? item.description.substring(0, 100) + '...' : item.description;
 
-                // Create the card HTML
                 var cardHTML = '<div class="card">' +
-                                    '<h3 id="' + item.id + '">' + item.title + '</h3>' +
-                                    '<div class="card-image" style="background-image: url(\'' + item.image + '\')"></div>' +
-                                    '<p>Game Version: ' + item.gameversion + '</p>' +
-                                    '<p>Engine: ' + item.engine + '</p>' +
-                                    '<p>Categories: ' + item.categories.join(', ') + '</p>' +
-                                    '<p>Author: ' + item.author + '</p>' +
-                                    '<p class="description">Description: ' + truncatedDescription + '</p>' +
-                                    '<button onclick="openEditModal(\'' + formattedId + '\')" class="edit-btn" data-id="' + formattedId + '">Edit</button>' +
-                                '</div>';
+                                '<h3 id="' + item.id + '">' + item.title + '</h3>' +
+                                '<div class="card-image" style="background-image: url(\'' + item.image + '\')"></div>' +
+                                '<p>Game Version: ' + item.gameversion + '</p>' +
+                                '<p>Engine: ' + item.engine + '</p>' +
+                                '<p>Categories: ' + item.categories.join(', ') + '</p>' +
+                                '<p>Author: ' + item.author + '</p>' +
+                                // show date
+                                '<p>Date: ' + item.date + '</p>' +
+                                '<p class="description">Description: ' + truncatedDescription + '</p>' +
+                                '<button onclick="openEditModal(\'' + formattedId + '\')" class="edit-btn" data-id="' + formattedId + '">Edit</button>' +
+                            '</div>';
                 
-                // Append the card HTML to the Items container
-                document.getElementById('Items').innerHTML += cardHTML;
+                $('#Items').append(cardHTML);
             });
 
-            // Restore the scroll position after the cards have been loaded
             $(window).scrollTop(scrollPosition);
         },
         error: function(xhr, status, error) {
@@ -69,6 +144,10 @@ function displayCards() {
         }
     });
 }
+
+
+
+
 
 
 
@@ -201,7 +280,7 @@ function openEditModal(itemId) {
 
             // Populate the editLink fields with the item ID included in the link
             for (var i = 0; i < item.link.length; i++) {
-                $('#editLink' + (i + 1)).val(item.link[i] + '#'+ itemId);
+                $('#editLink' + (i + 1)).val(item.link[i]);
             }
 
             // Populate the editVerified field

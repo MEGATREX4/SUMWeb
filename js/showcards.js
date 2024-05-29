@@ -50,18 +50,20 @@ function createModCard(mod) {
 
   // Preprocess the Markdown content to remove unwanted elements
   const cleanedDescription = mod.description
-    .replace(/^-{3,}\s*$/gm, '')               // Remove horizontal rules
-    .replace(/!\[.*?\]\(.*?\)/g, '')           // Remove image links in Markdown
+    .replace(/^-{3,}\s*$/gm, ' ')               // Remove horizontal rules
+    
+    .replace(/!\[.*?\]\(.*?\)/g, ' ')           // Remove image links in Markdown
     .replace(/\[(.*?)\]\(.*?\)/g, '$1')        // Treat regular Markdown links as plain text
-    .replace(/!\[.*?\]\s*/g, '')               // Remove any remaining image Markdown syntax
+    .replace(/!\[.*?\]\s*/g, ' ')               // Remove any remaining image Markdown syntax
     .replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|heic|ico|tif)(\?[^\s]*)?/gi, '') // Remove direct image URLs with extensions
     .replace(/https?:\/\/[^\s]+/gi, '')       // Remove any remaining URLs
-    .replace(/\*\*\*\*(.*?)\*\*\*\*/g, ' ')  // Remove bold markdown syntax (****text****)
-    .replace(/\*\*(.*?)\*\*/g, ' ')          // Remove bold markdown syntax (**text**)
-    .replace(/\r\n/g, '')                     // Remove line breaks
-    .replace(/\n/g, '');                      // Remove line breaks
-    
-    
+    .replace(/\*\*\*\*(.*?)\*\*\*\*/g, '$1')  // Remove bold markdown syntax (****text****)
+    .replace(/\*\*(.*?)\*\*/g, '$1')          // Remove bold markdown syntax (**text**)
+    .replace(/^\s+/g, ' ')                     // Remove all spaces at the beginning of the string
+    .replace(/\r\n/g, ' ')                     // Remove line breaks
+    .replace(/\n/g, ' ')                      // Remove line breaks
+    .replace(/#+/g, ' ')                      // Remove headings;
+
 
   // Trim the description to 100 characters after cleaning
   const trimmedDescription = cleanedDescription.length > 100 ? cleanedDescription.substring(0, 100) + '...' : cleanedDescription;
@@ -87,6 +89,7 @@ function createModCard(mod) {
     addIcons(iconContainer, statusClasses);
   }
 }
+
 
 
 

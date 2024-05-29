@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 import json
 import os
+from datetime import datetime
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -32,6 +33,11 @@ def get_max_id():
     new_id = '{:06d}'.format(max_id + 1)
 
     return new_id
+
+# date and time now
+def get_date_time():
+    now = datetime.now()
+    return now.strftime("%d/%m/%Y %H:%M:%S")
 
 def save_record(data):
     # Determine the filename based on the source
@@ -94,6 +100,7 @@ def create_record():
                 "translation": request.form['translation'],
                 "link": [link for link in request.form.getlist('link[]') if link.strip() != ''],  # Extract all link values from form
                 "id": get_max_id(),
+                "date": get_date_time(),
                 "source": source  # Add the extracted source to the new record
             }
             # Combine categories from form and additional categories
@@ -169,7 +176,8 @@ def fetch_items():
             'categories': item.get('categories', []),
             'author': item.get('author', ''),
             'description': truncated_description,
-            'id': item.get('id', '')
+            'id': item.get('id', ''),
+            'date': item.get('date', ''),
         }
         formatted_data.append(formatted_item)
     
@@ -228,7 +236,8 @@ def edit_record():
                     'author': request.form.get('editAuthor'),
                     'verified': True if request.form.get('editVerified') == 'on' else False,
                     'completed': True if request.form.get('editCompleted') == 'on' else False,
-                    'link': [link for link in request.form.getlist('editLink[]') if link.strip() != '']
+                    'link': [link for link in request.form.getlist('editLink[]') if link.strip() != ''],
+                    'date': get_date_time()
                 }
 
                 # Include translation and engine fields if they are not empty
