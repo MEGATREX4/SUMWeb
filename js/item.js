@@ -164,14 +164,16 @@ function updatePageMeta(selectedItem) {
     document.title = "СУМ" + " - переклад " + selectedItem.title;
 
     const cleanedDescription = selectedItem.description
-        .replace(/^-{3,}\s*$/gm, '')               // Remove horizontal rules
-        .replace(/!\[.*?\]\(.*?\)/g, '')           // Remove image links in Markdown
-        .replace(/\[(.*?)\]\(.*?\)/g, '$1')        // Treat regular Markdown links as plain text
-        .replace(/!\[.*?\]\s*/g, '')               // Remove any remaining image Markdown syntax
-        .replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|heic|ico|tif)(\?[^\s]*)?/gi, '') // Remove direct image URLs with extensions
-        .replace(/https?:\/\/[^\s]+/gi, '')       // Remove any remaining URLs
-        .replace(/\r\n/g, '')                     // Remove line breaks
-        .replace(/\n/g, '');                      // Remove line breaks
+    .replace(/^-{3,}\s*$/gm, '')               // Remove horizontal rules
+    .replace(/!\[.*?\]\(.*?\)/g, '')           // Remove image links in Markdown
+    .replace(/\[(.*?)\]\(.*?\)/g, '$1')        // Treat regular Markdown links as plain text
+    .replace(/!\[.*?\]\s*/g, '')               // Remove any remaining image Markdown syntax
+    .replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|heic|ico|tif)(\?[^\s]*)?/gi, '') // Remove direct image URLs with extensions
+    .replace(/https?:\/\/[^\s]+/gi, '')       // Remove any remaining URLs
+    .replace(/\*\*\*\*(.*?)\*\*\*\*/g, ' ')  // Remove bold markdown syntax (****text****)
+    .replace(/\*\*(.*?)\*\*/g, ' ')          // Remove bold markdown syntax (**text**)
+    .replace(/\r\n/g, '')                     // Remove line breaks
+    .replace(/\n/g, '');                      // Remove line breaks
 
     const metaTags = [
         { name: 'description', content: cleanedDescription },

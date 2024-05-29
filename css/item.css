@@ -37,6 +37,20 @@
     margin: 7px 0;
 }
 
+.itemdescription img{
+    max-width: 100%;
+    /* centred image */
+    margin: 10px auto;
+    display: block;
+    border-radius: var(--medium-border-radius);
+    padding: 1px;
+}
+
+.itemdescription a{
+    color: var(--font-family);
+}
+
+
 .itemtitle {
     font-size: var(--font-size-etraxlarge);
     margin-bottom: 5px;
