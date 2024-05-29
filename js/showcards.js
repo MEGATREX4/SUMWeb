@@ -56,8 +56,12 @@ function createModCard(mod) {
     .replace(/!\[.*?\]\s*/g, '')               // Remove any remaining image Markdown syntax
     .replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|heic|ico|tif)(\?[^\s]*)?/gi, '') // Remove direct image URLs with extensions
     .replace(/https?:\/\/[^\s]+/gi, '')       // Remove any remaining URLs
+    .replace(/\*\*\*\*(.*?)\*\*\*\*/g, ' ')  // Remove bold markdown syntax (****text****)
+    .replace(/\*\*(.*?)\*\*/g, ' ')          // Remove bold markdown syntax (**text**)
     .replace(/\r\n/g, '')                     // Remove line breaks
     .replace(/\n/g, '');                      // Remove line breaks
+    
+    
 
   // Trim the description to 100 characters after cleaning
   const trimmedDescription = cleanedDescription.length > 100 ? cleanedDescription.substring(0, 100) + '...' : cleanedDescription;
