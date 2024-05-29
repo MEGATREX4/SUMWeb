@@ -14,9 +14,15 @@
     <script src="{{ url_for('static', filename='newlinks.js') }}" defer></script>
     <script src="{{ url_for('static', filename='edit.js') }}" defer></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scrollbar.css') }}">
 </head>
 
-<body>    
+<body>
+    <script>
+        $(document).ready(function() {
+            simplemde = new SimpleMDE({ element: document.getElementById("description") });
+        });
+    </script>    
     <div class="container">
         <div class="first">
             <h1>Create Record</h1>
