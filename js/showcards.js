@@ -8,6 +8,15 @@ let modsData;
 let otherData;
 let filteredData;
 
+// function to autogenerate <meta name="keywords" content="alls mod.title here ">
+function generateKeywords(mod) {
+
+
+
+
+}
+
+
 function createModCard(mod) {
   const card = document.createElement('div');
   card.classList.add('card');
@@ -782,4 +791,5 @@ function handleDataInitialization() {
   handleFilterSelection();
   saveToStorageHandleInitialURLParams();
   loadFromStorageHandleInitialURLParams();
+
 }
