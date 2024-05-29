@@ -1603,15 +1603,15 @@
             "Декорації",
             "Технології"
         ],
-        "description": "Create Encased - невеликий аддон до Create Mod\r\n\r\nЦей аддон дозволяє використовувати всі обсадні матеріали у валах, зубчастих колесах та трубах",
+        "description": "![](https://iglee.fr/images/encased.png)\r\n\r\n![](https://iglee.fr/images/separator.png)\r\n\r\nCreate Encased - це невеликий аддон до [Create Mod](https://www.curseforge.com/minecraft/mc-mods/create)  \r\n\r\nЦей аддон дозволяє використовувати всі обсадні труби у валах, зубчастих колесах та трубах\r\n\r\n  \r\nІдея [MLDEG](https://www.youtube.com/MrMLDEG)  ",
         "image": "https://media.forgecdn.net/avatars/849/748/638250932531442863.png",
         "verified": true,
         "author": "Nemejčyk",
         "completed": true,
         "translation": "",
         "link": [
-            "https://www.curseforge.com/minecraft/mc-mods/create-encased",
-            "https://modrinth.com/mod/create-encased"
+            "https://www.curseforge.com/minecraft/mc-mods/create-encased#000139",
+            "https://modrinth.com/mod/create-encased#000139"
         ],
         "id": "000139"
     },
