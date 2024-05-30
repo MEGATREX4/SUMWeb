@@ -4,6 +4,21 @@
 
 }
 
+.cm-spell-error{
+    background: rgba(255, 0, 0, 0)!important;
+}
+
+.CodeMirror-line, .cm-null, .editor-preview-side p, .editor-preview p{
+    color: black!important;
+}
+
+.editor-preview-side img {
+    width: 100%!important;
+    height: auto!important;
+    display: block!important;
+    margin: auto!important;
+}
+
 html{
     background-color: #16181c;
 }

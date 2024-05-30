@@ -61,6 +61,16 @@ document.addEventListener("DOMContentLoaded", function () {
                         closeEditModal();
                     }
                 });
+                // Open CurseForge and Modrinth URLs in new tabs
+            const CurseName = item.title.replace(/ /g, '+');
+            const modName = item.title.replace(/ /g, '-').toLowerCase();
+            const curseForgeUrl = `https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortBy=relevancy&class=mc-mods&search=${CurseName}`;
+            const modrinthUrl = `https://modrinth.com/mods?q=${modName}`;
+            const testurl =`http://172.22.8.186:5500/item.html?id=${itemId}`
+            
+            window.open(curseForgeUrl, '_blank');
+            window.open(modrinthUrl, '_blank');
+            window.open(testurl, '_blank');
             },
             error: function(xhr, status, error) {
                 console.error('Error fetching item:', error);
@@ -239,12 +249,13 @@ function markItemCategories(itemCategories) {
 function openEditModal(itemId) {
     // Clear the modal fields first
     clearEditModalFields();
-
+    
     // Fetch the item data directly using the item ID
     $.ajax({
         url: '/fetch_item_by_id/' + itemId,
         method: 'GET',
         success: function(item) {
+
             // Populate the modal fields with the item's information
             $('#editItemId').val(itemId);
             $('#editTitle').val(item.title);
@@ -306,6 +317,7 @@ function openEditModal(itemId) {
                     closeEditModal();
                 }
             });
+            
         },
         error: function(xhr, status, error) {
             console.error('Error fetching item:', error);
