@@ -192,7 +192,23 @@ function displayCards(currentPage, pageSize, data) {
   if (cardsContainer) {
     // Clear existing cards
     cardsContainer.innerHTML = '';
-    currentData.forEach(item => createModCard(item)); // Replace createCard with createModCard
+
+    if (currentData.length > 0) {
+      //remove createCardFlex
+      cardsContainer.classList.remove('createCardFlex');
+      currentData.forEach(item => createModCard(item)); // Replace createCard with createModCard
+    } else {
+      // remove from id createCard class createCard and add createCardFlex to it
+      cardsContainer.classList.add('createCardFlex');
+
+      cardsContainer.innerHTML = `
+      <div class="ItemContainerInfo">
+            <img src="https://i.imgur.com/yXSBdgZ.png" height="300px" alt="Зображення ''щось не так''">
+            <div class="text404">Дідько, щось сталось не так.</div>
+            <div class="text404">Спробуйте змінити фільтри.</div>
+
+        </div>`;
+    }
   } else {
     console.error("Error: Cards container not found!");
   }
