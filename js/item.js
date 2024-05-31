@@ -220,10 +220,13 @@ function updatePageMeta(selectedItem) {
                     // Determine if the item is from mods.json
                     const isMod = modsData.some(mod => mod.id === selectedItem.id);
                     const isVerified = modsData.some(mod => mod.id === selectedItem.id && mod.verified);
-    
+                    
+                    
+
+                    
+
                     // Determine the game version text
                     const gameVersionText = selectedItem.gameversion && selectedItem.gameversion.length > 0 ? `<p class="gameversion iteminfo">Версія гри: ${selectedItem.gameversion}</p>` : '';
-    
                     const engineText = selectedItem.engine && selectedItem.engine.length > 0 ? `<p class="engine iteminfo">Рушій: ${selectedItem.engine}</p>` : '';
     
                     const categoriesText = selectedItem.categories && selectedItem.categories.length > 0 ? `

@@ -8,15 +8,6 @@ let modsData;
 let otherData;
 let filteredData;
 
-// function to autogenerate <meta name="keywords" content="alls mod.title here ">
-function generateKeywords(mod) {
-
-
-
-
-}
-
-
 function createModCard(mod) {
   const card = document.createElement('div');
   card.classList.add('card');
@@ -131,27 +122,39 @@ function getStatusClasses(mod, modsData, otherData) {
   return statusClasses;
 }
 
+let cachedIconData = null;
+
 // Function to get icon data from Icons.json
 function getIconData(statusClasses) {
+  if (cachedIconData) {
+    return Promise.resolve(filterIconsByStatusClasses(cachedIconData, statusClasses));
+  }
+
   // Replace this with the actual path to your Icons.json file
   const iconsJsonPath = 'icons.json';
-  // Return a Promise for fetching and processing the icon data
+
   return fetch(iconsJsonPath)
     .then(response => response.json())
     .then(iconData => {
-      const icons = [];
-      statusClasses.forEach(statusClass => {
-        const icon = iconData[statusClass];
-        if (icon && icon.icon) {
-          icons.push(icon);
-        }
-      });
-      return icons;
+      cachedIconData = iconData;
+      return filterIconsByStatusClasses(iconData, statusClasses);
     })
     .catch(error => {
       console.error('Error fetching icon data:', error);
       return [];
     });
+}
+
+// Helper function to filter icons based on status classes
+function filterIconsByStatusClasses(iconData, statusClasses) {
+  const icons = [];
+  statusClasses.forEach(statusClass => {
+    const icon = iconData[statusClass];
+    if (icon && icon.icon) {
+      icons.push(icon);
+    }
+  });
+  return icons;
 }
 
 // Function to add icons based on files and status
@@ -167,6 +170,7 @@ function addIcons(element, statusClasses) {
     });
   });
 }
+
 
 function truncateText(text, maxLength) {
   if (text.length > maxLength) {
