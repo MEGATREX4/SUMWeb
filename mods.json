@@ -525,37 +525,69 @@
     },
     {
         "title": "Create Stuff & Additions",
-        "description": "Додає нове обладнання, інструменти та гаджети, які підвищують ваші фізичні здібності та дають нові способи руху. Вам знадобляться різні види палива, такі як пар, теплова енергія або гідравлічна енергія, залежно від типу вашого обладнання. Цей мод також додає багато рецептів, які роблять деякі предмети гри створюваними за допомогою нових способів.",
+        "description": "![](https://media.forgecdn.net/attachments/817/883/create_stuff.png)\r\n\r\nДодає нове обладнання, інструменти та гаджети, які підвищують ваші фізичні здібності та дають нові способи руху.\r\nВам знадобляться різні види палива, такі як пар, теплова енергія або гідравлічна енергія, залежно від типу вашого обладнання. \r\nЦей мод також додає багато рецептів, які роблять деякі предмети гри створюваними за допомогою нових способів.",
         "image": "https://cdn.modrinth.com/data/aq9qUUQG/d2ca5daa0a97d343afc67d273f3b5f6eeac2ba52.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000026"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/create-stuff-additions",
+            "https://modrinth.com/mod/create-stuff-additions"
+        ],
+        "id": "000026",
+        "gameversion": "1.16.5",
+        "date": "31/05/2024 01:41:13",
+        "engine": "Forge",
+        "categories": [
+            "Декорації",
+            "Спорядження",
+            "Ігрові механіки",
+            "Зберігання",
+            "Технології",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Create: Crystal Clear",
-        "description": "Мод, який додає скляні рамки до Create. Щоб створити оболонки, просто клацніть правою кнопкою миші на відповідні оболонки з обрамленим склом.",
+        "description": "Create: Crystal Clear - це мод, який додає скляні обрамлення, а також кілька інших речей, пов'язаних зі склом, які будуть додані в найближчому майбутньому.\r\n\r\nЩоб створити корпус, просто клацніть правою кнопкою миші на відповідному корпусі з обрамленим склом.\r\n![](https://cdn.modrinth.com/data/h7QgiH72/images/9568f5044c021e2499e2e180fdecddfa93757566.png)",
         "image": "https://cdn.modrinth.com/data/h7QgiH72/5acf81af633b388442b1f6ced9ad4e0f865ce12a.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000027"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/create-crystal-clear",
+            "https://modrinth.com/mod/create-crystal-clear"
+        ],
+        "id": "000027",
+        "gameversion": "",
+        "date": "31/05/2024 01:43:44",
+        "categories": [
+            "Декорації",
+            "Технології"
+        ]
     },
     {
         "title": "Cultural Delights",
-        "description": "Мод додає до асортименту страв із різних країн світу та нові культурні враження. У меню з’явилася кукурудза, авокадо та огірки.",
+        "description": "![](https://wsrv.nl/?url=https%3A%2F%2Fmedia.forgecdn.net%2Fattachments%2F448%2F392%2Fbanner.png&n=-1)\r\n\r\nМод додає до асортименту страв із різних країн світу та нові культурні враження. У меню з’явилася кукурудза, авокадо та огірки.\r\n\r\n![](https://wsrv.nl/?url=https%3A%2F%2Fmedia.forgecdn.net%2Fattachments%2F692%2F64%2Funtitled1.png)",
         "image": "https://media.forgecdn.net/avatars/523/974/637844697378782554.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000028"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/cultural-delights",
+            "https://modrinth.com/mod/cultural-delights"
+        ],
+        "id": "000028",
+        "gameversion": "1.19.2",
+        "date": "31/05/2024 01:46:46",
+        "engine": "Forge",
+        "categories": [
+            "Їжа"
+        ]
     },
     {
         "title": "Configured",
-        "description": "Простий і легкий мод, який динамічно створює меню конфігурації для кожного мода. Раніше модифікації використовували вбудовану систему графічного інтерфейсу Forge, яка більше не існує у нових версіях. Цей мод має на меті відновити цю систему і створити свіжий досвід з оновленим простим у використанні інтерфейсом. ",
+        "description": "![](https://media.forgecdn.net/attachments/670/627/configured_banner.png)\r\nConfigured - це простий і легкий мод, який динамічно створює меню конфігурації для кожного мода з підтримуваною системою конфігурації. \r\nМод було створено через видалення вбудованого графічного інтерфейсу Forge, але зараз він розширив свої можливості та підтримку модозавантажувачів. Configured має на меті полегшити гравцям зміну конфігурацій модів, надаючи гарний графічний інтерфейс та інтуїтивно зрозумілий досвід.\r\nНайкраще те, що Configured не потребує від інших модів написання додаткового коду для створення меню, за умови, що вони використовують підтримувану систему конфігурації. Цей мод можна без проблем додати до будь-якого модпаку.\r\n\r\n![](https://media.forgecdn.net/attachments/859/942/newdesign.png)",
         "image": "https://media.forgecdn.net/avatars/871/317/638288810833209348.png",
         "verified": true,
         "author": "СУМ",
@@ -563,21 +595,37 @@
         "link": [
             "https://www.curseforge.com/minecraft/mc-mods/configured"
         ],
-        "id": "000029"
+        "id": "000029",
+        "gameversion": "",
+        "date": "31/05/2024 01:54:48",
+        "categories": [
+            "Бібліотеки",
+            "Управління",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Farmer's Respite",
-        "description": "Farmer's Respite - це аддон-мод для Farmer's Delight, в основі якого лежить додавання механіки заварювання чаю! ",
+        "description": "Farmer's Respite - це аддон-мод для Farmer's Delight, в основі якого лежить додавання механіки заварювання чаю! \r\n\r\nДодає чайник, чай, каву та інші різні корисні штуки.\r\n\r\n![](https://media.forgecdn.net/attachments/411/762/2021-11-29_22.png)",
         "image": "https://media.forgecdn.net/avatars/460/721/637739148850316506.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000030"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/farmers-respite"
+        ],
+        "id": "000030",
+        "gameversion": "1.16.6+",
+        "date": "31/05/2024 02:01:24",
+        "engine": "Forge",
+        "categories": [
+            "Їжа",
+            "Ігрові механіки"
+        ]
     },
     {
         "title": "Crafting Station",
-        "description": "Цей мод додає лише станцію ремесла від Tinker's з можливістю забрати\\класти предмети в прилеглі інвентарі.",
+        "description": "Цей мод додає лише станцію ремесла з Tinker's вона надає можливості:\r\n* Зберігати та класти предмети в прилеглі інвентарі\r\n* Предмети залишаються на станції після закриття інвентарю\r\n\r\n![](https://i.ytimg.com/vi/q91Q_lS4egA/maxresdefault.jpg)",
         "image": "https://media.forgecdn.net/avatars/198/38/636896970532934136.png",
         "verified": true,
         "author": "СУМ",
@@ -585,237 +633,459 @@
         "link": [
             "https://www.curseforge.com/minecraft/mc-mods/crafting-station"
         ],
-        "id": "000031"
+        "id": "000031",
+        "gameversion": "1.12.2",
+        "date": "31/05/2024 02:06:07",
+        "engine": "Forge",
+        "categories": [
+            "Управління"
+        ]
     },
     {
         "title": "It Takes a Pillage",
-        "description": "Мародери розширили свою Цивілізацію! Вони створили табори та фортеці по всьому світу! Чи є у вас те, що потрібно, щоб подолати ці нові загрози та захопити їхню дорогоцінну здобич?",
+        "description": "Мародери розширили свою Цивілізацію! Вони створили табори та фортеці по всьому світу! Чи є у вас те, що потрібно, щоб подолати ці нові загрози та захопити їхню дорогоцінну здобич?\r\n\r\n![](https://imgur.com/29VEnDg.png)",
         "image": "https://media.forgecdn.net/avatars/561/769/637914383465201197.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000032"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/it-takes-a-pillage",
+            "https://www.curseforge.com/minecraft/mc-mods/it-takes-a-pillage-fabric"
+        ],
+        "id": "000032",
+        "gameversion": "1.16.5+",
+        "date": "31/05/2024 02:21:57",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Спорядження",
+            "Моби",
+            "Генерація створення"
+        ]
     },
     {
         "title": "More Villagers",
-        "description": "Вам коли-небудь набридали майнкрафтівські селяни? Хочете, щоб вони продавали більше корисних речей? More Villagers має на меті виправити цю проблему, додавши кілька нових робочих місць для селян, з унікальними професіями, робочими місцями та покращеннями!",
+        "description": "![](https://i.imgur.com/rgWbKwC.png)\r\n\r\nВам коли-небудь набридали типові селяни? Хочете, щоб вони продавали більше корисних речей? More Villagers має на меті виправити цю проблему, додавши кілька нових робочих місць для селян, з унікальними професіями, робочими місцями та покращеннями!\r\n\r\n",
         "image": "https://media.forgecdn.net/avatars/386/555/637575570334274568.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000033"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/more-villagers",
+            "https://www.curseforge.com/minecraft/mc-mods/more-villagers-fabric"
+        ],
+        "id": "000033",
+        "gameversion": "1.16.5",
+        "date": "31/05/2024 02:24:35",
+        "engine": "NeoForge, Forge, Fabric",
+        "categories": [
+            "Економіка",
+            "Моби",
+            "Корисні функції"
+        ]
     },
     {
         "title": "FTB Quests",
-        "description": "FTB Quests - це легкий мод для командних квестів, який дуже простий у використанні.",
-        "image": "https://media.forgecdn.net/avatars/275/363/637261948352026071.png",
+        "description": "FTB Quests - це легкий мод для командних квестів, який дуже простий у використанні.\r\n\r\n![](https://dist.creeper.host/FTB2/cdn/assets/b1/AOKB8t.webp)",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/972/571/256/256/638474884805475097.png",
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": [],
-        "id": "000034"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge",
+            "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"
+        ],
+        "id": "000034",
+        "gameversion": "1.12.2",
+        "date": "31/05/2024 02:28:09",
+        "engine": "NeoForge, Forge, Fabric",
+        "categories": [
+            "Бібліотеки",
+            "Управління",
+            "Соціальні",
+            "Корисні функції"
+        ]
     },
     {
         "title": "FTB Chunks",
-        "description": "Мод, який дозволяє вам захистити чанки. Він також має міні-мапу та велику!",
-        "image": "https://media.forgecdn.net/avatars/371/658/637541702367842170.png",
+        "description": "Мод, який дозволяє вам захищати вашу теріторію навколо через інтуєтивне меню. Він також має міні-мапу та велику мапу!\r\n\r\n<br>\r\n* Клацніть правою кнопкою миші в будь-якому місці мапи, щоб створити маршрутну точку.\r\n* Клацніть правою кнопкою миші на маршрутні точки і точки смерті, щоб редагувати або видалити їх.\r\n* Натисніть на кнопку \"Захоплені ділянки\", а потім клацніть лівою або правою кнопкою миші на мапі, щоб вибрати ділянки, які будуть належати вам. Клацніть лівою або правою кнопкою миші, утримуючи клавішу Shift, щоб увімкнути примусове завантаження.\r\n* Додайте людей у союзники за допомогою кнопки Союзники, щоб дозволити їм взаємодіяти з вашими шматками (нещодавно це було змінено, оновлення буде незабаром).\r\n* Якщо вони також додадуть вас як союзника, ви зможете ділитися з ними даними мапи.\r\n\r\n![](https://dist.creeper.host/FTB2/cdn/assets/b1/K5sXkH.webp)",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/972/574/256/256/638474885623941574.png",
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": [],
-        "id": "000035"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge",
+            "https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-fabric"
+        ],
+        "id": "000035",
+        "gameversion": "1.12.2",
+        "date": "31/05/2024 02:34:20",
+        "engine": "NeoForge, Forge, Fabric",
+        "categories": [
+            "Ігрові механіки",
+            "Бібліотеки",
+            "Соціальні",
+            "Корисні функції"
+        ]
     },
     {
         "title": "FTB Teams",
-        "description": "Бібліотека для модів, що використовують командне проходження, таких як FTB Chunks та FTB Quests. У квестах вона дозволяє кільком людям виконувати одні й ті самі завдання разом, у FTB Chunks - командну взаємодію між блоками без необхідності додавати їх до білого списку.",
-        "image": "https://media.forgecdn.net/avatars/296/128/637339524496399588.png",
+        "description": "Бібліотека для модів, що використовують командне проходження, таких як FTB Chunks та FTB Quests.\r\nУ квестах вона дозволяє кільком людям виконувати одні й ті самі завдання разом, у FTB Chunks - командну взаємодію між блоками без необхідності додавати їх до білого списку.\r\n\r\n![](https://cdn.apexminecrafthosting.com/img/uploads/2021/10/25183935/FTBIntTeam.png)",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/972/581/256/256/638474887222710106.png",
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": [],
-        "id": "000036"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric",
+            "https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge/screenshots"
+        ],
+        "id": "000036",
+        "gameversion": "1.12.2",
+        "date": "31/05/2024 02:37:24",
+        "engine": "NeoForge, Forge, Fabric",
+        "categories": [
+            "Ігрові механіки",
+            "Соціальні",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Refined Storage",
-        "description": "Мод для Minecraft, який пропонує гравцям мережеву систему зберігання, що дозволяє зберігати предмети та рідини в мережі пристроїв з можливістю масового розширення.",
+        "description": "Мод для Minecraft, який пропонує гравцям мережеву систему зберігання, що дозволяє зберігати предмети та рідини в мережі пристроїв з можливістю масового розширення.\r\n\r\nПредмети та рідини можна зберігати в одному з багатьох сховищ, які пропонує мод. Будь-які пристрої зберігання, підключені до однієї мережі, доступні гравцеві через один простий інтерфейс, що дозволяє гравцеві отримати доступ до інвентарю багатьох пристроїв через єдиний уніфікований графічний інтерфейс.\r\n\r\nЦей мод додає не лише рішення для зберігання, але й пристрої, які можна використовувати для маніпуляцій з предметами та блоками у світі та всередині системи, такі як імпортери, експортери, конструктори, руйнівники та багато іншого! У цьому моді також є пристрої, які дозволяють гравцеві налаштувати автоматичне створення, що дозволяє створювати складні рецепти у кілька простих кліків.\r\n\r\n![](https://cdn.modrinth.com/data/KDvYkUg3/images/61c9476ee1c48d3e6182483d4c624bd2ac456bc7.jpeg)",
         "image": "https://media.forgecdn.net/avatars/109/479/636379986745350648.png",
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "link": [],
-        "id": "000037"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/refined-storage",
+            "https://modrinth.com/mod/refined-storage"
+        ],
+        "id": "000037",
+        "gameversion": "1.12+",
+        "date": "31/05/2024 02:41:08",
+        "engine": "NeoForge, Forge",
+        "categories": [
+            "Економіка",
+            "Спорядження",
+            "Ігрові механіки",
+            "Управління",
+            "Зберігання",
+            "Технології",
+            "Корисні функції",
+            "Генерація створення"
+        ]
     },
     {
         "title": "Building Gadgets",
-        "description": "Іноді будівництво великих споруд може бути трохи нудним і забирати багато сил. Знаєте, не всі з нас великі будівельники! Dire's Building Gadgets має на меті зробити будівництво трохи простішим.",
+        "description": "Іноді будівництво великих споруд може бути трохи нудним і забирати багато сил. Знаєте, не всі з нас великі будівельники! Dire's Building Gadgets має на меті зробити будівництво трохи простішим.\r\n\r\n![](https://th.bing.com/th/id/OIP.GGQZGe1LMGG1UeRrxiHaiQAAAA?rs=1&pid=ImgDetMain)",
         "image": "https://media.forgecdn.net/avatars/161/452/636672128890190531.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000038"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/building-gadgets"
+        ],
+        "id": "000038",
+        "gameversion": "1.12.2+",
+        "date": "31/05/2024 02:44:26",
+        "engine": "NeoForge, Forge",
+        "categories": [
+            "Ігрові механіки",
+            "Управління",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Keymap",
-        "description": "Цей мод дозволяє вам призначати команди для клавіш, щоб спростити їх використання. Ви можете пов’язати кілька команд з однією клавішею, що дозволяє вам швидко виконувати складні дії.",
+        "description": "![](https://i.imgur.com/gAVOGCc.png)\r\nЦей мод дозволяє вам призначати команди для клавіш, щоб спростити їх використання. Ви можете пов’язати кілька команд з однією клавішею, що дозволяє вам швидко виконувати складні дії.\r\n\r\n* Тепер ви можете комбінувати будь-яку клавішу з кількома клавішами-модифікаторами (ctrl, alt, shift)!\r\n* Комбінації, як і раніше, відображатимуться як частина підказки призначених дій для віртуальних клавіш\r\n* Комбінації відображатимуться у вигляді маленької жовтої рамки всередині призначеної клавіші\r\n* Ви все ще можете призначати клавіші-модифікатори, як зазвичай\r\n* Дії не можуть мати однакову комбінацію клавіш\r\n\r\n![](https://raw.githubusercontent.com/Einjerjar/keymap/v2/images/2022-06-24_00.40.47.png)",
         "image": "https://media.forgecdn.net/avatars/565/905/637924187849245090.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
         "link": [
-            "https://modrinth.com/mod/keymap"
+            "https://modrinth.com/mod/keymap",
+            "https://www.curseforge.com/minecraft/mc-mods/keymap"
         ],
-        "id": "000039"
+        "id": "000039",
+        "gameversion": "1.17.1+",
+        "date": "31/05/2024 02:51:07",
+        "categories": [
+            "Бібліотеки",
+            "Корисні функції"
+        ],
+        "engine": "Fabric, Forge, Quilt"
     },
     {
         "title": "Crafting Tweaks",
-        "description": "Цей мод додає кнопки до багатьох підтримуваних сіток створення(включно з модифікованими), що дозволяють швидко обертати рецепт, відбалансувати або очищати сітку створення.",
+        "description": "Цей мод додає кнопки до багатьох підтримуваних таблиць крафтингу (включно з модифікованими), що дозволяють швидко обертати, балансувати або очищати сітку.\r\n\r\nКрім того, утримуючи клавішу Shift на кнопці балансу, ви також можете швидко розподілити один стос по всій сітці, клацнувши правою кнопкою миші на комірці з результатом, ви зможете створити відразу стос, а також є комбінація клавіш для стиснення стосів предметів до рецепту 3х3 або 2х2 за допомогою натискання клавіші.\r\n\r\n![](https://wsrv.nl/?url=https%3A%2F%2Fblay09.net%2Ffiles%2Fbrand%2Fcraftingtweaks.png&n=-1)",
         "image": "https://cdn.modrinth.com/data/DMu0oBKf/9f2a32d53d372659e464fd18be6d6c0ba2035b0d.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
         "link": [
-            "https://modrinth.com/mod/crafting-tweaks"
+            "https://modrinth.com/mod/crafting-tweaks",
+            "https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks",
+            "https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks-fabric"
         ],
-        "id": "000040"
+        "id": "000040",
+        "gameversion": "1.12.2+",
+        "date": "31/05/2024 02:58:45",
+        "engine": "NeoForge, Forge, Fabric",
+        "categories": [
+            "Управління",
+            "Корисні функції"
+        ]
     },
     {
         "title": "AE2 Tools",
-        "description": "мод, який додає доповнення Tools Complement до AE2 Tools.",
+        "description": "Мод, який додає доповнення Tools Complement до AE2 Tools.\r\nДодає екскаватори, молоти, ножі і серпи, виготовлені з матеріалів AE2 (Кварц, незер кварц, Флюїкс)",
         "image": "https://media.forgecdn.net/avatars/804/765/638171397362772174.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000041"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ae2_tools"
+        ],
+        "id": "000041",
+        "gameversion": "1.19.2",
+        "date": "31/05/2024 03:02:31",
+        "engine": "Forge",
+        "categories": [
+            "Спорядження"
+        ]
     },
     {
         "title": "AE2 Additions",
-        "description": "Це мод, який додає деякі функції для Applied Energetics 2, які зроблять ваше життя простішим.",
+        "description": "Це мод, який додає деякі функції для Applied Energetics 2, які зроблять ваше життя простішим.\r\n\r\n![](https://media.forgecdn.net/attachments/451/32/1acraftingstorages.png)",
         "image": "https://i.ibb.co/cth4wxg/pattern-provider-3th.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000042"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ae2-additions"
+        ],
+        "id": "000042",
+        "gameversion": "1.18.2",
+        "date": "31/05/2024 03:06:01",
+        "engine": "Forge",
+        "categories": [
+            "Пригоди",
+            "Управління",
+            "Зберігання",
+            "Технології",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Ae2 Things",
-        "description": "Додає більше карток більшого розміру, на яких можна зберігати нескінченно багато інформації ",
+        "description": "Комірки, які можуть зберігати 1k, 4k, 16k і 64k предметів без обмежень за типом.\r\nЦя комірка не має обмежень на тип, і один предмет вважається одним байтом.\r\nЧерез обмеження формату комірки ви втрачаєте 24 байти на кібібайт, але це невелика ціна за відсутність типів, чи не так? Зауважте, що вони дорожчі за звичайні комірки, оскільки потребують трохи незериту.\r\n\r\n![](https://i.imgur.com/KmZ5mAX.png)",
         "image": "https://media.forgecdn.net/avatars/475/528/637767573984958255.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
         "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ae2things",
+            "https://www.curseforge.com/minecraft/mc-mods/ae2-things-forge",
             "https://modrinth.com/mod/ae2things"
         ],
-        "id": "000043"
+        "id": "000043",
+        "gameversion": "1.18.2+",
+        "date": "31/05/2024 03:11:08",
+        "engine": "Forge, NeoForge, Fabric",
+        "categories": [
+            "Управління",
+            "Зберігання",
+            "Технології"
+        ]
     },
     {
         "title": "AE2 Wireless Terminal Library",
-        "description": "Він оснащений декількома бездротовими терміналами Applied Energistics 2 з підтримкою картки нескінченності, що дозволяє терміналам працювати звідусіль і навіть у різних вимірах.",
-        "image": "https://media.forgecdn.net/avatars/368/795/637537459177764432.png",
+        "description": "Він оснащений декількома бездротовими терміналами Applied Energistics 2 з підтримкою картки нескінченності, що дозволяє терміналам працювати звідусіль і навіть у різних вимірах.\r\n\r\n#### Предмети\r\n*Універсальний бездротовий термінал*\r\n- Продукт об'єднання двох бездротових терміналів\r\n- Підтримка карт нескінченого прискорення\r\n\r\n\r\n*Картка нескінченого прискорення*\r\n- Дозволяє використовувати бездротовий термінал створення на будь-якій відстані та з різних вимірів\r\n- Щоб використати, вставте картку в комірку для картки у графічному інтерфейсі бездротового терміналу",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/207/38/256/256/636963109603309672.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
         "link": [
             "https://www.curseforge.com/minecraft/mc-mods/ae2wtlib"
         ],
-        "id": "000044"
+        "id": "000044",
+        "gameversion": "",
+        "date": "31/05/2024 03:16:36",
+        "categories": [
+            "Управління",
+            "Зберігання",
+            "Технології"
+        ]
     },
     {
         "title": "Another Furniture",
-        "description": "Прикрашати свій дім стало ще простіше! Another Furniture додає різноманітні меблі, з метою збереження ванільного стилю та послідовних розмірів, враховуючи звичайні блоки та розміри гравців.",
+        "description": "Прикрашати свій дім стало ще простіше! Another Furniture додає різноманітні меблі, з метою збереження ванільного стилю та послідовних розмірів, враховуючи звичайні блоки та розміри гравців.\r\n\r\n![](https://i.imgur.com/QiboDom.jpg)",
         "image": "https://media.forgecdn.net/avatars/531/947/637854788299840042.png",
         "verified": false,
+        "semiverified": true,
+        "tooltip": "Окрім нашого перекладу ще є офіційний, можна знайти на CurseForge та Modrinth",
         "author": "СУМ",
         "completed": true,
-        "link": [],
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/another-furniture",
+            "https://modrinth.com/mod/another-furniture/versions"
+        ],
         "id": "000045",
-        "gameversion": "",
+        "gameversion": "1.18.1+",
         "categories": [
             "Декорації",
             "Спорядження",
             "Ігрові механіки"
-        ]
+        ],
+        "date": "31/05/2024 03:18:36",
+        "engine": "Forge, Fabric"
     },
     {
         "title": "Create Confectionery",
-        "description": "Цей мод є доповненням до Create і додає їжу, виготовлену з різних матеріалів. Він додає подрібнене какао, какао-масло, какао-порошок, білий шоколад, чорний шоколад, карамель, шоколадні цукерки, зефір...",
+        "description": "![](https://media.forgecdn.net/attachments/868/850/create_conf_banner.png)\r\n\r\nЦей мод є доповненням до Create і додає їжу, виготовлену з різних матеріалів. Він додає подрібнене какао, какао-масло, какао-порошок, білий шоколад, чорний шоколад, карамель, шоколадні цукерки, зефір...\r\n\r\n",
         "image": "https://media.forgecdn.net/avatars/798/624/638160519853126907.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000046"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/create-confectionery"
+        ],
+        "id": "000046",
+        "gameversion": "1.16.5+",
+        "date": "31/05/2024 03:22:38",
+        "engine": "Forge",
+        "categories": [
+            "Їжа",
+            "Технології"
+        ]
     },
     {
         "title": "Energy Meter",
-        "description": "Він додає простий блок, який можна використовувати для вимірювання швидкості передачі енергії. Він має екран, на якому завжди відображається поточна швидкість, щоб ви завжди були в курсі.",
+        "description": "Він додає простий блок, який можна використовувати для вимірювання швидкості передачі енергії. Він має екран, на якому завжди відображається поточна швидкість, щоб ви завжди були в курсі.\r\n\r\n![](https://media.forgecdn.net/attachments/397/786/preview.png)",
         "image": "https://cdn.modrinth.com/data/MbejSZ2E/9c4e54c297ec9e68a25fecc99848266d43ff9909.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000047"
+        "link": [
+            "https://modrinth.com/mod/energymeter",
+            "https://www.curseforge.com/minecraft/mc-mods/energymeter"
+        ],
+        "id": "000047",
+        "gameversion": "1.17.1",
+        "date": "31/05/2024 03:24:16",
+        "engine": "Forge",
+        "categories": [
+            "Ігрові механіки",
+            "Зберігання",
+            "Технології",
+            "Транспортування"
+        ]
     },
     {
         "title": "Integrated Dungeons and Structures",
-        "description": "Додає дуже деталізовані структури, використовуючи блоки та мобів з Quark, Alex's Mobs та Create та можливістю інтеграції з багатьма іншими модами.",
+        "description": "Integrated Dungeons and Structures (також відомий як IDAS) - це мод, який додає дуже деталізовані структури, використовуючи блоки і мобів з Quark, Alex's Mobs і Create, з можливістю інтеграції з багатьма іншими модами. Розробник пише: \"*Мені набридло встановлювати структурні моди в пак і блукати світом, лише щоб знайти ванільні предмети і нічого складного ніде. Я люблю детальні збірки та створення машин, тому вирішив створити мод, який додає саме те, чого мені не вистачало. Красиві та складні підземелля і споруди, наповнені історією, які повністю інтегровані в декілька основних модифікацій для кузні*\".\r\n\r\n![](https://cdn.modrinth.com/data/Z8OZShAU/images/47e3a12420a6c79af525e0b308639c821d0aa6fd.png)",
         "image": "https://media.forgecdn.net/avatars/532/548/637856256123510936.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000048"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/idas",
+            "https://modrinth.com/mod/idas"
+        ],
+        "id": "000048",
+        "gameversion": "1.16.5",
+        "date": "31/05/2024 03:28:19",
+        "engine": "NeoForge, Forge",
+        "categories": [
+            "Пригоди",
+            "Дивні",
+            "Генерація створення"
+        ]
     },
     {
         "title": "Immersive Posts",
-        "description": "Простіше кажучи, цей мод дозволяє вам мати дуже високі стовпи з різними типами на вибір, а не лише з обробленого дерева, алюмінію та сталі.",
+        "description": "Простіше кажучи, цей мод дозволяє вам мати дуже високі стовпи з різними типами матеріалів на вибір, а не лише з обробленого дерева, алюмінію та сталі.\r\n\r\nПросто візьміть стовп і матеріал на ваш вибір і клацніть правою кнопкою миші на ньому або на самих стовпах для кращої видимості.\r\n\r\n![](https://camo.githubusercontent.com/cde34ea7d5bc516707eb3d6a7bfec94bc0cd97e2747a032fe14e1f866b50df2f/68747470733a2f2f692e696d6775722e636f6d2f634356717446462e706e67)",
         "image": "https://cdn.modrinth.com/data/UXrbgsTE/icon.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
         "link": [
-            "https://modrinth.com/mod/immersiveposts"
+            "https://modrinth.com/mod/immersiveposts",
+            "https://www.curseforge.com/minecraft/mc-mods/immersiveposts"
         ],
-        "id": "000049"
+        "id": "000049",
+        "gameversion": "",
+        "date": "31/05/2024 03:31:13",
+        "categories": [
+            "Декорації",
+            "Технології",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Item Locks",
-        "description": "ItemLocks дозволяє вам заблокувати комірки у вашому інвентарі, щоб ви не могли переміщати предмети мимоволі.",
+        "description": "ItemLocks дозволяє вам заблокувати комірки для предметів у вашому інвентарі, щоб ви не могли переміщати предмети мимоволі. Уявімо ви потрапили в напружену PvP-ситуацію, або просто займаєтесь своїми справами, і раптом з'являється той самий хлопець? На щастя, ви скористалися цим модом, заблокували слот для меча і тримали зброю рівно, незважаючи на те, що в паніці натиснули Q.",
         "image": "https://cdn.modrinth.com/data/tJzrFuyy/44ebf30cca22d764ffffd3428bc7613e58e7a69f.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000050"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/itemlocks",
+            "https://modrinth.com/mod/itemlocks"
+        ],
+        "id": "000050",
+        "gameversion": "1.18.2+",
+        "date": "31/05/2024 03:34:32",
+        "engine": "NeoForge, Forge, Fabric",
+        "categories": [
+            "Бібліотеки",
+            "Управління",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Ma Enchants",
-        "description": "Додає нові зачарування для мечів, обладунків, луків чи інструментів.",
+        "description": "![](https://media.forgecdn.net/attachments/300/961/ench.png)\r\nДодає нові зачарування для мечів, обладунків, луків та інструментів.\r\nМожна вимкнути певні чари, які вам не потрібні ([ваш світ]/serverconfig/ma-enchants-server.cfg)",
         "image": "https://media.forgecdn.net/avatars/283/664/637294078643740683.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000051"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/ma-enchants"
+        ],
+        "id": "000051",
+        "gameversion": "",
+        "date": "31/05/2024 03:37:14",
+        "categories": [
+            "Спорядження",
+            "Магія"
+        ]
     },
     {
         "title": "Patchouli",
-        "description": "Мод, який має на меті надати просту у впровадженні документацію, засновану на даних, як для minecraft-модерів, так і для виробників модпаків.",
+        "description": "Мод, який має на меті надати просту у впровадженні путівників по модам, засновану на даних, як для minecraft-модерів, так і для виробників модпаків.\r\n\r\n#### Можливості\r\n* Створення контенту на основі даних, без коду, вам навіть не потрібен код patchouli для створення\r\n* Попередній перегляд тексту в грі\r\n* Розширена система форматування тексту з підтримкою макросів\r\n* Розблокування контенту на основі просування\r\n* Вкладені категорії та закладки для швидкої та зручної навігації\r\n* Кілька готових до використання типів сторінок: текстові та сторінки зображень\r\n* Багатоблокова візуалізація для легкого створення\r\n* Система шаблонів для створення власних типів сторінок\r\n* Безшовна інтеграція з модами, з творчою вкладкою та імітацією того, що книга з вашого мода\r\n* Кастомні візуальні ефекти та звуки\r\n* Легко локалізується на інші мови\r\n* Тонни інших зручних функцій!\r\n\r\n![](https://wsrv.nl/?url=https%3A%2F%2Fvioletmoon.org%2Fbranding%2Fhero%2Fpatchouli.png&n=-1)",
         "image": "https://cdn.modrinth.com/data/nU0bVIaL/130922464c30a3a61eb493ce71d2502b23f29905.png",
         "verified": false,
-        "author": "СУМ",
+        "semiverified": true,
+        "tooltip": "Окрім нашого перекладу ще є офіційний, можна знайти на CurseForge та Modrinth",
+        "author": "СУМ, unroman",
         "completed": true,
-        "link": [],
-        "id": "000052"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/patchouli",
+            "https://modrinth.com/mod/patchouli"
+        ],
+        "id": "000052",
+        "gameversion": "",
+        "date": "31/05/2024 03:42:37",
+        "engine": "NeoForge, Forge, Fabric, Quilt",
+        "categories": [
+            "Ігрові механіки",
+            "Бібліотеки",
+            "Управління"
+        ]
     },
     {
         "title": "Sophisticated Backpacks",
-        "description": "Ще один мод для рюкзаків, цього разу з рюкзаком, який ви можете розміщувати у світі, розфарбовувати у різні кольорові комбінації, покращувати.",
+        "description": "Ще один мод для рюкзаків, цього разу з рюкзаком, який ви можете розміщувати у світі, розфарбовувати у різні кольорові комбінації, покращувати.\r\n\r\n![](https://media.forgecdn.net/attachments/362/34/backpack_variants.png)",
         "image": "https://media.forgecdn.net/avatars/375/56/637549610342642859.png",
         "verified": true,
         "author": "СУМ",
@@ -823,17 +1093,40 @@
         "link": [
             "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks"
         ],
-        "id": "000053"
+        "id": "000053",
+        "gameversion": "1.16.3+",
+        "date": "31/05/2024 03:46:20",
+        "engine": "NeoForge, Forge",
+        "categories": [
+            "Пригоди",
+            "Спорядження",
+            "Управління",
+            "Зберігання",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Tesseract",
-        "description": "Тессеракт дозволяє транспортувати предмети, рідину та енергію. Тессеракти працюють на будь-якій відстані і навіть у різних вимірах! Використовуйте кілька каналів, щоб мати різні групи Тессерактів!",
+        "description": "![](https://imgur.com/SSzxBGy.png)\r\nТессеракт дозволяє транспортувати предмети, рідину та енергію. Тессеракти працюють на будь-якій відстані і навіть у різних вимірах! Використовуйте кілька каналів, щоб мати різні групи Тессерактів!\r\n\r\n![](https://imgur.com/UIhlvjA.png)",
         "image": "https://i.ibb.co/4MqXLNs/off.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000054"
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/tesseract",
+            "https://modrinth.com/mod/tesseract"
+        ],
+        "id": "000054",
+        "gameversion": "1.12+",
+        "date": "31/05/2024 03:49:08",
+        "engine": "NeoForge, Forge, Fabric, Quilt",
+        "categories": [
+            "Ігрові механіки",
+            "Управління",
+            "Зберігання",
+            "Технології",
+            "Транспортування"
+        ]
     },
     {
         "title": "Trading Post",

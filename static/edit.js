@@ -122,8 +122,8 @@ function displayCards() {
                 if (!a.date) return -1;
                 if (!b.date) return 1;
                 
-                var dateA = new Date(a.date.split('/').reverse().join('-'));
-                var dateB = new Date(b.date.split('/').reverse().join('-'));
+                var dateB = new Date(b.date.split('/').join('_').split(' ').join('-').split('.').join('_'));
+                var dateA = new Date(a.date.split('/').join('_').split(' ').join('-').split('.').join('_'));
                 return dateA - dateB;
             });
             
