@@ -1130,49 +1130,87 @@
     },
     {
         "title": "Trading Post",
-        "description": "Додає один простий блок, який при використанні дозволяє торгувати з усіма жителями села в конфігурованій області одночасно. Таблиця виглядає дуже вигадливо і включає в себе симпатичну анімацію!",
-        "image": "https://i.ibb.co/6s90dKc/trading-post-top.png",
+        "description": "![](https://i.imgur.com/UzgNFIB.png)\r\n\r\nДодає один простий блок, який при використанні дозволяє торгувати з усіма жителями села в конфігурованій області одночасно. Таблиця виглядає дуже вигадливо і включає в себе симпатичну анімацію!\r\n\r\n![](https://wsrv.nl/?url=https%3A%2F%2Fmedia.forgecdn.net%2Fattachments%2F402%2F860%2F2021-10-21_22.png&n=-1)",
+        "image": "https://cdn.modrinth.com/data/8pcjMDgj/icon.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
         "link": [
-            "https://modrinth.com/mod/trading-post"
+            "https://modrinth.com/mod/trading-post",
+            "https://www.curseforge.com/minecraft/mc-mods/trading-post"
         ],
-        "id": "000055"
+        "id": "000055",
+        "gameversion": "1.19+",
+        "date": "31/05/2024 22:05:48",
+        "engine": "NeoForge, Forge, Fabric",
+        "categories": [
+            "Моби",
+            "Транспортування",
+            "Корисні функції"
+        ]
     },
     {
         "title": "Trashcans",
-        "description": "Додає сміттєві баки, які можна використовувати для знищення предметів, рідин та енергії! Предмети та рідини можна заносити до білого або чорного списку, а також встановлювати ліміт передачі енергії!",
+        "description": "![Trash Cans](https://imgur.com/nJsqdbd.png)\r\n\r\n**Trash Cans** - додає як не дивно  **смітники**, що можжуть бути для предметів, рідин та енергії! **Рідинні та предметні** можуть мати **білий або чорний лист**, а смітний для енергії - **ліміт споживання**!\r\n\r\n* Смітник предметів вилучає предмети!\r\n* Предмети можна фільтрувати у графічному інтерфейсі\r\n\r\n![Recipe for the Item Trash Can](https://wsrv.nl/?url=https%3A%2F%2Fmedia.forgecdn.net%2Fattachments%2Fthumbnails%2F301%2F933%2F310%2F172%2Fitem-trash-can-recipe.png&n=-1) \r\n\r\n*   Рідинний вилучає гази та рідинни\r\n*   Рідини також можна фільтрувати через інтерфейс\r\n\r\n![Recipe for the Fluid Trash Can](https://wsrv.nl/?url=https%3A%2F%2Fmedia.forgecdn.net%2Fattachments%2Fthumbnails%2F301%2F934%2F310%2F172%2Fliquid-trash-can-recipe.png&n=-1) \r\n\r\n*   Енергетичний смітник - вилучає енергію\r\n*   Через інтерфейс можна встановити ліміт споживання\r\n\r\n![Recipe for the Energy Trash Can](https://wsrv.nl/?url=https%3A%2F%2Fmedia.forgecdn.net%2Fattachments%2Fthumbnails%2F301%2F935%2F310%2F172%2Fenergy-trash-can-recipe.png&n=-1) \r\n\r\n* Цей смітник вилучає все відразу - предмети, рідини та енергію!\r\n* Фільтри для предметів і рідин\r\n* Обмеження на передачу енергії\r\n\r\n![Recipe for the Ultimate Trash Can](https://wsrv.nl/?url=https%3A%2F%2Fmedia.forgecdn.net%2Fattachments%2Fthumbnails%2F301%2F936%2F310%2F172%2Fultimate-trash-can-recipe.png&n=-1) ",
         "image": "https://cdn.modrinth.com/data/4QrnfueM/icon.png",
         "verified": true,
         "author": "СУМ",
         "completed": true,
         "link": [
-            "https://modrinth.com/mod/trash-cans"
+            "https://modrinth.com/mod/trash-cans",
+            "https://www.curseforge.com/minecraft/mc-mods/trash-cans"
         ],
-        "id": "000056"
+        "id": "000056",
+        "gameversion": "1.12.2+",
+        "date": "31/05/2024 22:15:50",
+        "categories": [
+            "Ігрові механіки",
+            "Технології",
+            "Транспортування",
+            "Корисні функції"
+        ],
+        "engine": "Neoforge, Forge, Fabric, Quilt"
     },
     {
         "title": "Create Deco",
-        "description": "Додає кілька нових типів декоративних блоків, які використовують переваги палітри та виробничих можливостей Create.",
+        "description": "Create Deco - це найкращий мод для підняття ваших індустріальних, урбаністичних чи стімпанк будівель на новий рівень.\r\nЗ усім, від подіумів до ламп, від транспортних контейнерів до листового металу, Create Deco бездоганно інтегрується з існуючим набором будівельних блоків у Create.\r\n\r\n![](https://cdn.modrinth.com/data/sMvUb4Rb/images/0af13da73a36b0e152b4311c632297e7e558b25e.png)\r\n\r\n### Додатковий декор\r\nОкрім наборів металевих блоків, мод включає в себе варіанти декору, такі як таблички з різними символами, які можуть бути використані для позначення пожежної небезпеки або забороненої зони.\r\n\r\n#### Транспортні контейнери та таблички\r\n\r\nТакож є транспортні контейнери у всіх 16 кольорах, які діють як cховища предметів, але зі свіжим новим виглядом.\r\n\r\n#### Цегла\r\nУ Create Deco є кілька нових кольорів цегли, які можна розрізати або модифікувати, щоб урізноманітнити зовнішній вигляд.\r\n\r\n#### Варіанти кольорів цегли\r\n\r\nЦі цеглини можуть бути короткими, довгими, плитчастими, з тріщинами або мохом, і всі вони мають варіант сходинок та плит.\r\n\r\n![](https://cdn.modrinth.com/data/sMvUb4Rb/images/d4e494b155cc1aec9859cd028fedcbbe84069c95.png)",
         "image": "https://media.forgecdn.net/avatars/412/231/637631343026186429.png",
         "verified": false,
         "author": "СУМ",
         "completed": true,
-        "link": [],
-        "id": "000057"
+        "link": [
+            "https://modrinth.com/mod/create-deco",
+            "https://www.curseforge.com/minecraft/mc-mods/create-deco"
+        ],
+        "id": "000057",
+        "gameversion": "1.16.5+",
+        "date": "31/05/2024 22:22:46",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Декорації",
+            "Зберігання",
+            "Технології"
+        ]
     },
     {
         "title": "Terrestria",
-        "description": "Terrestria покращує ігровий процес завдяки додаванню 17 основних біомів, які підтримуються 24 складовими біомами, 9 нових типів деревини, а також широкого вибору листя, що надає новий широкий вибір ландшафтів, які освіжають гру.",
-        "image": "https://cdn.modrinth.com/data/lsUDPMOT/icon.png",
+        "description": "![](https://i.imgur.com/UUmu4Yo.png)\r\n\r\nTerrestria покращує ігровий процес завдяки додаванню 17 основних біомів, які підтримуються 24 складовими біомами, 9 нових типів деревини, а також широкого вибору листя, що надає новий широкий вибір ландшафтів, які освіжають гру.\r\n\r\nМета Terrestria - стати найбільш відшліфованим і візуально привабливим модом про біоми для Minecraft, і з цією метою розробники інтенсивно працювали над відбором, деталізацією та вдосконаленням біомів, поки вони не стануть виглядати абсолютно приголомшливо. Замість того, щоб додавати тонни різних біомів, ми зосередилися на додаванні невеликої кількості біомів, а потім наповнили їх великою кількістю деталей і компонентів. Це в цілому призводить до більш згуртованого досвіду у порівнянні з існуючими модовими біомами.\r\n\r\n![](https://cdn.modrinth.com/data/lsUDPMOT/images/29258b1fa25834678b770d7f5c293a9ee3d21d1e.png)",
+        "image": "https://cdn.modrinth.com/data/lsUDPMOT/37bf53575f1767f27e1f99b1a0d355031c013fa3.webp",
         "verified": false,
         "author": "СУМ",
         "completed": true,
         "link": [
-            "https://modrinth.com/mod/terrestria"
+            "https://modrinth.com/mod/terrestria",
+            "https://www.curseforge.com/minecraft/mc-mods/terrestria"
         ],
-        "id": "000058"
+        "id": "000058",
+        "gameversion": "1.16.5+",
+        "date": "31/05/2024 22:28:17",
+        "categories": [
+            "Пригоди",
+            "Генерація створення"
+        ],
+        "engine": "Fabric, Quilt"
     },
     {
         "title": "Advanced Reborn",
@@ -2110,9 +2148,9 @@
             "Управління"
         ],
         "semiverified": true,
-        "description": "Trinkets додає до Minecraft нові комірки. Групи комірок - це колекції для певної частини тіла або більш невизначеної області. За замовчуванням існує 6 груп комірок (голова, груди, ноги, ступні, кисті рук, руки), але за бажанням можна додати більше груп. Інтерфейс Trinkets інтуїтивно зрозумілий, доступний і намагається покінчити з безладом. Його система означає, що у вас ніколи не буде комірки, яка ні для чого не використовується, оскільки моди роблять запити на ті комірки, яких потребують.\r\n\r\nTranslated with www.DeepL.com/Translator (free version)",
+        "description": "Trinkets додає до Minecraft нові комірки. Групи комірок - це колекції для певної частини тіла або більш невизначеної області. За замовчуванням існує 6 груп комірок (голова, груди, ноги, ступні, кисті рук, руки), але за бажанням можна додати більше груп. Інтерфейс Trinkets інтуїтивно зрозумілий, доступний і намагається покінчити з безладом.\r\nЙого система означає, що у вас ніколи не буде комірки, яка ні для чого не використовується, оскільки моди роблять запити на ті комірки, яких потребують.\r\n\r\n![](https://cdn-raw.modrinth.com/data/5aaWibi9/images/56224f13887cdd914a9624a18eb845dae0bcdfc0.png)",
         "image": "https://cdn.modrinth.com/data/5aaWibi9/icon.png",
-        "verified": true,
+        "verified": false,
         "author": "СУМ",
         "completed": true,
         "tooltip": "Окрім нашого перекладу ще є офіційний, можна знайти на CurseForge або Modrinth",
@@ -2121,7 +2159,8 @@
             "https://modrinth.com/mod/trinkets",
             "https://www.curseforge.com/minecraft/mc-mods/trinkets"
         ],
-        "id": "000150"
+        "id": "000150",
+        "date": "31/05/2024 22:02:26"
     },
     {
         "title": "AdventureZ",
@@ -2434,5 +2473,48 @@
         ],
         "id": "000164",
         "date": "31/05/2024 18:20:16"
+    },
+    {
+        "title": "Just Enough Breeding (JEBr)",
+        "gameversion": "1.15.2",
+        "engine": "NeoForge, Forge, Fabric, Quilt",
+        "categories": [
+            "Управління",
+            "Моби",
+            "Корисні функції"
+        ],
+        "description": "Цей мод додає додаткову категорію JEI/REI/EMI, яка надає наступну інформацію:\r\n\r\n* Показує предмети, необхідні мобам для розмноження.\r\n* Відображає яйце моба для легкого пошуку.\r\n* Показує кількість вироблених яєць, якщо моб відкладає яйця після розмноження.\r\n* Якщо моба потрібно приручити перед розмноженням, до його імені буде додано \"(приручений)\".\r\n\r\n![](https://cdn.modrinth.com/data/9Pk89J3g/images/52d772df289c00b9c73d5ebd5280e2992441a9f9.png)",
+        "image": "https://cdn.modrinth.com/data/9Pk89J3g/86043395c6a9e34380d3604e0c9cbbebc23b0b7a.png",
+        "verified": true,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/justenoughbreeding",
+            "https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding"
+        ],
+        "id": "000165",
+        "date": "03/06/2024 01:29:05"
+    },
+    {
+        "title": "",
+        "gameversion": "",
+        "engine": "",
+        "categories": [
+            "Управління",
+            "Корисні функції"
+        ],
+        "description": "Screenshot Viewer - це мод, який дозволяє переглядати скріншоти, які ви зробили під час гри! (включно з випадковими, зробленими під час спроби натиснути F3).\r\n\r\nВін поставляється з чудовим графічним інтерфейсом і внутрішньою конфігурацією завдяки CatConfigMC, бібліотеці, яку розробник сам розробив.\r\n\r\n![](https://raw.githubusercontent.com/LGatodu47/ScreenshotViewer/master/img/ingame_screenshots_view.png)",
+        "image": "https://cdn.modrinth.com/data/laNoi025/1bbd371a465710708ce253fad6f9f8e7c8e3e56e.png",
+        "verified": false,
+        "author": "medustyy ",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/screenshot-viewer",
+            "https://www.curseforge.com/minecraft/mc-mods/screenshot-viewer"
+        ],
+        "id": "000166",
+        "date": "03/06/2024 01:32:40"
     }
 ]
