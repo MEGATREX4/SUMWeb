@@ -2,6 +2,11 @@ from flask import Flask, render_template, request, jsonify, redirect, url_for
 import json
 import os
 from datetime import datetime
+import subprocess
+
+def run_sitemap_script():
+    # Run the sitemap.py script
+    subprocess.run(["python", "sitemap.py"])
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -60,6 +65,9 @@ def save_record(data):
     # Write the updated records back to the file
     with open(filename, 'w', encoding='utf-8') as file:
         json.dump(records, file, indent=4, ensure_ascii=False)
+    run_sitemap_script()
+    print("Sitemap updated successfully!")
+
 
 @app.route('/')
 def home():
@@ -111,6 +119,8 @@ def create_record():
 
             print("New Record:", new_record)  # Debug message to check new record
             save_record(new_record)  # Save the new record with the correct source
+            run_sitemap_script()
+            print("Sitemap updated successfully!")
             return redirect(url_for('home'))  # Redirect to the home page after creating the record
         else:
             print("Error: Source not found in form data")
@@ -262,7 +272,9 @@ def edit_record():
 
         with open('other.json', 'w', encoding='utf-8') as other_file:
             json.dump(other_data, other_file, indent=4, ensure_ascii=False)
-        
+        run_sitemap_script()
+        print("Sitemap updated successfully!")
+
         return redirect(url_for('home'))
 
 
