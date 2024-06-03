@@ -2516,5 +2516,114 @@
         ],
         "id": "000166",
         "date": "03/06/2024 01:36:24"
+    },
+    {
+        "title": "Map Atlases",
+        "gameversion": "1.16.2+",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Пригоди",
+            "Спорядження",
+            "Корисні функції"
+        ],
+        "description": "![](https://github.com/Pepperoni-Jabroni/MapAtlases/assets/17690401/3c934d54-99ca-4f66-b3fd-5865ea2a3d98)  \r\n  \r\nМіні-мапа/мод світогляду, що використовує ванільні мапи і називається \"Атлас\". \r\n--------\r\n\r\n![crafting_toast](https://wsrv.nl/?url=https%3A%2F%2Fuser-images.githubusercontent.com%2F17690401%2F206921288-fa262fb0-e294-409c-b0d8-9321ab6dbadd.png&n=-1)\r\n\r\nАтлас може бути створений шляхом комбінування:\r\n\r\n* Заповнену мапу (мапу-джерело)\r\n* Книгу\r\n* І щось липке (за замовчуванням - Слиз або пляшечка меду)\r\n\r\nМапа-джерело визначає масштаб атласу. Хто б міг подумати, що все, що потрібно було зробити, щоб отримати міні-мапу, - це приклеїти мапу до книги?\r\n\r\n![expanding_toast](https://wsrv.nl/?url=https%3A%2F%2Fuser-images.githubusercontent.com%2F17690401%2F206921556-f865f820-0aba-4db3-a14f-7f5646b401a0.png&n=-1)\r\n\r\n* Ви можете покласти як заповнені, так і порожні мапи з атласом в сітку створення, щоб вставити будь-який тип мапи в нього.\r\n* Для додавання заповнених мап і порожніх мап також можна використовувати картографічний стіл.\r\n* Заповнені мапи, що додаються, мають бути однакового масштабу.\r\n* У кожному Атласі може бути максимум 512 карт (налаштовується/перемикається).\r\n* Ви можете використовувати ваш атлас разом з ножицями у сітці створення, щоб видалити мапи з Атласу.\r\n<br>\r\n-----------------------------------------------\r\n<br>\r\n\r\n![2022-06-24_19 48 21](https://wsrv.nl/?url=https%3A%2F%2Fuser-images.githubusercontent.com%2F17690401%2F175755670-3819eca7-cbc4-4be5-a7c8-3d4286dacd19.png&n=-1)\r\n\r\n![java_VKNugiTAlO (online-video-cutter](https://wsrv.nl/?url=https%3A%2F%2Fuser-images.githubusercontent.com%2F17690401%2F182008727-dd3a0d38-b493-4367-8b9e-cf873442373a.gif&n=-1)\r\n\r\n\r\n\r\n![2022-11-17_18 16 44](https://wsrv.nl/?url=https%3A%2F%2Fuser-images.githubusercontent.com%2F17690401%2F202605175-ddc836c3-bc1e-4650-a9ae-8df7c377bfa7.png&n=-1)",
+        "image": "https://cdn.modrinth.com/data/C255PPUX/icon.png",
+        "verified": true,
+        "author": "Altegar, medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/map-atlases",
+            "https://www.curseforge.com/minecraft/mc-mods/map-atlases",
+            "https://www.curseforge.com/minecraft/mc-mods/map-atlases-forge"
+        ],
+        "id": "000167",
+        "date": "03/06/2024 14:50:32"
+    },
+    {
+        "title": "Potion Blender",
+        "gameversion": "1.19.2+",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Ігрові механіки",
+            "Зберігання",
+            "Корисні функції"
+        ],
+        "description": "Простий, але дуже цікавий мод на зміну механіки створення зілля.\r\n\r\n* Створення казана для зіль: Створіть спеціальний казан, клацнувши правою кнопкою миші на багатті з ванільним казаном.\r\n* Змішування зілля: Почніть з базового зілля (не Сплеск або Затягуюче) і додайте до нього ще два, щоб поєднати ефекти.\r\n* Фінальне варіння: виберіть інгредієнт (Нічна бородавка, Порох або Подих Дракона), щоб визначити тип зілля, і дочекайтеся, поки воно змішається.\r\n* Накладання ефектів: Додавання одного і того ж ефекту кілька разів збільшує силу, але зменшує тривалість; миттєві ефекти не можна складати.\r\nДля детальної конфігурації та оновлень зверніться до вікі та файлу ``` .minecraft/config/potionblender/potion_blender_config.json. ```\r\n<br>\r\n![](https://raw.githubusercontent.com/motivational-dragon/Potion-Blender/main/img/potion_craft.gif)",
+        "image": "https://cdn.modrinth.com/data/xe4saW9d/34e924f836ddbc449ab3cf51ace610c064f5831c.gif",
+        "verified": true,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/potion-blender",
+            "https://modrinth.com/mod/potion-blender"
+        ],
+        "id": "000168",
+        "date": "03/06/2024 14:48:53"
+    },
+    {
+        "title": "MineTraps",
+        "gameversion": "1.12+",
+        "engine": "NeoForge, Forge",
+        "categories": [
+            "Дивні",
+            "Декорації",
+            "Спорядження"
+        ],
+        "description": "![](https://raw.githubusercontent.com/XxRexRaptorxX/MineTraps/main/src/main/resources/logo.png)\r\n\r\nЦей мод додає кілька нових пасток і блоків, таких як міни, ведмежі пастки, пастки з цвяхів, токсичні міни, шипи та багато іншого!\r\n\r\nПобудуйте власний бункер або захистіть свою базу колючим дротом та перешкодами\r\n\r\n![](https://i.imgur.com/zSZsVwv.png)",
+        "image": "https://cdn.modrinth.com/data/1TVTyRG9/99fdaac1d89f81d01204272098dbf84a320a21b5.png",
+        "verified": true,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/minetraps",
+            "https://www.curseforge.com/minecraft/mc-mods/minetraps"
+        ],
+        "id": "000169",
+        "date": "03/06/2024 14:57:09"
+    },
+    {
+        "title": "Clean Tooltips",
+        "gameversion": "1.19.2",
+        "engine": "NeoForge, Forge, Fabric",
+        "categories": [
+            "Спорядження",
+            "Корисні функції"
+        ],
+        "description": "Ви коли-небудь відчували, що стандартні спливаючі підказки можна було б трохи покращити? Тоді це саме те, що ви шукаєте.\r\n\r\nГоловним чином, мод переглядає спосіб відображення заклинань у спливаючій підказці:\r\n\r\n* Вони тепер мають власну підкатегорію \"Зачарування:\"\r\n* Кольорове кодування, щоб легше було відрізнити добрі заклинання (зелений колір) від проклять (червоний)\r\n* Заклинання максимального рівня відображатимуться золотим кольором\r\n* Прокляття завжди впорядковані внизу списку\r\n\r\n![](https://cdn.modrinth.com/data/vMoHe8uI/images/c14297cb39a23c1a2a5f50d90c6d23efe681ea20.png)\r\n\r\nКрім того, були покращені й інші частини:\r\n\r\n* Колір на пофарбованих предметах тепер дійсно показує використаний колір\r\n* Пошкоджені предмети показують залишкову міцність у підказці\r\n\r\n![](https://cdn.modrinth.com/data/vMoHe8uI/images/fda90f7739ffda59decfeffa64e4cb8288d852c3.png)",
+        "image": "https://cdn.modrinth.com/data/vMoHe8uI/2ece29f22b84e678756adcbcc094c004daeb6973.png",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/clean-tooltips",
+            "https://www.curseforge.com/minecraft/mc-mods/clean-tooltips"
+        ],
+        "id": "000170",
+        "date": "03/06/2024 15:02:13"
+    },
+    {
+        "title": "Just Enough Professions (JEP)",
+        "gameversion": "1.16.5+",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Управління",
+            "Корисні функції"
+        ],
+        "description": "Цей мод додає нову функціональність до JEI. Ця нова функціональність дозволяє користувачеві визначити, які робочі столи потрібні для кожної професії селянина.\r\n\r\nДля цього ви можете використати клавішу використання JEI (за замовчуванням: U) на смарагді або яйці селянина, і вона покаже список усіх професій селян. Якщо ви хочете дізнатися, який мод додав професію, ви можете утримувати клавішу Shift, щоб відобразити ідентифікатор мода навпроти професії.\r\n\r\n![](https://media.forgecdn.net/attachments/309/201/2020-08-20_11.png)\r\n\r\n",
+        "image": "https://cdn.modrinth.com/data/kB56GtWA/icon.png",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/just-enough-professions-jep",
+            "https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep"
+        ],
+        "id": "000171",
+        "date": "03/06/2024 15:07:05"
     }
 ]
