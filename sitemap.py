@@ -1,5 +1,5 @@
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 
 # Define the file paths
 mods_file_path = 'mods.json'
@@ -17,14 +17,14 @@ def extract_ids(file_path):
 mods_ids = extract_ids(mods_file_path)
 other_ids = extract_ids(other_file_path)
 
-# Combine all IDs
-all_ids = mods_ids + other_ids
+# Combine all IDs and sort them
+all_ids = sorted(mods_ids + other_ids, key=lambda x: int(x))
 
 # Base URL for sitemap
 base_url = "https://sumtranslate.netlify.app/item.html?id="
 
-# Current date and time
-current_time = datetime.utcnow().isoformat() + 'Z'
+# Current date and time in UTC
+current_time = datetime.now(timezone.utc).isoformat()
 
 # Generate the sitemap URLs
 sitemap_entries = []
@@ -37,9 +37,14 @@ for item_id in all_ids:
     </url>"""
     sitemap_entries.append(sitemap_entry)
 
-# Create the sitemap XML content
+# Create the sitemap XML content with additional namespaces
 sitemap_xml = f"""<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 {''.join(sitemap_entries)}
 </urlset>"""
 
