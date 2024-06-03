@@ -12,6 +12,7 @@
     height: 100px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: var(--medium-border-radius);
 }
 

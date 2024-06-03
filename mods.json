@@ -259,14 +259,15 @@
             "https://modrinth.com/mod/nethers-delight"
         ],
         "id": "000013",
-        "gameversion": "",
-        "date": "30/05/2024 21:10:52",
+        "gameversion": "1.19+",
+        "date": "03/06/2024 16:12:32",
         "categories": [
             "Пригоди",
             "Декорації",
             "Їжа",
             "Моби"
-        ]
+        ],
+        "engine": "Forge, Fabric"
     },
     {
         "title": "Nether's Cruelty",
@@ -1003,7 +1004,7 @@
     },
     {
         "title": "Immersive Posts",
-        "description": "Простіше кажучи, цей мод дозволяє вам мати дуже високі стовпи з різними типами матеріалів на вибір, а не лише з обробленого дерева, алюмінію та сталі.\r\n\r\nПросто візьміть стовп і матеріал на ваш вибір і клацніть правою кнопкою миші на ньому або на самих стовпах для кращої видимості.\r\n\r\n![](https://camo.githubusercontent.com/cde34ea7d5bc516707eb3d6a7bfec94bc0cd97e2747a032fe14e1f866b50df2f/68747470733a2f2f692e696d6775722e636f6d2f634356717446462e706e67)",
+        "description": "Простіше кажучи, цей мод дозволяє вам мати дуже високі стовпи з різними типами матеріалів на вибір, а не лише з обробленого дерева, алюмінію та сталі.\r\n\r\nПросто візьміть стовп і матеріал на ваш вибір і клацніть правою кнопкою миші на ньому або на самих стовпах для кращої видимості.\r\n\r\n![](https://camo.githubusercontent.com/cde34ea7d5bc516707eb3d6a7bfec94bc0cd97e2747a032fe14e1f866b50df2f/68747470733a2f2f692e696d6775722e636f6d2f634356717446462e706e67)\r\n\r\n![](https://cdn.modrinth.com/data/UXrbgsTE/images/43c7021fc4da950d69147f5d82395a67fe52617d.png)",
         "image": "https://cdn.modrinth.com/data/UXrbgsTE/icon.png",
         "verified": true,
         "author": "СУМ",
@@ -1013,13 +1014,14 @@
             "https://www.curseforge.com/minecraft/mc-mods/immersiveposts"
         ],
         "id": "000049",
-        "gameversion": "",
-        "date": "31/05/2024 03:31:13",
+        "gameversion": "1.16.5",
+        "date": "03/06/2024 16:11:46",
         "categories": [
             "Декорації",
             "Технології",
             "Корисні функції"
-        ]
+        ],
+        "engine": "Forge"
     },
     {
         "title": "Item Locks",
@@ -1053,12 +1055,13 @@
             "https://www.curseforge.com/minecraft/mc-mods/ma-enchants"
         ],
         "id": "000051",
-        "gameversion": "",
-        "date": "31/05/2024 03:37:14",
+        "gameversion": "1.16.5+",
+        "date": "03/06/2024 16:10:24",
         "categories": [
             "Спорядження",
             "Магія"
-        ]
+        ],
+        "engine": "Forge"
     },
     {
         "title": "Patchouli",
@@ -1074,8 +1077,8 @@
             "https://modrinth.com/mod/patchouli"
         ],
         "id": "000052",
-        "gameversion": "",
-        "date": "31/05/2024 03:42:37",
+        "gameversion": "1.12+",
+        "date": "03/06/2024 15:56:31",
         "engine": "NeoForge, Forge, Fabric, Quilt",
         "categories": [
             "Ігрові механіки",
@@ -2476,7 +2479,7 @@
     },
     {
         "title": "Just Enough Breeding (JEBr)",
-        "gameversion": "1.15.2",
+        "gameversion": "1.15.2+",
         "engine": "NeoForge, Forge, Fabric, Quilt",
         "categories": [
             "Управління",
@@ -2494,7 +2497,7 @@
             "https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding"
         ],
         "id": "000165",
-        "date": "03/06/2024 01:29:05"
+        "date": "03/06/2024 15:14:39"
     },
     {
         "title": "Screenshot Viewer",
@@ -2586,7 +2589,7 @@
     },
     {
         "title": "Clean Tooltips",
-        "gameversion": "1.19.2",
+        "gameversion": "1.19.2+",
         "engine": "NeoForge, Forge, Fabric",
         "categories": [
             "Спорядження",
@@ -2603,7 +2606,7 @@
             "https://www.curseforge.com/minecraft/mc-mods/clean-tooltips"
         ],
         "id": "000170",
-        "date": "03/06/2024 15:02:13"
+        "date": "03/06/2024 15:14:24"
     },
     {
         "title": "Just Enough Professions (JEP)",
@@ -2625,5 +2628,215 @@
         ],
         "id": "000171",
         "date": "03/06/2024 15:07:05"
+    },
+    {
+        "title": "Ender Mail",
+        "gameversion": "1.12.2+",
+        "engine": "Forge",
+        "categories": [
+            "Пригоди",
+            "Дивні",
+            "Управління",
+            "Соціальні",
+            "Зберігання",
+            "Транспортування",
+            "Корисні функції"
+        ],
+        "description": "Ender Mail дозволяє вам наймати ендерменів, які доставлятимуть ваші посилки в будь-яку точку світу.\r\n\r\n* Створіть пакунки та заповніть їхні 5 слотів предметами, які потрібно доставити\r\n* Поставте штамп на пакунок, щоб визначити місце доставки\r\n* Клацніть правою кнопкою миші з контролером пакунків, щоб викликати листоношу Ендера, який доставить ваш пакунок\r\n* Клацніть правою кнопкою миші на заштампованому пакунку, присівши, щоб зняти штамп і отримати доступ до його вмісту\r\n* Пакунки можна забрати як предмети, що зберігають свій інвентар\r\n* Пакунки також можна доставити до шафки за їхніми унікальними ідентифікаторами\r\n\r\n",
+        "image": "https://cdn.modrinth.com/data/WrQH56oT/28f0dd0b2e5ef5c9936ea07a26ac4a42cc1e1d6a.png",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/bukkit-plugins/endermail",
+            "https://modrinth.com/mod/ender-mail"
+        ],
+        "id": "000172",
+        "date": "03/06/2024 15:14:06"
+    },
+    {
+        "title": "Ping Wheel",
+        "gameversion": "1.18+",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Управління",
+            "Соціальні",
+            "Корисні функції"
+        ],
+        "description": "Сучасні кооперативні ігри часто дозволяють гравцям спілкуватися за допомогою \"пінгів\" для позначення ігрових локацій.\r\n\r\nЗа замовчуванням для пінгу використовується комбінація клавіш \"Mouse5\". Утримуйте \"лівий Alt\", щоб бачити імена на пінгах інших.\r\nНалаштування можна змінити за допомогою /pingwheel config або Mod Menu.\r\nДодаткову інформацію можна знайти на вікі.\r\n\r\n![](https://cdn-raw.modrinth.com/data/QQXAdCzh/images/2c155a7af78d66174afcc1adc7efdbc8eefa05be.png)",
+        "image": "https://cdn.modrinth.com/data/QQXAdCzh/7674cb2cf2241f981e985af91bdf24209c56b024.png",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/ping-wheel",
+            "https://www.curseforge.com/minecraft/mc-mods/ping-wheel"
+        ],
+        "id": "000173",
+        "date": "03/06/2024 15:17:54"
+    },
+    {
+        "title": "Iron's Spells 'n Spellbooks",
+        "gameversion": "1.18.2+",
+        "engine": "NeoForge, Forge",
+        "categories": [
+            "Пригоди",
+            "Спорядження",
+            "Їжа",
+            "Ігрові механіки",
+            "Магія",
+            "Управління",
+            "Моби",
+            "Зберігання",
+            "Транспортування",
+            "Корисні функції",
+            "Генерація створення"
+        ],
+        "description": "Магічний мод, що додає класичне фентезі заклинань з рольових ігор.\r\n<br>\r\n![](https://wsrv.nl/?url=https%3A%2F%2Firon431.github.io%2FIrons-Spellbooks-Docs%2Fimg%2Fspellbooks-title-small-background.png&n=-1)\r\n<br>\r\nОсобливості:\r\n\r\n* Понад 60 заклинань, які можна покращити\r\n* Більше 20 предметів спорядження\r\n* Система поліпшення зброї\r\n* Система поліпшення броні\r\n* 10 комплектів обладунків\r\n* 5 будівель\r\n* 5 нових ворогів\r\n* Новий бос\r\n* І ще багато іншого!\r\n<br>\r\nШирокі можливості конфігурації світу (включаючи налаштування для кожного заклинання)\r\n* Підтримка JEI, JEED, Apotheosis, Tetra, Curios та Better Combat з коробки\r\n* Рекомендується грати з JEI і Configured\r\n\r\n![](https://wsrv.nl/?url=https%3A%2F%2Firon431.github.io%2FIrons-Spellbooks-Docs%2Fimg%2Fscreenshots%2Fspells.png&n=-1)",
+        "image": "https://cdn.modrinth.com/data/s4OWxYQQ/6a1f5c6adb434a6c56c1975af6f4fbde3ba907ff.png",
+        "verified": false,
+        "author": "Bodya33381, medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks",
+            "https://modrinth.com/mod/irons-spells-n-spellbooks"
+        ],
+        "id": "000174",
+        "date": "03/06/2024 15:24:16"
+    },
+    {
+        "title": "Coordinates Display",
+        "gameversion": "1.17.1+",
+        "engine": "NeoForge, Forge, Fabric, Quilt",
+        "categories": [
+            "Управління",
+            "Корисні функції"
+        ],
+        "description": "Coordinates Display - це клієнтський мод, який додає HUD, що показує ваше місцезнаходження, положення чанку, напрямок, в якому ви дивитеся, назву біому, в якому ви перебуваєте, і вашу версію Minecraft.\r\n\r\n![](https://cdn.modrinth.com/data/3mW8PdUo/images/81cffc25f9d76dcdd6c6bc125387e4ae996516a6.png)\r\n\r\n",
+        "image": "https://cdn.modrinth.com/data/3mW8PdUo/812200156b5283d05d11c436fd91f4beccdbf743.webp",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/coordinates-display",
+            "https://www.curseforge.com/minecraft/mc-mods/coordinates-display"
+        ],
+        "id": "000175",
+        "date": "03/06/2024 15:27:51"
+    },
+    {
+        "title": "Durability Tooltip",
+        "gameversion": "1.12+",
+        "engine": "NeoForge, Forge, Fabric, Quilt",
+        "categories": [
+            "Управління",
+            "Корисні функції"
+        ],
+        "description": "![](https://imgur.com/OtKnynt.png)\r\nПідказка міцності показує вам довговічність предмета! Стиль підказки можна змінити у файлі конфігурації.\r\n\r\nПрисутні такі стилі:\r\n* Числами\r\n![](https://imgur.com/7gGOfD3.gif)\r\n* Рядком стану\r\n![](https://imgur.com/CO2xhM3.gif)\r\n* Словами\r\n![](https://imgur.com/sL27du9.gif)\r\n",
+        "image": "https://imgur.com/CO2xhM3.gif",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/durability-tooltip",
+            "https://modrinth.com/mod/durability-tooltip"
+        ],
+        "id": "000176",
+        "date": "03/06/2024 15:35:05"
+    },
+    {
+        "title": "Dungeon Now Loading",
+        "gameversion": "1.20.1+",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Пригоди",
+            "Спорядження",
+            "Магія",
+            "Генерація створення"
+        ],
+        "description": "Досліджуйте величезні, складні підземелля, які завантажені у ваш світ!\r\nМод вводить низку нових підземель різних розмірів і тематик, а також хитромудрого боса, з яким можна буде битися в кінці багатьох структур. Здобувайте нові предмети, щоб подолати безліч мобів, які перекривають вам шлях. Дійдіть до кінця підземелля і переможіть босів, щоб отримати нагороду і підземелля для себе! Ласкаво просимо до Dungeon Now Loading! Досліджуйте та відкривайте, допитливі підземелля!\r\n\r\n![](https://www.minecraft-france.fr/wp-content/uploads/2023/04/dungeon-now-loading.png)",
+        "image": "https://cdn.modrinth.com/data/vZoqTqwv/d4f5abc97489df78a8743d3db4e616301ae8cb11.png",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/dungeon-now-loading",
+            "https://www.curseforge.com/minecraft/mc-mods/dungeon-now-loading"
+        ],
+        "id": "000177",
+        "date": "03/06/2024 15:42:31"
+    },
+    {
+        "title": "ME Requester",
+        "gameversion": "1.18.2+",
+        "engine": "NeoForge, Forge, Fabric",
+        "categories": [
+            "Управління",
+            "Технології",
+            "Транспортування",
+            "Корисні функції"
+        ],
+        "description": "![](https://media.forgecdn.net/attachments/506/204/preview.png)\r\nЗберігайте предмети та рідини у вашій системі ME з Applied Energistics 2.\r\n\r\n* Мод спрощує автоматичне зберігання предметів і рідин у вашій ME-системі Applied Energistics 2 на складі.\r\n* За замовчуванням ME запитувач може приймати 5 запитів. Ви можете розмістити будь-яку кількість запитів у вашій системі і отримати до них віддалений доступ через термінал ME запитувача.\r\n* Термінал дозволяє конфігурувати запити та віддалено відстежувати їхній стан.\r\n* Можна налаштувати кількість комірок, які підтримує запитувач, а також його канал і споживання енергії в режимі очікування.\r\n\r\nЯкщо ви раніше користувалися модом Lazier AE2, то ви можете бути знайомі з запитувачем. Ми вирішили відокремити функції Requester від нього і зробити його окремим модом.\r\n\r\nВся система була переписана і тепер також підтримує рідини!\r\n",
+        "image": "https://cdn.modrinth.com/data/E6BFl96N/4024be522db82e28c63552475f3289809d3bb34d.png",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/merequester",
+            "https://www.curseforge.com/minecraft/mc-mods/merequester"
+        ],
+        "id": "000178",
+        "date": "03/06/2024 15:50:17"
+    },
+    {
+        "title": "Connected Glass",
+        "gameversion": "1.12+",
+        "engine": "NeoForge, Forge, Fabric, Quilt",
+        "categories": [
+            "Декорації",
+            "Оптимізація"
+        ],
+        "description": "![](https://imgur.com/9HhMKLg.png)\r\n\r\nConnected Glass додає нові типи скла зі сполучними текстурами! Сюди входять звичайне, прозоре та старе скло!\r\n<br>\r\nСкло, що з'єднується:\r\n* Звичайні текстури скла, але краї блоки з'єднуються!\r\n\r\n![](https://imgur.com/YUeq5yG.png)\r\nПрозоре скло\r\n* Прозорі версії звичайних текстур скла!\r\n\r\n![](https://imgur.com/tBFyFOW.png)\r\n\"Подряпане скло\"\r\n* Старі програмістські текстури художнього скла!\r\n\r\n![](https://imgur.com/SPgoOZY.png)\r\nТоноване скло\r\n* Поєднання та кольорові версії текстур тонованого скла!\r\n* Тоноване скло не пропускає світло!\r\n\r\n![](https://imgur.com/QQGBn4Q.png)",
+        "image": "https://cdn.modrinth.com/data/DghO0R02/icon.png",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/connected-glass",
+            "https://www.curseforge.com/minecraft/mc-mods/connected-glass"
+        ],
+        "id": "000179",
+        "date": "03/06/2024 15:55:33"
+    },
+    {
+        "title": "End Remastered",
+        "gameversion": "1.16.3+",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Пригоди",
+            "Спорядження",
+            "Ігрові механіки",
+            "Генерація створення"
+        ],
+        "description": "End Remastered докорінно змінює спосіб, яким гравці дістаються до Кінця, і робить процес проходження цікавішим, змушуючи їх повністю дослідити прекрасний світ Minecraft. Додаючи 16 абсолютно нових Очей Ендера, захованих по всьому світу, цей мод зробить вашу гру набагато приємнішою.\r\n\r\n![](https://i.imgur.com/2ROuTJe.png)\r\n",
+        "image": "https://cdn.modrinth.com//data/ZJTGwAND/icon.png",
+        "verified": false,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/endrem",
+            "https://www.curseforge.com/minecraft/mc-mods/endremastered"
+        ],
+        "id": "000180",
+        "date": "03/06/2024 16:09:32"
     }
 ]
