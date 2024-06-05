@@ -2838,5 +2838,28 @@
         ],
         "id": "000180",
         "date": "03/06/2024 16:09:32"
+    },
+    {
+        "title": "Biome Makeover",
+        "gameversion": "1.16.3+",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Пригоди",
+            "Декорації",
+            "Генерація створення"
+        ],
+        "description": "Biome Makeover - це мод, призначений для надання певним біомам свіжого вигляду, він бере вже існуючі функції та біоми та наносить новий шар фарби.\r\nРозробники прагнуть, щоб зміни були дружніми до ваніли і підходили для будь-якого мод-паку.\r\n\r\n![](https://biomemakeover.laserknights.com/notes/images/gallery/bl_3.png)\r\n\r\n![](https://wsrv.nl/?url=https%3A%2F%2Fbiomemakeover.laserknights.com%2Fnotes%2Fimages%2Fgallery%2Fmf_1.png&n=-1)",
+        "image": "https://cdn.modrinth.com/data/jG8Q2YwT/icon.png",
+        "verified": true,
+        "author": "unroman",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/biome-makeover",
+            "https://www.curseforge.com/minecraft/mc-mods/biome-makeover-forge",
+            "https://www.curseforge.com/minecraft/mc-mods/biome-makeover"
+        ],
+        "id": "000181",
+        "date": "05/06/2024 13:22:01"
     }
 ]
