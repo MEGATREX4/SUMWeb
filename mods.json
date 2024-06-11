@@ -2861,5 +2861,28 @@
         ],
         "id": "000181",
         "date": "05/06/2024 13:22:01"
+    },
+    {
+        "title": "Wildlife",
+        "gameversion": "1.18.2+",
+        "engine": "Fabric",
+        "categories": [
+            "Пригоди",
+            "Декорації",
+            "Моби"
+        ],
+        "description": "Wildlife - це мод, що додає додаткових тварин та комах до Minecraft!\r\n\r\n* Додає у світ 74 різних види тварин і комах.\r\n* Комах та менших тварин можна спіймати/відпустити, клацнувши на них правою кнопкою миші.\r\n* Кожен вид співочих птахів має свій власний унікальний спів.\r\n* Дрібних тварин можна розміщувати на головах гравців та на рамах для предметів.\r\n* Рідкісні варіанти альбіносів.\r\n* Включає книгу Patchouli з описами/ілюстраціями для кожної тварини.\r\n* Містить конфігураційний файл, за допомогою якого можна налаштувати місця/частоту появи.\r\n\r\n![](https://i.imgur.com/Rek1GIg.png)",
+        "image": "https://cdn.modrinth.com/data/gkVIACVj/dc5d684e8d97bbeec6ae9b5a96cd7520131a0ec3.png",
+        "verified": false,
+        "author": "Minestar",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/wildlife-fabric",
+            "https://www.curseforge.com/minecraft/mc-mods/chirpys-wildlife",
+            "https://minestar.com.ua/"
+        ],
+        "id": "000182",
+        "date": "05/06/2024 15:50:11"
     }
 ]
