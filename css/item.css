@@ -39,6 +39,11 @@
     margin: 7px 0;
 }
 
+.itemdescription{
+    max-width: 710px;
+    margin: 10px auto;
+}
+
 .itemdescription img{
     max-width: 100%;
     /* centred image */
@@ -101,7 +106,9 @@
 
 .TextImageContainer p{
     font-size: var(--font-size-normal);
+
 }
+
 
 .ItemTopContainer {
     display: flex;
