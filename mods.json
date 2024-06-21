@@ -2884,5 +2884,155 @@
         ],
         "id": "000182",
         "date": "05/06/2024 15:50:11"
+    },
+    {
+        "title": "BetterF3",
+        "gameversion": "1.16+",
+        "engine": "NeoForge, Forge, Fabric, Quilt",
+        "categories": [
+            "Декорації",
+            "Управління",
+            "Корисні функції"
+        ],
+        "description": "BetterF3 - це мод, який замінює оригінальний налагоджувальний HUD Minecraft на високоналаштовуваний, більш зрозумілий. Ви можете налаштовувати кольори, положення, додавати проміжки та багато іншого.\r\n\r\nКожен рядок є частиною модуля, ви можете:\r\n\r\n* Змінювати кольори кожного модуля\r\n* Змінювати положення кожного модуля\r\n* Додавати і видаляти модулі, а також додавати проміжки між ними\r\n* Вимкнути окремі рядки модуля або вимкнути весь модуль\r\n* Додати тінь до тексту, що виводиться (за замовчуванням увімкнено)\r\n* Змінювати колір фону за всіма рядками\r\n* Анімації для відкриття/закриття (з можливістю налаштування швидкості)\r\n\r\n![](https://raw.githubusercontent.com/TreyRuffy/BetterF3/architectury/1.20/docs/readme/readme-image.png)",
+        "image": "https://cdn.modrinth.com//data/8shC1gFX/icon.png",
+        "verified": true,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "https://crowdin.com/project/betterf3/uk",
+        "link": [
+            "https://modrinth.com/mod/betterf3",
+            "https://www.curseforge.com/minecraft/mc-mods/betterf3"
+        ],
+        "id": "000184",
+        "date": "21/06/2024 10:51:38"
+    },
+    {
+        "title": "ClickThrough",
+        "gameversion": "1.16.4+",
+        "engine": "Fabric",
+        "categories": [
+            "Управління",
+            "Зберігання",
+            "Корисні функції"
+        ],
+        "description": "Модифікація дозволяє отримати доступ до контейнерів (скринь, ящиків, бочок...), які позначені табличкою або рамкою. Клацнувши правою кнопкою миші на табличку або рамку, прикріплені до контейнера - ви відкриєте контейнер.\r\n\r\nНа відміну від інших подібних модів, це суто клієнтський мод, тому він працює на будь-якому сервері - ванільному, модифікованому, або з spigot/paper.\r\n\r\nВи все ще можете обертати предмети у рамках, підкрадаючись і клацаючи по них.\r\n\r\nТе ж саме стосується табличок, які мають певну функціональність, додану сервером, наприклад, купувати/продавати вивіски на сервері, де ввімкнено ChestShop або подібний плагін.",
+        "image": "https://cdn.modrinth.com/data/Z5b0cAlD/icon.png",
+        "verified": true,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "https://crowdin.com/project/clickthrough",
+        "link": [
+            "https://modrinth.com/mod/clickthrough",
+            "https://www.curseforge.com/minecraft/mc-mods/clickthrough"
+        ],
+        "id": "000185",
+        "date": "21/06/2024 10:57:22"
+    },
+    {
+        "title": "Emotecraft",
+        "gameversion": "1.16.5+",
+        "engine": "Forge, Fabric, Quilt",
+        "categories": [
+            "Бібліотеки",
+            "Соціальні"
+        ],
+        "description": "Створюйте власні емоції в Minecraft.\r\n\r\nЗа замовчуванням, натисніть B, щоб відкрити колесо вибору емоцій\r\n\r\nВстановіть власні емоції, поклавши їх до теки .minecraft/emotes\r\n\r\n![](https://i.imgur.com/tWD40Fg.png)",
+        "image": "https://cdn.modrinth.com/data/pZ2wrerK/icon.png",
+        "verified": true,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "https://crowdin.com/project/emotecraft",
+        "link": [
+            "https://modrinth.com/mod/emotecraft",
+            "https://modrinth.com/plugin/emotecraft-bukkit",
+            "https://www.curseforge.com/minecraft/mc-mods/emotecraft",
+            "https://www.curseforge.com/minecraft/mc-mods/emotecraft-forge",
+            "https://www.curseforge.com/minecraft/bukkit-plugins/emotecraft-bukkit"
+        ],
+        "id": "000186",
+        "date": "21/06/2024 11:01:28"
+    },
+    {
+        "title": "Emotes Open Collection",
+        "gameversion": "1.16.5+",
+        "engine": "Emotecraft",
+        "categories": [
+            "Соціальні"
+        ],
+        "description": "Open source бібліотека емоцій для Emotecraft",
+        "image": "https://cdn.modrinth.com/data/pZ2wrerK/icon.png",
+        "verified": true,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "https://crowdin.com/project/emotes-open-collection",
+        "link": [
+            "https://emotes.kosmx.dev/"
+        ],
+        "id": "000187",
+        "date": "21/06/2024 11:09:09"
+    },
+    {
+        "title": "RandomBlockPlacement",
+        "gameversion": "1.16.4+",
+        "engine": "Froge, Fabric",
+        "categories": [
+            "Декорації",
+            "Управління",
+            "Корисні функції"
+        ],
+        "description": "Хочете побудувати споруду (стіну, дорогу, що завгодно) з набору різних блоків, причому так, щоб результат виглядав так, ніби блоки були розміщені випадковим чином? Тоді цей мод для вас.\r\n\r\nПісля його увімкнення, кожного разу, коли ви кладете блок, ваша гаряча панель буде випадковим чином вибирати іншу (або, можливо, ту саму) комірку.\r\n\r\nЗа замовчуванням щоб включити або виключити натисність - R.",
+        "image": "https://cdn.modrinth.com/data/djlwpkGP/icon.png",
+        "verified": true,
+        "author": "medustyy",
+        "completed": true,
+        "translation": "https://crowdin.com/project/randomblockplacement/uk",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/randomblockplacement",
+            "https://modrinth.com/mod/randomblockplacement"
+        ],
+        "id": "000188",
+        "date": "21/06/2024 11:15:20"
+    },
+    {
+        "title": "Translations for Sodium",
+        "gameversion": "1.17.1+",
+        "engine": "Minecraft Ресурспак",
+        "categories": [
+            "Корисні функції"
+        ],
+        "description": "Неофіційний переклад для мода Sodium у форматі ресурспаку.",
+        "image": "https://cdn.modrinth.com/data/yfDziwn1/b881a25439a070a1836a4679a0482ffd956a9ba7.png",
+        "verified": true,
+        "author": "medustyy, Krasapan, hainer MInecraft, Krik69, Mr_Foxer, KruF, Vil4ckc, Фішер",
+        "completed": true,
+        "translation": "https://crowdin.com/project/sodium-fabric",
+        "link": [
+            "https://www.curseforge.com/minecraft/texture-packs/translations-for-sodium",
+            "https://modrinth.com/resourcepack/translations-for-sodium"
+        ],
+        "id": "000189",
+        "date": "21/06/2024 11:29:36"
+    },
+    {
+        "title": "Sodium Extra",
+        "gameversion": "1.16.2+",
+        "engine": "Fabric, Quilt",
+        "categories": [
+            "Оптимізація",
+            "Корисні функції"
+        ],
+        "description": "Аддон до Sodium, який додає можливості, яких немає у Sodium.\r\n\r\nSodium Extra має на меті перенести більшість функцій OptiFine, що привертають увагу, в Sodium; на додаток до деяких функцій, таких як візуальне виправлення помилок та інші параметри продуктивності, які поки що недоступні в Sodium.\r\n\r\n### Ось основний опис того, що робить цей мод.\r\n\r\n* Налаштування анімацій (Керування вогнем, водою, лавою, анімацією блоків тощо...)\r\n* Налаштування частинок (Керування всіма типами частинок, включно з частинками з інших модів)\r\n* Налаштування деталей (керування небом, зірками, сонцем/місяцем, погодою та багато іншого)\r\n* Налаштування візуалізації (Керування туманом, статичними об'єктами та іншими різноманітними візуалізаціями)\r\n* Додаткові налаштування (Відображення FPS, координат, сповіщень, хмари та багато іншого)\r\n",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/344/698/256/256/637491211740686215.png",
+        "verified": true,
+        "author": "medustyy, mishaareyy, Вова Смірнов",
+        "completed": true,
+        "translation": "https://crowdin.com/project/sodium-extra/uk",
+        "link": [
+            "https://modrinth.com/mod/sodium-extra",
+            "https://www.curseforge.com/minecraft/mc-mods/sodium-extra"
+        ],
+        "id": "000190",
+        "date": "21/06/2024 11:35:10"
     }
 ]

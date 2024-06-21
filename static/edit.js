@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const modName = item.title.replace(/ /g, '-').toLowerCase();
             const curseForgeUrl = `https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortBy=relevancy&class=mc-mods&search=${CurseName}`;
             const modrinthUrl = `https://modrinth.com/mods?q=${modName}`;
-            const testurl =`http://172.22.8.186:5500/item.html?id=${itemId}`
+            const testurl =`http://192.168.0.113:5500/item.html?id=${itemId}`
             
             window.open(curseForgeUrl, '_blank');
             window.open(modrinthUrl, '_blank');

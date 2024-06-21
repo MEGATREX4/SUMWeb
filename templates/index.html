@@ -48,6 +48,8 @@
                     <input type="text" id="link2" name="link[]" placeholder="Link 2" style="display: none;">
                     <input type="text" id="link3" name="link[]" placeholder="Link 3" style="display: none;">
                     <input type="text" id="link4" name="link[]" placeholder="Link 4" style="display: none;">
+                    <input type="text" id="link4" name="link[]" placeholder="Link 5" style="display: none;">
+                    <input type="text" id="link4" name="link[]" placeholder="Link 6" style="display: none;">
 
                 </div><br><br>
                 <div id="category-section" style="display: block;">
@@ -104,7 +106,7 @@
             <label for="editLink">Links:</label>
             
             <div class="editLinkSection" id="editLinkSection">
-                {% for i in range(4) %}
+                {% for i in range(6) %}
                 <input type="text" id="editLink{{ i + 1 }}" name="editLink[]" placeholder="Link {{ i + 1 }}" style="display: none;">
                 {% endfor %}
             </div>
