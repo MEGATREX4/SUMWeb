@@ -3034,5 +3034,48 @@
         ],
         "id": "000190",
         "date": "21/06/2024 11:35:10"
+    },
+    {
+        "title": "Explosive Enhancement",
+        "gameversion": "1.19.2+",
+        "engine": "Fabric, Forge",
+        "categories": [
+            "Пригоди",
+            "Декорації",
+            "Моби"
+        ],
+        "description": "Explosive Enhancement - це простий мод, який покращує вигляд вибухів. Він додає багато нових частинок, кожну з яких ви можете увімкнути/вимкнути за власним бажанням. Ви також можете повністю увімкнути/вимкнути мод через налаштування!\r\n\r\nІснує також спеціальний ефект підводного вибуху, коли вибух відбувається під водою. Ви можете зробити так, щоб під час підводного вибуху з'являлося багато бульбашок для дуже приємного ефекту!",
+        "image": "https://cdn.modrinth.com/data/OSQ8mw2r/88f44e9ed022061b1eb865996b2f98fe01937de6.png",
+        "verified": false,
+        "author": "minicatez(Кірюша)",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/explosive-enhancement",
+            "https://www.curseforge.com/minecraft/mc-mods/explosive-enhancement-reforged",
+            "https://modrinth.com/mod/explosive-enhancement-forge"
+        ],
+        "id": "000191",
+        "date": "01/07/2024 16:48:44"
+    },
+    {
+        "title": "Ocean's Delight",
+        "gameversion": "1.18.2",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Їжа"
+        ],
+        "description": "Ocean's Delight - це аддон-мод для Farmer's Delight, заснований на додаванні контенту вишуканої кулінарії з океанів!\r\n\r\nВикористовуючи свої кулінарні навички, ви можете приготувати безліч ситних страв з мешканців океану!\r\n\r\n![](https://media.forgecdn.net/attachments/638/229/odpics.JPG)",
+        "image": "https://cdn.modrinth.com/data/DGiq4ZSW/949ba66d6fffb5a984fbb70e3ef4a51f15be3191.png",
+        "verified": false,
+        "author": "minicatez(Кірюша)",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/oceans-delight",
+            "https://www.curseforge.com/minecraft/mc-mods/oceans-delight"
+        ],
+        "id": "000192",
+        "date": "01/07/2024 17:01:42"
     }
 ]

@@ -19,13 +19,13 @@
     },
     {
         "authorID": "Artem",
-        "authorImage": "https://pbs.twimg.com/profile_images/1689762283772092416/_zCiH9CV_400x400.jpg",
+        "authorImage": "https://pbs.twimg.com/profile_images/1786521684113084416/kqLxNYbo_400x400.jpg",
         "authorName": "Artem Tsynoborenko",
         "authorAbout": "Перекладач JackboxUA, аматорське озвучення."
     },
     {
         "authorID": "kork0za",
-        "authorImage": "https://pbs.twimg.com/profile_images/1774705403202265088/02s2MoVk_400x400.jpg",
+        "authorImage": "https://pbs.twimg.com/profile_images/1801686191634362368/03322_uZ_400x400.jpg",
         "authorName": "Коркóза",
         "authorAbout": "Юпупер, застовник Patsiuk Localizator."
     },
@@ -40,5 +40,20 @@
         "authorImage": "https://i.imgur.com/iLUJNz5.jpeg",
         "authorName": "Erik_Mensy",
         "authorAbout": "Роботяга, займається перекладами 5 років."
+    },
+
+
+
+    {
+        "authorID": "Minestar",
+        "authorImage": "https://minestar.com.ua/_next/image?url=%2Flogo.png&w=64&q=75",
+        "authorName": "Minestar",
+        "authorAbout": "Український комплекс серверів"
+    },
+    {
+        "authorID": "PatsiukLocalizator",
+        "authorImage": "https://pbs.twimg.com/profile_images/1772289751527137281/63uYsxtJ_400x400.jpg",
+        "authorName": "Patsiuk Localizator",
+        "authorAbout": "Спілка перекладу ігор"
     }
 ]
