@@ -3097,5 +3097,155 @@
         ],
         "id": "000193",
         "date": "05/07/2024 10:39:49"
+    },
+    {
+        "title": "Aquamirae ",
+        "gameversion": "1.20.1+",
+        "engine": "Fabric, Forge",
+        "categories": [
+            "Пригоди",
+            "Спорядження",
+            "Їжа",
+            "Ігрові механіки",
+            "Магія",
+            "Моби",
+            "Генерація створення"
+        ],
+        "description": "Колись безкрайній океан, води якого піднімали з глибин поривчасті вітри, океан, яким плавали відважні мореплавці та грізні флотилії грабіжників, тепер скутий льодом і снігом.\r\n\r\nЗастиглий у часі... Кораблі тих, кому не пощастило, застигли в нещадній кризі, в ту ж мить з безодні на світло дня виповзли жахливі істоти. Крізь хуртовину чути лише рідкісні звуки рогів тих, хто все ще сподівається на порятунок. Що могло так кардинально змінити колись неприборканий океан?\r\n\r\n* Крижана локація з унікальною генерацією. Лабіринт на поверхні, замерзлий океан під кригою. Генерується у ванільному біомі \"Глибокий замерзлий океан\", що робить його сумісним з усіма модами на генерацію світу.\r\n* Багато різних за розміром споруд для виживання.\r\n* Унікальне оточення: фонові звуки, музика і частинки.\r\n* Жахливі глибоководні (і не тільки) істоти.\r\n* Привид капітана Корнелії: бос зі складною анімацією та набором смертоносних здібностей.\r\n* Багато зброї з різними можливостями.\r\n* Кілька комплектів обладунків з унікальними ефектами напівкомплектів і повних комплектів.\r\n* Їжа, витратні предмети, предмети з унікальними властивостями та прикраси.\r\n* Багато можливостей кастомізації через конфігураційний файл.\r\n\r\n![](https://media.forgecdn.net/attachments/459/700/2022-05-06_00.png)",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/851/972/256/256/638254470839980834.png",
+        "verified": false,
+        "author": "Minestar, СУМ",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/aquamirae",
+            "https://www.curseforge.com/minecraft/mc-mods/aquamirae-fabric",
+            "https://www.curseforge.com/minecraft/mc-mods/ob-aquamirae",
+            "https://minestar.com.ua/"
+        ],
+        "id": "000194",
+        "date": "24/07/2024 14:21:30"
+    },
+    {
+        "title": "Body Health System",
+        "gameversion": "1.19+",
+        "engine": "Fabric",
+        "categories": [
+            "Пригоди",
+            "Дивні",
+            "Ігрові механіки"
+        ],
+        "description": "Цей мод додає нову систему здоров'я до Minecraft. Здоров'я гравців розділене на різні частини тіла, і коли частина отримує пошкодження, до уваги береться лише броня, що відповідає цій частині. Якщо деякі частини втрачають здоров'я, до гравця будуть застосовані всі дебаффи здоров'я, такі як повільність, втома від видобутку корисних копалин і слабкість.\r\n\r\n![](https://cdn.modrinth.com/data/OXoUeQEk/images/5c0c6232db31f3d53258c7eff9a5299f7d08c288.png)",
+        "image": "https://cdn.modrinth.com/data/OXoUeQEk/ee6bfd65c5d8a860f270cf5f61a5d67a303755cc.png",
+        "verified": false,
+        "author": "",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/body-health-system"
+        ],
+        "id": "000195",
+        "date": "24/07/2024 14:24:21"
+    },
+    {
+        "title": "Accessories",
+        "gameversion": "1.20.1",
+        "engine": "Fabric, NeoForge",
+        "categories": [],
+        "description": "αccessories - це мод на основі даних для NeoForge та Fabric з акцентом на використанні спільного API для обох платформ, коли це можливо.\r\n\r\nТакий API базується на роботах Curios та Trinkets, а також TheIllusiveC4 та emilyploszaj за їхню роботу над модами аксесуарів для Minecraft.\r\n\r\n### Особливості\r\n* Доступні шари сумісності для існуючих аксесуарів, таких як Curios і Trinkets\r\n\t* Шар сумісності Curios\r\n\t* Trinkets Compat Layer\r\n* Повна підтримка аксесуарів на основі NBT\r\n* Існуючі події API для нейтральних предметів для піґлінів, масок ендерменів, налаштувань здобичі, налаштувань удачі та здатності ходити по снігу.\r\n* Унікальний API комірок.\r\n* Команда для редагування будь-яких аксесуарів для живих істот через спеціальний екран\r\n\r\n![](https://cdn.modrinth.com/data/jtmvUHXj/images/e40c711b48f2962a31f808c34792ba4f71978ca3.png)",
+        "image": "https://cdn.modrinth.com/data/jtmvUHXj/14fabf4859e845b0bd6659daf2375be3e88f59ec.png",
+        "verified": false,
+        "author": "СУМ",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/accessories",
+            "https://www.curseforge.com/minecraft/mc-mods/accessories"
+        ],
+        "id": "000196",
+        "date": "24/07/2024 14:28:45"
+    },
+    {
+        "title": "Soulbound Enchantment",
+        "gameversion": "1.18.2+",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Магія",
+            "Корисні функції"
+        ],
+        "description": "Цей мод має лише одне зачарування soulbound(прив'язування душ), кілька користувацьких конфігурацій і не має надлишкових функцій.\r\n\r\nЩоб змінити конфігурацію, встановіть Cloth Config API або відкрийте самостійно конфігураційний файл /config/soulbound.json (Forge підтримує лише модифікації конфігураційного файлу, який називається soulbound-common.toml).\r\n\r\nВступ до функції\r\nПредмети з прив'язкою до душі автоматично зберігаються після смерті, а їхня довговічність зменшується випадковим чином, залежно від конфігурації. Якщо встановлено на 0, довговічність не зменшується.\r\n\r\nНе зменшує довговічність у творчому режимі або у режимі  Keep Inventory.\r\n\r\n\r\n![](https://cdn.modrinth.com/data/MmUmcwom/images/45f2b15e4772c43be997b989c4789d9f2ca5116e.png)",
+        "image": "https://cdn.modrinth.com/data/MmUmcwom/dc78bb10171a320f5d79b2b220ae47ecb9da65f0.png",
+        "verified": false,
+        "author": "СУМ",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/soulbound-enchantment"
+        ],
+        "id": "000197",
+        "date": "24/07/2024 14:32:42"
+    },
+    {
+        "title": "Tom's Simple Storage Mod",
+        "gameversion": "1.15.2+",
+        "engine": "Fabric, Quilt, Forge, NeoForge",
+        "categories": [
+            "Зберігання",
+            "Технології",
+            "Транспортування"
+        ],
+        "description": "Простий ванільний мод для зберігання.\r\n\r\n### Особливості:\r\n\r\n* Термінал для зберігання та майстрування\r\n* Роз'єм для інвентаризації\r\n* Відкритий ящик\r\n* Бездротовий термінал\r\n* Фільтровані роз'єми\r\n* Інвентарна лійка\r\n\r\n![](https://media.forgecdn.net/attachments/288/563/2020-04-24_18.png)",
+        "image": "https://cdn.modrinth.com/data/XZNI4Cpy/icon.png",
+        "verified": false,
+        "author": "СУМ",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/toms-storage",
+            "https://www.curseforge.com/minecraft/mc-mods/toms-storage",
+            "https://www.curseforge.com/minecraft/mc-mods/toms-storage-fabric"
+        ],
+        "id": "000198",
+        "date": "24/07/2024 14:37:19"
+    },
+    {
+        "title": "Advanced Machines",
+        "gameversion": "1.7.10",
+        "engine": "Forge",
+        "categories": [
+            "Технології"
+        ],
+        "description": "Набір машин, подібних до індукційних печей, для подрібнення, екстракції, пресування, обробки металів тиском, переробки та миття.\r\nЯк і версія Іммібіса, це звичайні еквіваленти індукційних печей. Жодних обмежень не було додано, але вони мають по 2 комірки для модернізації як і індукційна піч.\r\n\r\n![](http://puu.sh/5EM5K.png)\r\n\r\n![](http://puu.sh/5EMkz.png)",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/50/965/256/256/636097941091459587.png",
+        "verified": false,
+        "author": "Erik_Mensy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/advanced-machines"
+        ],
+        "id": "000199",
+        "date": "24/07/2024 14:46:51"
+    },
+    {
+        "title": "Nuclear Control 2",
+        "gameversion": "1.7.10",
+        "engine": "Forge",
+        "categories": [
+            "Ігрові механіки",
+            "Технології",
+            "Транспортування"
+        ],
+        "description": "Ви бачили кратери, які можуть утворювати ядерні реактори. Як одна помилка може спустошити вашу базу.\r\n\r\nРозробка робочої технології виявилася складнішою, ніж будь-хто міг собі уявити. І все ж, тепер ви можете\r\n\r\nзможете контролювати всю свою базу, вимкнути реактори до того, як вони перегріються, і врятувати світ від себе!\r\n\r\n![](http://i.imgur.com/FQrMTd9.png) \r\n\r\nNuclear Control 2 - це аддон-мод до IC2, який дозволяє контролювати кілька блоків у світі.\r\n\r\nСпочатку розроблений Shedar для моніторингу та контролю ядерних реакторів IC2, нинішня команда (Xbony2, dmf444 та Pyrolusite) інтегрувала його з кількома іншими популярними модами.\r\n\r\n![](http://i.imgur.com/zuvbm0P.png)",
+        "image": "https://forum.industrial-craft.net/core/images/style-2/pageLogo.png",
+        "verified": false,
+        "author": "Erik_Mensy",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/nuclear-control-2"
+        ],
+        "id": "000200",
+        "date": "24/07/2024 14:57:34"
     }
 ]
