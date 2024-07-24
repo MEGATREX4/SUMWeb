@@ -228,6 +228,9 @@ function updatePageMeta(selectedItem) {
                     // Determine the game version text
                     const gameVersionText = selectedItem.gameversion && selectedItem.gameversion.length > 0 ? `<p class="gameversion iteminfo">Версія гри: ${selectedItem.gameversion}</p>` : '';
                     const engineText = selectedItem.engine && selectedItem.engine.length > 0 ? `<p class="engine iteminfo">Рушій: ${selectedItem.engine}</p>` : '';
+
+                    // if item has date
+                    const dateText = selectedItem.date && selectedItem.date.length > 0 ? `<p class="date iteminfo">Інформація від ${selectedItem.date}</p>` : '';
     
                     const categoriesText = selectedItem.categories && selectedItem.categories.length > 0 ? `
                         <div class="categories iteminfo">Категорії:&nbsp; 
@@ -267,6 +270,7 @@ function updatePageMeta(selectedItem) {
                                 ${engineText}
                                 ${categoriesText}
                                 <p class="itemtranslator">Автори перекладу: ${selectedItem.author}</p>
+                                ${dateText}
                             </div>
                             </div>
                             <div class="ItemBottomContainer">
