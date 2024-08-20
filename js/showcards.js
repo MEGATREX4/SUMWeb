@@ -7,6 +7,7 @@ let currentPage;
 let modsData;
 let otherData;
 let filteredData;
+let selectedCategories = new Set();
 
 function createModCard(mod) {
   const card = document.createElement('div');
@@ -421,7 +422,7 @@ function createFilterInputs(authors) {
   
     const div = document.createElement('div');
     div.classList.add('filter-icon');
-    div.innerHTML = `<div class="ItemIcons" style="background-image: url(&quot;${filterDisplayNames[filter].icon}&quot;);" title="${filterDisplayNames[filter].title}"></div><label for="${filter.toLowerCase()}">${filterDisplayNames[filter].name}</label>`; // Use filterDisplayNames object
+    div.innerHTML = `<div class="ItemIcons" style="background-image: url(&quot;${filterDisplayNames[filter].icon}&quot;);" title="${filterDisplayNames[filter].title}"></div><label for="${filter.toLowerCase()}">${filterDisplayNames[filter].name}</label>`;
     divFor = filter.toLowerCase();
   
     filterContainer.appendChild(input);
@@ -560,13 +561,12 @@ function updateURL(page, selectedFilters, searchQuery) {
 // Function to handle filter selection and search
 function handleFilterSelection() {
   const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
-  
   const searchQuery = document.getElementById('searchInput').value.toLowerCase(); // Get the search query
 
-  // Filter data based on selected filters and search query
-  filteredData = allData.filter(item => {
-    // Check if item matches selected filters
-    const matchesFilters = selectedFilters.length === 0 || selectedFilters.every(filter => {
+  // Filter data based on content type
+  let contentFilteredData = allData.filter(item => {
+    // Check if item matches selected content type filters
+    return selectedFilters.length === 0 || selectedFilters.every(filter => {
       if (filter === 'Other') {
         return otherData.includes(item);
       } else if (filter === 'Mods') {
@@ -575,18 +575,21 @@ function handleFilterSelection() {
         return item.verified === true;
       } else if (filter === 'FromMembers') {
         return item.author !== 'СУМ';
-      } else if (filter === 'NotCompleted') { // Add condition for 'NotCompleted'
+      } else if (filter === 'NotCompleted') {
         return !item.completed;
       }
-      // Add more conditions for other filters if needed
       return true;
     });
+  });
 
-    // Check if item matches search query
-    const matchesSearchQuery = searchQuery === '' || item.title.toLowerCase().includes(searchQuery) || item.description.toLowerCase().includes(searchQuery);
+  // Apply category filtering
+  let categoryFilteredData = contentFilteredData.filter(item => {
+    return selectedCategories.size === 0 || item.categories.some(category => selectedCategories.has(category));
+  });
 
-    // Return true if item matches both filters and search query
-    return matchesFilters && matchesSearchQuery;
+  // Apply search query
+  filteredData = categoryFilteredData.filter(item => {
+    return searchQuery === '' || item.title.toLowerCase().includes(searchQuery) || item.description.toLowerCase().includes(searchQuery);
   });
 
   // Get the total number of pages with the filtered data
@@ -610,6 +613,8 @@ function handleFilterSelection() {
   // Update the URL with the current page, selected filters, and search query
   updateURL(currentPage, selectedFilters, searchQuery);
 }
+
+
 
 
 // Function to add event listener to search input field and save to local storage
@@ -760,7 +765,77 @@ function applyFilters() {
 }
 
 
+// Function to load and display categories from ItemCategories.json
+function loadAndDisplayCategories() {
+  fetch('ItemCategories.json')
+    .then(response => response.json())
+    .then(categoriesData => {
+      const categoriesContainer = document.querySelector('.categories-cards');
+      categoriesContainer.innerHTML = '';
 
+      categoriesData.forEach(category => {
+        const categoryElement = document.createElement('div');
+        categoryElement.classList.add('filter');
+        categoryElement.style.backgroundColor = category.colour;
+
+        // Encode the SVG icon as a data URI
+        const encodedIcon = `data:image/svg+xml,${encodeURIComponent(category.icon)}`;
+
+        // Create the inner HTML structure
+        categoryElement.innerHTML = `
+          <input type="checkbox" id="${category.title}" value="${category.title}">
+          <div class="filter-icon">
+            <div style="background-image: url('${encodedIcon}');" class="ItemIcons"></div>
+            <label for="${category.title}" class="filter-label">${category.title}</label>
+          </div>
+        `;
+
+        categoriesContainer.appendChild(categoryElement);
+
+        // Add event listener to update selected categories
+        categoryElement.querySelector('input').addEventListener('change', (event) => {
+          const isChecked = event.target.checked;
+          const categoryValue = event.target.value;
+
+          if (isChecked) {
+            selectedCategories.add(categoryValue);
+          } else {
+            selectedCategories.delete(categoryValue);
+          }
+
+          // Filter the data based on selected categories
+          filterDataByCategories();
+        });
+      });
+    })
+    .catch(error => console.error('Error loading categories:', error));
+}
+
+
+// Function to filter data based on selected categories
+function filterDataByCategories() {
+  if (selectedCategories.size === 0) {
+    // No category filter applied, show all data
+    filteredData = [...modsData, ...otherData];
+  } else {
+    filteredData = allData.filter(item => {
+      // Ensure item.categories is defined and is an array before using .some()
+      return Array.isArray(item.categories) && item.categories.some(category => selectedCategories.has(category));
+    });
+  }
+
+  // Display filtered cards and update page navigation
+  displayCards(currentPage, pageSize, filteredData);
+  updatePageNavigation(currentPage, pageSize, filteredData);
+}
+
+
+
+
+// Call the function to load and display categories on page load
+document.addEventListener('DOMContentLoaded', () => {
+  loadAndDisplayCategories();
+});
 
 
 

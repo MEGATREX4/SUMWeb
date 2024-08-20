@@ -149,7 +149,7 @@ h2 {
   /*height: 108px;*/
 }
 
-.filtred {
+.filtred, .categories-container {
   margin: 15px;
   margin-top: 92px;
   padding: 30px 15px;
@@ -162,9 +162,22 @@ h2 {
   color: var(--text-color);
   gap: 0.5rem;
   border: 1px solid var(--border-color);
-
-
 }
+
+.categories-container{
+  margin-top: 0px;
+  gap: 0.5rem;
+  
+  height: 256px;
+}
+
+.categories-cards{
+  gap: 0.5rem;
+  overflow: auto; 
+  display: flex;
+  flex-direction: column;
+}
+
 .filters-header{
   width: 100%;
   text-align: center;
@@ -299,6 +312,12 @@ p {
   height: 0.5em;
   min-width: 0.5em;
   min-height: 0.5em;
+}
+
+.category-icon svg{ 
+  height: 0.8em;
+  width: 0.8em;
+  stroke: red!important;
 }
 
 .FiltersContainer {
