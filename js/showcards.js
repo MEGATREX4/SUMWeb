@@ -1,4 +1,4 @@
-//showcards.js
+
 
 
 let pageSize;
@@ -13,19 +13,16 @@ function createModCard(mod) {
   const card = document.createElement('div');
   card.classList.add('card');
 
-  // Call getStatusClasses with modsData and otherData
   let statusClasses = getStatusClasses(mod, modsData, otherData);
 
-  // Only add the status classes if they are not empty
   if (statusClasses.length > 0) {
     statusClasses.forEach(statusClass => {
-      card.classList.add(statusClass); // Add each status class to the card
+      card.classList.add(statusClass);
     });
   }
 
   card.id = `${mod.id}`;
 
-  // Populate the card with mod data
   card.innerHTML = `
     <div class="TopCardContainer">
       <div class="cardimage" style="background-image: url('${mod.image}')" title="Зображення ${mod.title}" style="max-width: 100%;"></div>
@@ -36,67 +33,52 @@ function createModCard(mod) {
     </div>
   `;
 
-  // Add click event listener to redirect to the item page
   card.addEventListener('click', () => {
     window.location.href = `item.html?id=${mod.id}`;
   });
 
-  // Append the card to the CardsContainer
   document.querySelector('.CardsContainer').appendChild(card);
 
-  // Add description block
   const descriptionContainer = document.createElement('div');
   descriptionContainer.classList.add('description-container');
   card.appendChild(descriptionContainer);
 
-  // Preprocess the Markdown content to remove unwanted elements
   const cleanedDescription = mod.description
-    .replace(/^-{3,}\s*$/gm, ' ')               // Remove horizontal rules
+    .replace(/^-{3,}\s*$/gm, ' ')
     
-    .replace(/!\[.*?\]\(.*?\)/g, ' ')           // Remove image links in Markdown
-    .replace(/\[(.*?)\]\(.*?\)/g, '$1')        // Treat regular Markdown links as plain text
-    .replace(/!\[.*?\]\s*/g, ' ')               // Remove any remaining image Markdown syntax
-    .replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|heic|ico|tif)(\?[^\s]*)?/gi, '') // Remove direct image URLs with extensions
-    .replace(/https?:\/\/[^\s]+/gi, '')       // Remove any remaining URLs
-    .replace(/\*\*\*\*(.*?)\*\*\*\*/g, '$1')  // Remove bold markdown syntax (****text****)
-    .replace(/\*\*(.*?)\*\*/g, '$1')          // Remove bold markdown syntax (**text**)
-    .replace(/^\s+/g, ' ')                     // Remove all spaces at the beginning of the string
-    .replace(/\r\n/g, ' ')                     // Remove line breaks
-    .replace(/\n/g, ' ')                      // Remove line breaks
-    .replace(/#+/g, ' ')                      // Remove headings;
+    .replace(/!\[.*?\]\(.*?\)/g, ' ')
+    .replace(/\[(.*?)\]\(.*?\)/g, '$1')
+    .replace(/!\[.*?\]\s*/g, ' ')
+    .replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|heic|ico|tif)(\?[^\s]*)?/gi, '')
+    .replace(/https?:\/\/[^\s]+/gi, '')
+    .replace(/\*\*\*\*(.*?)\*\*\*\*/g, '$1')
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/^\s+/g, ' ')
+    .replace(/\r\n/g, ' ')
+    .replace(/\n/g, ' ')
+    .replace(/#+/g, ' ')
 
 
-  // Trim the description to 100 characters after cleaning
   const trimmedDescription = cleanedDescription.length > 100 ? cleanedDescription.substring(0, 100) + '...' : cleanedDescription;
 
-  // Convert Markdown to HTML using marked
   const markdownHTML = marked.parse(trimmedDescription);
 
-  // Create a new paragraph element for the description
   const descriptionParagraph = document.createElement('p');
   descriptionParagraph.classList.add('short-description');
   descriptionParagraph.innerHTML = markdownHTML;
 
-  // Append the description paragraph to the description container
   descriptionContainer.appendChild(descriptionParagraph);
 
-  // Add icon container
   if (statusClasses.length > 0) {
     const iconContainer = document.createElement('div');
     iconContainer.classList.add('IconContainer');
     card.appendChild(iconContainer);
 
-    // Use Promise to get icon data and add icons to the container
     addIcons(iconContainer, statusClasses);
   }
 }
 
 
-
-
-
-
-// Function to get the status classes based on mod properties and type
 function getStatusClasses(mod, modsData, otherData) {
   const statusClasses = [];
 
@@ -108,9 +90,7 @@ function getStatusClasses(mod, modsData, otherData) {
     statusClasses.push('verified');
   }
 
-  // Check if the mod exists in modsData
   const modExistsInModsData = modsData.some(modData => modData.id === mod.id);
-  // Check if the mod exists in otherData
   const modExistsInOtherData = otherData.some(otherMod => otherMod.id === mod.id);
 
   if (modExistsInModsData) {
@@ -119,19 +99,16 @@ function getStatusClasses(mod, modsData, otherData) {
     statusClasses.push('other');
   }
 
-  // Return an array of status classes
   return statusClasses;
 }
 
 let cachedIconData = null;
 
-// Function to get icon data from Icons.json
 function getIconData(statusClasses) {
   if (cachedIconData) {
     return Promise.resolve(filterIconsByStatusClasses(cachedIconData, statusClasses));
   }
 
-  // Replace this with the actual path to your Icons.json file
   const iconsJsonPath = 'icons.json';
 
   return fetch(iconsJsonPath)
@@ -146,7 +123,6 @@ function getIconData(statusClasses) {
     });
 }
 
-// Helper function to filter icons based on status classes
 function filterIconsByStatusClasses(iconData, statusClasses) {
   const icons = [];
   statusClasses.forEach(statusClass => {
@@ -158,9 +134,7 @@ function filterIconsByStatusClasses(iconData, statusClasses) {
   return icons;
 }
 
-// Function to add icons based on files and status
 function addIcons(element, statusClasses) {
-  // Use Promise to get icon data
   getIconData(statusClasses).then(icons => {
     icons.forEach(iconData => {
       const iconContainer = document.createElement('div');
@@ -182,9 +156,7 @@ function truncateText(text, maxLength) {
 }
 
 
-// Function to display cards based on the current page and data
 function displayCards(currentPage, pageSize, data) {
-  // Sort the data by ID
   data.sort((a, b) => parseInt(a.id) - parseInt(b.id));
 
   const startIndex = (currentPage - 1) * pageSize;
@@ -192,18 +164,14 @@ function displayCards(currentPage, pageSize, data) {
 
   const currentData = data.slice(startIndex, endIndex);
 
-  // Check if the container exists before setting innerHTML
   const cardsContainer = document.querySelector('.CardsContainer');
   if (cardsContainer) {
-    // Clear existing cards
     cardsContainer.innerHTML = '';
 
     if (currentData.length > 0) {
-      //remove createCardFlex
       cardsContainer.classList.remove('createCardFlex');
-      currentData.forEach(item => createModCard(item)); // Replace createCard with createModCard
+      currentData.forEach(item => createModCard(item));
     } else {
-      // remove from id createCard class createCard and add createCardFlex to it
       cardsContainer.classList.add('createCardFlex');
 
       cardsContainer.innerHTML = `
@@ -220,14 +188,13 @@ function displayCards(currentPage, pageSize, data) {
 }
 
 
-// Function to display page numbers
 function displayPageNumber(pageNumber, isActive) {
   const pagesContainer = document.getElementById('Pages');
 
   const pageElement = document.createElement('div');
   pageElement.classList.add('page-number');
   if (isActive) {
-    pageElement.classList.add('ActivePage');  // Add ActivePage class if the page is active
+    pageElement.classList.add('ActivePage');
   }
   pageElement.textContent = pageNumber;
 
@@ -236,12 +203,11 @@ function displayPageNumber(pageNumber, isActive) {
   pagesContainer.appendChild(pageElement);
 }
 
-// Function to update the number of pages and display page navigation
 function updatePageNavigation(currentPage, pageSize, filteredData) {
   const totalPages = Math.ceil(filteredData.length / pageSize);
   const pagesContainer = document.getElementById('Pages');
 
-  pagesContainer.innerHTML = ''; // Clear existing navigation buttons
+  pagesContainer.innerHTML = '';
 
   const displayPageNumber = (pageNumber) => {
     const isActive = pageNumber === currentPage;
@@ -257,13 +223,12 @@ function updatePageNavigation(currentPage, pageSize, filteredData) {
   };
 
   const displayLastPage = () => {
-    const isActive = totalPages === currentPage; // Check if it's the last page
+    const isActive = totalPages === currentPage;
     pagesContainer.innerHTML += `
       <div class="page-number ${isActive ? 'ActivePage' : ''}" onclick="navigatePage(${totalPages}, ${totalPages})">${totalPages}</div>
     `;
   };
 
-  // Display the first page number
   displayPageNumber(1);
 
   if (currentPage > 4) {
@@ -286,19 +251,16 @@ function updatePageNavigation(currentPage, pageSize, filteredData) {
 
 
 
-// Function to navigate between pages
 function navigatePage(newPage, totalPages) {
   if (!isNaN(newPage) && newPage >= 1) {
-      // Ensure the requested page is within valid bounds
       const targetPage = Math.min(newPage, totalPages);
       if (targetPage !== currentPage) {
-          currentPage = targetPage;  // Update currentPage
-          updateURL(currentPage);  // Update the URL before updating the content
-          displayCards(currentPage, pageSize, filteredData); // Use filteredData
+          currentPage = targetPage;
+          updateURL(currentPage);  
+          displayCards(currentPage, pageSize, filteredData);
           updatePageNavigation(currentPage, pageSize, filteredData);
       }
   } else {
-      // Display error message for non-numeric or invalid page number
       displayErrorMessage();
   }
 }
@@ -314,10 +276,9 @@ function getUniqueAuthors(mods, other) {
 }
 
 
-// Add this function to update the list of authors in the HTML
 function updateAuthorsList(authors) {
   const authorsContainer = document.querySelector('.AuthorsContainer');
-  authorsContainer.innerHTML = ''; // Clear existing authors
+  authorsContainer.innerHTML = '';
 
   authors.forEach(author => {
     const authorElement = document.createElement('div');
@@ -376,9 +337,9 @@ function toggleModsOtherCheckbox() {
 function createFilterInputs(authors) {
   const filtersContainer = document.querySelector('.FiltersContainer');
   const filtredContainer = document.querySelector('.filtred');
-  const filtersForm = document.createElement('form'); // Create form element
-  filtersForm.classList.add('filters-form'); // Add class to form
-  filtersForm.id = 'filtersForm'; // Add id to form
+  const filtersForm = document.createElement('form');
+  filtersForm.classList.add('filters-form');
+  filtersForm.id = 'filtersForm';
 
   const filters = Object.keys(filterDisplayNames);
 
@@ -425,7 +386,7 @@ function createFilterInputs(authors) {
     } else if (filter === 'Other') {
       otherContainer.appendChild(filterContainer);
     } else {
-      filtersForm.appendChild(filterContainer); // Append filter container to form
+      filtersForm.appendChild(filterContainer);
     }
   });
   
@@ -441,11 +402,11 @@ function createFilterInputs(authors) {
     const authorLabel = document.createElement('label');
     authorLabel.textContent = author;
 
-    filtersForm.appendChild(authorCheckbox); // Append author checkbox to form
-    filtersForm.appendChild(authorLabel); // Append author label to form
+    filtersForm.appendChild(authorCheckbox);
+    filtersForm.appendChild(authorLabel);
   });
 
-  filtredContainer.appendChild(filtersForm); // Append form to filtred container
+  filtredContainer.appendChild(filtersForm);
 
   const selectedFilters = sessionStorage.getItem('selectedFilters');
   if (selectedFilters) {
@@ -510,7 +471,7 @@ function updateURL(page, selectedFilters, selectedCategories, searchQuery) {
     if (categoriesString) {
       urlParams.set('c', categoriesString);
     } else {
-      urlParams.delete('c'); // Remove 'c' if no categories are selected
+      urlParams.delete('c');
     }
   }
 
@@ -597,7 +558,6 @@ function handleFilterSelection() {
 function parseURLParameters() {
   const urlParams = new URLSearchParams(window.location.search);
 
-  // Parse categories from URL parameters
   const categories = urlParams.get('c');
   if (categories) {
     selectedCategories = new Set(decodeURIComponent(categories).split('&'));
@@ -611,7 +571,6 @@ function parseURLParameters() {
     })
   }
 
-  // Parse filters from URL parameters
   const filters = urlParams.get('filter');
   if (filters) {
     const filterArray = decodeURIComponent(filters).split('&');
@@ -619,13 +578,11 @@ function parseURLParameters() {
       input.checked = filterArray.includes(input.value);
     });
   } else {
-    // Uncheck all filters if no filter parameter is present
     document.querySelectorAll('.filtred input').forEach(input => {
       input.checked = false;
     });
   }
 
-  // Parse search query from URL parameters
   const searchQuery = urlParams.get('q');
   if (searchQuery) {
     document.getElementById('searchInput').value = decodeURIComponent(searchQuery);
@@ -656,41 +613,41 @@ addSearchInputEventListener();
 
 toggleModsOtherCheckbox();
 
-let selectedFilters = 'none'; // Initialize selectedFilters variable with 'none' as default
-let searchQuery = ''; // Initialize searchQuery variable
+let selectedFilters = 'none';
+let searchQuery = '';
 
 function saveToStorageHandleInitialURLParams() {
   const urlParams = new URLSearchParams(window.location.search);
   const pageParam = urlParams.get('page');
   const filterParam = urlParams.get('filter');
-  const categoryParam = urlParams.get('c'); // Get the categories parameter
-  const searchParam = urlParams.get('q'); // Get the search query parameter
+  const categoryParam = urlParams.get('c');
+  const searchParam = urlParams.get('q');
 
   if (pageParam && !isNaN(pageParam)) {
     currentPage = parseInt(pageParam);
   }
 
   if (filterParam) {
-    selectedFilters = filterParam; // Update selectedFilters variable
+    selectedFilters = filterParam;
   }
 
   if (categoryParam) {
     if (categoryParam) {
-      selectedCategories = new Set(categoryParam.split('&')); // Update selectedCategories variable
+      selectedCategories = new Set(categoryParam.split('&'));
     } else {
-      selectedCategories = new Set(); // Handle the case where 'c' is empty
+      selectedCategories = new Set();
     }
   }
 
   if (searchParam) {
-    searchQuery = searchParam; // Update searchQuery variable
+    searchQuery = searchParam;
   }
 }
 
 
 function loadFromStorageHandleInitialURLParams() {
   const filterParam = selectedFilters;
-  const categoryParam = Array.from(selectedCategories).join('&'); // Get selected categories
+  const categoryParam = Array.from(selectedCategories).join('&');
 
   if (filterParam && filterParam !== 'none') {
     const filters = filterParam.split('&');
@@ -698,7 +655,7 @@ function loadFromStorageHandleInitialURLParams() {
       const input = document.getElementById(filter);
       if (input) {
         input.checked = true;
-        handleFilterSelection(); // Trigger filter selection after setting checkboxes
+        handleFilterSelection();
       }
     });
 
@@ -708,7 +665,7 @@ function loadFromStorageHandleInitialURLParams() {
         const input = filtersForm.querySelector(`input[value="${filter}"]`);
         if (input) {
           input.checked = true;
-          handleFilterSelection(); // Trigger filter selection after setting checkboxes
+          handleFilterSelection();
         }
       });
     }
@@ -720,16 +677,16 @@ function loadFromStorageHandleInitialURLParams() {
       const input = document.getElementById(category);
       if (input) {
         input.checked = true;
-        filterDataByCategories(); // Apply the saved categories
+        filterDataByCategories();
       }
     });
   }
 
   const searchInput = document.getElementById('searchInput');
   if (searchInput) {
-    searchInput.value = searchQuery; // Set the value of the search input
+    searchInput.value = searchQuery;
     if (searchQuery) {
-      handleFilterSelection(); // Trigger search if searchQuery is present
+      handleFilterSelection();
     }
   }
 }
@@ -739,22 +696,21 @@ function loadFromStorageHandleInitialURLParams() {
 function loadAndApplyFilterParameters() {
   const urlParams = new URLSearchParams(window.location.search);
   const filterParam = urlParams.get('filter');
-  const categoryParam = urlParams.get('c'); // Get categories parameter
+  const categoryParam = urlParams.get('c');
   const searchQuery = urlParams.get('q');
 
   // Apply filter parameters if they exist
   if (filterParam && filterParam !== 'none') {
-    const filters = filterParam.split('&'); // Use '&' as the separator
+    const filters = filterParam.split('&');
     filters.forEach(filter => {
       const input = document.getElementById(filter);
       if (input) {
         input.checked = true;
       }
     });
-    handleFilterSelection(); // Apply the saved filters
+    handleFilterSelection();
   }
 
-  // Apply categories parameters if they exist
   if (categoryParam) {
     const categories = categoryParam.split('&');
     categories.forEach(category => {
@@ -763,14 +719,13 @@ function loadAndApplyFilterParameters() {
         input.checked = true;
       }
     });
-    filterDataByCategories(); // Apply the saved categories
+    filterDataByCategories();
   }
 
-  // Apply search query if it exists
   const searchInput = document.getElementById('searchInput');
   if (searchQuery && searchInput) {
     searchInput.value = searchQuery;
-    handleFilterSelection(); // Trigger search if searchQuery is present
+    handleFilterSelection();
   }
 }
 
@@ -783,18 +738,16 @@ function loadAndApplyFilterParameters() {
 function saveFilterParameters() {
   const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
   const filtersString = selectedFilters.join('&');
-  const selectedCategories = Array.from(selectedCategories).join('&'); // Collect selected categories
+  const selectedCategories = Array.from(selectedCategories).join('&');
   const searchQuery = document.getElementById('searchInput').value.toLowerCase();
   
-  // Save to sessionStorage
   sessionStorage.setItem('selectedFilters', filtersString);
-  sessionStorage.setItem('selectedCategories', selectedCategories); // Save selected categories
+  sessionStorage.setItem('selectedCategories', selectedCategories);
   sessionStorage.setItem('searchQuery', searchQuery);
   
-  // Update URL parameters
   const urlParams = new URLSearchParams(window.location.search);
   urlParams.set('filter', filtersString);
-  urlParams.set('c', selectedCategories); // Add categories to URL
+  urlParams.set('c', selectedCategories);
   urlParams.set('q', searchQuery);
   window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 }
@@ -803,22 +756,20 @@ function saveFilterParameters() {
 function loadFilterParameters() {
   const urlParams = new URLSearchParams(window.location.search);
   const filterParam = urlParams.get('filter');
-  const categoryParam = urlParams.get('c'); // Get categories parameter
+  const categoryParam = urlParams.get('c');
   const searchQuery = urlParams.get('q');
 
-  // Apply filter parameters if they exist
   if (filterParam && filterParam !== 'none') {
-    const filters = filterParam.split('&'); // Use '&' as the separator
+    const filters = filterParam.split('&');
     filters.forEach(filter => {
       const input = document.getElementById(filter);
       if (input) {
         input.checked = true;
       }
     });
-    handleFilterSelection(); // Apply the saved filters
+    handleFilterSelection();
   }
 
-  // Apply categories parameters if they exist
   if (categoryParam) {
     if (categoryParam) {
       const categories = categoryParam.split('&');
@@ -828,25 +779,38 @@ function loadFilterParameters() {
           input.checked = true;
         }
       });
-      filterDataByCategories(); // Apply the saved categories
+      filterDataByCategories();
     } else {
-      selectedCategories = new Set(); // Handle the case where 'c' is empty
+      selectedCategories = new Set();
     }
   }
 
-  // Apply search query if it exists
   const searchInput = document.getElementById('searchInput');
   if (searchQuery && searchInput) {
     searchInput.value = searchQuery;
-    handleFilterSelection(); // Trigger search if searchQuery is present
+    handleFilterSelection();
   }
+}
+
+function getURLParameters() {
+  const params = new URLSearchParams(window.location.search);
+  const categories = params.get('c'); // Get 'c' parameter for categories
+
+  return categories ? categories.split('&') : []; // Split by '&' if multiple categories
 }
 
 
 function applyFilters() {
   saveFilterParameters();
-  sessionStorage.setItem('searchQuery', document.getElementById('searchInput').value.toLowerCase());
+  const searchInput = document.getElementById('searchInput');
+  const searchQuery = searchInput ? searchInput.value.toLowerCase() : '';
+  const categories = Array.from(selectedCategories).map(cat => encodeURIComponent(cat)).join('&'); // Encode category names
+  const url = new URL(window.location.href);
+  url.searchParams.set('searchQuery', searchQuery);
+  url.searchParams.set('c', categories);
+  window.history.pushState({}, '', url.toString());
 }
+
 
 
 function loadAndDisplayCategories() {
@@ -856,20 +820,19 @@ function loadAndDisplayCategories() {
       const categoriesContainer = document.querySelector('.categories-cards');
       categoriesContainer.innerHTML = '';
 
-      // Load saved categories from sessionStorage
-      const savedCategories = JSON.parse(sessionStorage.getItem('selectedCategories')) || {};
+      const urlCategories = getURLParameters(); // Get categories from URL
 
       categoriesData.forEach(category => {
         const categoryElement = document.createElement('div');
-        categoryElement.classList.add('filter');
-        categoryElement.classList.add('CategoryFilter');
+        categoryElement.classList.add('filter', 'CategoryFilter');
         categoryElement.style.backgroundColor = category.color;
 
-        // Check if the icon property exists
         const encodedIcon = category.icon ? `data:image/svg+xml,${encodeURIComponent(category.icon)}` : '';
 
+        const isChecked = urlCategories.includes(category.title); // Check if category is in URL
+
         categoryElement.innerHTML = `
-          <input type="checkbox" id="category-${category.id}" value="${category.title}" ${savedCategories[category.id] ? 'checked' : ''}>
+          <input type="checkbox" id="category-${category.id}" value="${category.title}" ${isChecked ? 'checked' : ''}>
           <div class="filter-icon">
             ${encodedIcon ? `<div style="background-image: url('${encodedIcon}');" class="ItemIcons"></div>` : ''}
             <label for="category-${category.id}" class="filter-label">${category.title}</label>
@@ -882,11 +845,6 @@ function loadAndDisplayCategories() {
           const isChecked = event.target.checked;
           const categoryId = category.id;
 
-          // Save current category state to sessionStorage
-          const currentSavedCategories = JSON.parse(sessionStorage.getItem('selectedCategories')) || {};
-          currentSavedCategories[categoryId] = isChecked;
-          sessionStorage.setItem('selectedCategories', JSON.stringify(currentSavedCategories));
-
           // Update selectedCategories set
           if (isChecked) {
             selectedCategories.add(event.target.value);
@@ -895,11 +853,13 @@ function loadAndDisplayCategories() {
           }
 
           filterDataByCategories();
+          applyFilters(); // Update URL with new filters
         });
       });
     })
     .catch(error => console.error('Error loading categories:', error));
 }
+
 
 
 function filterDataByCategories() {
@@ -908,7 +868,6 @@ function filterDataByCategories() {
   } else {
     filteredData = allData.filter(item => {
       const itemCategories = new Set(item.categories || []);
-      // Check if all selected categories are included in the item's categories
       return Array.from(selectedCategories).every(category => itemCategories.has(category));
     });
   }
@@ -920,55 +879,45 @@ function filterDataByCategories() {
 document.addEventListener('DOMContentLoaded', () => {
   parseURLParameters();
   
-  loadAndDisplayCategories(); // Ensure this is still called if needed for category display
+  loadAndDisplayCategories();
 });
 
 
 
 
 
-// Load mods and other data
 Promise.all([
   fetch('mods.json').then(response => response.json()),
   fetch('other.json').then(response => response.json())
 ])
   .then(([mods, other]) => {
-    // Assign mods and other data to variables
     modsData = mods;
     otherData = other;
-    allData = [...modsData, ...otherData]; // Initialize allData with mods and other data
-    filteredData = allData; // Initialize filteredData with allData
+    allData = [...modsData, ...otherData];
+    filteredData = allData;
 
 
-    // Get unique authors from mods and other data
     const uniqueAuthors = getUniqueAuthors(mods, other);
 
-    // Initialize page size and current page from URL parameters
     pageSize = 15;
     currentPage = parseInt(new URLSearchParams(window.location.search).get('page')) || 1;
 
-    // Save and load initial URL parameters
     saveToStorageHandleInitialURLParams();
     loadFromStorageHandleInitialURLParams();
 
-    // Display initial cards and page navigation
     displayCards(currentPage, pageSize, filteredData);
     updatePageNavigation(currentPage, pageSize, filteredData);
 
-    // Create filter inputs based on unique authors
     createFilterInputs(uniqueAuthors);
 
-    // Update total translation count if mods and other data are defined
     if (modsData && otherData) {
       updateTotalTranslation(modsData, otherData);
     }
 
-    // Call the function that depends on allData
     handleDataInitialization();
   })
   .catch(error => console.error("Error loading data:", error));
 
-// Define a function to handle operations after allData is initialized
 function handleDataInitialization() {
   handleFilterSelection();
   saveToStorageHandleInitialURLParams();
