@@ -14,6 +14,9 @@
     order: 1; /* Move FiltersContainer to the top */
     width: 100%; /* Take full width on small screens */
     margin-bottom: 10px; /* Add some space between FiltersContainer and CPContainer */
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap!important;
   }
 
   .CPContainer {
@@ -43,7 +46,8 @@
   }
 
   .FiltersContainer {
-    width: auto; /* Allow FiltersContainer to take its natural width */
+    width: auto;
+    
   }
 
 }
@@ -58,11 +62,20 @@
 @media only screen and (max-width: 767px) {
   .filtred{
     margin-top: 10px!important;
-    width: 100%!important;
+    width: calc(40% - 30px)!important;
+  }
+  .categories-container{
+    width: calc(40% - 30px)!important;
   }
   .TopContainer{
     max-width: 90%;
   }
+}
+
+.categories-cards {
+  overflow-y: scroll; /* Ensure scrolling is enabled */
+  padding-right: 5px; /* Adjust this value to move the scrollbar */
+  box-sizing: content-box; /* Ensure padding does not affect width */
 }
 
 
@@ -176,6 +189,11 @@ h2 {
   overflow: auto; 
   display: flex;
   flex-direction: column;
+}
+
+.CategoryFilter{
+  border-radius: var(--small-border-radius);
+  padding: 10px 0;
 }
 
 .filters-header{

@@ -1,100 +1,120 @@
 [
     {
+        "id": 0,
         "title" : "Пригоди",
         "color" : "#772B47",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></circle><polygon points=\"16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polygon></svg>"
     },
     {
+        "id": 1,
         "title" : "Дивні",
         "color" : "#64365C",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><rect x=\"7\" y=\"7.5\" width=\"10\" height=\"14\" rx=\"5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></rect><polyline points=\"2 12.5 4 14.5 7 14.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polyline><polyline points=\"22 12.5 20 14.5 17 14.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polyline><polyline points=\"3 21.5 5 18.5 7 17.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polyline><polyline points=\"21 21.5 19 18.5 17 17.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polyline><polyline points=\"3 8.5 5 10.5 7 11.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polyline><polyline points=\"21 8.5 19 10.5 17 11.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polyline><line x1=\"12\" y1=\"7.5\" x2=\"12\" y2=\"21.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><path d=\"M15.38,8.82A3,3,0,0,0,16,7h0a3,3,0,0,0-3-3H11A3,3,0,0,0,8,7H8a3,3,0,0,0,.61,1.82\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><line x1=\"9\" y1=\"4.5\" x2=\"8\" y2=\"2.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"15\" y1=\"4.5\" x2=\"16\" y2=\"2.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line></svg>"
     },
     {
+        "id": 2,
         "title" : "Декорації",
         "color" : "#4B3F65",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><polyline points=\"9 22 9 12 15 12 15 22\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polyline></svg>"
     },
     {
+        "id": 3,
         "title" : "Економіка",
         "color" : "#364562",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"23\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><path d=\"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path></svg>"
     },
     {
+        "id": 4,
         "title" : "Спорядження",
         "color" : "#2F4858",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><path d=\"M17.573 20.038L3.849 7.913 2.753 2.755 7.838 4.06 19.47 18.206l-1.898 1.832z\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M7.45 14.455l-3.043 3.661 1.887 1.843 3.717-3.25\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M16.75 10.82l3.333-2.913 1.123-5.152-5.091 1.28-2.483 2.985\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M21.131 16.602l-5.187 5.01 2.596-2.508 2.667 2.761\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M2.828 16.602l5.188 5.01-2.597-2.508-2.667 2.761\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path></svg>"
     },
     {
+        "id": 5,
         "title" : "Їжа",
         "color" : "#382735",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><path d=\"M2.27 21.7s9.87-3.5 12.73-6.36a4.5 4.5 0 0 0-6.36-6.37C5.77 11.84 2.27 21.7 2.27 21.7zM8.64 14l-2.05-2.04M15.34 15l-2.46-2.46\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M22 9s-1.33-2-3.5-2C16.86 7 15 9 15 9s1.33 2 3.5 2S22 9 22 9z\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M15 2s-2 1.33-2 3.5S15 9 15 9s2-1.84 2-3.5C17 3.33 15 2 15 2z\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path></svg>"
     },
     {
+        "id": 6,
         "title" : "Ігрові механіки",
         "color" : "#3D3B56",
         "icon" : "  <svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><line x1=\"4\" y1=\"21\" x2=\"4\" y2=\"14\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"4\" y1=\"10\" x2=\"4\" y2=\"3\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"12\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"3\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"20\" y1=\"21\" x2=\"20\" y2=\"16\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"20\" y1=\"12\" x2=\"20\" y2=\"3\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"1\" y1=\"14\" x2=\"7\" y2=\"14\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"9\" y1=\"8\" x2=\"15\" y2=\"8\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"17\" y1=\"16\" x2=\"23\" y2=\"16\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line></svg>"
     },
     {
+        "id": 7,
         "title" : "Бібліотеки",
         "color" : "#5E3B4F",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><path d=\"M4 19.5A2.5 2.5 0 0 1 6.5 17H20\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path></svg>"
     },
     {
+        "id": 8,
         "title" : "Магія",
         "color" : "#6D3F33",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><path d=\"M15 4V2\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M15 16v-2\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M8 9h2\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M20 9h2\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M17.8 11.8 19 13\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M15 9h0\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M17.8 6.2 19 5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"m3 21 9-9\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><path d=\"M12.2 6.2 11 5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path></svg>"
     },
     {
+        "id": 9,
         "title" : "Управління",
         "color" : "#4C364F",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></rect><rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></rect><line x1=\"6\" y1=\"6\" x2=\"6.01\" y2=\"6\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"6\" y1=\"18\" x2=\"6.01\" y2=\"18\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line></svg>"
     },
     {
+        "id": 10,
         "title" : "Міні-гри",
         "color" : "#572C38",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><circle cx=\"12\" cy=\"8\" r=\"7\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></circle><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polyline></svg>"
     },
     {
+        "id": 11,
         "title" : "Моби",
         "color" : "#453543",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" xml:space=\"preserve\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.5\" clip-rule=\"evenodd\" viewBox=\"0 0 24 24\" width=\"24\"  height=\"24\" ><path fill=\"none\" d=\"M0 0h24v24H0z\"></path><path fill=\"none\" stroke=\"#ecf9fb\" stroke-width=\"2px\" d=\"M3 3h18v18H3z\"></path><path stroke=\"#ecf9fb\" fill=\"#ecf9fb\" d=\"M6 6h4v4H6zm8 0h4v4h-4zm-4 4h4v2h2v6h-2v-2h-4v2H8v-6h2v-2Z\"></path></svg>"
     },
     {
+        "id": 12,
         "title" : "Оптимізація",
         "color" : "#37243B",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polygon></svg>"
     },
     {
+        "id": 13,
         "title" : "Соціальні",
         "color" : "#5A2924",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><path d=\"M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path></svg>"
     },
     {
+        "id": 14,
         "title" : "Зберігання",
         "color" : "#3B4335",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><polyline points=\"21 8 21 21 3 21 3 8\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polyline><rect x=\"1\" y=\"3\" width=\"22\" height=\"5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></rect><line x1=\"10\" y1=\"12\" x2=\"14\" y2=\"12\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line></svg>"
     },
     {
+        "id": 15,
         "title" : "Технології",
         "color" : "#614C5D",
         "icon" : "  <svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><line x1=\"22\" y1=\"12\" x2=\"2\" y2=\"12\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><path d=\"M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path><line x1=\"6\" y1=\"16\" x2=\"6.01\" y2=\"16\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line><line x1=\"10\" y1=\"16\" x2=\"10.01\" y2=\"16\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></line></svg>"
     },
     {
+        "id": 16,
         "title" : "Транспортування",
         "color" : "#3E3F28",
         "icon" : "  <svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></rect><polygon points=\"16 8 20 8 23 11 23 16 16 16 16 8\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></polygon><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></circle><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></circle></svg>"
     },
     {
+        "id": 17,
         "title" : "Корисні функції",
         "color" : "#563623",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"24\"  height=\"24\" ><rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></rect><path d=\"M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path></svg>"
     },
     {
+        "id": 18,
         "title" : "Генерація створення",
         "color" : "#382F29",
         "icon" : "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\" width=\"24\"  height=\"24\" ><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z\" stroke=\"#ecf9fb\" fill=\"none\" stroke-width=\"2px\"></path></svg>"
     },
     {
+        "id": 19,
         "title" : "Пісочниця",
         "color" : "#6a5951"
     }

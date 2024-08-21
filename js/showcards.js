@@ -536,7 +536,7 @@ function updateURL(page, selectedFilters, selectedCategories, searchQuery) {
 
 function handleFilterSelection() {
   const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
-  const searchQuery = document.getElementById('searchInput').value.toLowerCase(); // Get the search query
+  const searchQuery = document.getElementById('searchInput').value.toLowerCase();
 
   if (!Array.isArray(allData)) {
     console.error('allData is not an array or is undefined');
@@ -548,7 +548,6 @@ function handleFilterSelection() {
     return;
   }
 
-  // The categoryFilteredData has been filtered to only include items with all selected categories
   let categoryFilteredData = allData.filter(item => {
     const itemCategories = Array.isArray(item.categories) ? new Set(item.categories) : new Set();
     return selectedCategories.size === 0 || Array.from(selectedCategories).every(category => itemCategories.has(category));
@@ -568,7 +567,7 @@ function handleFilterSelection() {
         case 'NotCompleted':
           return !item.completed;
         default:
-          return true; // If the filter is not recognized, include the item
+          return true;
       }
     });
   });
@@ -580,7 +579,6 @@ function handleFilterSelection() {
   });
 
   let totalPages = Math.ceil(filteredData.length / pageSize);
-
   totalPages = Math.max(totalPages, 1);
 
   if (currentPage > totalPages) {
@@ -588,11 +586,50 @@ function handleFilterSelection() {
   }
 
   toggleModsOtherCheckbox(filteredData.length > 0);
-
   displayCards(currentPage, pageSize, filteredData);
   updatePageNavigation(currentPage, pageSize, filteredData);
-
   updateURL(currentPage, selectedFilters, selectedCategories, searchQuery);
+}
+
+
+
+
+function parseURLParameters() {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  // Parse categories from URL parameters
+  const categories = urlParams.get('c');
+  if (categories) {
+    selectedCategories = new Set(decodeURIComponent(categories).split('&'));
+    document.querySelectorAll('.filtred input').forEach(input => {
+      input.checked = selectedCategories.has(input.value);
+    })
+  } else {
+    selectedCategories = new Set();
+    document.querySelectorAll('.filtred input').forEach(input => {
+      input.checked = false;
+    })
+  }
+
+  // Parse filters from URL parameters
+  const filters = urlParams.get('filter');
+  if (filters) {
+    const filterArray = decodeURIComponent(filters).split('&');
+    document.querySelectorAll('.filtred input').forEach(input => {
+      input.checked = filterArray.includes(input.value);
+    });
+  } else {
+    // Uncheck all filters if no filter parameter is present
+    document.querySelectorAll('.filtred input').forEach(input => {
+      input.checked = false;
+    });
+  }
+
+  // Parse search query from URL parameters
+  const searchQuery = urlParams.get('q');
+  if (searchQuery) {
+    document.getElementById('searchInput').value = decodeURIComponent(searchQuery);
+  }
 }
 
 
@@ -649,7 +686,6 @@ function saveToStorageHandleInitialURLParams() {
     searchQuery = searchParam; // Update searchQuery variable
   }
 }
-
 
 
 function loadFromStorageHandleInitialURLParams() {
@@ -820,18 +856,23 @@ function loadAndDisplayCategories() {
       const categoriesContainer = document.querySelector('.categories-cards');
       categoriesContainer.innerHTML = '';
 
+      // Load saved categories from sessionStorage
+      const savedCategories = JSON.parse(sessionStorage.getItem('selectedCategories')) || {};
+
       categoriesData.forEach(category => {
         const categoryElement = document.createElement('div');
         categoryElement.classList.add('filter');
-        categoryElement.style.backgroundColor = category.colour;
+        categoryElement.classList.add('CategoryFilter');
+        categoryElement.style.backgroundColor = category.color;
 
-        const encodedIcon = `data:image/svg+xml,${encodeURIComponent(category.icon)}`;
+        // Check if the icon property exists
+        const encodedIcon = category.icon ? `data:image/svg+xml,${encodeURIComponent(category.icon)}` : '';
 
         categoryElement.innerHTML = `
-          <input type="checkbox" id="${category.title}" value="${category.title}">
+          <input type="checkbox" id="category-${category.id}" value="${category.title}" ${savedCategories[category.id] ? 'checked' : ''}>
           <div class="filter-icon">
-            <div style="background-image: url('${encodedIcon}');" class="ItemIcons"></div>
-            <label for="${category.title}" class="filter-label">${category.title}</label>
+            ${encodedIcon ? `<div style="background-image: url('${encodedIcon}');" class="ItemIcons"></div>` : ''}
+            <label for="category-${category.id}" class="filter-label">${category.title}</label>
           </div>
         `;
 
@@ -839,16 +880,21 @@ function loadAndDisplayCategories() {
 
         categoryElement.querySelector('input').addEventListener('change', (event) => {
           const isChecked = event.target.checked;
-          const categoryValue = event.target.value;
+          const categoryId = category.id;
 
+          // Save current category state to sessionStorage
+          const currentSavedCategories = JSON.parse(sessionStorage.getItem('selectedCategories')) || {};
+          currentSavedCategories[categoryId] = isChecked;
+          sessionStorage.setItem('selectedCategories', JSON.stringify(currentSavedCategories));
+
+          // Update selectedCategories set
           if (isChecked) {
-            selectedCategories.add(categoryValue);
+            selectedCategories.add(event.target.value);
           } else {
-            selectedCategories.delete(categoryValue);
+            selectedCategories.delete(event.target.value);
           }
 
           filterDataByCategories();
-          
         });
       });
     })
@@ -872,8 +918,11 @@ function filterDataByCategories() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadAndDisplayCategories();
+  parseURLParameters();
+  
+  loadAndDisplayCategories(); // Ensure this is still called if needed for category display
 });
+
 
 
 
