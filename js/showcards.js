@@ -329,9 +329,7 @@ function updateAuthorsList(authors) {
 
 
 
-// Function to fetch filter icons from icons.json
 function FetchFilterIcons() {
-  // Replace this with the actual path to your icons.json file
   const iconsJsonPath = 'icons.json';
 
   return fetch(iconsJsonPath)
@@ -345,7 +343,6 @@ function FetchFilterIcons() {
 
 
 
-// Constant object mapping filter variable names to display names and icons
 const filterDisplayNames = {
   Mods: { name: 'Моди', icon: 'icon/minecraft.svg', title: 'Моди' },
   Other: { name: 'Інші', icon: 'icon/other.svg', title: 'Інші' },
@@ -355,12 +352,10 @@ const filterDisplayNames = {
 };
 
 
-// Function to handle toggling between Mods and Other checkboxes
 function toggleModsOtherCheckbox() {
   const modsCheckbox = document.querySelector('input[value="Mods"]');
   const otherCheckbox = document.querySelector('input[value="Other"]');
   
-  // Check if both checkboxes are found before adding event listeners
   if (modsCheckbox && otherCheckbox) {
     modsCheckbox.addEventListener('change', () => {
       if (modsCheckbox.checked) {
@@ -378,7 +373,6 @@ function toggleModsOtherCheckbox() {
   }
 }
 
-// Modify the createFilterInputs function to include headers
 function createFilterInputs(authors) {
   const filtersContainer = document.querySelector('.FiltersContainer');
   const filtredContainer = document.querySelector('.filtred');
@@ -388,7 +382,6 @@ function createFilterInputs(authors) {
 
   const filters = Object.keys(filterDisplayNames);
 
-  // Add headers for Mods/Other and Official/FromMembers/NotCompleted
   const modsHeader = document.createElement('div');
   modsHeader.textContent = 'Тип контенту';
   modsHeader.classList.add('filter-header');
@@ -417,7 +410,6 @@ function createFilterInputs(authors) {
     input.id = filter.toLowerCase();
     input.value = filter;
   
-    // Add event listener only for radio buttons
     input.addEventListener('change', () => handleFilterSelection());
   
     const div = document.createElement('div');
@@ -428,7 +420,6 @@ function createFilterInputs(authors) {
     filterContainer.appendChild(input);
     filterContainer.appendChild(div);
   
-    // Append filters to respective containers based on Mods/Other
     if (filter === 'Mods') {
       modsContainer.appendChild(filterContainer);
     } else if (filter === 'Other') {
@@ -439,7 +430,6 @@ function createFilterInputs(authors) {
   });
   
 
-  // Create checkboxes for each unique author
   authors.forEach(author => {
     const authorCheckbox = document.createElement('input');
     authorCheckbox.type = 'checkbox';
@@ -457,7 +447,6 @@ function createFilterInputs(authors) {
 
   filtredContainer.appendChild(filtersForm); // Append form to filtred container
 
-  // Retrieve selected filters from Session Storage and set checkboxes
   const selectedFilters = sessionStorage.getItem('selectedFilters');
   if (selectedFilters) {
     const filters = selectedFilters.split('&');
@@ -477,7 +466,6 @@ function createFilterInputs(authors) {
 
 
 
-// Function to update the total translation count
 function updateTotalTranslation(mods, other) {
   try {
     const totalTranslationSpan = document.getElementById('TotalTranslation');
@@ -493,39 +481,39 @@ function updateTotalTranslation(mods, other) {
   }
 }
 
-// Call the function after ensuring modsData and otherData are defined
 if (modsData && otherData) {
   updateTotalTranslation(modsData, otherData);
 }
 
 
-// Call the function after ensuring modsData and otherData are defined
 if (modsData && otherData) {
   updateTotalTranslation(modsData, otherData);
 }
 
-// Function to update the URL with the current page, selected filters, and search query
-function updateURL(page, selectedFilters, searchQuery) {
-  // Create a new URLSearchParams object to handle URL parameters
+function updateURL(page, selectedFilters, selectedCategories, searchQuery) {
   const urlParams = new URLSearchParams(window.location.search);
 
-  // Define variables to hold the values of filters and search query
   let filtersString = '';
-  let queryParam = '';
+  let categoriesString = '';
 
-  // Update page number if it has changed
   if (page !== undefined) {
     urlParams.set('page', page);
   }
 
-  // Update selected filters if they have changed
   if (selectedFilters !== undefined) {
-    // Concatenate selected filters with '&' delimiter
     filtersString = selectedFilters ? selectedFilters.join('&') : '';
-    urlParams.set('filter', filtersString); // Keep filters parameter even if it's empty
+    urlParams.set('filter', filtersString);
   }
 
-  // Update search query if it has changed
+  if (selectedCategories !== undefined) {
+    categoriesString = selectedCategories ? Array.from(selectedCategories).join('&') : '';
+    if (categoriesString) {
+      urlParams.set('c', categoriesString);
+    } else {
+      urlParams.delete('c'); // Remove 'c' if no categories are selected
+    }
+  }
+
   if (searchQuery !== undefined) {
     if (searchQuery && searchQuery.trim() !== '') {
       urlParams.set('q', searchQuery.trim());
@@ -534,10 +522,8 @@ function updateURL(page, selectedFilters, searchQuery) {
     }
   }
 
-  // Construct the full URL with updated parameters
-  const fullURL = `${window.location.pathname}?${urlParams}`;
+  const fullURL = `${window.location.pathname}?${urlParams.toString()}`;
 
-  // Replace the current state in the browser history with the updated URL
   window.history.replaceState({}, '', fullURL);
 }
 
@@ -548,76 +534,71 @@ function updateURL(page, selectedFilters, searchQuery) {
 
 
 
-
-
-
-
-
-// Call the toggleModsOtherCheckbox function to set up the event listeners
-
-
-
-
-// Function to handle filter selection and search
 function handleFilterSelection() {
   const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
   const searchQuery = document.getElementById('searchInput').value.toLowerCase(); // Get the search query
 
-  // Filter data based on content type
-  let contentFilteredData = allData.filter(item => {
-    // Check if item matches selected content type filters
+  if (!Array.isArray(allData)) {
+    console.error('allData is not an array or is undefined');
+    return;
+  }
+
+  if (!(selectedCategories instanceof Set)) {
+    console.error('selectedCategories is not a Set or is undefined');
+    return;
+  }
+
+  // The categoryFilteredData has been filtered to only include items with all selected categories
+  let categoryFilteredData = allData.filter(item => {
+    const itemCategories = Array.isArray(item.categories) ? new Set(item.categories) : new Set();
+    return selectedCategories.size === 0 || Array.from(selectedCategories).every(category => itemCategories.has(category));
+  });
+
+  let contentFilteredData = categoryFilteredData.filter(item => {
     return selectedFilters.length === 0 || selectedFilters.every(filter => {
-      if (filter === 'Other') {
-        return otherData.includes(item);
-      } else if (filter === 'Mods') {
-        return modsData.includes(item);
-      } else if (filter === 'Official') {
-        return item.verified === true;
-      } else if (filter === 'FromMembers') {
-        return item.author !== 'СУМ';
-      } else if (filter === 'NotCompleted') {
-        return !item.completed;
+      switch (filter) {
+        case 'Other':
+          return otherData.includes(item);
+        case 'Mods':
+          return modsData.includes(item);
+        case 'Official':
+          return item.verified === true;
+        case 'FromMembers':
+          return item.author !== 'СУМ';
+        case 'NotCompleted':
+          return !item.completed;
+        default:
+          return true; // If the filter is not recognized, include the item
       }
-      return true;
     });
   });
 
-  // Apply category filtering
-  let categoryFilteredData = contentFilteredData.filter(item => {
-    return selectedCategories.size === 0 || item.categories.some(category => selectedCategories.has(category));
+  filteredData = contentFilteredData.filter(item => {
+    const titleMatches = searchQuery === '' || item.title.toLowerCase().includes(searchQuery);
+    const descriptionMatches = searchQuery === '' || item.description.toLowerCase().includes(searchQuery);
+    return titleMatches || descriptionMatches;
   });
 
-  // Apply search query
-  filteredData = categoryFilteredData.filter(item => {
-    return searchQuery === '' || item.title.toLowerCase().includes(searchQuery) || item.description.toLowerCase().includes(searchQuery);
-  });
-
-  // Get the total number of pages with the filtered data
   let totalPages = Math.ceil(filteredData.length / pageSize);
 
-  // Ensure there is at least one page
   totalPages = Math.max(totalPages, 1);
 
-  // Reset current page to the last page if it exceeds the total pages after filtering
   if (currentPage > totalPages) {
     currentPage = totalPages;
   }
 
-  // Toggle Mods/Other checkbox based on the presence of filtered data
   toggleModsOtherCheckbox(filteredData.length > 0);
 
-  // Update the displayed cards and page navigation with the filtered data
   displayCards(currentPage, pageSize, filteredData);
   updatePageNavigation(currentPage, pageSize, filteredData);
 
-  // Update the URL with the current page, selected filters, and search query
-  updateURL(currentPage, selectedFilters, searchQuery);
+  updateURL(currentPage, selectedFilters, selectedCategories, searchQuery);
 }
 
 
 
 
-// Function to add event listener to search input field and save to local storage
+
 function addSearchInputEventListener() {
   const searchInput = document.getElementById('searchInput');
   if (searchInput) {
@@ -628,7 +609,6 @@ function addSearchInputEventListener() {
   }
 }
 
-// Call the function to add event listener to search input field
 addSearchInputEventListener();
 
 
@@ -637,7 +617,6 @@ addSearchInputEventListener();
 
 
 
-// Call the toggleModsOtherCheckbox function to set up the event listeners
 toggleModsOtherCheckbox();
 
 let selectedFilters = 'none'; // Initialize selectedFilters variable with 'none' as default
@@ -647,6 +626,7 @@ function saveToStorageHandleInitialURLParams() {
   const urlParams = new URLSearchParams(window.location.search);
   const pageParam = urlParams.get('page');
   const filterParam = urlParams.get('filter');
+  const categoryParam = urlParams.get('c'); // Get the categories parameter
   const searchParam = urlParams.get('q'); // Get the search query parameter
 
   if (pageParam && !isNaN(pageParam)) {
@@ -657,18 +637,27 @@ function saveToStorageHandleInitialURLParams() {
     selectedFilters = filterParam; // Update selectedFilters variable
   }
 
+  if (categoryParam) {
+    if (categoryParam) {
+      selectedCategories = new Set(categoryParam.split('&')); // Update selectedCategories variable
+    } else {
+      selectedCategories = new Set(); // Handle the case where 'c' is empty
+    }
+  }
+
   if (searchParam) {
     searchQuery = searchParam; // Update searchQuery variable
   }
 }
 
-// Function to load selected filters from storage and apply them to UI
+
+
 function loadFromStorageHandleInitialURLParams() {
   const filterParam = selectedFilters;
+  const categoryParam = Array.from(selectedCategories).join('&'); // Get selected categories
 
   if (filterParam && filterParam !== 'none') {
     const filters = filterParam.split('&');
-    // Update selected filters in the UI
     filters.forEach(filter => {
       const input = document.getElementById(filter);
       if (input) {
@@ -677,7 +666,6 @@ function loadFromStorageHandleInitialURLParams() {
       }
     });
 
-    // Set selected filters in the form with id "filtersForm"
     const filtersForm = document.getElementById('filtersForm');
     if (filtersForm) {
       filters.forEach(filter => {
@@ -690,7 +678,17 @@ function loadFromStorageHandleInitialURLParams() {
     }
   }
 
-  // Load search query from storage and apply it to UI
+  if (categoryParam) {
+    const categories = categoryParam.split('&');
+    categories.forEach(category => {
+      const input = document.getElementById(category);
+      if (input) {
+        input.checked = true;
+        filterDataByCategories(); // Apply the saved categories
+      }
+    });
+  }
+
   const searchInput = document.getElementById('searchInput');
   if (searchInput) {
     searchInput.value = searchQuery; // Set the value of the search input
@@ -701,10 +699,12 @@ function loadFromStorageHandleInitialURLParams() {
 }
 
 
-// Function to load filter parameters and search query from sessionStorage and apply them to the form
+
 function loadAndApplyFilterParameters() {
-  const filterParam = new URLSearchParams(window.location.search).get('filter');
-  const searchQuery = new URLSearchParams(window.location.search).get('q');
+  const urlParams = new URLSearchParams(window.location.search);
+  const filterParam = urlParams.get('filter');
+  const categoryParam = urlParams.get('c'); // Get categories parameter
+  const searchQuery = urlParams.get('q');
 
   // Apply filter parameters if they exist
   if (filterParam && filterParam !== 'none') {
@@ -718,10 +718,23 @@ function loadAndApplyFilterParameters() {
     handleFilterSelection(); // Apply the saved filters
   }
 
+  // Apply categories parameters if they exist
+  if (categoryParam) {
+    const categories = categoryParam.split('&');
+    categories.forEach(category => {
+      const input = document.getElementById(category);
+      if (input) {
+        input.checked = true;
+      }
+    });
+    filterDataByCategories(); // Apply the saved categories
+  }
+
   // Apply search query if it exists
   const searchInput = document.getElementById('searchInput');
   if (searchQuery && searchInput) {
     searchInput.value = searchQuery;
+    handleFilterSelection(); // Trigger search if searchQuery is present
   }
 }
 
@@ -731,41 +744,75 @@ function loadAndApplyFilterParameters() {
 
 
 
-// Save filter parameters to sessionStorage
 function saveFilterParameters() {
   const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
   const filtersString = selectedFilters.join('&');
+  const selectedCategories = Array.from(selectedCategories).join('&'); // Collect selected categories
+  const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+  
+  // Save to sessionStorage
   sessionStorage.setItem('selectedFilters', filtersString);
+  sessionStorage.setItem('selectedCategories', selectedCategories); // Save selected categories
+  sessionStorage.setItem('searchQuery', searchQuery);
+  
+  // Update URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  urlParams.set('filter', filtersString);
+  urlParams.set('c', selectedCategories); // Add categories to URL
+  urlParams.set('q', searchQuery);
+  window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 }
 
-// Load filter parameters from sessionStorage and apply them to the form
-function loadFilterParameters() {
-  const filterParam = sessionStorage.getItem('selectedFilters');
 
+function loadFilterParameters() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const filterParam = urlParams.get('filter');
+  const categoryParam = urlParams.get('c'); // Get categories parameter
+  const searchQuery = urlParams.get('q');
+
+  // Apply filter parameters if they exist
   if (filterParam && filterParam !== 'none') {
-    const filters = filterParam.split('&');
+    const filters = filterParam.split('&'); // Use '&' as the separator
     filters.forEach(filter => {
       const input = document.getElementById(filter);
       if (input) {
         input.checked = true;
-        handleFilterSelection(); // Apply the saved filters
-
       }
     });
     handleFilterSelection(); // Apply the saved filters
   }
+
+  // Apply categories parameters if they exist
+  if (categoryParam) {
+    if (categoryParam) {
+      const categories = categoryParam.split('&');
+      categories.forEach(category => {
+        const input = document.getElementById(category);
+        if (input) {
+          input.checked = true;
+        }
+      });
+      filterDataByCategories(); // Apply the saved categories
+    } else {
+      selectedCategories = new Set(); // Handle the case where 'c' is empty
+    }
+  }
+
+  // Apply search query if it exists
+  const searchInput = document.getElementById('searchInput');
+  if (searchQuery && searchInput) {
+    searchInput.value = searchQuery;
+    handleFilterSelection(); // Trigger search if searchQuery is present
+  }
 }
 
-// Call saveFilterParameters when filters are applied
+
 function applyFilters() {
   saveFilterParameters();
-  // Save search query along with filter parameters
   sessionStorage.setItem('searchQuery', document.getElementById('searchInput').value.toLowerCase());
-  // Apply filters logic
 }
 
 
-// Function to load and display categories from ItemCategories.json
 function loadAndDisplayCategories() {
   fetch('ItemCategories.json')
     .then(response => response.json())
@@ -778,10 +825,8 @@ function loadAndDisplayCategories() {
         categoryElement.classList.add('filter');
         categoryElement.style.backgroundColor = category.colour;
 
-        // Encode the SVG icon as a data URI
         const encodedIcon = `data:image/svg+xml,${encodeURIComponent(category.icon)}`;
 
-        // Create the inner HTML structure
         categoryElement.innerHTML = `
           <input type="checkbox" id="${category.title}" value="${category.title}">
           <div class="filter-icon">
@@ -792,7 +837,6 @@ function loadAndDisplayCategories() {
 
         categoriesContainer.appendChild(categoryElement);
 
-        // Add event listener to update selected categories
         categoryElement.querySelector('input').addEventListener('change', (event) => {
           const isChecked = event.target.checked;
           const categoryValue = event.target.value;
@@ -803,8 +847,8 @@ function loadAndDisplayCategories() {
             selectedCategories.delete(categoryValue);
           }
 
-          // Filter the data based on selected categories
           filterDataByCategories();
+          
         });
       });
     })
@@ -812,27 +856,21 @@ function loadAndDisplayCategories() {
 }
 
 
-// Function to filter data based on selected categories
 function filterDataByCategories() {
   if (selectedCategories.size === 0) {
-    // No category filter applied, show all data
     filteredData = [...modsData, ...otherData];
   } else {
     filteredData = allData.filter(item => {
-      // Ensure item.categories is defined and is an array before using .some()
-      return Array.isArray(item.categories) && item.categories.some(category => selectedCategories.has(category));
+      const itemCategories = new Set(item.categories || []);
+      // Check if all selected categories are included in the item's categories
+      return Array.from(selectedCategories).every(category => itemCategories.has(category));
     });
   }
 
-  // Display filtered cards and update page navigation
-  displayCards(currentPage, pageSize, filteredData);
-  updatePageNavigation(currentPage, pageSize, filteredData);
+  handleFilterSelection();
 }
 
 
-
-
-// Call the function to load and display categories on page load
 document.addEventListener('DOMContentLoaded', () => {
   loadAndDisplayCategories();
 });

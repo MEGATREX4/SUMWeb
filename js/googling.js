@@ -56,8 +56,6 @@ async function fetchDataAndUpdateKeywords() {
 
         const keywords = combineAndModifyKeywords(otherData, modsData);
         updateMetaKeywords(keywords);
-
-        console.log('Script executed successfully!');
     } catch (error) {
         console.error('Error in script execution:', error);
     }
