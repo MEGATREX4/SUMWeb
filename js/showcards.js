@@ -9,6 +9,11 @@ let otherData;
 let filteredData;
 let selectedCategories = new Set();
 
+
+
+
+
+
 function createModCard(mod) {
   const card = document.createElement('div');
   card.classList.add('card');
@@ -924,3 +929,8 @@ function handleDataInitialization() {
   loadFromStorageHandleInitialURLParams();
 
 }
+
+document.querySelector('#category-header').addEventListener('click', function() {
+  const categoriesCards = document.querySelector('.categories-cards');
+  categoriesCards.classList.toggle('open');
+});

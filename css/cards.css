@@ -30,6 +30,23 @@
   .CardsContainer{
     margin-top: 5px;
   }
+  .categories-cards {
+    display: none; /* Hide by default */
+    max-height: 0; /* Ensure it's hidden */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Animation effect */
+    height:auto!important;
+  }
+
+  .categories-cards.open {
+    display: block; /* Show when open */
+    max-height: 500px; /* Adjust max-height as needed */
+    margin-bottom: 5px;
+  }
+  .CategoryFilter{
+    margin-bottom: 5px;
+    gap: 0!important;
+  }
 }
 
 /* Media query for screens between 768px and 1023px */
@@ -62,10 +79,10 @@
 @media only screen and (max-width: 767px) {
   .filtred{
     margin-top: 10px!important;
-    width: calc(40% - 30px)!important;
+    width: calc(100%)!important;
   }
   .categories-container{
-    width: calc(40% - 30px)!important;
+    width: calc(100%)!important;
   }
   .TopContainer{
     max-width: 90%;
@@ -180,8 +197,7 @@ h2 {
 .categories-container{
   margin-top: 0px;
   gap: 0.5rem;
-  
-  height: 256px;
+  max-height: 256px;
 }
 
 .categories-cards{
