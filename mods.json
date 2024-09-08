@@ -3247,5 +3247,27 @@
         ],
         "id": "000200",
         "date": "24/07/2024 14:57:34"
+    },
+    {
+        "title": "Translations for Nvidium",
+        "gameversion": "1.20+",
+        "engine": "Fabric",
+        "categories": [
+            "Бібліотеки",
+            "Управління",
+            "Оптимізація"
+        ],
+        "description": "![](https://i.imgur.com/k8A1buX.jpg)\r\n\r\n### Що таке Nvidium?\r\nNvidium - це заміна промальовування для Sodium, яка використовує тільки розширення OpenGL від Nvidia для значного збільшення FPS.\r\n\r\n#### Підтримувані мови\r\n* Англійська\r\n* Іспанська\r\n* Українська\r\n* Японська\r\n* Корейська\r\n* Традиційна китайська (Тайвань)\r\n\r\n### Як я можу зробити свій внесок?\r\nВи можете легко додати переклад для вашої рідної мови на нашій сторінці [Crowdin](https://crowdin.com/project/nvidium-ua)!",
+        "image": "https://i.imgur.com/nED2JT4.jpeg",
+        "verified": false,
+        "author": "ether.lang",
+        "completed": true,
+        "translation": "https://crowdin.com/project/nvidium-ua",
+        "link": [
+            "https://modrinth.com/mod/nvidium",
+            "https://modrinth.com/resourcepack/nvidium-translations"
+        ],
+        "id": "000202",
+        "date": "08/09/2024 17:19:46"
     }
 ]
