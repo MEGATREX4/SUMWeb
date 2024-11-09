@@ -24,7 +24,7 @@ input[type="radio"], input[type="checkbox"] {
     margin-right: 10px;
 }
 
-input{
+input, textarea{
     color: #3b3b3b;
     background-color: #ffffff;
     border-radius: var(--medium-border-radius);
@@ -35,6 +35,11 @@ input{
     font-family: var(--font-family);
     font-weight: 200;
     border: none;
+}
+
+textarea{
+    height: 50px;
+    resize:vertical;
 }
 
 .Processing{
