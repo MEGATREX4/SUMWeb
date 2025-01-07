@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "netlify-plugin-inline-functions-env": "^1.0.9"
+  }
+}

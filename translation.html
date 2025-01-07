@@ -104,87 +104,84 @@
             }
 
             async function sendContact(ev) {
-                ev.preventDefault();
+    ev.preventDefault();
 
-                const itemname = document.getElementById('ItemName').value;
-                const name = document.getElementById('Name').value;
-                const image = document.getElementById('Image').value;
-                const gmurl = document.getElementById('GMUrl').value;
-                const trnalstionLink = document.getElementById('TrnalstionLink').value;
-                const added = document.querySelector('input[name="entry.666320625"]:checked') ? document.querySelector('input[name="entry.666320625"]:checked').value : null;
-                const contact = document.getElementById('Contact').value;
-                const processingCheckbox = document.getElementById('Processing');
+    const itemname = document.getElementById('ItemName').value;
+    const name = document.getElementById('Name').value;
+    const image = document.getElementById('Image').value;
+    const gmurl = document.getElementById('GMUrl').value;
+    const trnalstionLink = document.getElementById('TrnalstionLink').value;
+    const added = document.querySelector('input[name="entry.666320625"]:checked') 
+        ? document.querySelector('input[name="entry.666320625"]:checked').value 
+        : null;
+    const contact = document.getElementById('Contact').value;
+    const processingCheckbox = document.getElementById('Processing');
 
-                // Check if all required fields are filled in and Processing checkbox is checked
-                if (!itemname || !name || !image || !contact || !added || !processingCheckbox.checked) {
-                    alert('Будь ласка, заповніть всі обов\'язкові поля та підтвердіть обробку даних.');
-                    return;
-                }
+    if (!itemname || !name || !image || !contact || !added || !processingCheckbox.checked) {
+        alert('Будь ласка, заповніть всі обов\'язкові поля та підтвердіть обробку даних.');
+        return;
+    }
 
-                const timestamp = new Date().toISOString();
+    const timestamp = new Date().toISOString();
 
-                let thumbnail = null; // Initialize thumbnail variable
+    let thumbnail = null;
+    if (isValidImageUrl(image)) {
+        thumbnail = { url: image };
+    }
 
-                // Check if the image URL is valid
-                if (isValidImageUrl(image)) {
-                    thumbnail = { url: image }; // Set thumbnail URL if image is valid
-                }
+    const webhookBody = {
+        embeds: [{
+            title: itemname,
+            fields: [
+                { name: ':paintbrush: Назва перекладеного', value: itemname },
+                { name: ':bust_in_silhouette: Ваше ім\'я/назва команди', value: name },
+                { name: ':frame_photo: Зображення перекладеного', value: image },
+                { name: ':paperclips: Посилання на гру/мод(можна декілька)', value: gmurl },
+                { name: ':link: Посилання на переклад', value: trnalstionLink },
+                { name: ':eyes: Чи додали ваш перклад офіційно', value: added },
+                { name: ':thread: Контакти та додаткова інформація', value: contact },
+            ],
+            thumbnail: thumbnail,
+            timestamp: timestamp,
+        }],
+    };
 
-                const webhookBody = {
-                    embeds: [{
-                        title: itemname,
-                        fields: [
-                            { name: ':paintbrush: Назва перекладеного', value: itemname },
-                            { name: ':bust_in_silhouette: Ваше ім\'я/назва команди', value: name },
-                            { name: ':frame_photo: Зображення перекладеного', value: image },
-                            { name: ':paperclips: Посилання на гру/мод(можна декілька)', value: gmurl },
-                            { name: ':link: Посилання на переклад', value: trnalstionLink },
-                            { name: ':eyes: Чи додали ваш перклад офіційно', value: added },
-                            { name: ':thread: Контакти та додаткова інформація', value: contact },
-                        ],
-                        thumbnail: thumbnail, // Include thumbnail if valid
-                        timestamp: timestamp // Add timestamp to the embed
-                    }],
-                };
+    try {
+        const response = await fetch('/.netlify/functions/discordWebhook', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(webhookBody),
+        });
 
-                const webhookUrl = 'https://discord.com/api/webhooks/1201289349308874863/YfVwUk2F2_DgZCJdcD_2CRA5YtOE8eGcgjIwH-STiOTkkp2_0md3woK9oVydSEn2D7Pv';
+        if (response.ok) {
+            // Надсилаємо дані до Google Forms
+            const form = document.querySelector('form');
+            const formData = new FormData(form);
 
-                const response = await fetch(webhookUrl, {
+            const googleFormsUrl = 'https://docs.google.com/forms/d/1UaAQAJ1iZWmhDKxmbCytomdZpDgu_y7mh72oenMzUY8/formResponse';
+
+            try {
+                await fetch(googleFormsUrl, {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(webhookBody),
+                    body: formData,
+                    mode: 'no-cors',
                 });
 
-                if (response.ok) {
-                    const form = document.querySelector('form');
-
-                    const formData = new FormData(form);
-
-                    const googleFormsUrl = 'https://docs.google.com/forms/d/1UaAQAJ1iZWmhDKxmbCytomdZpDgu_y7mh72oenMzUY8/formResponse';
-
-                    try {
-                        // Send POST request to Google Forms
-                        const response = await fetch(googleFormsUrl, {
-                            method: 'POST',
-                            body: formData,
-                            mode: 'no-cors'
-                        });
-
-                        // Redirect to another page after successful submission
-                        if (response.ok) {
-                            window.location.href = 'submited';
-                        } else {
-                            window.location.href = 'submited';
-                        }
-                    } catch (error) {
-                        window.location.href = 'submited';
-                    }
-                } else {
-                    alert('Сталась якась помилка, перевірте введені дані та спробуйте ще раз.');
-                }
+                window.location.href = 'submited';
+            } catch (error) {
+                console.error('Помилка при надсиланні до Google Forms:', error);
+                window.location.href = 'submited';
             }
+        } else {
+            alert('Сталась якась помилка, перевірте введені дані та спробуйте ще раз.');
+        }
+    } catch (error) {
+        console.error('Помилка при надсиланні до серверної функції:', error);
+        alert('Сталась якась помилка, перевірте введені дані та спробуйте ще раз.');
+    }
+}
 
             // Function to validate image URL
             function isValidImageUrl(url) {
