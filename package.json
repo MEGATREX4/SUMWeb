@@ -1,5 +1,8 @@
 {
-  "devDependencies": {
-    "netlify-plugin-inline-functions-env": "^1.0.9"
+  "type": "module",
+  "dependencies": {
+    "install": "^0.13.0",
+    "node-fetch": "^2.6.7",
+    "npm": "^11.0.0"
   }
 }
