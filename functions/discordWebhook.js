@@ -1,6 +1,6 @@
 exports.handler = async (event, context) => {
-    // Доступ до змінної середовища 
-    const webhookUrl = process.env.DISCORD;
+    // Доступ до змінної середовища
+    const webhookUrl = process.env.DISCORD_WEBHOOK;
   
     if (!webhookUrl) {
       return {
