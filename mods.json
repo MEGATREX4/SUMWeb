@@ -3333,5 +3333,64 @@
         ],
         "id": "000206",
         "date": "09/11/2024 20:29:25"
+    },
+    {
+        "title": "Minecraft Transit Railway (MTR)",
+        "gameversion": "1.8.9, 1.16.2+",
+        "engine": "Forge, Fabric",
+        "categories": [
+            "Декорації"
+        ],
+        "description": "Minecraft Transit Railway - це мод для Minecraft, який дозволяє створювати власну транспортну мережу з автоматизованими поїздами, човнами, канатними дорогами та літаками. Версія 4.0.0 включає повний перепис коду, що значно зменшує затримки на серверах Minecraft. Основні функції включають налаштування поїздів, реалістичні рухи поїздів, покращену сигналізацію, бічні ліфти та нову онлайн-систему карт.\r\n\r\n![](https://media.forgecdn.net/attachments/608/880/3feaa76b-2215-450e-8ba0-cb946d4e3d42.png)",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.forgecdn.net%2Favatars%2F558%2F845%2F637907450842557925.png&f=1&nofb=1&ipt=67a35d8ba9c3cbe45a2eb34135c34739fc4ba8c7af243f3a597b17ff06f96852&ipo=images",
+        "verified": true,
+        "author": "Reizer023, Artem Vanieiev (archiefloppy), MartianDIll, MrGaben (dimagasko), Павло Сухацький (pavlosuhackij58), TravkaEngine, Renat Zimin (RenyaVostok), Arsen Pronyk (BlyeX), MAX29STIVE",
+        "completed": true,
+        "translation": "https://crowdin.com/project/minecraft-transit-railway/uk",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/minecraft-transit-railway"
+        ],
+        "id": "000207",
+        "date": "20/01/2025 14:42:22"
+    },
+    {
+        "title": "Create Railways Navigator",
+        "gameversion": "1.18.2+",
+        "engine": "Fabric, Forge, NeoForge",
+        "categories": [
+            "Декорації"
+        ],
+        "description": "Create Railways Navigator (CRN) - це мод для Minecraft, який дозволяє отримувати список можливих залізничних сполучень у вашому світі від однієї станції до іншої. Мод також містить інші функції, пов'язані з навігацією поїздів, такі як дисплеї.\r\n\r\nЗалежності: Цей мод вимагає Minecraft Create Mod версії 0.5.1e або вище.\r\n\r\nОсобливості:\r\n\r\nНавігатор: CRN, натхненний DB Navigator (додаток у Німеччині), пропонує можливі залізничні сполучення для поїздів з Create Mod у вашому світі Minecraft. Різні параметри налаштування дозволяють визначити, які станції слід розглядати як одну станцію, і як результати навігації повинні бути відфільтровані та відсортовані, щоб ви завжди отримували найкращі пропозиції маршрутів.\r\n\r\nРозширені дисплеї: Оновіть свої інформаційні табло та використовуйте їх на платформах, щоб показувати більше інформації про ваші поїзди у більш стильний спосіб, або використовуйте їх всередині поїздів як дисплеї призначення поїздів або інформаційні дисплеї для пасажирів. Налаштуйте їх і вирішуйте, скільки інформації має бути відображено.\r\n\r\nЦей мод значно покращує навігацію та інформаційні можливості для залізничних систем у Minecraft.\r\n\r\n![](https://cdn.modrinth.com/data/Dq3STxps/images/1603ac19d27e757d8ad73a5055f88f078d43c838.png)",
+        "image": "https://cdn.modrinth.com/data/Dq3STxps/10e1b3796f2fcf5b70bb77110e68b59c750310ac_96.webp",
+        "verified": true,
+        "author": "Lemonnik6484, MartianDill",
+        "completed": true,
+        "translation": "https://crowdin.com/project/create-railways-navigator/uk",
+        "link": [
+            "https://modrinth.com/mod/create-railways-navigator",
+            "https://www.curseforge.com/minecraft/mc-mods/create-railways-navigator"
+        ],
+        "id": "000208",
+        "date": "20/01/2025 14:45:48"
+    },
+    {
+        "title": "Enigmatic Legacy",
+        "gameversion": "1.14.4+",
+        "engine": "Forge",
+        "categories": [
+            "Пригоди",
+            "Дивні",
+            "Спорядження",
+            "Магія"
+        ],
+        "description": "Enigmatic Legacy - це мод для Minecraft, який надає інструменти для дослідження безмежних світів Minecraft. Він додає нові ресурси, потужне спорядження та стародавні реліквії, щоб винагородити вас за дослідження. Мод розширює механіку ванільної гри, заповнюючи прогалини, залишені оригінальною грою.\r\n\r\nОсобливості:\r\n\r\nНові інструменти, броня та зброя: Додаються нові рівні спорядження, доступні на пізніх етапах гри.\r\n\r\nЛут з підземель: Нові предмети в підземеллях, як з моду, так і з ванільної гри.\r\n\r\nЗілля та маніпуляції з чарами: Розширена система варіння зіль та нові зілля з потужними ефектами.\r\n\r\nУправління інвентарем: Нові способи керування інвентарем та створення великих отворів у світі.\r\n\r\nАксесуари: Завдяки Curios API, додаються кільця, амулети, сувої та камені заклинань.\r\n\r\nНові досягнення: Відображають ваш прогрес та найважливіші досягнення в моді.\r\n\r\nРецепти: Всі рецепти можна розблокувати в книзі рецептів, отримавши ключові інгредієнти.\r\n\r\n![](https://media.forgecdn.net/attachments/261/109/creative_tab.png)",
+        "image": "https://i.imgur.com/JVQcyBV.png",
+        "verified": false,
+        "author": "Inasai",
+        "completed": true,
+        "translation": "",
+        "link": [],
+        "id": "000209",
+        "date": "20/01/2025 14:53:16"
     }
 ]
