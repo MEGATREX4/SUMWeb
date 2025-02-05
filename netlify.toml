@@ -1,4 +1,0 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'self'; frame-src https://www.youtube.com https://www.youtube.com/embed"

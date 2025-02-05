@@ -311,19 +311,17 @@ function updatePageMeta(selectedItem) {
 function preprocessDescriptionForIframe(description) {
     // Replace custom markdown like [iframe](url) with actual iframe HTML
     return description.replace(/\[iframe\]\((https?:\/\/[^\)]+)\)/g, (match, url) => {
-        // Check if the URL is from YouTube embed
-        const isYouTubeEmbed = url.includes('youtube.com/embed') || url.includes('youtu.be/');
-        
-        if (isYouTubeEmbed) {
-            // If it's a YouTube embed URL, render the iframe directly
-            return `<iframe width="560" height="315" src="${url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        // Check if the URL is from YouTube (you can add other domains here)
+        const isYouTube = url.includes('youtube.com') || url.includes('youtu.be');
+        if (isYouTube) {
+            // If it's a YouTube URL, show a fallback message instead of the iframe
+            return `<p>Це відео не можна вбудувати безпосередньо через обмеження платформи. <a href="${url}" target="_blank">Натисніть тут, щоб переглянути на YouTube</a>.</p>`;
         } else {
             // For other URLs, render iframe as usual
             return `<iframe src="${url}" frameborder="0" width="560" height="315"></iframe>`;
         }
     });
 }
-
 
 
 function handle404Error() {
