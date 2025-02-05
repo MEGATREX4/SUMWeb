@@ -311,9 +311,20 @@ function updatePageMeta(selectedItem) {
 function preprocessDescriptionForIframe(description) {
     // Replace custom markdown like [iframe](url) with actual iframe HTML
     return description.replace(/\[iframe\]\((https?:\/\/[^\)]+)\)/g, (match, url) => {
-        return `<iframe src="${url}" frameborder="0" width="560" height="315"></iframe>`;
+        // Check if the URL is from YouTube embed
+        const isYouTubeEmbed = url.includes('youtube.com/embed') || url.includes('youtu.be/');
+        
+        if (isYouTubeEmbed) {
+            // If it's a YouTube embed URL, render the iframe directly
+            return `<iframe width="560" height="315" src="${url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        } else {
+            // For other URLs, render iframe as usual
+            return `<iframe src="${url}" frameborder="0" width="560" height="315"></iframe>`;
+        }
     });
 }
+
+
 
 function handle404Error() {
     document.title = "Йой, халепа";
