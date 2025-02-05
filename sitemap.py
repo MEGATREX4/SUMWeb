@@ -1,55 +1,78 @@
+# sitemap.py
 import json
 from datetime import datetime, timezone
 
-# Define the file paths
+# File paths
 mods_file_path = 'mods.json'
 other_file_path = 'other.json'
 sitemap_file_path = 'itemsitemap.xml'
 
-# Function to read JSON file and extract IDs
-def extract_ids(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        data = json.load(file)
-        ids = [item['id'] for item in data]
-    return ids
+def update_sitemap(item_id=None):
+    """ Updates the sitemap for a specific item or regenerates the full sitemap if item_id is None. """
 
-# Extract IDs from both JSON files
-mods_ids = extract_ids(mods_file_path)
-other_ids = extract_ids(other_file_path)
+    def extract_ids(file_path):
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            return [item['id'] for item in data]
 
-# Combine all IDs and sort them
-all_ids = sorted(mods_ids + other_ids, key=lambda x: int(x))
+    # Extract IDs from JSON files
+    mods_ids = extract_ids(mods_file_path)
+    other_ids = extract_ids(other_file_path)
+    all_ids = sorted(mods_ids + other_ids, key=lambda x: int(x))
 
-# Base URL for sitemap
-base_url = "https://sumtranslate.netlify.app/item.html?id="
+    # Base URL
+    base_url = "https://sumtranslate.netlify.app/item.html?id="
 
-# Current date and time in UTC
-current_time = datetime.now(timezone.utc).isoformat()
+    # Get current time
+    current_time = datetime.now(timezone.utc).isoformat()
 
-# Generate the sitemap URLs
-sitemap_entries = []
-for item_id in all_ids:
-    sitemap_entry = f"""<url>
-        <loc>{base_url}{item_id}</loc>
-        <lastmod>{current_time}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>"""
-    sitemap_entries.append(sitemap_entry)
+    # Read existing sitemap
+    try:
+        with open(sitemap_file_path, 'r', encoding='utf-8') as file:
+            existing_sitemap = file.read()
+    except FileNotFoundError:
+        existing_sitemap = ""
 
-# Create the sitemap XML content with additional namespaces
-sitemap_xml = f"""<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" 
-        xmlns:xhtml="http://www.w3.org/1999/xhtml" 
-        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" 
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    # If an item_id is provided, update only that entry
+    if item_id:
+        new_entry = f"""<url>
+            <loc>{base_url}{item_id}</loc>
+            <lastmod>{current_time}</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>"""
+
+        if f"<loc>{base_url}{item_id}</loc>" in existing_sitemap:
+            # Replace the existing entry
+            updated_sitemap = existing_sitemap.replace(
+                f"<loc>{base_url}{item_id}</loc>", new_entry
+            )
+        else:
+            # Append new entry
+            updated_sitemap = existing_sitemap.replace(
+                "</urlset>", f"{new_entry}\n</urlset>"
+            )
+
+    else:
+        # Regenerate the whole sitemap
+        sitemap_entries = [
+            f"""<url>
+            <loc>{base_url}{item}</loc>
+            <lastmod>{current_time}</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>"""
+            for item in all_ids
+        ]
+
+        updated_sitemap = f"""<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {''.join(sitemap_entries)}
 </urlset>"""
 
-# Write the sitemap to a file
-with open(sitemap_file_path, 'w', encoding='utf-8') as file:
-    file.write(sitemap_xml)
+    # Write back to file
+    with open(sitemap_file_path, 'w', encoding='utf-8') as file:
+        file.write(updated_sitemap)
 
-print(f"Sitemap generated successfully and saved to {sitemap_file_path}")
+    print(f"Sitemap {'updated' if item_id else 'regenerated'} successfully!")
+

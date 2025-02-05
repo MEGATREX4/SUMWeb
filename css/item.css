@@ -47,7 +47,7 @@ h2{
     margin: 10px auto;
 }
 
-.itemdescription img{
+.itemdescription img, .itemdescription iframe{
     max-width: 100%;
     /* centred image */
     margin: 10px auto;

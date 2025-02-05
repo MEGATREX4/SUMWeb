@@ -3392,5 +3392,24 @@
         "link": [],
         "id": "000209",
         "date": "20/01/2025 14:53:16"
+    },
+    {
+        "title": "Ambiance!",
+        "gameversion": "1.21",
+        "engine": "Forge, Fabric, NeoForge",
+        "categories": [
+            "Декорації"
+        ],
+        "description": "**Маленький мод, який додає нові атмосферні ефекти до гри Minecraft!**\r\n\r\n\r\n### Оновлений вигляд для:\r\n- **Блоки**:\r\n  - Око Ендера\r\n  - Портал кінця\r\n  - Портал кінцевих воріт\r\n  - Поширення каталізатора скалка\r\n  - Сплеск казана з водою\r\n  - Сплеск казана з лавою\r\n  - Вогонь\r\n  - Багаття\r\n  - Факел\r\n  - Свічка\r\n  - Спавнери мобів\r\n  - Ефекти сховища винагороди\r\n\r\n- **Предмети**:\r\n  - Літаюче око Ендера\r\n\r\n- **Сутності**:\r\n  - Блисківка спалення\r\n  - Ендермен\r\n  - Ендерміт\r\n\r\n[iframe](https://youtu.be/HBDCdwrtwx0)\r\n\r\n",
+        "image": "https://cdn.modrinth.com/data/hCdWhw9o/9df0d2d8ae3748a3f085f33e9cbf9bae809b8184_96.webp",
+        "verified": true,
+        "author": "MartianDill",
+        "completed": true,
+        "translation": "https://crowdin.com/project/geode-plus/uk#/Crowdin%20%2F%20main/ambiance",
+        "link": [
+            "https://modrinth.com/mod/ambiance"
+        ],
+        "id": "000210",
+        "date": "05/02/2025 17:48:59"
     }
 ]

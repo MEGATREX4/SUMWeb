@@ -3,6 +3,7 @@ import json
 import os
 from datetime import datetime
 import subprocess
+from sitemap import update_sitemap
 
 def run_sitemap_script():
     # Run the sitemap.py script
@@ -45,28 +46,24 @@ def get_date_time():
     return now.strftime("%d/%m/%Y %H:%M:%S")
 
 def save_record(data):
-    # Determine the filename based on the source
     filename = 'mods.json' if data.get('source') == 'mods' else 'other.json'
 
-    # Remove the 'source' key from the data
     data_without_source = data.copy()
     data_without_source.pop('source', None)
 
-    # Load existing records from the file
     try:
         with open(filename, 'r', encoding='utf-8') as file:
             records = json.load(file)
     except FileNotFoundError:
         records = []
 
-    # Append the new record to the existing records
     records.append(data_without_source)
 
-    # Write the updated records back to the file
     with open(filename, 'w', encoding='utf-8') as file:
         json.dump(records, file, indent=4, ensure_ascii=False)
-    run_sitemap_script()
-    print("Sitemap updated successfully!")
+
+    # Update sitemap for the specific ID
+    update_sitemap(data_without_source['id'])
 
 
 @app.route('/')

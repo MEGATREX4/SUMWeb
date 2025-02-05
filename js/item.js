@@ -249,9 +249,11 @@ function updatePageMeta(selectedItem) {
     
                     // Preprocess description to replace single newlines with double newlines
                     const preprocessedDescription = selectedItem.description.replace(/\n/g, '\n\n');
+
+                    const modifiedDescription = preprocessDescriptionForIframe(preprocessedDescription);
     
                     // Convert Markdown description to HTML and wrap in a container with the class itemdescription
-                    const descriptionHTML = `<div class="itemdescription">${marked.parse(preprocessedDescription)}</div>`;
+                    const descriptionHTML = `<div class="itemdescription">${marked.parse(modifiedDescription)}</div>`;
     
                     // Create HTML string for item data
                     const itemHTML = `
@@ -305,6 +307,13 @@ function updatePageMeta(selectedItem) {
     updateItemPage();
 });
 
+
+function preprocessDescriptionForIframe(description) {
+    // Replace custom markdown like [iframe](url) with actual iframe HTML
+    return description.replace(/\[iframe\]\((https?:\/\/[^\)]+)\)/g, (match, url) => {
+        return `<iframe src="${url}" frameborder="0" width="560" height="315"></iframe>`;
+    });
+}
 
 function handle404Error() {
     document.title = "Йой, халепа";
