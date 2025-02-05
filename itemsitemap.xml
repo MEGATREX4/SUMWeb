@@ -1052,4 +1052,16 @@
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
         </url>
+<url>
+            <loc>https://sumtranslate.netlify.app/item.html?id=000211</loc>
+            <lastmod>2025-02-05T16:17:04.406418+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>
+<url>
+            <loc>https://sumtranslate.netlify.app/item.html?id=000212</loc>
+            <lastmod>2025-02-05T16:19:28.545526+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>
 </urlset>

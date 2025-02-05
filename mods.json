@@ -3400,7 +3400,7 @@
         "categories": [
             "Декорації"
         ],
-        "description": "**Маленький мод, який додає нові атмосферні ефекти до гри Minecraft!**\r\n\r\n\r\n### Оновлений вигляд для:\r\n- **Блоки**:\r\n  - Око Ендера\r\n  - Портал кінця\r\n  - Портал кінцевих воріт\r\n  - Поширення каталізатора скалка\r\n  - Сплеск казана з водою\r\n  - Сплеск казана з лавою\r\n  - Вогонь\r\n  - Багаття\r\n  - Факел\r\n  - Свічка\r\n  - Спавнери мобів\r\n  - Ефекти сховища винагороди\r\n\r\n- **Предмети**:\r\n  - Літаюче око Ендера\r\n\r\n- **Сутності**:\r\n  - Блисківка спалення\r\n  - Ендермен\r\n  - Ендерміт\r\n\r\n[iframe](https://www.youtube.com/watch?v=tZItqVmDIdo)\r\n\r\n",
+        "description": "**Маленький мод, який додає нові атмосферні ефекти до гри Minecraft!**\r\n\r\n\r\n### Оновлений вигляд для:\r\n- **Блоки**:\r\n  - Око Ендера\r\n  - Портал кінця\r\n  - Портал кінцевих воріт\r\n  - Поширення каталізатора скалка\r\n  - Сплеск казана з водою\r\n  - Сплеск казана з лавою\r\n  - Вогонь\r\n  - Багаття\r\n  - Факел\r\n  - Свічка\r\n  - Спавнери мобів\r\n  - Ефекти сховища винагороди\r\n\r\n- **Предмети**:\r\n  - Літаюче око Ендера\r\n\r\n- **Сутності**:\r\n  - Блисківка спалення\r\n  - Ендермен\r\n  - Ендерміт\r\n\r\n[iframe](https://www.youtube.com/watch?v=HBDCdwrtwx0&t=1s)\r\n\r\n",
         "image": "https://cdn.modrinth.com/data/hCdWhw9o/9df0d2d8ae3748a3f085f33e9cbf9bae809b8184_96.webp",
         "verified": true,
         "author": "MartianDill",
@@ -3411,5 +3411,48 @@
         ],
         "id": "000210",
         "date": "05/02/2025 17:48:59"
+    },
+    {
+        "title": "Geode Plus (Geode+)",
+        "gameversion": "",
+        "engine": "",
+        "categories": [
+            "Пригоди",
+            "Ігрові механіки"
+        ],
+        "description": "Geode+ — мод для Minecraft, який додає джеоди у Надземний світ, Незер та навіть Енд. Досліджуйте нові біоми з джеодами, що містять лазурит, редстоун, смарагд, діамант та рідкісні джеоди (целестит, рожевий топаз, призмарин, відлуння)\r\n\r\n![](https://github.com/ChorusTeam/geode-plus/blob/master/page/screenshot/lapisGeodeInMineshaft.png?raw=true)",
+        "image": "https://cdn.modrinth.com/data/3LAzTsNC/446e5f8184321173561d0e25b098a0bb17a7f85c_96.webp",
+        "verified": true,
+        "author": "MartianDill, Nezila Nez (Nezila)",
+        "completed": true,
+        "translation": "https://crowdin.com/project/geode-plus/uk#/Crowdin%20%2F%20main/geode-plus",
+        "link": [
+            "https://modrinth.com/mod/geode-plus",
+            "https://www.curseforge.com/minecraft/mc-mods/geode-plus"
+        ],
+        "id": "000211",
+        "date": "05/02/2025 18:17:04"
+    },
+    {
+        "title": "Resource Slimes",
+        "gameversion": "",
+        "engine": "",
+        "categories": [
+            "Пригоди",
+            "Дивні",
+            "Декорації"
+        ],
+        "description": "Мод **Resource Slimes** знаходиться на стадії активної розробки. Він додає в гру нову механіку розведення миленьких слизів та збору ресурсів. Цей мод поєднує елементи з \"Resourceful Bees\" та \"Slime Rancher\", пропонуючи унікальний ігровий досвід.\r\n\r\n**Основні особливості моду:**\r\n- **Типи слизів:** У моді планується багато різних видів слизів з унікальними властивостями.\r\n- **Користувацькі блоки:** Спеціальні блоки для обробки врожаю, які можна створювати та налаштовувати.\r\n- **Система розмноження:** Можливість розводити різні види слизів для отримання кращих ресурсів.\r\n- **Інтеграція з іншими модами:** Підтримка і взаємодія з різними модами для розширення функціональності.\r\n- **Прогресія:** Додавання нових інструментів, руд і механік для поступового розвитку гравця.\r\n- **Структури та боси:** Планується додавання структур, босів і навіть сюжету, що забезпечить додаткові виклики та ",
+        "image": "https://media.forgecdn.net/avatars/thumbnails/583/81/64/64/637949698474313996.png",
+        "verified": true,
+        "author": "MartianDill, Dease Liker (ArchiJK)",
+        "completed": true,
+        "translation": "https://crowdin.com/project/resource-slimes/uk",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/resource-slimes",
+            "https://github.com/Kaupenjoe/Resource-Slimes"
+        ],
+        "id": "000212",
+        "date": "05/02/2025 18:19:28"
     }
 ]
