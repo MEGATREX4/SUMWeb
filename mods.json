@@ -3482,5 +3482,115 @@
         ],
         "id": "000213",
         "date": "05/04/2025 14:32:42"
+    },
+    {
+        "title": "Create Nuclear",
+        "gameversion": "1.21–1.21.1, 1.20.1",
+        "engine": "Fabric, Forge",
+        "categories": [
+            "Зберігання",
+            "Технології",
+            "Транспортування",
+            "Генерація створення"
+        ],
+        "description": "**Create Nuclear** — це доповнення, яке додає повноцінну **ядерну систему** до моду Create. Оптимізований реактор здатний виробляти **понад два мільйони ОЕ** (одиниць енергії/SU).\r\n\r\nCreate Nuclear також вводить у гру уранову руду та повний процес її збагачення. Це дозволяє створювати паливо та автоматично живити реактор навіть з нескінченних джерел, як-от кругляк, використовуючи складні ланцюжки переробки, що задіюють **увесь потенціал механізмів Create**.\r\n\r\n![Скриншот енергетичної установки](https://cdn.modrinth.com/data/cached_images/1a69b6b412e0ef456ab2b778f89e8dc574e77f99.png)\r\n\r\n## Використання\r\n\r\n### Fabric\r\nСпершу необхідно встановити [Create Fabric](https://modrinth.com/mod/create-fabric) та [Fabric API](https://modrinth.com/mod/fabric-api).\r\n\r\nМод сумісний з **JEI**, **REI** та **EMI**.\r\n\r\n### Forge\r\nСпершу необхідно встановити оригінальний мод [Create](https://modrinth.com/mod/create).\r\n\r\nМод сумісний з **JEI**, **REI** та **EMI**.\r\n\r\n## Локалізація\r\nЯкщо ви хочете допомогти з перекладом, ми відкрили проєкт на Crowdin: [натисніть тут](https://crowdin.com/project/createnuclear).\r\n\r\n## Вихідний код\r\n\r\n*   **Fabric:** [github.com/valentinlamine/CreateNuclearFabric](https://github.com/valentinlamine/CreateNuclearFabric)\r\n*   **Forge:** [github.com/Giovanniricotta2002/CreateNuclearForge](https://github.com/Giovanniricotta2002/CreateNuclearForge)",
+        "image": "https://cdn.modrinth.com/data/z611fdf7/100fd84c2390fd4bde548e30b9624ee1fa32c018_96.webp",
+        "verified": true,
+        "author": "MartianDill, Koko(PanTomat), Дьяков Кирило(diakow73), MSOU K(Darnon), molachu(molachucat)",
+        "completed": true,
+        "translation": "https://crowdin.com/project/createnuclear/uk",
+        "link": [
+            "https://modrinth.com/mod/createnuclear",
+            "https://www.curseforge.com/minecraft/mc-mods/createnuclear",
+            "https://github.com/valentinlamine/CreateNuclearFabric"
+        ],
+        "id": "000214",
+        "date": "03/05/2026 20:39:36"
+    },
+    {
+        "title": "Antique Atlas",
+        "gameversion": "1.18.2, 1.17.1, 1.16.2–1.16.5",
+        "engine": "Fabric, Forge, NeoForge",
+        "categories": [
+            "Пригоди",
+            "Спорядження",
+            "Ігрові механіки"
+        ],
+        "description": "![](https://i.imgur.com/i90KA8K.png)\r\n\r\n**Antique Atlas** — це предмет, який можна скрафтити для відкриття спеціального екрана мапи. Ви можете переміщатися по мапі за допомогою натискання та перетягування, а також змінювати масштаб коліщатком миші. Крім того, кнопки на екрані дозволяють додавати, видаляти або приховувати маркери, а також експортувати мапу у файл зображення.\r\n\r\n> **Важливо:** мод має бути встановлений як на **сервері**, так і на **клієнті**.\r\n> \r\n> Ви можете вільно включати цей мод у свої збірки, якщо ви не заробляєте на цьому гроші.\r\n> \r\n> **Відомі помилки:** [github.com/AntiqueAtlasTeam/AntiqueAtlas/labels/type: bug](https://github.com/AntiqueAtlasTeam/AntiqueAtlas/labels/type: bug)\r\n\r\n**Наш Discord: [discord.gg/N2H3r9y](https://discord.gg/N2H3r9y)**\r\n\r\nМапа генерується навколо гравця, вибираючи один біом для представлення кожного чанку 16x16 блоків. Кастомні біоми з інших модів будуть автоматично призначені до стандартного набору текстур на основі їхніх характеристик, але ви можете додавати власні набори текстур: див. [Редагування текстур](https://github.com/Hunternif/AntiqueAtlas/wiki/Editing-Textures).\r\n\r\nВи можете експортувати атлас як файл зображення PNG, що показує поточний вимір гравця.\r\n\r\nМоддери можуть використовувати **[Atlas API](https://github.com/AntiqueAtlasTeam/AntiqueAtlas/wiki/API)**! Для розробки з API завантажте деобфусковану збірку [тут](https://github.com/AntiqueAtlasTeam/AntiqueAtlas/releases/latest).\r\n\r\nЯк і з ванільними мапами Minecraft, натисніть ПКМ, тримаючи порожній атлас **![](https://i.imgur.com/6FbcaxQ.png)**, щоб створити робочий екземпляр: **![](https://i.imgur.com/rO2ZrTZ.png)**\r\n\r\nКрафт заповненого атласу з порожніми створює клони оригіналу. Вміст мапи розподіляється між клонами, тому ви завжди можете залишити копію вдома і вирушати в пригоди, не хвилюючись про втрату свого атласу.\r\n\r\nДва різних атласи можна з'єднати разом, об'єднавши їхній вміст у новий атлас.\r\n\r\nНатисніть праву кнопку миші, тримаючи атлас у руках, щоб відкрити його.\r\n\r\n**Подяки:**\r\nВелика подяка всім, хто зробив свій внесок у розвиток моду!\r\n\r\n— **Hunternif** за створення моду та оригінальних текстур;\r\n— **[Kenkron](https://www.curseforge.com/members/kenkron)** за оновлення та підтримку моду протягом декількох років;\r\n— **voythas** та іншим учасникам команди Quest за натхнення на оригінальну ідею;\r\n— **coolAlias** за інтеграцію з ZSS, переписування мережевого коду та постійну допомогу;\r\n— **crafteverywhere**, **CapoFantasma97**, **Mazdallier**, **Ruukas** за переклад текстів;\r\n— **Golrith** за його роботу над кастомним набором текстур, а також **temdur** та **barrowisp** за допомогу;\r\n— **Stereowalker** за портування на версію 1.21.1;\r\n— усім, хто пропонував ідеї на форумах Minecraft. Вони були дуже корисними, і деякі із запропонованих функцій вже реалізовані.",
+        "image": "https://cdn.modrinth.com/data/Y5Ve4Ui4/c0f117d80004f69fbea1367148c85f731da3dfbb.png",
+        "verified": false,
+        "author": "Yaroslav Kozlan",
+        "completed": true,
+        "translation": "https://legacy.curseforge.com/minecraft/texture-packs/antique-atlas-ukrainian-translation",
+        "link": [
+            "https://www.curseforge.com/minecraft/mc-mods/antique-atlas"
+        ],
+        "id": "000215",
+        "date": "03/05/2026 20:44:15"
+    },
+    {
+        "title": "PortalMod",
+        "gameversion": "",
+        "engine": "",
+        "categories": [],
+        "description": "![PortalMod Logo](https://cdn.modrinth.com/data/cached_images/d2a8ac1e46d43d63102a3dcb0b2541e60ea033b9.png)\r\n\r\n   \r\n\r\n![](https://cdn.modrinth.com/data/cached_images/c0fbbf79fd11a2b47b0fca7481caf73cfe7f4eb6.png)\r\n\r\n![Companion Cube](https://cdn.modrinth.com/data/cached_images/0ec4fe9dd387eb2fa09a8649b188eca2c3874963.png)\r\n\r\n![About](https://cdn.modrinth.com/data/cached_images/97b6452651ae30dc9af109a41ba5600d345af51b.png)\r\n\r\nЛаскаво просимо до **PortalMod** — проєкту, що має на меті **переосмислити досвід Portal** у Minecraft.\r\n\r\nОкрім власне **портальної гармати**, PortalMod додає безліч **елементів із франшизи Portal, адаптованих** так, щоб вони виглядали органічно у світі Minecraft.\r\n\r\nМод розробляється з думкою про **повну сумісність із виживанням** та **підтримку багатокористувацької гри**, щоб ви могли будувати та проходити камери випробувань разом із друзями. Тортик додається!\r\n\r\n  \r\n\r\n![](https://cdn.modrinth.com/data/cached_images/c0fbbf79fd11a2b47b0fca7481caf73cfe7f4eb6.png)\r\n\r\n![Turret](https://cdn.modrinth.com/data/cached_images/21e15c3f0e682732db03ca47a151225d98491fa1.png)\r\n\r\n![Features](https://cdn.modrinth.com/data/cached_images/96acf62bd1de822cef04fdb7ff50563088726f64.png)\r\n\r\n> Цей мод додає **різноманітні елементи випробувань з ігор Portal**, дозволяючи вам створювати **власні камери**.\r\n\r\n> У нас є **куби** та **роздавачі кубів**, а також круті **кнопки** для революційного тестування на основі взаємодії кубів і кнопок. Ці кнопки з'єднуються з **дверима камер** за допомогою **антиліній** (Antlines), подібних до редстоуну.\r\n\r\n> Ви можете додатково урізноманітнити свої камери за допомогою **гелів**, **полів антиекспропріації** (Fizzlers), **повітряних панелей віри**, **автопорталів** та іншого! Або додайте небезпеки, як-от **турелі** чи **смертельну рідину**, щоб позбутися небажаних піддослідних після тестування.\r\n\r\n* * *\r\n\r\n  \r\n![Black and White panel blocks](https://cdn.modrinth.com/data/cached_images/1b419f2e0b4c15564d059e74f57551cf344a23df.png)\r\n\r\nМи також, звісно, не забули додати чудові декоративні блоки. **Білі та чорні панелі** мають **багато варіантів**, а також велику **гнучкість у розміщенні**.\r\n\r\nПрикрашайте далі за допомогою мерехтливих **ламп камери**, налаштовуваних **знаків**, **платформ** та **балок**, які чудово підходять для сходів, а також дуже гарних типів **залізних рам** для будь-яких структурних будівель.\r\n\r\n  \r\n\r\n![](https://cdn.modrinth.com/data/cached_images/c0fbbf79fd11a2b47b0fca7481caf73cfe7f4eb6.png)\r\n\r\n![Chicken on Portal Button](https://cdn.modrinth.com/data/cached_images/eaf37fed6d3e7a4b05e156ab3348c5147affdcb0.png)\r\n\r\n![Community](https://cdn.modrinth.com/data/cached_images/3b32841f142791870694906d5ddbc65f59bc1f2d.png)\r\n\r\n> Приєднуйтесь до нашого **[Discord-сервера](https://discord.gg/hUXXtfJc44)**, щоб **ділитися своїми творіннями**, обговорювати будь-які теми, **брати участь у крутих подіях спільноти** та отримувати **ексклюзивні новини** про процес портування моду на сучасні версії Minecraft.\r\n\r\n> Ви можете повідомити про **проблеми** або надіслати **пропозиції** на сторінці **[Github Issues](https://github.com/snowy-shack/PortalMod/issues)**. Нам дуже потрібна ваша допомога у вдосконаленні моду!\r\n\r\n  \r\n\r\n![](https://cdn.modrinth.com/data/cached_images/c0fbbf79fd11a2b47b0fca7481caf73cfe7f4eb6.png)\r\n\r\n![Golden Portal Gun](https://cdn.modrinth.com/data/cached_images/6fdd2a5eb584d1baf34d124d3cd38f5197a59283.png)\r\n\r\n![Support](https://cdn.modrinth.com/data/cached_images/d2f61b04e3f817b0a7f364888bd3e7dedaea993b.png)\r\n\r\nЯкщо ви хочете **підтримати проєкт**, це можна зробити на нашій **[сторінці пожертв](https://portalmod.net/donate/)** або за допомогою **бусту** нашого **[Discord-сервера](https://discord.gg/hUXXtfJc44)**!\r\n\r\nЦе **розблокує** спеціальний **скін для портальної гармати** у грі, який буде **видно всім**! Більше інформації про скіни можна знайти **[тут](https://portalmod.net/info/skins)**.\r\n\r\n  \r\n\r\n![](https://cdn.modrinth.com/data/cached_images/c0fbbf79fd11a2b47b0fca7481caf73cfe7f4eb6.png)\r\n\r\n© 2022 - 2026 SerialSniper, PhantomEye & LarsMans\r\n\r\n* * *\r\n\r\nМи НЕ є афілійованими, пов'язаними, авторизованими, підтриманими або будь-яким іншим чином офіційно пов'язаними з: Microsoft®, Mojang®, Valve®\r\n\r\n![](https://cdn.modrinth.com/data/cached_images/03654be29dec3933c094f3fbc428706f917f3032.png)",
+        "image": "https://portalmod.net/images/radio/radio.png",
+        "verified": true,
+        "author": "NdrNmnk, TheWrlQ, hented guitar, KitsoriK KOT",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://portalmod.net/",
+            "https://modrinth.com/mod/portalmod",
+            "https://www.curseforge.com/minecraft/mc-mods/portalmod"
+        ],
+        "id": "000216",
+        "date": "03/05/2026 20:47:42"
+    },
+    {
+        "title": "Create Aeronautics",
+        "gameversion": "1.21.1",
+        "engine": "NeoForge",
+        "categories": [
+            "Ігрові механіки",
+            "Управління",
+            "Технології"
+        ],
+        "description": "[![powered by sable](https://cdn.modrinth.com/data/cached_images/d13ac17ef50ed090e7d21fcae0caf8958eeece3d.png)](https://modrinth.com/mod/sable) [![youtube-singular](https://wsrv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40intergrav%2Fdevins-badges%403%2Fassets%2Fcozy-minimal%2Fsocial%2Fyoutube-singular_64h.png&n=-1)](https://www.youtube.com/@createaeronautics) [![discord-singular](https://wsrv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40intergrav%2Fdevins-badges%403%2Fassets%2Fcozy-minimal%2Fsocial%2Fdiscord-singular_64h.png&n=-1)](https://discord.gg/createaeronautics)\r\n\r\nПро мод\r\n=======\r\n\r\n**Create Aeronautics** розширює системи Create, дозволяючи гравцям будувати всі типи транспортних засобів та фізичних механізмів за допомогою Sable. Мод містить контент і блоки для створення чого завгодно: від літаків, дронів і повітряних куль до автомобілів, вантажівок та химерних ґаджетів.\r\n\r\nВін містить 3 «розділи» контенту:\r\n\r\n*   **Simulated** — це ядро проєкту. Воно забезпечує збірку, компоненти редстоуну та всі інструменти, необхідні для взаємодії з фізичними механізмами.\r\n*   **Aeronautics** — дозволяє створювати всілякі літальні апарати за допомогою гарячого повітря, пропелерів та магічних летючих каменів.\r\n*   **Offroad** — дозволяє використовувати майже все, що схоже на колесо, для створення наземних транспортних засобів.\r\n\r\nЗалежності\r\n==========\r\n\r\n❗ Для гри в Create Aeronautics необхідно встановити і Sable, і Create. ❗\r\n-------------------------------------------------------------------------\r\n\r\n*   [https://modrinth.com/mod/create](https://modrinth.com/mod/create)\r\n*   [https://modrinth.com/mod/sable](https://modrinth.com/mod/sable)\r\n\r\n⚠️ Відомі несумісності\r\n----------------------\r\n\r\n*   Наразі Aeronautics має візуальні проблеми при використанні з **Iris Shaders.**\r\n\r\nАвтори\r\n------\r\n\r\n**Команда:** Eriksonn · RyanHCode · Starlotte · KyanBirb · Kryppers · keyberries · BeeIsYou · Cyvack\r\n\r\n**Контриб’ютори:** AddyBerry · Ocelot · LlamaMann · FallenReaper · Farcr · ModogTheDev · Cake\r\n\r\n**Автори трейлера:** Rhyguy1 · NonaWax · SpottyTheTurtle · Silved · Chazbomb1 · Exeros · maybe_madeline · TropheusJay · FusionFlux · Talrey\r\n\r\n_Окрема подяка FortressNebula, Oakli, Lyzantra та Amo_",
+        "image": "https://cdn.modrinth.com/data/oWaK0Q19/f66b5589924884ffd81acb27f3ccb775867a962e_96.webp",
+        "verified": true,
+        "author": "Mazik, Tenwoc, MartianDill, Tapio, DobyaGame, manueldan737",
+        "completed": true,
+        "translation": "https://crowdin.com/project/create-aeronautics",
+        "link": [
+            "https://modrinth.com/mod/create-aeronautics",
+            "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics",
+            "https://createsimulated.com/"
+        ],
+        "id": "000217",
+        "date": "03/05/2026 20:50:59"
+    },
+    {
+        "title": "Create: The Factory Must Grow",
+        "gameversion": "",
+        "engine": "",
+        "categories": [
+            "Спорядження",
+            "Ігрові механіки",
+            "Технології",
+            "Корисні функції"
+        ],
+        "description": "![refinery.png](https://media.forgecdn.net/attachments/789/779/refinery.png)\r\n\r\n![large_diesel_engine.png](https://media.forgecdn.net/attachments/789/770/large_diesel_engine.png)\r\n\r\n*   ![Thumbnail refinery.png](https://media.forgecdn.net/attachments/789/779/refinery.png)\r\n*   ![Thumbnail large_diesel_engine.png](https://media.forgecdn.net/attachments/789/770/large_diesel_engine.png)\r\n\r\n**  \r\n[ПРИЄДНУЙТЕСЬ ДО НАШОГО DISCORD](https://discord.gg/YcHt7gaDdm)** \r\n---------------------------------------------------------\r\n\r\n**\\---------Інформація---------**\r\n\r\n**Create: The Factory Must Grow — це мод, що має на меті розширити Create до епохи дизеля та електрики. Якщо величезні заводи, що виробляють зміг, живляться від ліній електропередач та працюють на масивних дизельних двигунах, здаються вам привабливими — тоді це аддон саме для вас!**\r\n\r\n**Деякі з наших особливостей включають:**\r\n\r\n*   **Дизельні, бензинові, ГБО та інші двигуни з можливістю налаштування конфігурації циліндрів!**\r\n*   **Унікальна система електрики з напругою (Voltage)! (сумісна з FE)**\r\n*   **Напалм, вогнемети, саморобні бомби та інше озброєння!**\r\n*   **Нафта та її переробка!**\r\n*   **Матеріали, такі як сталь, сірка, алюміній, свинець тощо!**\r\n*   **Будівельні блоки, такі як бетон, шлакоблоки, опори та багато іншого!**\r\n*   **І це далеко не все!**\r\n\r\n**  \r\n\\---------Інші проєкти---------**\r\n\r\n[**Create: Industrialized Architecture**](https://legacy.curseforge.com/minecraft/mc-mods/industrialized-architecture)\r\n======================================================================================================================\r\n\r\n### **[![Create: Industrialized Architecture](https://media.forgecdn.net/attachments/description/693815/description_0f3cd13b-5c65-416c-816f-b6446d5398d4.png)](https://legacy.curseforge.com/minecraft/mc-mods/industrialized-architecture)**\r\n\r\n### **\\---------Хостинг---------**\r\n\r\n### **[![](https://www.bisecthosting.com/partners/custom-banners/262afb89-b159-42bc-b108-1866574c8ef6.png)](https://www.bisecthosting.com/)**\r\n\r\n##### Коли справа доходить до хостингу серверів, я завжди довіряю BisectHosting. Нові клієнти можуть скористатися кодом DrMangoTea, щоб заощадити 25% на першому місяці оренди ігрового сервера, а їхня команда підтримки доступна 24/7, щоб надати вам високоякісну допомогу.",
+        "image": "https://cdn.modrinth.com/data/USgVjXsk/a8150331e2257d66e03e09478f17e121fcd3fdea_96.webp",
+        "verified": true,
+        "author": "Mazik",
+        "completed": true,
+        "translation": "https://github.com/DrMango14/Create-The_Factory_Must_Grow/blame/1.21.1/src/main/resources/assets/tfmg/lang/uk_ua.json",
+        "link": [
+            "https://modrinth.com/mod/create-tfmg",
+            "https://www.curseforge.com/minecraft/mc-mods/create-industry"
+        ],
+        "id": "000218",
+        "date": "03/05/2026 20:52:59"
     }
 ]
